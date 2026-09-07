@@ -47,8 +47,7 @@ cd So-long
 Accéder ensuite aux exécutables :
 
 ```bash
-> ls
-> so_long git:(main) ✗ ls
+$ ls
 carte_01.ber  carte_03.ber        carte_04_bonus.ber  ft_errors.c      ft_inits.c  ft_parse_road.c  gnl     main.c    mlx_linux  so_long_bonus  so_long.h
 carte_02.ber  carte_03_bonus.ber  ft_display.c        ft_event_move.c  ft_move.c   ft_parsing.c     images  Makefile  so_long    solong_bonus   so_long_utils.c
 ```

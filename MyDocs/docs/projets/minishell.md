@@ -31,17 +31,17 @@ description: "Interpréteur de commandes UNIX en C inspiré de bash : processus,
 
 <div class="soft-skill-card">
     <span class="soft-skill-title">Programmation système</span><br><br>
-    <span class="soft-skill-desc">Compréhension du systéme UNIX</span>
+    <span class="soft-skill-desc">Compréhension du système UNIX</span>
 </div>
 
 <div class="soft-skill-card">
     <span class="soft-skill-title">Gestion des processus</span><br><br>
-    <span class="soft-skill-desc">Decouvertes des processus (fork, exec, wait)</span>
+    <span class="soft-skill-desc">Découverte des processus (fork, exec, wait)</span>
 </div>
 
 <div class="soft-skill-card">
     <span class="soft-skill-title">Parsing</span><br><br>
-    <span class="soft-skill-desc">Gestion des Inputs et parsing avancé</span>
+    <span class="soft-skill-desc">Gestion des inputs et parsing avancé</span>
 </div>
 
 <div class="soft-skill-card">
@@ -51,7 +51,7 @@ description: "Interpréteur de commandes UNIX en C inspiré de bash : processus,
 
    <div class="soft-skill-card">
       <span class="soft-skill-title">Redirections</span><br><br>
-      <span class="soft-skill-desc">Gestions des pipes et des redirections.</span>
+      <span class="soft-skill-desc">Gestion des pipes et des redirections.</span>
    </div>
 
 </div>

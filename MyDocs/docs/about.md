@@ -24,7 +24,7 @@ icon: material/account
 ## <span class="h2">Mon Parcours</span>
 
 !!! info "Mon histoire"
-    Ancien conducteur d'engins de terrassement et grutier, j'ai choisi de me reconversion dans la programmation après avoir découvert ma passion pour la technologie et la résolution de problèmes logiques.
+    Ancien conducteur d'engins de terrassement et grutier, j'ai choisi de me reconvertir dans la programmation après avoir découvert ma passion pour la technologie et la résolution de problèmes logiques.
     
     Aujourd'hui, je suis **étudiant à 42 Angoulême**, une école sans cours traditionnels où l'apprentissage par projets est au cœur de la méthode.
 

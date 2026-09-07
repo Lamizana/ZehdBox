@@ -1,71 +1,85 @@
 ================================================================================
-  TODO — MyDocs — Choses à faire
-  Dernière mise à jour : 29 août 2026
+  TODO — MyDocs — Axes d'amélioration (Audit réalisé le 07 septembre 2026)
+  Site vitrine développeur — Score global : 86/100
 ================================================================================
 
-📌 IMMÉDIAT (à faire avant le prochain push)
-─────────────────────────────────────────────
-[ ] ✅ Fait — Corrections tags.md commitées (commits a0f50a3, 7453556)
-[ ] ✅ Fait — Liens /tags/ vérifiés : 6/6 corrects vers les URLs blog ASCII
-    (build --strict propre le 2026-08-29, slugs du frontmatter respectés)
+> NOTE : ce fichier avait été vidé (modification non commitée) avant l'audit.
+> Les tâches non-finales de l'historique précédent ont été reportées ici.
 
+────────────────────────────────────────────────────────────────────────────────
+🚀 PRIORITÉ HAUTE — VITRINE / CONVICTION RECRUTEUR
+────────────────────────────────────────────────────────────────────────────────
 
-🔒 SÉCURITÉ
-─────────────────────────────────────────────
-[ ] ✅ Fait — rel="noopener" ajouté aux 55 liens target="_blank" (commit 7747f26)
+[ ] Ajouter un lien de DÉMO LIVE / déploiement sur chaque fiche projet
+    (ou au minimum sur Transcendance qui est HTML/JS et déployable).
+    Actuellement 5 projets sur 6 n'ont QUE le lien GitHub → signal faible
+    pour un recruteur. Exemples :
+      - Transcendance : héberger une instance (Render/Railway/VPS) → lien live
+      - Tokenizer : lien BscScan déjà présent (bien)
+      - Minishell / ft_irc / Push Swap / So Long : dépendances natives,
+        exiger une démo est dur → mettre en avant captures + vidéo (So Long OK)
+    → Uniformiser la section "Lien" de chaque fiche : [Démo live] + [Repo]
 
+[ ] Uniformiser la DENSITÉ et la STRUCTURE des fiches projets
+    Modèles riches : transcendance.md, tokeniser.md  → à étendre au reste :
+      - minishell.md : section "Compétences" utilise .soft-skills-grid (cards) au
+        lieu de la liste plate utilisée ailleurs → harmoniser.
+      - ft_irc.md / minishell.md / push_swap.md : ajouter "Résultat / retombées".
+    Structure cible par fiche : Contexte → Compétences → Stack → Défis →
+    Résultat → [Démo live] + [Repo].
 
-🔍 SEO & RÉFÉRENCEMENT
-─────────────────────────────────────────────
-[ ] ✅ Fait — Plugin tags activé dans properdocs.yml (commit 0099794)
-[ ] ✅ Fait — robots.txt créé (commit 0099794)
-[ ] ✅ Fait — Tags ajoutés aux 6 posts blog (commit 0099794)
-[ ] ✅ Fait — Page tags.md créée manuellement
-[ ] Confirmer l'indexation du sitemap dans Google Search Console
-    (généré : 71 URLs, lastmod 2026-08-29, référencé dans robots.txt)
-[ ] Envisager d'ajouter des meta descriptions plus spécifiques par page projet
+[ ] Homogénéiser le nom du projet IRC dans la nav
+    properdocs.yml affiche "Irc:" tandis que le fichier est ft_irc.md → aligner
+    sur "ft_irc" ou "IRC".
 
-
+────────────────────────────────────────────────────────────────────────────────
 📄 CONTENU & STRUCTURE
-─────────────────────────────────────────────
-[ ] ✅ Fait — Fausse alerte "19 fichiers avec plusieurs H1" : le décompte
-    initial comptait les commentaires Python (#) dans les blocs de code comme
-    des titres. Vérifié le 29/08 : les 19 fichiers ont tous 1 seul H1 réel ✅
-    (recherche à refaire si besoin : exclure les blocs ``` du grep ^#)
+────────────────────────────────────────────────────────────────────────────────
 
-[ ] ✅ Fait — Tokenizer ajouté aux projets vedettes de l'accueil (commit 25477be)
-[ ] ✅ Fait — Duplication tokenizer résolue : liens croisés ajoutés
-    projets/tokeniser.md ↔ web/web3/tokenizer.md (commit b230c18)
+[ ] Étoffer la page d'accueil du blog : docs/blog/index.md (25 lignes, quasi vide)
+    → y présenter les derniers articles, une courte présentation de la thématique
+    (science / culture), et orienter vers les tags.
+[ ] Envisager de séparer explicitement dans la nav :
+      - "Projets" (vitrine)  ← déjà le cas, bien
+      - "Notes/Veille" (cours, système, web, github) ← déjà bien séparé, à garder
+    → RAS, la séparation est déjà saine. Continuer sur cette lancée.
 
-
+────────────────────────────────────────────────────────────────────────────────
 🎨 DESIGN & CSS
-─────────────────────────────────────────────
-[ ] ✅ Fait — Doublon .badge-section supprimé (une seule définition restante,
-    utilisée par 6 pages — commit 2dd9395)
-[ ] Ajouter loading="lazy" sur les images (performance mobile)
-[ ] ✅ Fait — Mention "MkDocs" → "ProperDocs" dans l'accueil (footer ligne 106)
-    + meta description corrigée le 29/08/2026 (non commitée)
+────────────────────────────────────────────────────────────────────────────────
 
+[ ] Supprimer les définitions DUPLIQUÉES dans docs/css/custom.css :
+      - .badge-row        (défini 2× : ~ligne 98 et ~ligne 537)
+      - .badge-category   (défini 2× : ~ligne 91 et ~ligne 528)
+      - .project-card     (défini 2× : ~ligne 116 et concerné aussi ~ligne 550+)
+    → fusionner en une seule définition chacune (les règles des blocs sont
+      proches mais pas identiques : réconcilier hauteurs/justification).
+[ ] image : ajouter loading="lazy" sur les images de contenu (perf mobile)
+    (déjà listé dans l'ancien TODO — toujours en attente)
 
-⚙️ CONFIGURATION
-─────────────────────────────────────────────
-[ ] ✅ Fait — navigation.top actif dans properdocs.yml
-[ ] ✅ Fait — content.tooltips actif dans properdocs.yml (commit 2dd9395)
+────────────────────────────────────────────────────────────────────────────────
+🔍 SEO & RÉFÉRENCEMENT
+────────────────────────────────────────────────────────────────────────────────
 
+[ ] Meta Open Graph / Twitter différenciée PAR PAGE PROJET (partage LinkedIn/Twitter)
+    → vérifier que le plugin social Material génère une carte distincte par page
+      (penser aux drafts de description + images).
+[ ] Confirmer l'indexation du sitemap dans Google Search Console
+    (généré : 72 URLs, référencé dans robots.txt).
+[ ] Verifier que Google Analytics (G-74MZWWS1RR) collecte réellement après
+    acceptation du consent cookie.
 
+────────────────────────────────────────────────────────────────────────────────
 🌐 DÉPLOIEMENT & CI/CD
-─────────────────────────────────────────────
-[ ] Vérifier le run GitHub Actions du push du 29/08 (build strict + deploy)
-    → vérifiable en CLI après `gh auth login`, ou via l'interface GitHub
-[ ] Vérifier que Google Analytics (G-74MZWWS1RR) collecte bien des données
-    après acceptation du consent cookie
+────────────────────────────────────────────────────────────────────────────────
 
+[ ] Vérifier le dernier run GitHub Actions (build strict + deploy) après le
+    prochain push — via `gh` ou l'interface GitHub.
 
+────────────────────────────────────────────────────────────────────────────────
 📋 IDÉES FUTURES
-─────────────────────────────────────────────
-[ ] Ajouter une page "Changelog" ou "Journal" pour suivre les évolutions
-[ ] Ajouter des tags aux pages de cours (Python, JavaScript, etc.)
-    pour améliorer la découverte via la page /tags/
-[ ] ✅ Fait — Page "Contact" dédiée créée : docs/contact.md (grid cards + styles
-    .contact-btn existants), nav mise à jour, About pointe vers la page (29/08/2026)
-[ ] Envisager un filtre par tag sur la page d'accueil du blog
+────────────────────────────────────────────────────────────────────────────────
+
+[ ] Ajouter une page "Changelog" / "Journal" pour suivre les évolutions.
+[ ] Ajouter des tags aux pages de cours (Python, JavaScript…) pour enrichir /tags/.
+[ ] Réfléchir à un filtre par tag sur la page d'accueil du blog.

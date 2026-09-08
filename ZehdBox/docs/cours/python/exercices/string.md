@@ -129,6 +129,6 @@ Pour accéder à un terminal python dans le navigateur nous allons utiliser **Ba
 
 -   :octicons-arrow-right-24: **[Continue vers le sommaire →](../index.md)**
 
-    ✅ Exercices terminés. Explore maintenant les fonctions et les librairies (Pandas, NumPy, Scikit-learn).
+    ✅ Exercices terminés. Explore maintenant les fonctions et les bibliothèques (Pandas, NumPy, Scikit-learn).
 
 </div>

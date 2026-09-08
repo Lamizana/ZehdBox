@@ -21,28 +21,30 @@ nav:
       - cours/index.md
       - Python:
           - cours/python/index.md
-          - Bien débuter:
+          - Les bases:
+              - cours/python/bases/index.md
               - Mise en place: cours/python/bases/mise-en-place.md
               - Variables: cours/python/bases/variables.md
-              - Flux d'exécution: cours/python/bases/flux-execution.md
-              - Instructions répétitives: cours/python/bases/instructions-repetitives.md
               - Types de données: cours/python/bases/types.md
               - Opérateurs: cours/python/bases/operateurs.md
               - Chaînes: cours/python/bases/chaines.md
+              - Flux d'exécution: cours/python/bases/flux-execution.md
+              - Instructions répétitives: cours/python/bases/instructions-repetitives.md
               - Exercices de base: cours/python/bases/exercice-bases.md
           - Exercices:
               - cours/python/exercices/index.md
               - Nombres: cours/python/exercices/nombres.md
               - Chaînes de caractères: cours/python/exercices/string.md
           - Fonctions: cours/python/fonctions.md
-          - Librairies:
+          - Bibliothèques:
+              - cours/python/librairies/index.md
+              - NumPy:
+                  - cours/python/numpy/index.md
+                  - Projet Dés: cours/python/numpy/exercice-dice.md
               - Pandas:
                   - cours/python/pandas/index.md
                   - Cours Météo: cours/python/pandas/tutoriel-meteo.md
                   - Exercices Météo: cours/python/pandas/exercice-meteo.md
-              - NumPy:
-                  - cours/python/numpy/index.md
-                  - Projet Dés: cours/python/numpy/exercice-dice.md
               - Scikit-learn: cours/python/scikit-learn.md
 
       - MkDocs:

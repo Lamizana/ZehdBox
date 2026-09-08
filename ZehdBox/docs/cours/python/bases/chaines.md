@@ -200,7 +200,7 @@ print('Il a dit "Bonjour"')
 ## <span class="h2">Résumé des Méthodes</string>
 
 | Méthode | Description |
-|---------|-------------|
+| --------- | ------------- |
 | `upper()` | Minuscules → MAJUSCULES |
 | `lower()` | MAJUSCULES → minuscules |
 | `strip()` | Enlève les espaces |

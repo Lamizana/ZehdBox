@@ -35,7 +35,7 @@ cd mon-projet
 
 Cela génère la structure suivante :
 
-```
+```console
 mon-projet/
 ├── properdocs.yml    # Fichier de configuration
 └── docs/
@@ -47,7 +47,7 @@ mon-projet/
 ## <span class="h2">Commandes essentielles</span>
 
 | Commande | Description |
-|---|---|
+| --- | --- |
 | `properdocs new [dossier]` | Créer un nouveau projet |
 | `properdocs serve` | Lancer le serveur de dev (hot-reload) |
 | `properdocs build` | Générer le site statique |
@@ -99,7 +99,7 @@ markdown_extensions:
 
 ## <span class="h2">Structure recommandée</span>
 
-```
+```console
 mon-projet/
 ├── properdocs.yml
 ├── docs/

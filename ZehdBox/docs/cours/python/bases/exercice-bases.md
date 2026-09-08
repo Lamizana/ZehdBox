@@ -34,8 +34,6 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
 
-
-
 ---
 
 ## <span class="h2">Exercice 1 : Créer des Variables</span>
@@ -55,7 +53,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
     prenom = "Alex"
     nom = "Dupont"
     age = 25
-    
+
     print(prenom)
     print(nom)
     print(age)
@@ -143,7 +141,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
     flottant = 3.14
     chaine = "texte"
     booleen = True
-    
+
     print(type(entier))
     print(type(flottant))
     print(type(chaine))
@@ -171,7 +169,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
     nombre = int(texte)
     print(nombre)
     print(type(nombre))
-    
+
     nombre2 = 45
     texte2 = str(nombre2)
     print(texte2)
@@ -349,7 +347,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
 
 <div class="grid cards" markdown>
 
--   :octicons-arrow-right-24: **[Passe aux exercices →](../exercices/index.md)**
+- :octicons-arrow-right-24: **[Passe aux exercices →](../exercices/index.md)**
 
     🎉 Tu as terminé les bases de Python. Deux ateliers pratiques t'attendent : nombres et chaînes de caractères.
 

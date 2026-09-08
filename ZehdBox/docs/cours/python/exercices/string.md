@@ -128,10 +128,10 @@ description: "Exercices pratiques sur les chaînes de caractères (strings) en P
 
 !!! success "Résultat attendu"
     ```python
-    Mère Teresa a dit " La vie est une opportunité, profitez-en. 
-    La vie est belle, admirez-la. 
-    La vie est un rêve, réalisez-la. 
-    La vie est un devoir, complétez-la. 
+    Mère Teresa a dit " La vie est une opportunité, profitez-en.
+    La vie est belle, admirez-la.
+    La vie est un rêve, réalisez-la.
+    La vie est un devoir, complétez-la.
     La vie est un jeu, jouez-la."
     ```
 
@@ -176,12 +176,12 @@ description: "Exercices pratiques sur les chaînes de caractères (strings) en P
 
 !!! success "Résultat attendu"
     ```python
-    Nom initial (avec espaces):  	 	 
-     Alex  	 
+    Nom initial (avec espaces):
+     Alex
      .
-    Nom sans espace à gauche: Alex  	 
+    Nom sans espace à gauche: Alex
      .
-    Nom sans espace à droite:  	 	 
+    Nom sans espace à droite:
      Alex .
     Nom sans espace: Alex .
     ```
@@ -203,7 +203,7 @@ description: "Exercices pratiques sur les chaînes de caractères (strings) en P
 
 <div class="grid cards" markdown>
 
--   :octicons-arrow-right-24: **[Continue vers le sommaire](../index.md)**
+- :octicons-arrow-right-24: **[Continue vers le sommaire](../index.md)**
 
     Exercices terminés.
     

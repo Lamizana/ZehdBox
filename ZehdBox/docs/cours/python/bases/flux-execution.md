@@ -15,7 +15,6 @@ description: Comprendre les conditions (if/elif/else) et le contrôle du flux d'
 
 L'activité essentiel d'un programmeur est la résolution de problèmes. Or pour résoudre un probléme informatique, il faut toujours effectuer une série d'actions dans un certain ordre. _La description structuré de ces actions et de l'ordre dans lequel il convient de les effectuer s'appellent un **algorithme**_.
 
-
 Le "_chemin_" suivie par Python est appelé un **flux d'exécution**, et les constructions qui le modifient sont appelé des **instructions de contrôle de flux**.
 
 Les structures de contrôles sont les groupes d'instructions qui définissent l'ordre dans lequel les actions sont effectuées.En programmation moderne il en existe seulement 3 :
@@ -38,7 +37,7 @@ Nous allons aborder dans ce chapitre la **séquence** et la **sélection**.
 En régle générales, les instructions d'un programme s'effectue les unes après les autres, _dans l'ordre dans elles ont été écrite dans le script_.
 
 ???+ warning "Attention"
-    Une mauvaise disposition des instructions peut créer des erreurs sémantiques dans les programmes informatiques. 
+    Une mauvaise disposition des instructions peut créer des erreurs sémantiques dans les programmes informatiques.
 
 Il faut donc être extrémement attentif à l'ordre des instructions dans vos programmes. Prenons la séquence d'instructions suivantes:
 

@@ -29,7 +29,7 @@ nav:
               - Types de données: cours/python/bases/types.md
               - Opérateurs: cours/python/bases/operateurs.md
               - Chaînes: cours/python/bases/chaines.md
-              - Exercices: cours/python/bases/exercice-bases.md
+              - Exercices de base: cours/python/bases/exercice-bases.md
           - Exercices:
               - cours/python/exercices/index.md
               - Nombres: cours/python/exercices/nombres.md
@@ -44,9 +44,6 @@ nav:
                   - cours/python/numpy/index.md
                   - Projet Dés: cours/python/numpy/exercice-dice.md
               - Scikit-learn: cours/python/scikit-learn.md
-
-      - Javascript:
-          - cours/javascript/index.md
 
       - MkDocs:
           - mkdocs/index.md

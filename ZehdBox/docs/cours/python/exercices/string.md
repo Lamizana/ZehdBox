@@ -122,3 +122,13 @@ Pour accéder à un terminal python dans le navigateur nous allons utiliser **Ba
     print(f"Nom sans espace à droite: {name.rstrip()} .")
     print(f"Nom sans espace: {name.strip()} .")
     ```
+
+---
+
+<div class="grid cards" markdown>
+
+-   :octicons-arrow-right-24: **[Continue vers le sommaire →](../index.md)**
+
+    ✅ Exercices terminés. Explore maintenant les fonctions et les librairies (Pandas, NumPy, Scikit-learn).
+
+</div>

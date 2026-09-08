@@ -352,3 +352,13 @@ Calculez : 2 + 3 * 4, puis (2 + 3) * 4
 ## <span class="h2">Correction</span>
 
 Vous retrouverez toutes les solutions dans les blocs "Solution" ci-dessus.
+
+---
+
+<div class="grid cards" markdown>
+
+-   :octicons-arrow-right-24: **[Passe aux exercices →](../exercices/index.md)**
+
+    🎉 Tu as terminé les bases de Python. Deux ateliers pratiques t'attendent : nombres et chaînes de caractères.
+
+</div>

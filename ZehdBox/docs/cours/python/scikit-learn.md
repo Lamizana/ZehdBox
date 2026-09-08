@@ -125,3 +125,13 @@ y_encoded = encoder.fit_transform(y)
 Essayer scikit-learn directement:
 
 [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button }
+
+---
+
+<div class="grid cards" markdown>
+
+-   :octicons-arrow-right-24: **[Retour au sommaire →](index.md)**
+
+    🏁 Tu as parcouru tout le cours Python : bases, exercices et librairies. Bravo !
+
+</div>

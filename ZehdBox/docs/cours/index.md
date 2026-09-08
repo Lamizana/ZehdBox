@@ -24,14 +24,6 @@ icon: material/school
 
     [:octicons-arrow-right-24: Python](python/index.md)
 
--   :material-language-javascript:{ .lg .middle } __JavaScript__
-
-    ---
-
-    Les fondamentaux du langage web : syntaxe, DOM et manipulation événementielle.
-
-    [:octicons-arrow-right-24: JavaScript](javascript/index.md)
-
 </div>
 
 ---

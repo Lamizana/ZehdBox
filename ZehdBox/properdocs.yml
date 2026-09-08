@@ -45,9 +45,6 @@ nav:
                   - Projet Dés: cours/python/numpy/exercice-dice.md
               - Scikit-learn: cours/python/scikit-learn.md
 
-      - Javascript:
-          - cours/javascript/index.md
-
       - MkDocs:
           - mkdocs/index.md
           - Bases: mkdocs/bases.md

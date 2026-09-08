@@ -3,11 +3,11 @@
 > **Document de travail** — Audit réalisé le **07 septembre 2026** · Site vitrine développeur
 
 | | |
-|---|---|
+| --- | --- |
 | 🏆 **Score global** | 86 / 100 |
 | 📝 **Statut** | En cours d'amélioration continue |
 | 🚀 **Priorité** | Vitrine / conviction recruteur |
-| 📈 **Progression** | 2 / 15 tâches accomplies |
+| 📈 **Progression** | 5 / 15 tâches accomplies |
 
 ---
 
@@ -34,7 +34,7 @@
 - **État actuel** : 5 projets sur 6 n'ont *que* le lien GitHub ← signal faible
 
 | Projet | Démo live | Action recommandée |
-|---|---|---|
+| --- | --- | --- |
 | Transcendance | ❌ | Héberger une instance (Render / Railway / VPS) |
 | Tokenizer | ✅ | Lien BscScan déjà présent |
 | Minishell | ⚠️ | Dépendances natives → captures + démonstration |
@@ -48,15 +48,15 @@
 
 - [ ] Uniformiser la **densité** et la **structure** des fiches projets
 - ✅ **Modèles riches** : `transcendance.md`, `tokeniser.md`
-- ⚠️ **À harmoniser** :
+- **À harmoniser** :
   - `minishell.md` : section Compétences en cards (`.soft-skills-grid`) vs liste plate ailleurs
   - `ft_irc.md` / `minishell.md` / `push_swap.md` : ajouter *Résultat / retombées*
-- 📐 **Structure cible** : `Contexte → Compétences → Stack → Défis → Résultat → [Démo live] + [Repo]`
+- **Structure cible** : `Contexte → Compétences → Stack → Défis → Résultat → [Démo live] + [Repo]`
 
 ### 🏷️ Nom du projet IRC
 
 - [x] Homogénéiser le nom du projet IRC dans la nav
-- ✅ **Terminé** sur la branche `feat/seo-tittres-descriptions` (nav + `about.md`) — **attente merge**
+- ✅ **Terminé** — mergé via PR #13 (`feat/seo-tittres-descriptions`)
 
 ---
 
@@ -83,12 +83,12 @@
 - [ ] **Supprimer les définitions dupliquées** dans `docs/css/custom.css`
 
 | Sélecteur | Occurrence 1 | Occurrence 2 |
-|---|---|---|
+| --- | --- | --- |
 | `.badge-row` | ~ligne 98 | ~ligne 537 |
 | `.badge-category` | ~ligne 91 | ~ligne 528 |
 | `.project-card` | ~ligne 116 | ~ligne 550+ |
 
-> 🔄 Fusionner en une seule définition chacune — les règles des blocs sont proches mais pas identiques : réconcilier hauteurs/justification.
+> Fusionner en une seule définition chacune — les règles des blocs sont proches mais pas identiques : réconcilier hauteurs/justification.
 
 - [ ] Ajouter `loading="lazy"` sur les images de contenu (perf mobile)
   - *(déjà listé dans l'ancien TODO — toujours en attente)*
@@ -110,26 +110,29 @@
 
 ## 🔗 Maillage interne
 
-> **Constat (audit du 08/09/2026)** : 25 pages orphelines = accessibles uniquement via la nav, sans lien dans le contenu.
->
-> `cours Python (14)` · `Strudel (6)` · `blog (6 articles)` · `tags.md` · `react.md`
+!!! Note
+    **Constat (audit du 08/09/2026)** : 25 pages orphelines = accessibles uniquement via la nav, sans lien dans le contenu.
+
+    `cours Python (14)` · `Strudel (6)` · `blog (6 articles)` · `tags.md` · `react.md`
 
 ### Vue d'ensemble des chantiers
 
 | Chantier | Impact | Pages | Statut |
-|---|---|---|---|
-| 🔴 1 — Chaînage cours Python | ⭐⭐⭐ | 8 | ⬜ À faire |
-| 🟠 2 — Bloc « Autres projets » | ⭐⭐⭐ | 6 | ⬜ À faire |
-| 🟡 3 — Blog & tags | ⭐⭐ | 4 | ⬜ À faire |
-| 🟢 4 — Web & cross-links | ⭐⭐ | 4 | ⬜ À faire |
-| ⚪ 5 — Strudel | ⭐ | 6 | ⬜ À faire |
+| --- | --- | --- | --- |
+| 1 — Chaînage cours Python | ⭐⭐⭐ | 8 | ✅ Terminé |
+| 2 — Bloc « Autres projets » | ⭐⭐⭐ | 6 | ⬜ À faire |
+| 3 — Blog & tags | ⭐⭐ | 4 | ⬜ À faire |
+| 4 — Web & cross-links | ⭐⭐ | 4 | ⬜ À faire |
+| 5 — Strudel | ⭐ | 6 | ⬜ À faire |
 
-### 🔴 Chantier 1 — Chaînage pédagogique cours Python
+---
 
-- [ ] Ajouter en bas de chaque page un bloc **« Continuer la lecture »**
+### Chantier 1 — Chaînage pédagogique cours Python
+
+- [x] Ajouter en bas de chaque page un bloc **« Continuer la lecture »**
 
 | Étape | Page suivante |
-|---|---|
+| --- | --- |
 | `mise-en-place` | → `variables` |
 | `variables` | → `types` |
 | `types` | → `operateurs` |
@@ -139,12 +142,14 @@
 | `instructions-repetitives` | → `fonctions` |
 | `fonctions` | → `exercices` |
 
-### 🟠 Chantier 2 — Bloc « Autres projets »
+---
+
+### Chantier 2 — Bloc « Autres projets »
 
 - [ ] Encart « 📚 Autres projets » en bas de chaque fiche
 
 | Projet | Liens suggérés |
-|---|---|
+| --- | --- |
 | `transcendance` | ft_irc, push_swap, index |
 | `minishell` | ft_irc, push_swap, index |
 | `ft_irc` | transcendance, minishell, index |
@@ -152,7 +157,9 @@
 | `push_swap` | minishell, so_long, index |
 | `so_long` | push_swap, minishell, index |
 
-### 🟡 Chantier 3 — Réactiver blog et tags
+---
+
+### Chantier 3 — Réactiver blog et tags
 
 - [ ] Ajouter une carte « Blog » dans les grid cards de la home *(manquante)*
 - [ ] `blog/index.md` → lien « 📂 Explorer par tags » vers `tags.md`
@@ -178,7 +185,7 @@
 - [ ] Remplacer les `<span class="tech-tag">` des 6 fiches projets par des badges `shields.io style=for-the-badge`
 
 | Type | Technos |
-|---|---|
+| --- | --- |
 | 🎨 Logos officiels | C · C++ · JavaScript · Solidity · PostgreSQL · React |
 | 🔊 Badges texte coloré | UNIX · Makefile · Sockets · RFC 1459 · WebSockets · OAuth 42 · BEP-20 · OpenZeppelin · Algorithmique · Optimisation · MiniLibX · Jeu 2D |
 

@@ -1,0 +1,85 @@
+ZehdBox — Récapitulatif des PR (maillage Python)
+==================================================
+
+--------------------------------------------------
+PR 1 — Réorganisation pédagogique de la nav Python
+--------------------------------------------------
+
+Branche   : feat/nav-python-parcours
+Base      : main
+Commit    : f595f6a
+Statut    : ✅ MERGÉE (Merge PR #15, commit 139cf09)
+Lien      : https://github.com/Lamizana/ZehdBox/pull/15
+
+Titre :
+docs(python): réorganisation pédagogique de la nav + rédaction fonctions
+
+Corps :
+
+## Résumé
+Réorganisation pédagogique de la section Python + rédaction complète de la page Fonctions.
+
+## Changements
+- 🔄 Nav « Bien débuter » → « Les bases » réordonnée selon le parcours pédagogique
+  (Mise en place → Variables → Types → Opérateurs → Chaînes → Flux → Répétitives)
+- 🏷️ « Librairies » → « Bibliothèques » (nav + textes)
+- 🔀 NumPy placé avant Pandas (fondations d'abord)
+- 📝 Rédaction complète de `fonctions.md` (définir/appeler, return, portée, docstrings, exercices)
+- 📄 Création des index de section `bases/` et `librairies/` (en-têtes cliquables)
+- 🌱 La page Fonctions n'est plus vide dans la nav
+
+## Fichiers touchés
+- `properdocs.yml` (nav Python)
+- `docs/cours/python/fonctions.md`, `bases/index.md`, `librairies/index.md`
+- `docs/cours/python/index.md`, `exercices/string.md`, `scikit-learn.md` (harmonisation)
+
+## Validation
+✅ `mkdocs build --config-file properdocs.yml --strict` vert
+
+
+--------------------------------------------------
+PR 2 — Mise en page uniforme des exercices Python
+--------------------------------------------------
+
+Branche   : feat/exercices-python-mise-en-page
+Base      : main
+Commit    : 82f3396
+Statut    : ✅ MERGÉE (Merge PR #16, commit 3ba6a58)
+Lien      : https://github.com/Lamizana/ZehdBox/pull/16
+
+Titre :
+docs(python): mise en page uniforme des exercices + gabarit de référence
+
+Corps :
+
+## Résumé
+Uniformisation de la mise en page des exercices Python + création d'un gabarit de référence.
+
+## Changements
+- 📄 **Gabarit `_template-exercice.md`** (exclu du build via `exclude_docs`) : norme pour les futurs exercices
+- 🔢 **Nombres** : bloc brut réécrit en 2 exercices structurés (énoncé → indices → résultat → solution)
+- 🔤 **Chaînes** : uniformisation `question`/`success` + corrections de fautes
+- 📋 **Exercices de base** : 15 exercices harmonisés + tableau des notions couvertes en tête
+- 🎲 **Dés & Météo** : checklist de progression (`???+ abstract`) + solutions en onglets "Méthode 1/2"
+- 🌐 **Bloc Basthon unifié** (option hors environnement, bouton primaire) sur les 5 pages d'exercices
+
+## Fichiers touchés
+- `properdocs.yml` (`exclude_docs`)
+- `_template-exercice.md`, `bases/exercice-bases.md`
+- `exercices/nombres.md`, `exercices/string.md`
+- `numpy/exercice-dice.md`, `pandas/exercice-meteo.md`
+
+## Validation
+✅ `mkdocs build --config-file properdocs.yml --strict` vert
+
+
+--------------------------------------------------
+ÉTAT FINAL DU NETTOYAGE
+--------------------------------------------------
+
+- Branches mergées supprimées : ✅
+  - feat/nav-python-parcours (PR #15) — supprimée (local + distant)
+  - feat/chainage-cours-python (PR #14) — supprimée (local + distant)
+  - feat/seo-tittres-descriptions (PR #13) — supprimée (local, distant déjà gone)
+- Build final sur main : ✅ vert
+- Remote : rebasculé en HTTPS

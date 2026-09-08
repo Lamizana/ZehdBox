@@ -1,9 +1,9 @@
 ---
-title: Transcendance
-description: "Application web Pong multijoueur en temps réel : WebSockets, OAuth 42, PostgreSQL, architecture microservices."
+title: Transcendance — Pong multijoueur en ligne (projet 42)
+description: "Projet 42 Transcendance : Pong multijoueur temps réel en JavaScript — WebSockets, OAuth 42, PostgreSQL et architecture microservices."
 ---
 
-# <span class="h1">Transcendance</span>
+# <span class="h1">Transcendance — Pong multijoueur en ligne</span>
 
 <div class="project-hero">
     <span class="tech-tag">JavaScript</span>

@@ -1,9 +1,9 @@
 ---
-title: Push Swap
-description: "Algorithme de tri optimisé en C : deux piles et un nombre minimal d'opérations."
+title: Push_swap — Algorithme de tri en C (projet 42)
+description: "Push_swap : algorithme de tri en C avec deux piles — optimisation du nombre minimal d'opérations (projet 42)."
 ---
 
-# <span class="h1">Push Swap</span>
+# <span class="h1">Push_swap — Tri optimisé en C</span>
 
 <div class="project-hero">
     <span class="tech-tag">C</span>

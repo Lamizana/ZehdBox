@@ -1,6 +1,6 @@
 ---
-title: Web 3.0
-description: "Le Web 3.0 : blockchain, décentralisation, smart contracts et explorateurs de blocs comme Etherscan."
+title: Web 3.0 — Blockchain, DeFi et smart contracts
+description: "Découvrir le Web 3.0 : blockchain, décentralisation, smart contracts, Etherscan et création d'un token BEP-20."
 icon: material/bitcoin
 ---
 

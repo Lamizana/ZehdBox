@@ -1,6 +1,6 @@
 ---
-title: Cours
-description: "Cours de programmation : Python, JavaScript, données et plus encore, avec une console interactive Basthon."
+title: Cours de programmation — Python, JavaScript et plus
+description: "Cours gratuits de programmation : Python, JavaScript, bases de données et tutoriels Web avec console interactive."
 icon: material/school
 ---
 

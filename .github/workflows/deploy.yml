@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:          # bouton "Run workflow" manuel dans l'onglet Actions
+  workflow_dispatch: # bouton "Run workflow" manuel dans l'onglet Actions
 
 permissions:
   contents: read
@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true    # push rapide : annule le build précédent en cours
+  cancel-in-progress: true # push rapide : annule le build précédent en cours
 
 jobs:
   build:
@@ -22,12 +22,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0      # historique git COMPLET (obligatoire pour git-revision-date-localized)
+          fetch-depth: 0 # historique git COMPLET (obligatoire pour git-revision-date-localized)
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install system dependencies (Cairo for social plugin)
         run: |
@@ -35,18 +35,18 @@ jobs:
           sudo apt-get install -y libcairo2-dev libpango1.0-dev libgdk-pixbuf2.0-dev libffi-dev
 
       - name: Install Python dependencies
-        run: pip install -r MyDocs/requirements-ci.txt
+        run: pip install -r ZehdBox/requirements-ci.txt
 
       - name: Build site (strict)
-        run: properdocs build -f MyDocs/properdocs.yml --strict
+        run: properdocs build -f ZehdBox/properdocs.yml --strict
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: MyDocs/site
+          path: ZehdBox/site
 
   deploy:
-    needs: build              # ne démarre que si le build a réussi
+    needs: build # ne démarre que si le build a réussi
     runs-on: ubuntu-latest
     environment:
       name: github-pages

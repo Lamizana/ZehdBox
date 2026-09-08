@@ -1,7 +1,7 @@
 # =========================== DESCRIPTION DU SITE =============================
-site_name: MyDocs
+site_name: ZehdBox
 site_author: Alex Lamizana
-site_url: https://lamizana.github.io/MyDocs/
+site_url: https://lamizana.github.io/ZehdBox/
 site_description: "Cours de programmation, projets 42, tutoriels Python, JavaScript, Web 3.0, Linux et blog — par Alex Lamizana."
 
 # =============================== NAVIGATION ==================================
@@ -229,7 +229,7 @@ plugins:
 
 # ======================== Configuration des versions =========================
 extra:
-  copyright: MyDocs Copyright (c) 2026 Alex Lamizana
+  copyright: ZehdBox Copyright (c) 2026 Alex Lamizana
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Lamizana
@@ -253,9 +253,9 @@ extra:
         checked: false
         property: G-74MZWWS1RR
 
-repo_url: https://github.com/Lamizana/MyDocs
-repo_name: Lamizana/MyDocs
-edit_uri: edit/main/MyDocs/docs/
+repo_url: https://github.com/Lamizana/ZehdBox
+repo_name: Lamizana/ZehdBox
+edit_uri: edit/main/ZehdBox/docs/
 
 # ========================= VALIDATION DES LIENS ==============================
 # Les liens relatifs vers les posts du blog (../blog/2026/../slug/) pointent

@@ -105,7 +105,6 @@ nav:
 # =============================== THEME DU SITE ================================
 theme:
   name: material # mkdocs,readthedocs, material, pyodide-mkdocs-theme
-  custom_dir: overrides   # templates personnalisés (ex: vérification Search Console)
   language: fr
   palette:
     # Toogle Mode clair :

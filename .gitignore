@@ -1,6 +1,7 @@
 .env/
 .idea/
 .vscode/
-MyDocs/.cache/
-MyDocs/site/
+ZehdBox/.cache/
+ZehdBox/site/
+ZehdBox/node_modules/
 .aider*

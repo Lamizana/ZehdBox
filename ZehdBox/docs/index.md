@@ -1,10 +1,10 @@
 ---
 title: Accueil
-description: "MyDocs, site de documentation sur la programmation propulsé par ProperDocs et Material for MkDocs."
+description: "ZehdBox, site de documentation sur la programmation propulsé par ProperDocs et Material for MkDocs."
 icon: material/home
 ---
 
-# <span class="h1">MyDocs</span>
+# <span class="h1">ZehdBox</span>
 
 <p class="intro">
     Le pouvoir du savoir...

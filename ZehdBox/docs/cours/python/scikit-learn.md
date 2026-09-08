@@ -132,6 +132,6 @@ Essayer scikit-learn directement:
 
 -   :octicons-arrow-right-24: **[Retour au sommaire →](index.md)**
 
-    🏁 Tu as parcouru tout le cours Python : bases, exercices et librairies. Bravo !
+    🏁 Tu as parcouru tout le cours Python : bases, exercices et bibliothèques. Bravo !
 
 </div>

@@ -14,7 +14,7 @@ icon: material/account
 </div>
 <div class="about-intro">
     <p class="about-name">Alex Lamizana</p>
-    <p class="about-tagline">Étudiant à <strong>42 Angoulême</strong> · Développeur Fullstack & Data</p>
+    <p class="about-tagline">Étudiant à <strong>42 Angoulême</strong> · Architecture système, Bases de données et IA</p>
     <p class="about-meta">Ancien conducteur d'engins → Reconversion dans la tech</p>
 </div>
 </div>

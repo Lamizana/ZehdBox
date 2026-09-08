@@ -7,7 +7,7 @@ icon: material/school
 # <span class="h1">Cours sur la programmation</span>
 
 <p class="intro">
-    Cours de programmation : Python, JavaScript, données et plus encore, avec une console interactive.
+    Cours de programmation : Python, C, C++, données et plus encore, avec une console interactive.
 </p>
 
 ---
@@ -16,7 +16,7 @@ icon: material/school
 
 <div class="grid cards" markdown>
 
--   :fontawesome-brands-python:{ .lg .middle } __Python__
+- :fontawesome-brands-python:{ .lg .middle } __Python__
 
     ---
 
@@ -30,9 +30,9 @@ icon: material/school
 
 ## <span class="h2">Console Interactive</span>
 
-Pour accéder à un terminal dans le navigateur, nous allons utiliser **Basthon**:
+Pour accéder à un terminal dans le navigateur, nous allons utiliser __Basthon__:
 
-**Basthon est un site bac à sable** permettant d'exécuter du code directement dans le navigateur.
+__Basthon est un site bac à sable__ permettant d'exécuter du code directement dans le navigateur.
 
 Il prend en charge les langages suivants:
 
@@ -42,6 +42,6 @@ Il prend en charge les langages suivants:
 
 Pour les différents exercices, vous aurez un lien qui vous permettra d'accéder directement à la console correspondante.
 
-Basthon permet aussi le format ***Jupyter Notebook***.
+Basthon permet aussi le format __Jupyter Notebook__.
 
 [:material-play-circle: Ouvrir Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }

@@ -27,16 +27,13 @@ Les variables sont des **conteneurs** qui permettent de stocker des données en 
 
 ## <span class="h2">Données et variables</span>
 
-L'essentiel du travail effectué par un programme d'ordinateur consiste à manipuler des **données**. Ces données 
-peuvent être diverses, mais dans la mémoire de l'ordinateur, elles se ramènent toujours en définitive à **une suite 
-finie de nombres binaires**.
+L'essentiel du travail effectué par un programme d'ordinateur consiste à manipuler des **données**. Ces données peuvent être diverses, mais dans la mémoire de l'ordinateur, elles se ramènent toujours en définitive à **une suite  finie de nombres binaires**.
 
 Pour pouvoir y accéder, le programme fait usage de **variables** de différents types.
 
 !!! warning "Important"
     - Une variable apparaît dans la majorité des langages de programmation sous un **nom de variable** quelconque, mais pour l'ordinateur, **il s'agit d'une _référence_ désignant une adresse mémoire**, c'est-à-dire un emplacement précis dans la mémoire vive.
-    - À cet emplacement est stockée une **valeur** bien déterminée, c'est la donnée qui est stockée sous la forme 
-    d'_une suite de nombres binaires_.
+    - À cet emplacement est stockée une **valeur** bien déterminée, c'est la donnée qui est stockée sous la forme d'une suite de nombres _binaires_.
 
 ---
 
@@ -58,19 +55,17 @@ Pour pouvoir y accéder, le programme fait usage de **variables** de différents
 
 Nous allons voir à présent comment **définir** une variable et lui **affecter** une valeur.
 
-> Les termes "affecter une valeur" ou "assigner une valeur" à une variable sont équivalents. Ils désignent 
-l'opération par laquelle on établit un lien entre le nom de la variable et sa valeur.
+> Les termes "affecter une valeur" ou "assigner une valeur" à une variable sont équivalents. Ils désignent l'opération par laquelle on établit un lien entre le nom de la variable et sa valeur.
 
-- En Python comme dans beaucoup d'autres langages de programmation, l'opération d'affectation est représentée par le 
-  signe égal (`=`)
+- En Python comme dans beaucoup d'autres langages de programmation, l'opération d'affectation est représentée par le signe égal (`=`)
 
-``` py
+```py
 >>> nom = "Alex"    # affecter la valeur "Alex" à nom
 >>> age = 25        # définir la variable "age" et lui donner la valeur 25
 >>> taille = 1.75   # assigner sa valeur à la variable "taille"
 ```
-Les exemples ci-dessus montrent des _instructions d'affectation_ Python. Après qu'on les a exécutées, elles existent 
-dans la mémoire de l'ordinateur, à des endroits différents :
+
+Les exemples ci-dessus montrent des _instructions d'affectation_ Python. Après qu'on les a exécutées, elles existent dans la mémoire de l'ordinateur, à des endroits différents :
 
 - 3 noms de variables : `nom`, `age` et `taille`.
 - 3 séquences d'octets où sont encodées les valeurs des variables.
@@ -81,8 +76,7 @@ dans la mémoire de l'ordinateur, à des endroits différents :
           - Créer et mémoriser un **nom de variable**.
           - Attribuer un **type** bien déterminé.
           - Créer et mémoriser une **valeur** particulière.
-          - Établir un lien (par un système de **pointeur**) entre le nom de la variable et l'emplacement mémoire de la 
-          valeur correspondante.
+          - Établir un lien (par un système de **pointeur**) entre le nom de la variable et l'emplacement mémoire de la valeur correspondante.
 
     !!! info
         Les trois noms de variables sont des _références_.
@@ -91,18 +85,15 @@ dans la mémoire de l'ordinateur, à des endroits différents :
 
 ## <span class="h2">Typage des variables</span>
 
-En Python, il n'est pas nécessaire de préciser le type de variables avant de pouvoir les utiliser. Il suffit 
-d'assigner une valeur à un nom de variable avant de pouvoir l'utiliser:
+En Python, il n'est pas nécessaire de préciser le type de variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable avant de pouvoir l'utiliser:
 
 - On dit alors que celle-ci est _automatiquement créée avec le type qui correspond au mieux à la valeur fournie_.
 
-De plus on dira que le _typage des variables sous Python est dynamique_, par opposition au _typage statique_ qui est de 
-mise en `C` ou `C++`.
+De plus on dira que le _typage des variables sous Python est dynamique_, par opposition au _typage statique_ qui est de mise en `C` ou `C++`.
 
 ???+ note "A savoir"
     === "Typage dynamique"
-        - Le typage statique est préférable dans les langages compilés tels que le `C`. Il permet _l'opération de 
-        compilation_.
+        - Le typage statique est préférable dans les langages compilés tels que le `C`. Il permet _l'opération de compilation_.
 
     === "Typage statique"
         - Le typage dynamique permet d'écrire plus aisément des constructions logiques de niveaux élevés, en particulier 
@@ -113,6 +104,7 @@ mise en `C` ou `C++`.
 ## <span class="h2">Affectation Multiple</span>
 
 Python nous permet d'assigner une valeur à plusieurs variables simultanément :
+
 ``` py
 >>> x = y = 7
 >>> x
@@ -121,7 +113,8 @@ Python nous permet d'assigner une valeur à plusieurs variables simultanément :
 7
 ```
 
-On peut aussi faire des affectations parallèles ;
+On peut aussi faire des affectations parallèles :
+
 ``` py
 >>> a, b = 4, 1.33
 >>> a
@@ -136,8 +129,7 @@ On peut aussi faire des affectations parallèles ;
 
 ## <span class="h2">Opérateurs et expressions</span>
 
-On manipule les valeurs et les variables qui les référencent en les combinant avec des **opérateurs** pour former des 
-**expressions** :
+On manipule les valeurs et les variables qui les référencent en les combinant avec des **opérateurs** pour former des **expressions** :
 
 ``` python
 >>> a, b = 7.3, 12
@@ -176,9 +168,7 @@ On manipule les valeurs et les variables qui les référencent en les combinant 
 
 ### 2. Priorité des opérations
 
-Lorsqu'il y a plus d'un opérateur dans une expression, l'ordre dans lequel les opérations doivent s'effectuer suit un schéma 
-précis, on appelle ça les **règles de priorités**. En Python, elles sont les mêmes que celles qui sont appliquées en 
-mathématique.
+Lorsqu'il y a plus d'un opérateur dans une expression, l'ordre dans lequel les opérations doivent s'effectuer suit un schéma précis, on appelle ça les **règles de priorités**. En Python, elles sont les mêmes que celles qui sont appliquées en mathématique.
 
 !!! abstract "À connaître"
     Pour les mémoriser à l'aide d'un moyen mnémotechnique, l'acronyme **`PEMDAS`**:
@@ -198,9 +188,7 @@ mathématique.
 
 ## <span class="h2">Composition</span>
 
-Une des grandes forces d'un langage de programmation de haut niveau est qu'il permet de construire des instructions 
-complexes par assemblage de plusieurs instructions. Par exemple, on sait comment additionner deux nombres et comment 
-afficher une valeur, on peut donc combiner ses instructions en une seule :
+Une des grandes forces d'un langage de programmation de haut niveau est qu'il permet de construire des instructions complexes par assemblage de plusieurs instructions. Par exemple, on sait comment additionner deux nombres et comment afficher une valeur, on peut donc combiner ses instructions en une seule :
 
 ``` python
 >>> print(3 + 5)

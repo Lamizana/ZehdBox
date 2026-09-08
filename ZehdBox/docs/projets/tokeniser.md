@@ -1,9 +1,9 @@
 ---
-title: Tokenizer
-description: "Token BEP-20 GOLD42 sur BNB Smart Chain : premier smart contract, défi de compréhension blockchain et DeFi."
+title: Tokenizer — Smart contract BEP-20 sur BNB Smart Chain
+description: "Création d'un token BEP-20 GOLD42 sur BNB Smart Chain : premier smart contract Solidity, OpenZeppelin, blockchain et DeFi."
 ---
 
-# <span class="h1">Tokenizer</span>
+# <span class="h1">Tokenizer — Token BEP-20 sur la blockchain</span>
 
 <div class="project-hero">
     <span class="tech-tag">Solidity</span>

@@ -13,7 +13,7 @@ nav:
       - Tokenizer: projets/tokeniser.md
       - Transcendance: projets/transcendance.md
       - Minishell: projets/minishell.md
-      - Irc: projets/ft_irc.md
+      - ft_irc: projets/ft_irc.md
       - Push Swap: projets/push_swap.md
       - So Long: projets/so_long.md
 

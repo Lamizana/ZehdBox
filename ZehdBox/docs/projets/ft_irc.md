@@ -1,9 +1,9 @@
 ---
-title: Irc
-description: "Serveur IRC en C++ conforme à la RFC 1459 : sockets BSD, canaux, multi-clients."
+title: ft_irc — Serveur IRC en C++ conforme RFC 1459 (projet 42)
+description: "ft_irc, serveur IRC en C++ conforme à la RFC 1459 : sockets BSD, multi-clients, canaux et mode opérateur (projet 42)."
 ---
 
-# <span class="h1">Irc</span>
+# <span class="h1">ft_irc — Serveur IRC conforme RFC 1459</span>
 
 <div class="project-hero">
     <span class="tech-tag">C++</span>

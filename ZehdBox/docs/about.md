@@ -104,7 +104,7 @@ icon: material/account
 
 <div class="project-card">
     <h3><a href="https://github.com/Lamizana/ft_irc" class="md-button md-button--primary" target="_blank" rel="noopener">
-        Irc
+        ft_irc
     </a></h3>
     <p class="project-desc">Serveur IRC en C++ - Implémentation du protocole IRC avec gestion des channels</p>
     <div class="project-tech-badges">

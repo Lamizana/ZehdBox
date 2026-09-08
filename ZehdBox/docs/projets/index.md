@@ -1,6 +1,6 @@
 ---
-title: Projets
-description: "Mes projets d'école 42 : applications web, interpréteurs, serveurs, algorithmes et jeux."
+title: Projets 42 — Applications, algorithmes et serveurs
+description: "Portfolio de projets école 42 : Pong multijoueur, serveur IRC, interpréteur shell, smart contract BEP-20, jeux 2D et algorithmes en C/C++."
 icon: material/rocket-launch
 ---
 

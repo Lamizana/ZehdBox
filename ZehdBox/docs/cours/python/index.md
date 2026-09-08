@@ -1,6 +1,6 @@
 ---
-title: Python
-description: "Cours de programmation en Python : bases, fonctions, librairies et exercices pratiques."
+title: Cours Python — Bases, fonctions et librairies
+description: "Cours Python complet : bases du langage, variables, fonctions, NumPy, Pandas et scikit-learn avec exercices pratiques."
 icon: fontawesome/brands/python
 ---
 

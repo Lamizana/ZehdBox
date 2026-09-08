@@ -1,6 +1,6 @@
 ---
-title: GitHub
-description: "GitHub, la plateforme de gestion de versions et de collaboration : dépôts, branches, pull requests."
+title: GitHub pour débutants — Git, branches et pull requests
+description: "Apprendre GitHub : dépôts, branches, pull requests et bonnes pratiques Git pour collaborer sur vos projets."
 icon: material/github
 ---
 

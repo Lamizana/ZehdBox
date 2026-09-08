@@ -1,9 +1,9 @@
 ---
-title: Minishell
-description: "Interpréteur de commandes UNIX en C inspiré de bash : processus, redirections, pipes et signaux."
+title: Minishell — Interpréteur de commandes UNIX en C (projet 42)
+description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash — processus, redirections, pipes et gestion des signaux (projet 42)."
 ---
 
-# <span class="h1">Minishell</span>
+# <span class="h1">Minishell — Interpréteur de commandes UNIX</span>
 
 <div class="project-hero">
     <span class="tech-tag">C</span>

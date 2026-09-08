@@ -21,6 +21,14 @@ description: Projet pratique pour maîtriser les fondamentaux de NumPy à traver
     - **Indices** : Si vous bloquez, des blocs d'indices sont là pour vous guider sans vous donner la réponse immédiatement.
     - **Solutions** : Elles utilisent les meilleures pratiques (les plus communes) de NumPy pour vous montrer la voie la plus optimisée.
 
+???+ abstract "Progression"
+    - [ ] Exercice 1 : Création du Dé
+    - [ ] Exercice 2 : Lancer le Dé
+    - [ ] Exercice 3 : Statistiques de Base
+    - [ ] Exercice 4 : Compter les Occurrences
+    - [ ] Exercice 5 : Comparaison Théorie vs Simulation
+    - [ ] Exercice 6 : Classe AnalyseurDe
+
 !!! warning "Conseil pédagogique"
     Pour progresser, **JOUEZ LE JEUX** : essayez par vous-même avant de dévoiler les solutions.
     
@@ -33,11 +41,10 @@ description: Projet pratique pour maîtriser les fondamentaux de NumPy à traver
 - Python 3.8+
 - NumPy installé (`pip install numpy`)
 
-***ou***
+???+ note "Lancer les exercices — option hors environnement"
+    Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
-Essayer l'exercice directement sur:
-
-[Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button }
+    [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
 
 ---
 
@@ -66,18 +73,24 @@ Créez un tableau NumPy représentant les faces d'un dé à 6 faces.
     | `np.array(list(range(...)))` | Convertir une liste | `np.array(range(1,7))` |
 
 
-??? - tip "Solution"
-    ```python
-    import numpy as np
+???- tip "Solution"
+    === "Méthode 1 — `np.array`"
+        ```python
+        import numpy as np
 
-    # Methode 1: avec np.array
-    faces = np.array([1, 2, 3, 4, 5, 6])
+        faces = np.array([1, 2, 3, 4, 5, 6])
 
-    # Methode 2: avec np.arange
-    faces = np.arange(1, 7)
+        print(faces)
+        ```
 
-    print(faces)
-    ```
+    === "Méthode 2 — `np.arange`"
+        ```python
+        import numpy as np
+
+        faces = np.arange(1, 7)
+
+        print(faces)
+        ```
 ---
 
 ## <span class="h2">Exercice 2: Lancer le Dé</span>

@@ -26,6 +26,16 @@ description: Exercices pratiques pour maîtriser Pandas avec des données mété
     
     L'erreur fait partie de l'apprentissage !
 
+???+ abstract "Progression"
+    - [ ] Exercice 1 : Création du DataFrame Météo
+    - [ ] Exercice 2 : Accéder aux Données
+    - [ ] Exercice 3 : Statistiques
+    - [ ] Exercice 4 : Filtrer les Données
+    - [ ] Exercice 5 : Trier et Ajouter des Colonnes
+    - [ ] Exercice 6 : API Open-Meteo
+    - [ ] Exercice 7 : API vers DataFrame
+    - [ ] Exercice 8 : Projet Final - Analyseur Météo
+
 ---
 
 ## <span class="h2">Prérequis</span>
@@ -34,11 +44,10 @@ description: Exercices pratiques pour maîtriser Pandas avec des données mété
 - Pandas installé (`pip install pandas`)
 - Requests installé (`pip install requests`)
 
-***ou***
+???+ note "Lancer les exercices — option hors environnement"
+    Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
-Essayer l'exercice directement sur:
-
-[Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button }
+    [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
 
 ---
 
@@ -80,20 +89,36 @@ Créez un DataFrame Pandas avec les données météo suivantes:
     | `pd.read_csv('fichier.csv')` | Charger depuis un fichier |
 
 ???- tip "Solution"
-    ```python
-    import pandas as pd
+    === "Méthode 1 — un dictionnaire"
+        ```python
+        import pandas as pd
 
-    # Methode 1: avec un dictionnaire
-    data = {
-        'jour': ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'],
-        'temperature': [15, 18, 22, 19, 17],
-        'humidite': [65, 55, 45, 60, 70],
-        'condition': ['Nuageux', 'Ensoleillé', 'Ensoleillé', 'Nuageux', 'Pluie']
-    }
+        data = {
+            'jour': ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'],
+            'temperature': [15, 18, 22, 19, 17],
+            'humidite': [65, 55, 45, 60, 70],
+            'condition': ['Nuageux', 'Ensoleillé', 'Ensoleillé', 'Nuageux', 'Pluie']
+        }
 
-    meteo = pd.DataFrame(data)
-    print(meteo)
-    ```
+        meteo = pd.DataFrame(data)
+        print(meteo)
+        ```
+
+    === "Méthode 2 — une liste de dictionnaires"
+        ```python
+        import pandas as pd
+
+        data = [
+            {'jour': 'Lundi',     'temperature': 15, 'humidite': 65, 'condition': 'Nuageux'},
+            {'jour': 'Mardi',     'temperature': 18, 'humidite': 55, 'condition': 'Ensoleillé'},
+            {'jour': 'Mercredi',  'temperature': 22, 'humidite': 45, 'condition': 'Ensoleillé'},
+            {'jour': 'Jeudi',     'temperature': 19, 'humidite': 60, 'condition': 'Nuageux'},
+            {'jour': 'Vendredi',  'temperature': 17, 'humidite': 70, 'condition': 'Pluie'},
+        ]
+
+        meteo = pd.DataFrame(data)
+        print(meteo)
+        ```
 
 ---
 

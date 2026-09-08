@@ -1,5 +1,6 @@
-# 🧰 ZehdBox
+# ZehdBox
 
+> [!INFO]
 > **Base de connaissances & portfolio de développement** — Python, Data Science, Web, Système
 
 [![Deploy to GitHub Pages](https://github.com/Lamizana/ZehdBox/actions/workflows/deploy.yml/badge.svg)](https://github.com/Lamizana/ZehdBox/actions/workflows/deploy.yml)

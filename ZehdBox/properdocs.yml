@@ -4,6 +4,10 @@ site_author: Alex Lamizana
 site_url: https://lamizana.github.io/ZehdBox/
 site_description: "Cours de programmation, projets 42, tutoriels Python, JavaScript, Web 3.0, Linux et blog — par Alex Lamizana."
 
+# ====================== FICHIERS EXCLUS DU BUILD =============================
+exclude_docs: |
+  cours/python/_template-exercice.md
+
 # =============================== NAVIGATION ==================================
 nav:
   - Home: index.md

@@ -3,29 +3,52 @@ title: Exercices - Bases Python
 description: "Exercices pratiques pour consolider les bases du langage Python."
 ---
 
-# <span class="h1">Exercices - Bases Python</span>
+# <span class="h1">Exercices — Bases Python</span>
+
+<p class="intro">
+    Pratiquez les bases de Python avec ces 15 exercices de révision.
+</p>
 
 ---
 
 ## <span class="h2">Introduction</span>
 
-Pratiquez les bases de Python avec ces exercices.
+Cette page regroupe les **notions essentielles** du parcours *Les bases* :
+
+!!! abstract "Notions couvertes"
+    | Notion | Exercices |
+    |:---|:---:|
+    | Variables et affectations | 1, 2 |
+    | Opérateurs arithmétiques | 3, 15 |
+    | Comparaisons et logique | 4, 7 |
+    | Types et conversions | 5, 6 |
+    | Chaînes de caractères | 8, 9, 10, 14 |
+    | Listes et dictionnaires | 11, 12 |
+    | Opérateurs combinés | 13 |
+
+!!! tip "Conseil"
+    Essayez **par vous-même** avant de déplier la solution. L'erreur fait partie de l'apprentissage !
+
+???+ note "Lancer les exercices — option hors environnement"
+    Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
+
+    [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
+
+
 
 ---
 
-## <span class="h2">Exercice 1: Créer des Variables</span>
+## <span class="h2">Exercice 1 : Créer des Variables</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Créez trois variables : `prenom`, `nom` et `age`, puis affichez-les.
 
-Créez trois variables : `prenom`, `nom` et `age`, puis affichez-les.
-
-### Résultat attendu
-
-```
-Alex
-Dupont
-25
-```
+!!! success "Résultat attendu"
+    ```
+    Alex
+    Dupont
+    25
+    ```
 
 ???- tip "Solution"
     ```python
@@ -40,17 +63,15 @@ Dupont
 
 ---
 
-## <span class="h2">Exercice 2: Affectation Multiple</span>
+## <span class="h2">Exercice 2 : Affectation Multiple</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Créez trois variables `x`, `y`, `z` avec les valeurs 1, 2, 3 en une seule ligne.
 
-Créez trois variables `x`, `y`, `z` avec les valeurs 1, 2, 3 en une seule ligne.
-
-### Résultat attendu
-
-```
-1 2 3
-```
+!!! success "Résultat attendu"
+    ```
+    1 2 3
+    ```
 
 ???- tip "Solution"
     ```python
@@ -60,22 +81,20 @@ Créez trois variables `x`, `y`, `z` avec les valeurs 1, 2, 3 en une seule ligne
 
 ---
 
-## <span class="h2">Exercice 3: Opérations Arithmétiques</span>
+## <span class="h2">Exercice 3 : Opérations Arithmétiques</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Calculez :
+    - L'addition de 10 et 5
+    - La multiplication de 7 par 6
+    - Le reste de la division de 17 par 5
 
-Calculez :
-- L'addition de 10 et 5
-- La multiplication de 7 par 6
-- Le reste de la division de 17 par 5
-
-### Résultat attendu
-
-```
-15
-42
-2
-```
+!!! success "Résultat attendu"
+    ```
+    15
+    42
+    2
+    ```
 
 ???- tip "Solution"
     ```python
@@ -86,18 +105,16 @@ Calculez :
 
 ---
 
-## <span class="h2">Exercice 4: Comparaison</span>
+## <span class="h2">Exercice 4 : Comparaison</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Vérifiez si 10 est supérieur à 5, et si "Bonjour" est égal à "bonjour".
 
-Vérifiez si 10 est supérieur à 5, et si "Bonjour" est égal à "bonjour".
-
-### Résultat attendu
-
-```
-True
-False
-```
+!!! success "Résultat attendu"
+    ```
+    True
+    False
+    ```
 
 ???- tip "Solution"
     ```python
@@ -107,20 +124,18 @@ False
 
 ---
 
-## <span class="h2">Exercice 5: Types de Données</span>
+## <span class="h2">Exercice 5 : Types de Données</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Créez une variable de chaque type : entier, flottant, chaîne, booléen.
 
-Créez une variable de chaque type : entier, flottant, chaîne, booléen.
-
-### Résultat attendu
-
-```
-<class 'int'>
-<class 'float'>
-<class 'str'>
-<class 'bool'>
-```
+!!! success "Résultat attendu"
+    ```
+    <class 'int'>
+    <class 'float'>
+    <class 'str'>
+    <class 'bool'>
+    ```
 
 ???- tip "Solution"
     ```python
@@ -137,20 +152,18 @@ Créez une variable de chaque type : entier, flottant, chaîne, booléen.
 
 ---
 
-## <span class="h2">Exercice 6: Conversion de Types</span>
+## <span class="h2">Exercice 6 : Conversion de Types</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Convertissez la chaîne "123" en entier, puis le nombre 45 en chaîne.
 
-Convertissez la chaîne "123" en entier, puis le nombre 45 en chaîne.
-
-### Résultat attendu
-
-```
-123
-<class 'int'>
-45
-<class 'str'>
-```
+!!! success "Résultat attendu"
+    ```
+    123
+    <class 'int'>
+    45
+    <class 'str'>
+    ```
 
 ???- tip "Solution"
     ```python
@@ -167,17 +180,15 @@ Convertissez la chaîne "123" en entier, puis le nombre 45 en chaîne.
 
 ---
 
-## <span class="h2">Exercice 7: Opérateurs Logiques</span>
+## <span class="h2">Exercice 7 : Opérateurs Logiques</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Vérifiez si 10 est supérieur à 5 ET inférieur à 20.
 
-Vérifiez si 10 est supérieur à 5 ET inférieur à 20.
-
-### Résultat attendu
-
-```
-True
-```
+!!! success "Résultat attendu"
+    ```
+    True
+    ```
 
 ???- tip "Solution"
     ```python
@@ -187,17 +198,15 @@ True
 
 ---
 
-## <span class="h2">Exercice 8: Chaînes - Majuscules</span>
+## <span class="h2">Exercice 8 : Chaînes — Majuscules</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Convertissez "bonjour" en majuscules.
 
-Convertissez "bonjour" en majuscules.
-
-### Résultat attendu
-
-```
-BONJOUR
-```
+!!! success "Résultat attendu"
+    ```
+    BONJOUR
+    ```
 
 ???- tip "Solution"
     ```python
@@ -207,17 +216,15 @@ BONJOUR
 
 ---
 
-## <span class="h2">Exercice 9: Chaînes - Recherche</span>
+## <span class="h2">Exercice 9 : Chaînes — Recherche</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Trouvez la position de "mon" dans "Bonjour tout le monde".
 
-Trouvez la position de "mon" dans "Bonjour tout le monde".
-
-### Résultat attendu
-
-```
-8
-```
+!!! success "Résultat attendu"
+    ```
+    8
+    ```
 
 ???- tip "Solution"
     ```python
@@ -227,17 +234,15 @@ Trouvez la position de "mon" dans "Bonjour tout le monde".
 
 ---
 
-## <span class="h2">Exercice 10: F-String</span>
+## <span class="h2">Exercice 10 : F-String</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Utilisez une f-string pour afficher "J'ai 25 ans".
 
-Utilisez une f-string pour afficher "J'ai 25 ans".
-
-### Résultat attendu
-
-```
-J'ai 25 ans
-```
+!!! success "Résultat attendu"
+    ```
+    J'ai 25 ans
+    ```
 
 ???- tip "Solution"
     ```python
@@ -247,17 +252,15 @@ J'ai 25 ans
 
 ---
 
-## <span class="h2">Exercice 11: Listes</span>
+## <span class="h2">Exercice 11 : Listes</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Créez une liste de vos fruits préférés et affichez le deuxième.
 
-Créez une liste de vos fruits préférés et affichez le deuxième.
-
-### Résultat attendu
-
-```
-banane
-```
+!!! success "Résultat attendu"
+    ```
+    banane
+    ```
 
 ???- tip "Solution"
     ```python
@@ -267,17 +270,15 @@ banane
 
 ---
 
-## <span class="h2">Exercice 12: Dictionnaires</span>
+## <span class="h2">Exercice 12 : Dictionnaires</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Créez un dictionnaire avec votre nom et âge, puis affichez l'âge.
 
-Créez un dictionnaire avec votre nom et âge, puis affichez l'âge.
-
-### Résultat attendu
-
-```
-25
-```
+!!! success "Résultat attendu"
+    ```
+    25
+    ```
 
 ???- tip "Solution"
     ```python
@@ -287,17 +288,15 @@ Créez un dictionnaire avec votre nom et âge, puis affichez l'âge.
 
 ---
 
-## <span class="h2">Exercice 13: Opérateur +=</span>
+## <span class="h2">Exercice 13 : Opérateur +=</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Utilisez `+=` pour incrémenter une variable de 5.
 
-Utilisez `+=` pour incrémenter une variable de 5.
-
-### Résultat attendu
-
-```
-15
-```
+!!! success "Résultat attendu"
+    ```
+    15
+    ```
 
 ???- tip "Solution"
     ```python
@@ -308,17 +307,15 @@ Utilisez `+=` pour incrémenter une variable de 5.
 
 ---
 
-## <span class="h2">Exercice 14: Tranchage</span>
+## <span class="h2">Exercice 14 : Tranchage</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Extrayez "py" de "Python".
 
-Extrayez "py" de "Python".
-
-### Résultat attendu
-
-```
-py
-```
+!!! success "Résultat attendu"
+    ```
+    py
+    ```
 
 ???- tip "Solution"
     ```python
@@ -328,18 +325,16 @@ py
 
 ---
 
-## <span class="h2">Exercice 15: Ordre des Opérations</span>
+## <span class="h2">Exercice 15 : Ordre des Opérations</span>
 
-### Énoncé
+!!! question "Énoncé"
+    Calculez : 2 + 3 * 4, puis (2 + 3) * 4
 
-Calculez : 2 + 3 * 4, puis (2 + 3) * 4
-
-### Résultat attendu
-
-```
-14
-20
-```
+!!! success "Résultat attendu"
+    ```
+    14
+    20
+    ```
 
 ???- tip "Solution"
     ```python
@@ -349,11 +344,8 @@ Calculez : 2 + 3 * 4, puis (2 + 3) * 4
 
 ---
 
-## <span class="h2">Correction</span>
-
-Vous retrouverez toutes les solutions dans les blocs "Solution" ci-dessus.
-
----
+!!! note "Correction"
+    Toutes les solutions se trouvent dans les blocs **"Solution"** dépliables de chaque exercice.
 
 <div class="grid cards" markdown>
 

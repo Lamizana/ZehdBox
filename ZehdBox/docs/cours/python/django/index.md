@@ -1,7 +1,7 @@
 ---
 title: Django — Du projet à l'application web avec SQL
 description: "Cours Django complet : environnement virtuel, installation, Docker, PostgreSQL, modèles, migrations, vues, URLs et templates."
-icon: fontawesome/brands/python
+icon: simple/django
 ---
 
 # <span class="h1">Django avec SQL</span>

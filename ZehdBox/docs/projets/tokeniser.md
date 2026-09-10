@@ -22,8 +22,7 @@ description: "Création d'un token BEP-20 GOLD42 sur BNB Smart Chain : premier s
 
 ## <span class="h2">Description</span>
 
-!!! abstract "Contexte"
-    Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'objectif était de comprendre concrètement le fonctionnement d'une blockchain en créant, testant et déployant un token ***BEP-20*** réel sur un réseau de test.
+Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'objectif était de comprendre concrètement le fonctionnement d'une blockchain en créant, testant et déployant un token ***BEP-20*** réel sur un réseau de test.
 
 ---
 

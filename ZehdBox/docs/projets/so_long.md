@@ -23,10 +23,9 @@ description: "so_long, jeu 2D en C avec la minilibx 42 : collecte d'objets, gest
 
 ## <span class="h2">Description</span>
 
-!!! abstract "Contexte"
-    **So Long** est un petit jeu 2D où le joueur doit collecter tous les objets sur une carte avant de sortir. Le projet a été développé en **C** en utilisant la bibliothèque graphique **minilibx**, fournie par l'école 42.
-    
-    L'objectif principal est de gérer les entrées clavier, les collisions, et l'affichage graphique de manière fluide et optimisée. Ce projet a été réalisé dans le cadre de la formation à **l'école 42**. Il met en avant les compétences en gestion de projet, en programmation système, et en utilisation de bibliothèques graphiques.
+**So Long** est un petit jeu 2D où le joueur doit collecter tous les objets sur une carte avant de sortir. Le projet a été développé en **C** en utilisant la bibliothèque graphique **minilibx**, fournie par l'école 42.
+
+L'objectif principal est de gérer les entrées clavier, les collisions, et l'affichage graphique de manière fluide et optimisée. Ce projet a été réalisé dans le cadre de la formation à **l'école 42**. Il met en avant les compétences en gestion de projet, en programmation système, et en utilisation de bibliothèques graphiques.
 
 ---
 

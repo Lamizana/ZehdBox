@@ -23,8 +23,7 @@ description: "Projet 42 Transcendance : Pong multijoueur temps réel en JavaScri
 
 ## <span class="h2">Description</span>
 
-!!! abstract "Contexte"
-    Projet final du tronc commun de l'école 42. Le but était de créer une application web complète permettant de jouer au **Pong** en ligne contre d'autres joueurs.
+Projet final du tronc commun de l'école 42. Le but était de créer une application web complète permettant de jouer au **Pong** en ligne contre d'autres joueurs.
 
 ---
 

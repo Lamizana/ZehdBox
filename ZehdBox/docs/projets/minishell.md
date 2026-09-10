@@ -22,8 +22,7 @@ description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash 
 
 ## <span class="h2">Description</span>
 
-!!! abstract "Contexte"
-    Projet 42 visant à créer un **interpréteur de commandes** (shell) similaire à bash. Ce projet est une excellente introduction aux systèmes UNIX.
+Projet 42 visant à créer un **interpréteur de commandes** (shell) similaire à bash. Ce projet est une excellente introduction aux systèmes UNIX.
 
 ---
 

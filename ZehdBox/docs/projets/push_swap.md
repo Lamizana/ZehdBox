@@ -21,8 +21,7 @@ description: "Push_swap : algorithme de tri en C avec deux piles — optimisatio
 
 ## <span class="h2">Description</span>
 
-!!! abstract "Contexte"
-    Projet 42 visant à trier une liste de nombres entiers en utilisant **deux piles** et un ensemble restreint d'opérations (`sa`, `sb`, `ss`, `pa`, `pb`, `ra`, `rb`, `rr`, `rra`, `rrb`, `rrr`). L'objectif est de minimiser le nombre total d'opérations.
+Projet 42 visant à trier une liste de nombres entiers en utilisant **deux piles** et un ensemble restreint d'opérations (`sa`, `sb`, `ss`, `pa`, `pb`, `ra`, `rb`, `rr`, `rra`, `rrb`, `rrr`). L'objectif est de minimiser le nombre total d'opérations.
 
 ---
 

@@ -21,8 +21,7 @@ description: "ft_irc, serveur IRC en C++ conforme à la RFC 1459 : sockets BSD, 
 
 ## <span class="h2">Description</span>
 
-!!! abstract "Contexte"
-    Projet 42 consistant à implémenter un **serveur IRC** (Internet Relay Chat) en C++. Ce projet enseigne les fondamentaux du réseau et de la programmation orientée objet.
+Projet 42 consistant à implémenter un **serveur IRC** (Internet Relay Chat) en C++. Ce projet enseigne les fondamentaux du réseau et de la programmation orientée objet.
 
 ---
 

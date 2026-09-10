@@ -1,14 +1,20 @@
-# ZehdBox
+<p align="center">
+  <img src="https://img.shields.io/badge/Material_for_MkDocs-9-526CFE?style=for-the-badge&logo=markdown&logoColor=white" alt="Material for MkDocs">
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/GitHub_Pages-deployed-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages">
+  <img src="https://img.shields.io/badge/ProperDocs-1.6.7-blue?style=for-the-badge" alt="ProperDocs">
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License MIT">
+</p>
 
-> [!INFO]
-> **Base de connaissances & portfolio de développement** — Python, Data Science, Web, Système
+<h1 align="center">ZehdBox</h1>
 
-[![Deploy to GitHub Pages](https://github.com/Lamizana/ZehdBox/actions/workflows/deploy.yml/badge.svg)](https://github.com/Lamizana/ZehdBox/actions/workflows/deploy.yml)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
-![ProperDocs](https://img.shields.io/badge/ProperDocs-1.6.7-blue)
-![Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-9-dark?logo=markdown&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-deployed-brightgreen?logo=githubpages&logoColor=white)
+<p align="center">
+  <strong>Base de connaissances de développement & portfolio</strong>
+</p>
+
+<p align="center">
+  Python, Data Science, Web, Système.
+</p>
 
 ---
 
@@ -16,7 +22,7 @@
 
 **ZehdBox** est un site vitrine & base de connaissances personnel, couvrant le développement logiciel, la data science, le web et le système. Il sert à la fois de **portfolio pour les recruteurs** et de **mémo technique** alimenté au fil de l'apprentissage.
 
-**71 pages** de contenu structuré, déployées automatiquement via GitHub Actions sur GitHub Pages.
+Contenu structuré, déployées automatiquement via GitHub Actions sur GitHub Pages.
 
 **Live** : [lamizana.github.io/ZehdBox](https://lamizana.github.io/ZehdBox/)
 
@@ -64,7 +70,7 @@
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```console
 ZehdBox/
@@ -98,7 +104,7 @@ ZehdBox/
 
 ---
 
-## 🎯 Projets
+## Projets
 
 | Projet | Description | Stack | Démo |
 | --- | --- | --- | --- |
@@ -232,7 +238,7 @@ Distribué sous la licence MIT. Voir [`LICENSE`](LICENSE) pour plus de détails.
 
 ---
 
-## 👨Auteur
+## Auteur
 
 **Alex Lamizana** — Étudiant 42 Angoulême, spécialisation Data & IA
 

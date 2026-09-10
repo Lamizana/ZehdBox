@@ -11,7 +11,6 @@ icon: material/rocket-launch
 </p>
 
 <div class="badge-section">
-<p class="badge-category">Stack utilisée</p>
 <div class="badge-row">
     <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
     <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">

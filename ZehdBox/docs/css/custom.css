@@ -6,6 +6,7 @@
     font-weight: 900; 
     display: block; 
     color: var(--md-primary-fg-color) !important;
+    margin-bottom: 0;
 }
 
 /* Titre secondaire */
@@ -20,6 +21,7 @@
     font-style: italic !important;
     color: #90a4ae!important;
     font-size: 1.2em !important;
+    margin-top: 0.1em;
 }
 
 /* Texte de presentation (adapté aux modes clair et sombre) */
@@ -191,6 +193,44 @@
 }
 
 .soft-skill-desc {
+  font-size: 0.9em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* =========================== SKILL CARDS (Compétences Acquises) =========================== */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(100, 181, 246, 0.3);
+}
+
+.skill-card-icon {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.skill-card-title {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 5px;
+}
+
+.skill-card-desc {
   font-size: 0.9em;
   color: var(--md-default-fg-color--light);
 }

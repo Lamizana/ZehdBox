@@ -3,12 +3,14 @@ title: Push_swap — Algorithme de tri en C (projet 42)
 description: "Push_swap : algorithme de tri en C avec deux piles — optimisation du nombre minimal d'opérations (projet 42)."
 ---
 
-# <span class="h1">Push_swap — Tri optimisé en C</span>
+# <span class="h1">Push_swap</span>
 
-<div class="project-hero">
-    <span class="tech-tag">C</span>
-    <span class="tech-tag">Algorithmique</span>
-    <span class="tech-tag">Optimisation</span>
+<div class="badge-section">
+<div class="badge-row">
+    <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
+    <img src="https://img.shields.io/badge/Algorithmique-4E5EE4?style=for-the-badge&logo=python&logoColor=white" alt="Algorithmique">
+    <img src="https://img.shields.io/badge/Optimisation-00C853?style=for-the-badge&logo=googledatastudio&logoColor=white" alt="Optimisation">
+</div>
 </div>
 
 <p class="intro">
@@ -19,17 +21,40 @@ description: "Push_swap : algorithme de tri en C avec deux piles — optimisatio
 
 ## <span class="h2">Description</span>
 
-!!! note "Contexte"
+!!! abstract "Contexte"
     Projet 42 visant à trier une liste de nombres entiers en utilisant **deux piles** et un ensemble restreint d'opérations (`sa`, `sb`, `ss`, `pa`, `pb`, `ra`, `rb`, `rr`, `rra`, `rrb`, `rrr`). L'objectif est de minimiser le nombre total d'opérations.
 
 ---
 
 ## <span class="h2">Compétences Acquises</span>
 
-- **Algorithmique** : conception de stratégies de tri adaptées
-- **Optimisation** : réduction du nombre d'opérations à chaque taille de liste
-- **Gestion mémoire** : allocation et libération en C
-- **Structuration du code** : séparation parsing / logique / opérations
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-icon">🔀</span>
+    <span class="skill-card-title">Algorithmique</span><br>
+    <span class="skill-card-desc">Conception de stratégies de tri adaptées à chaque taille de liste</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🚀</span>
+    <span class="skill-card-title">Optimisation</span><br>
+    <span class="skill-card-desc">Réduction du nombre d'opérations minimal</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🧠</span>
+    <span class="skill-card-title">Gestion mémoire</span><br>
+    <span class="skill-card-desc">Allocation et libération en C, sans fuites mémoire</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🏷️</span>
+    <span class="skill-card-title">Structuration du code</span><br>
+    <span class="skill-card-desc">Séparation parsing / logique / opérations</span>
+</div>
+
+</div>
 
 ---
 

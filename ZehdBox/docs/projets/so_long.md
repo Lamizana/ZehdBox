@@ -3,15 +3,17 @@ title: so_long — Jeu 2D en C avec la Minilibx (projet 42)
 description: "so_long, jeu 2D en C avec la minilibx 42 : collecte d'objets, gestion des collisions et rendu graphique (projet 42)."
 ---
 
-# <span class="h1">so_long — Jeu 2D en C</span>
-
-<div class="project-hero">
-    <span class="tech-tag">C</span>
-    <span class="tech-tag">Minilibx</span>
-    <span class="tech-tag">Jeu 2D</span>
-</div>
+# <span class="h1">So Long</span>
 
 ![player](../images/player-solong.png){.player-solong}
+
+<div class="badge-section">
+<div class="badge-row">
+    <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
+    <img src="https://img.shields.io/badge/Minilibx-FF5722?style=for-the-badge&logo=c&logoColor=white" alt="Minilibx">
+    <img src="https://img.shields.io/badge/Jeu%202D-00E676?style=for-the-badge&logo=unity&logoColor=white" alt="Jeu 2D">
+</div>
+</div>
 
 <p class="intro">
     Petit jeu 2D développé en <strong>C</strong> avec la <strong>minilibx 42</strong>.
@@ -19,20 +21,68 @@ description: "so_long, jeu 2D en C avec la minilibx 42 : collecte d'objets, gest
 
 ---
 
-## <span class="h2">:material-presentation: Présentation</span>
+## <span class="h2">Description</span>
 
-<div class="presentation">
-    <p>
-        <strong>So Long</strong> est un petit jeu 2D où le joueur doit collecter tous les objets sur une carte avant de sortir. Le projet a été développé en <strong>C</strong> en utilisant la bibliothèque graphique <strong>minilibx</strong>, fournie par l'école 42.
-    </p>
-    <p>
-        L'objectif principal est de gérer les entrées clavier, les collisions, et l'affichage graphique de manière fluide et optimisée.
-    </p>
+!!! abstract "Contexte"
+    **So Long** est un petit jeu 2D où le joueur doit collecter tous les objets sur une carte avant de sortir. Le projet a été développé en **C** en utilisant la bibliothèque graphique **minilibx**, fournie par l'école 42.
+    
+    L'objectif principal est de gérer les entrées clavier, les collisions, et l'affichage graphique de manière fluide et optimisée. Ce projet a été réalisé dans le cadre de la formation à **l'école 42**. Il met en avant les compétences en gestion de projet, en programmation système, et en utilisation de bibliothèques graphiques.
+
+---
+
+## <span class="h2">Compétences Acquises</span>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-icon">🖼️</span>
+    <span class="skill-card-title">Rendu graphique 2D</span><br>
+    <span class="skill-card-desc">Utilisation de la minilibx pour afficher et animer les sprites</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">⌨️</span>
+    <span class="skill-card-title">Gestion des entrées clavier</span><br>
+    <span class="skill-card-desc">Capture et traitement des événements utilisateur en temps réel</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">📂</span>
+    <span class="skill-card-title">Parsing de fichiers</span><br>
+    <span class="skill-card-desc">Lecture et validation des cartes .ber (murs, sortie, collectibles)</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🧠</span>
+    <span class="skill-card-title">Gestion de la mémoire</span><br>
+    <span class="skill-card-desc">Allocation dynamique et prévention des fuites mémoire</span>
+</div>
+
 </div>
 
 ---
 
-## <span class="h2">:fontawesome-solid-computer: Installation</span>
+## <span class="h2">Stack Technique</span>
+
+| Langage | Bibliothèque | Outils | Format carte |
+|---------|-------------|--------|-------------|
+| C       | Minilibx    | Makefile, GCC | .ber |
+
+---
+
+## <span class="h2">Défis Relevés</span>
+
+!!! tip "Points clés"
+    1. **Parsing des cartes** : Validation stricte du format .ber (murs fermés, sortie unique, collectibles)
+    2. **Gestion des collisions** : Détection et blocage du joueur contre les murs
+    3. **Rendu fluide** : Affichage des sprites et animations sans latence
+    4. **Gestion mémoire** : Libération correcte des ressources (mlx_destroy, free)
+
+---
+
+## <span class="h2">Fonctionnalités</span>
+
+### Installation
 
 Pour installer et exécuter le projet, suivez ces étapes :
 
@@ -57,13 +107,11 @@ Le projet contient deux versions du jeu :
 * ***`so_long`***: Version de base, compatible avec les cartes standard.
 * ***`solong-bonus`***: Version bonus avec des fonctionnalités supplémentaires.
 
----
-
-## <span class="h2">:fontawesome-regular-circle-play: Comment jouer</span>
+### Comment jouer
 
 Pour lancer le jeu, utilisez les commandes suivantes :
 
-``` c
+```c
 # Lancer la version de base
 ./so_long carte_03.ber
 
@@ -96,23 +144,19 @@ Le jeu s'ouvre dans une fenêtre indépendante.
   </div>
 </div>
 
----
-
-## <span class="h2">:fontawesome-regular-map: Cartes disponibles</span>
+### Cartes disponibles
 
 Voici les cartes disponibles dans le projet :
-  
+
 * **carte_01.ber** : Carte de base simple.
 * **carte_02.ber** : Carte avec des obstacles.
 * **carte_03.ber** : Carte recommandée pour commencer.
-* **carte_03_bonus.ber**: Carte bonus avec des fonctionnalités supplémentaires.
-* **carte_04_bonus.ber**: Carte bonus avec map différente.
+* **carte_03_bonus.ber** : Carte bonus avec des fonctionnalités supplémentaires.
+* **carte_04_bonus.ber** : Carte bonus avec map différente.
 
 ---
 
-## <span class="h2">:material-note-text: Notes supplémentaires</span>
+## <span class="h2">Lien</span>
 
-!!! note "Note"
-    Ce projet a été réalisé dans le cadre de la formation à **l'école 42**. Il met en avant les compétences en gestion de projet, en programmation système, et en utilisation de bibliothèques graphiques.
-    
-    N'hésitez pas à contribuer ou à signaler des bugs sur le [dépôt GitHub](https://github.com/Lamizana/So-long){ target="_blank" rel="noopener" } !
+[:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/So-long){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[:material-message-text: Contribuer](https://github.com/Lamizana/So-long/issues){ .md-button target="_blank" rel="noopener" }

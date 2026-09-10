@@ -3,35 +3,65 @@ title: Tokenizer — Smart contract BEP-20 sur BNB Smart Chain
 description: "Création d'un token BEP-20 GOLD42 sur BNB Smart Chain : premier smart contract Solidity, OpenZeppelin, blockchain et DeFi."
 ---
 
-# <span class="h1">Tokenizer — Token BEP-20 sur la blockchain</span>
+# <span class="h1">Tokenizer</span>
 
-<div class="project-hero">
-    <span class="tech-tag">Solidity</span>
-    <span class="tech-tag">BEP-20</span>
-    <span class="tech-tag">BNB Smart Chain</span>
-    <span class="tech-tag">OpenZeppelin</span>
+<div class="badge-section">
+<div class="badge-row">
+    <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity">
+    <img src="https://img.shields.io/badge/BEP--20-F0B90B?style=for-the-badge&logo=binance&logoColor=black" alt="BEP-20">
+    <img src="https://img.shields.io/badge/BNB%20Smart%20Chain-F0B90B?style=for-the-badge&logo=binance&logoColor=black" alt="BNB Smart Chain">
+    <img src="https://img.shields.io/badge/OpenZeppelin-4E5EE4?style=for-the-badge&logo=openzeppelin&logoColor=white" alt="OpenZeppelin">
+</div>
 </div>
 
 <p class="intro">
-    Création du token <strong>GOLD42 (G42)</strong> sur la BNB Smart Chain Testnet — mon premier smart contract.
+    Création du token <strong>GOLD42 (G42)</strong> sur la BNB Smart Chain Testnet. Mon premier smart contract.
 </p>
 
 ---
 
 ## <span class="h2">Description</span>
 
-!!! note "Contexte"
-    Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'objectif était de comprendre concrètement le fonctionnement d'une blockchain en créant, testant et déployant un token BEP-20 réel sur un réseau de test.
+!!! abstract "Contexte"
+    Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'objectif était de comprendre concrètement le fonctionnement d'une blockchain en créant, testant et déployant un token ***BEP-20*** réel sur un réseau de test.
 
 ---
 
 ## <span class="h2">Compétences Acquises</span>
 
-- **Blockchain & DeFi** : compréhension des concepts fondamentaux (wallet, gas, transaction, explorateur de blocs)
-- **Smart Contracts** : écriture, compilation et déploiement d'un contrat Solidity
-- **Standard BEP-20/ERC-20** : implémentation des fonctions `transfer`, `approve`, `transferFrom`, `mint`, `burn`
-- **Sécurité** : gestion de la propriété (`onlyOwner`), plafond de supply, protection contre les transferts vers l'adresse zéro
-- **Outils** : Remix IDE, MetaMask, BscScan Testnet
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-icon">🔗</span>
+    <span class="skill-card-title">Blockchain & DeFi</span><br>
+    <span class="skill-card-desc">Compréhension des concepts fondamentaux (wallet, gas, transaction, explorateur de blocs)</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">📜</span>
+    <span class="skill-card-title">Smart Contracts</span><br>
+    <span class="skill-card-desc">Écriture, compilation et déploiement d'un contrat Solidity</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🔁</span>
+    <span class="skill-card-title">Standard BEP-20/ERC-20</span><br>
+    <span class="skill-card-desc">Implémentation des fonctions <code>transfer</code>, <code>approve</code>, <code>transferFrom</code>, <code>mint</code>, <code>burn</code></span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🛡️</span>
+    <span class="skill-card-title">Sécurité</span><br>
+    <span class="skill-card-desc">Gestion de la propriété (<code>onlyOwner</code>), plafond de supply, protection contre les transferts vers l'adresse zéro</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🔧</span>
+    <span class="skill-card-title">Outils</span><br>
+    <span class="skill-card-desc">Remix IDE, MetaMask, BscScan Testnet</span>
+</div>
+
+</div>
 
 ---
 
@@ -63,6 +93,45 @@ description: "Création d'un token BEP-20 GOLD42 sur BNB Smart Chain : premier s
 | `mint(recipient, amount)` | Créer des G42 (dans la limite du plafond) | Propriétaire |
 | `burn(amount)` | Détruire ses propres G42 | Tous |
 | `transferOwnership(newOwner)` | Transférer la propriété du contrat | Propriétaire |
+
+---
+
+## <span class="h2">Métriques</span>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-icon">🏭</span>
+    <span class="skill-card-title">1 000 000 G42</span><br>
+    <span class="skill-card-desc">supply maximal plafonné</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">📦</span>
+    <span class="skill-card-title">80 % créés</span><br>
+    <span class="skill-card-desc">au moment du déploiement</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🔨</span>
+    <span class="skill-card-title">20 % mintables</span><br>
+    <span class="skill-card-desc">par le propriétaire</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🪙</span>
+    <span class="skill-card-title">10^18 wei</span><br>
+    <span class="skill-card-desc">précision de 1 G42</span>
+</div>
+
+</div>
+
+---
+
+## <span class="h2">Ce que j'ai appris</span>
+
+!!! info "Réflexion"
+    Ce projet m'a fait comprendre que la blockchain n'est pas magique : chaque transaction est un **appel de fonction sur un contrat**, et le vrai coût est la compréhension des unités (`wei`) et de la **gestion de la propriété**. Debugger un smart contract est radicalement différent du C : pas de `printf`, pas de `gdb` — il faut raisonner sur l'état du contrat **avant** de le déployer.
 
 ---
 

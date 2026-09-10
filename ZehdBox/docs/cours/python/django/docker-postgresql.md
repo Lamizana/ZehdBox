@@ -71,10 +71,11 @@ Pour afficher les images qui tournent :
 $ docker images -a
 ```
 
-Forcer l'arrêt et supprimer toutes les images :
+Forcer l'arrêt de tous les conteneurs puis supprimer toutes les images :
 
 ```bash
-$ docker images purge
+$ docker stop $(docker ps -aq)
+$ docker rmi -f $(docker images -q)
 ```
 
 ---
@@ -116,7 +117,7 @@ Commandes utiles :
 Accéder aux éléments d'une table de la base de données :
 
 ```sql
-SELECT * FROM pong_client;
+SELECT * FROM pong_player;
 ```
 
 Arrêter le conteneur avant de le supprimer :

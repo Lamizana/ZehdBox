@@ -83,11 +83,11 @@ Instruction `if` dans un gabarit :
 Les filtres permettent d'appliquer un certain formatage.
 
 ```html
-<li>{{ client.name|upper }}</li>   <!-- Met le nom en majuscule -->
+<li>{{ player.name|upper }}</li>   <!-- Met le nom en majuscule -->
 ```
 
 ```html
-<li>{{ client.name|length }}</li>  <!-- Donne la longueur du nom -->
+<li>{{ player.name|length }}</li>  <!-- Donne la longueur du nom -->
 ```
 
 ---

@@ -66,7 +66,7 @@ from django.http        import HttpResponse
 from pong.models        import Player
 
 def index(request):
-    player = Player.objects.all()
+    players = Player.objects.all()
     return render(request, 'pong/log/log.html', {'players': players})
 ```
 

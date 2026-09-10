@@ -16,6 +16,14 @@ icon: material/web
 
 <div class="grid cards" markdown>
 
+-   :material-book-open-page-variant:{ .lg .middle } __Bases du Web__
+
+    ---
+
+    Les fondamentaux : histoire d'Internet, langages, réseaux et métiers.
+
+    [:octicons-arrow-right-24: Bases du Web](bases/index.md)
+
 -   :material-language-javascript:{ .lg .middle } __Web 2.0__
 
     ---

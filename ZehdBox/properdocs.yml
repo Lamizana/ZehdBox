@@ -80,6 +80,13 @@ nav:
 
   - Web:
       - web/index.md
+      - Bases du Web:
+          - web/bases/index.md
+          - La naissance du Web: web/bases/naissance.md
+          - Langages: web/bases/langages.md
+          - Réseaux: web/bases/reseaux.md
+          - Métiers: web/bases/metiers.md
+
       - Web 2.0:
           - web/web2/index.md
           - Framework React: web/web2/react.md

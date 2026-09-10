@@ -3,13 +3,15 @@ title: Minishell — Interpréteur de commandes UNIX en C (projet 42)
 description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash — processus, redirections, pipes et gestion des signaux (projet 42)."
 ---
 
-# <span class="h1">Minishell — Interpréteur de commandes UNIX</span>
+# <span class="h1">Minishell</span>
 
-<div class="project-hero">
-    <span class="tech-tag">C</span>
-    <span class="tech-tag">UNIX</span>
-    <span class="tech-tag">Makefile</span>
-    <span class="tech-tag">Signaux</span>
+<div class="badge-section">
+<div class="badge-row">
+    <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
+    <img src="https://img.shields.io/badge/UNIX-2496ED?style=for-the-badge&logo=gnubash&logoColor=white" alt="UNIX">
+    <img src="https://img.shields.io/badge/Makefile-4D4D4D?style=for-the-badge&logo=gnubash&logoColor=white" alt="Makefile">
+    <img src="https://img.shields.io/badge/Signaux-FF6F00?style=for-the-badge&logo=linux&logoColor=white" alt="Signaux">
+</div>
 </div>
 
 <p class="intro">
@@ -20,39 +22,44 @@ description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash 
 
 ## <span class="h2">Description</span>
 
-!!! note "Contexte"
+!!! abstract "Contexte"
     Projet 42 visant à créer un **interpréteur de commandes** (shell) similaire à bash. Ce projet est une excellente introduction aux systèmes UNIX.
 
 ---
 
 ## <span class="h2">Compétences Acquises</span>
 
-<div class="soft-skills-grid">
+<div class="skill-grid">
 
-<div class="soft-skill-card">
-    <span class="soft-skill-title">Programmation système</span><br><br>
-    <span class="soft-skill-desc">Compréhension du système UNIX</span>
+<div class="skill-card">
+    <span class="skill-card-icon">💻</span>
+    <span class="skill-card-title">Programmation système</span><br>
+    <span class="skill-card-desc">Compréhension du système UNIX</span>
 </div>
 
-<div class="soft-skill-card">
-    <span class="soft-skill-title">Gestion des processus</span><br><br>
-    <span class="soft-skill-desc">Découverte des processus (fork, exec, wait)</span>
+<div class="skill-card">
+    <span class="skill-card-icon">🌿</span>
+    <span class="skill-card-title">Gestion des processus</span><br>
+    <span class="skill-card-desc">Découverte des processus (fork, exec, wait)</span>
 </div>
 
-<div class="soft-skill-card">
-    <span class="soft-skill-title">Parsing</span><br><br>
-    <span class="soft-skill-desc">Gestion des inputs et parsing avancé</span>
+<div class="skill-card">
+    <span class="skill-card-icon">📋</span>
+    <span class="skill-card-title">Parsing</span><br>
+    <span class="skill-card-desc">Gestion des inputs et parsing avancé</span>
 </div>
 
-<div class="soft-skill-card">
-    <span class="soft-skill-title">Signaux</span><br><br>
-    <span class="soft-skill-desc">Compréhension des effets des signaux (SIGINT, SIGQUIT, etc...)</span>
+<div class="skill-card">
+    <span class="skill-card-icon">⚠️</span>
+    <span class="skill-card-title">Signaux</span><br>
+    <span class="skill-card-desc">Compréhension des effets des signaux (SIGINT, SIGQUIT, etc...)</span>
 </div>
 
-   <div class="soft-skill-card">
-      <span class="soft-skill-title">Redirections</span><br><br>
-      <span class="soft-skill-desc">Gestion des pipes et des redirections.</span>
-   </div>
+<div class="skill-card">
+    <span class="skill-card-icon">🔀</span>
+    <span class="skill-card-title">Redirections</span><br>
+    <span class="skill-card-desc">Gestion des pipes et des redirections</span>
+</div>
 
 </div>
 
@@ -83,6 +90,13 @@ description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash 
 - Pipes (`|`)
 - Variables d'environnement
 - Gestion des erreurs
+
+---
+
+## <span class="h2">Ce que j'ai appris</span>
+
+!!! info "Réflexion"
+    Ce projet a révélé la puissance des **processus `fork`**. Avant, le terminal était une boîte noire ; après minishell, je voyais chaque `ls` comme un `fork` + `exec` + `wait`. La gestion des signaux (`Ctrl+C`) m'a appris qu'un programme est défini autant par ce qu'il fait que par ce qu'il **refuse** de faire — et que le parsing d'entrées utilisateur est un terrain miné où une citation mal fermée fait tout exploser.
 
 ---
 

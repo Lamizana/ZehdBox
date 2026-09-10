@@ -3,14 +3,16 @@ title: Transcendance — Pong multijoueur en ligne (projet 42)
 description: "Projet 42 Transcendance : Pong multijoueur temps réel en JavaScript — WebSockets, OAuth 42, PostgreSQL et architecture microservices."
 ---
 
-# <span class="h1">Transcendance — Pong multijoueur en ligne</span>
+# <span class="h1">Transcendance</span>
 
-<div class="project-hero">
-    <span class="tech-tag">JavaScript</span>
-    <span class="tech-tag">C++</span>
-    <span class="tech-tag">PostgreSQL</span>
-    <span class="tech-tag">WebSockets</span>
-    <span class="tech-tag">OAuth 42</span>
+<div class="badge-section">
+<div class="badge-row">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+    <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+    <img src="https://img.shields.io/badge/WebSockets-4E5EE4?style=for-the-badge&logo=socketdotio&logoColor=white" alt="WebSockets">
+    <img src="https://img.shields.io/badge/OAuth%2042-000000?style=for-the-badge&logo=42&logoColor=white" alt="OAuth 42">
+</div>
 </div>
 
 <p class="intro">
@@ -21,28 +23,61 @@ description: "Projet 42 Transcendance : Pong multijoueur temps réel en JavaScri
 
 ## <span class="h2">Description</span>
 
-!!! note "Contexte"
+!!! abstract "Contexte"
     Projet final du tronc commun de l'école 42. Le but était de créer une application web complète permettant de jouer au **Pong** en ligne contre d'autres joueurs.
 
 ---
 
 ## <span class="h2">Compétences Acquises</span>
 
-- **Full-stack Web Development**
-- **Temps réel** avec WebSockets
-- **Authentification** sécurisée (JWT, OAuth 42)
-- **Base de données** relationnelle (SQL)
-- **Architecture** microservices
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-icon">🌐</span>
+    <span class="skill-card-title">Full-stack Web Development</span><br>
+    <span class="skill-card-desc">Développement d'une application web complète, du front au back</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">⚡</span>
+    <span class="skill-card-title">Temps réel</span><br>
+    <span class="skill-card-desc">Mise en œuvre des WebSockets pour un gameplay fluide</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🔑</span>
+    <span class="skill-card-title">Authentification</span><br>
+    <span class="skill-card-desc">Sessions sécurisées avec JWT et OAuth 42</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🗃️</span>
+    <span class="skill-card-title">Base de données</span><br>
+    <span class="skill-card-desc">Modélisation et requêtes SQL (PostgreSQL)</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🖥️</span>
+    <span class="skill-card-title">Architecture</span><br>
+    <span class="skill-card-desc">Conception d'une application en microservices</span>
+</div>
+
+</div>
 
 ---
 
 ## <span class="h2">Stack Technique</span>
 
-| Frontend | Backend | Base de données |
-| ---------- |--------- |----------------- |
-| JavaScript | C++ | PostgreSQL |
-| HTML/CSS | | |
-| Socket.io | | |
+=== "Frontend"
+    - JavaScript
+    - HTML/CSS
+    - Socket.io
+
+=== "Backend"
+    - C++
+
+=== "Base de données"
+    - PostgreSQL
 
 ---
 
@@ -63,6 +98,45 @@ description: "Projet 42 Transcendance : Pong multijoueur temps réel en JavaScri
 - Classements (leaderboard)
 - Chat en direct
 - Mode spectateur
+
+---
+
+## <span class="h2">Métriques</span>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-icon">👥</span>
+    <span class="skill-card-title">2 joueurs</span><br>
+    <span class="skill-card-desc">en duel temps réel par partie</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">👀</span>
+    <span class="skill-card-title">Mode spectateur</span><br>
+    <span class="skill-card-desc">rejoindre une partie en cours</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">🏆</span>
+    <span class="skill-card-title">Leaderboard</span><br>
+    <span class="skill-card-desc">classement global des joueurs</span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-icon">💬</span>
+    <span class="skill-card-title">Chat intégré</span><br>
+    <span class="skill-card-desc">échanges en direct pendant la partie</span>
+</div>
+
+</div>
+
+---
+
+## <span class="h2">Ce que j'ai appris</span>
+
+!!! info "Réflexion"
+    Le plus gros défi n'était pas le jeu lui-même mais l'**architecture** : quand le front (JavaScript) et le back (C++) échangent via WebSockets, la discipline consiste à décider **qui détient l'état de vérité** à chaque instant. J'ai compris pourquoi l'état d'une application temps réel doit être pensé avant la première ligne de code — la latence se paie cher ensuite.
 
 ---
 

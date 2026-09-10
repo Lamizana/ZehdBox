@@ -142,3 +142,4 @@ Projet final du tronc commun de l'école 42. Le but était de créer une applica
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/ft_transcendence){ target="_blank" rel="noopener" .md-button .md-button--primary }
+[:material-message-text: Contribuer](https://github.com/Lamizana/ft_transcendence/issues){ .md-button target="_blank" rel="noopener" }

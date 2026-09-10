@@ -94,3 +94,4 @@ Projet 42 consistant à implémenter un **serveur IRC** (Internet Relay Chat) en
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/ft_irc){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[:material-message-text: Contribuer](https://github.com/Lamizana/ft_irc/issues){ .md-button target="_blank" rel="noopener" }

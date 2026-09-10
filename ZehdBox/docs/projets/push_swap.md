@@ -87,3 +87,4 @@ Projet 42 visant à trier une liste de nombres entiers en utilisant **deux piles
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Push-swap){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[:material-message-text: Contribuer](https://github.com/Lamizana/Push-swap/issues){ .md-button target="_blank" rel="noopener" }

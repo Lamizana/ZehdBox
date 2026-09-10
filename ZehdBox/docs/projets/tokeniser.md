@@ -144,12 +144,20 @@ Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'object
 
 ---
 
+<div class="project-card" markdown>
+
+## :material-robot-love: Tutoriel : Créer votre token BEP-20
+
+Tu veux reproduire ce projet ? Consulte ce tutoriel qui couvre l'intégralité du processus, de l'installation de MetaMask à la vérification sur BSCScan.
+
+[:octicons-arrow-right-24: Commencer le tutoriel](../web/web3/tokenizer.md){ .md-button .md-button--primary }
+
+</div>
+
+---
+
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Tokeniser){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [:octicons-verified-24: Contrat sur BscScan](https://testnet.bscscan.com/address/0xa3B9A3eb3F2aE8ed3a6788F4Ccbdb1e503FE6aaD){ .md-button target="_blank" rel="noopener" }
-
----
-
-!!! info "Tutoriel complet"
-    Tu veux reproduire ce projet ? Consulte le [tutoriel pas à pas : créer un token BEP-20](../web/web3/tokenizer.md){ target="_blank" rel="noopener" } qui couvre l'intégralité du processus, de l'installation de MetaMask à la vérification sur BSCScan.
+[:material-message-text: Contribuer](https://github.com/Lamizana/Tokeniser/issues){ .md-button target="_blank" rel="noopener" }

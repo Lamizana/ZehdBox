@@ -95,10 +95,11 @@ Projet 42 visant à créer un **interpréteur de commandes** (shell) similaire �
 ## <span class="h2">Ce que j'ai appris</span>
 
 !!! info "Réflexion"
-    Ce projet a révélé la puissance des **processus `fork`**. Avant, le terminal était une boîte noire ; après minishell, je voyais chaque `ls` comme un `fork` + `exec` + `wait`. La gestion des signaux (`Ctrl+C`) m'a appris qu'un programme est défini autant par ce qu'il fait que par ce qu'il **refuse** de faire — et que le parsing d'entrées utilisateur est un terrain miné où une citation mal fermée fait tout exploser.
+    Ce projet a révélé la puissance des **processus `fork`**. Avant, le terminal était une boîte noire ; après minishell, je voyais chaque `ls` comme un `fork` + `exec` + `wait`. La gestion des signaux (`Ctrl+C`) m'a appris qu'un programme est défini autant par ce qu'il fait que par ce qu'il **refuse** de faire et que le parsing d'entrées utilisateur est un terrain miné où une citation mal fermée fait tout exploser.
 
 ---
 
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Minishell){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[:material-message-text: Contribuer](https://github.com/Lamizana/Minishell/issues){ .md-button target="_blank" rel="noopener" }

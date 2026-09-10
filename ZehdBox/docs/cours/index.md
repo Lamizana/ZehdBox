@@ -24,6 +24,14 @@ icon: material/school
 
     [:octicons-arrow-right-24: Python](python/index.md)
 
+- :simple-django:{ .lg .middle } __Django__
+
+    ---
+
+    Créer une application web Django, de l'environnement virtuel jusqu'aux templates, avec Docker et PostgreSQL.
+
+    [:octicons-arrow-right-24: Django](python/django/index.md)
+
 </div>
 
 ---

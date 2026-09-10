@@ -40,6 +40,13 @@ nav:
               - Nombres: cours/python/exercices/nombres.md
               - Chaînes de caractères: cours/python/exercices/string.md
           - Fonctions: cours/python/fonctions.md
+          - Django:
+              - cours/python/django/index.md
+              - Installation: cours/python/django/installation.md
+              - Docker & PostgreSQL: cours/python/django/docker-postgresql.md
+              - Modèles & Migrations: cours/python/django/modeles-migrations.md
+              - Vues & URLs: cours/python/django/vues-urls.md
+              - Templates: cours/python/django/templates.md
           - Bibliothèques:
               - cours/python/librairies/index.md
               - NumPy:

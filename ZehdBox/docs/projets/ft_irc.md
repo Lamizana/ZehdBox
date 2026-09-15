@@ -21,6 +21,12 @@ description: "ft_irc, serveur IRC en C++ (RFC 2810-2813) : sockets TCP, un seul 
 
 ---
 
+## <span class="h2">Présentation</span>
+
+Un **serveur IRC** qui connecte de **multiples clients** : salons (`#canal`), **opérateurs**, **5 modes** de gestion, **messagerie privée** et diffusion, plus un **bot** Pierre-Papier-Ciseaux.
+
+---
+
 ## <span class="h2">Contexte</span>
 
 Projet de la branche réseau du tronc commun 42 : développer un **serveur IRC** (Internet Relay Chat) en C++98 capable de gérer plusieurs clients simultanément, sur le modèle des serveurs IRC réels (RFC 2810 à 2813).

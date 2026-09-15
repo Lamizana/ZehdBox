@@ -23,6 +23,12 @@ description: "Projet 42 Transcendance : application web Django + Canvas pour jou
 
 ---
 
+## <span class="h2">Présentation</span>
+
+Une application web **full-stack** pour jouer au **Pong** en local : **1 contre 1**, **4 joueurs**, **tournoi**, interface **multi-langue** avec gestion des comptes utilisateurs.
+
+---
+
 ## <span class="h2">Contexte</span>
 
 Transcendance est le **dernier projet du tronc commun 42**. L'objectif était de concevoir une application web full-stack fonctionnelle, déployable via Docker, intégrant un jeu Pong jouable en local sur un même navigateur. Le projet combinait développement back-end (API REST), front-end (rendu Canvas), gestion d'utilisateurs, base de données relationnelle et conteneurisation, le tout en **solo**.

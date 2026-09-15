@@ -219,6 +219,9 @@ plugins:
   - redirects:
       redirect_maps:
         'projets/tokeniser.md': 'projets/tokenizer.md'
+        'projets/ft_transcendence.md': 'projets/transcendance.md'
+        'so_long/jeux.md': 'projets/so_long.md'
+        'github/github.md': 'github/index.md'
 
   - search:
       lang: fr

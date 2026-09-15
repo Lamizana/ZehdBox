@@ -56,7 +56,9 @@ Les requêtes HTTP entrent par **Nginx**, qui termine le SSL et les transmet à 
 | **Django** | Routage des URLs, vues, API REST, auth de session | apps `pong` + `utilisateurs`, viewsets DRF |
 | **PostgreSQL** | Persistance des profils, scores, duels, tournois | modèle `Player` + `ArrayField` |
 
-Deux apps Django : `utilisateurs` (inscription, connexion, déconnexion) et `pong` (jeu, profil, amis, scores). Côté client, un routeur JavaScript (`router.js`) récupère le HTML par `fetch()` et applique la langue — un fonctionnement type SPA sans framework.
+Deux apps **Django** : `utilisateurs` (inscription, connexion, déconnexion) et `pong` (jeu, profil, amis, scores).
+
+Côté client, un **routeur JavaScript** (`router.js`) récupère le HTML par `fetch()` et applique la langue: un fonctionnement type SPA sans framework.
 
 ---
 

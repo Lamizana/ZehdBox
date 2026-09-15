@@ -15,14 +15,14 @@ description: "Tokenizer : création du token GOLD42 (BEP-20) sur BNB Smart Chain
 </div>
 
 <p class="intro">
-    Création du token <strong>GOLD42 (G42)</strong> sur la BNB Smart Chain Testnet — mon premier smart contract.
+    Création du token <strong>GOLD42 (G42)</strong> sur la BNB Smart Chain Testnet: mon premier smart contract.
 </p>
 
 ---
 
 ## <span class="h2">Présentation</span>
 
-Un **token BEP-20** — `GOLD42 (G42)` — déployé sur la **BNB Smart Chain Testnet** : solde, transferts, autorisations, création et destruction de tokens, le tout sur la blockchain.
+Un **token BEP-20**  `GOLD42 (G42)` déployé sur la **BNB Smart Chain Testnet** : solde, transferts, autorisations, création et destruction de tokens, le tout sur la blockchain.
 
 ---
 
@@ -93,7 +93,7 @@ GOLD42 is ERC20 (OpenZeppelin)
 ## <span class="h2">Fonctionnalités</span>
 
 | Fonction | Rôle | Accès |
-|----------|------|-------|
+| ---------- | ------ | ------- |
 | `transfer(to, amount)` | Envoyer des G42 | Tous |
 | `balanceOf(account)` | Consulter un solde | Lecture |
 | `approve(spender, amount)` | Autoriser un tiers à dépenser | Tous |
@@ -121,7 +121,7 @@ GOLD42 is ERC20 (OpenZeppelin)
 - Smart contract déployé et **vérifié sur BscScan** : [`0xB03B454DDa79A522603f2a21471A6bC6B24dDb80`](https://testnet.bscscan.com/address/0xB03B454DDa79A522603f2a21471A6bC6B24dDb80)
 - **1 000 000 G42** de supply maximale, **800 000 (80 %)** créés au déploiement, **200 000 (20 %)** mintables par le propriétaire
 - **18 décimales**, coût de déploiement : 0,001544511 BNB
-- Token importable dans MetaMask ; transferts et échanges testés entre wallets
+- Token importable dans MetaMask: transferts et échanges testés entre wallets
 
 ---
 

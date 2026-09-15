@@ -41,39 +41,22 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 
 ## <span class="h2">Architecture</span>
 
-<div class="skill-grid">
+<figure markdown>
+  ![Architecture de Transcendance](images/transcendance_architecture.jpeg){.project-architecture}
+  <figcaption>Schéma de l'architecture de Transcendance</figcaption>
+</figure>
 
-<div class="skill-card">
-    <span class="skill-card-title">Django 4.2</span><br>
-    <span class="skill-card-desc"><strong>Back-end Python</strong><br><em>Framework web avec ORM, auth natif, admin, système de templates.</em></span>
-</div>
+Les requêtes HTTP entrent par **Nginx**, qui termine le SSL et les transmet à **gunicorn** ; Django aiguille vers les apps `pong` et `utilisateurs`, interroge **PostgreSQL** et renvoie un HTML rendu côté serveur, pendant que le moteur de jeu s'exécute en JavaScript sur le canvas du navigateur.
 
-<div class="skill-card">
-    <span class="skill-card-title">Docker Compose</span><br>
-    <span class="skill-card-desc"><strong>3 conteneurs</strong><br><em>web (gunicorn + Django), db (PostgreSQL 15), nginx (reverse proxy SSL).</em></span>
-</div>
+| Étape | Rôle | Dans le code |
+|-------|------|--------------|
+| **Navigateur** | L'utilisateur charge `/pong/` ; le moteur de jeu démarre sur le canvas | `pong.js`, `router.js`, HTML5 Canvas |
+| **Nginx** | Reverse proxy, terminaison SSL/TLS, service des fichiers statiques | `nginx/nginx.conf` (port 8080) |
+| **Gunicorn** | Serveur WSGI qui exécute Django | conteneur `web`, `proxy_pass http://web:8000` |
+| **Django** | Routage des URLs, vues, API REST, auth de session | apps `pong` + `utilisateurs`, viewsets DRF |
+| **PostgreSQL** | Persistance des profils, scores, duels, tournois | modèle `Player` + `ArrayField` |
 
-<div class="skill-card">
-    <span class="skill-card-title">Nginx + SSL/TLS</span><br>
-    <span class="skill-card-desc"><strong>Reverse proxy</strong><br><em>Terminaison SSL (TLSv1.2/1.3), proxy_pass vers gunicorn, service des fichiers statiques.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">PostgreSQL 15</span><br>
-    <span class="skill-card-desc"><strong>Base relationnelle</strong><br><em>Modèle Player avec ArrayField pour historique des duels et tournois.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">HTML5 Canvas + Vanilla JS</span><br>
-    <span class="skill-card-desc"><strong>Moteur de jeu côté client</strong><br><em>Rendu 60fps, physique de balle, collisions, IA prédictive, contrôles tactiles.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Django REST Framework</span><br>
-    <span class="skill-card-desc"><strong>API REST</strong><br><em>Viewsets pour scores, tournois, profils, langues et statuts — consommés via fetch() côté JS.</em></span>
-</div>
-
-</div>
+Deux apps Django : `utilisateurs` (inscription, connexion, déconnexion) et `pong` (jeu, profil, amis, scores). Côté client, un routeur JavaScript (`router.js`) récupère le HTML par `fetch()` et applique la langue — un fonctionnement type SPA sans framework.
 
 ---
 
@@ -140,7 +123,7 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 - Déploiement Docker en une commande (`make create`)
 - API REST complète : 5 viewsets DRF pour scores, tournois, profils, langues, statuts
 
-**Lancement**
+### <span class="h3">Lancement</span>
 
 ```bash
 make create        # docker compose up --build + migrations + superuser

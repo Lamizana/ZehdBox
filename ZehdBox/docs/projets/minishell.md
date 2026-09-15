@@ -1,6 +1,6 @@
 ---
 title: Minishell — Interpréteur de commandes UNIX en C (projet 42)
-description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash — parseur en deux passes, signaux, redirections et pipes (projet 42)."
+description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash — REPL, parsing par pipeline, pipes, redirections et gestion des signaux (projet 42)."
 ---
 
 # <span class="h1">Minishell</span>
@@ -9,7 +9,8 @@ description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash 
 <div class="badge-row">
     <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
     <img src="https://img.shields.io/badge/UNIX-2496ED?style=for-the-badge&logo=gnubash&logoColor=white" alt="UNIX">
-    <img src="https://img.shields.io/badge/Makefile-4D4D4D?style=for-the-badge&logo=gnubash&logoColor=white" alt="Makefile">
+    <img src="https://img.shields.io/badge/Libft-4D4D4D?style=for-the-badge&logo=c&logoColor=white" alt="Libft">
+    <img src="https://img.shields.io/badge/Readline-4D4D4D?style=for-the-badge&logo=gnubash&logoColor=white" alt="Readline">
     <img src="https://img.shields.io/badge/Signaux-FF6F00?style=for-the-badge&logo=linux&logoColor=white" alt="Signaux">
 </div>
 </div>
@@ -22,13 +23,13 @@ description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash 
 
 ## <span class="h2">Présentation</span>
 
-Un **interpréteur de commandes UNIX** qui exécute des commandes, gère les pipes et les redirections, et réagit aux signaux comme le ferait un vrai terminal.
+Un **interpréteur de commandes UNIX** qui exécute des commandes, gère les pipes et réagit aux signaux comme le ferait un vrai terminal.
 
 ---
 
 ## <span class="h2">Contexte</span>
 
-*Projet du tronc commun de l'école 42, réalisé en C.*
+*Projet du tronc commun de l'école 42, réalisé en binôme avec mon camarade, en 2023.*
 
 **L'objectif** : comprendre ce qui se passe réellement quand on tape une commande dans un terminal; les processus, les descripteurs de fichiers et les signaux.
 
@@ -36,20 +37,27 @@ Un **interpréteur de commandes UNIX** qui exécute des commandes, gère les pip
 
 ## <span class="h2">Mon rôle</span>
 
-- Conception du **REPL** (boucle read-eval-print)
-- Architecture du **parseur en deux passes** (tokenisation puis AST)
-- Implémentation des **builtins** et de la gestion des **signaux**
+Projet réalisé en **binôme** : j'ai conçu le cœur de l'interpréteur, mon binôme a apporté le découpage des arguments et l'expansion des variables.
+
+- Conception du **REPL** (boucle lecture-évaluation-exécution) avec `readline` pour le prompt et l'historique
+- **Parsing** de la ligne de commande : substitution des variables, espacement des pipes, découpage en arguments et nettoyage des quotes
+- Implémentation des **builtins** et de l'**exécution** des commandes externes via `fork` / `exec` / `wait`
+- **Pipes** (simples et multiples) et gestion des **signaux** avec `readline`
 
 ---
 
 ## <span class="h2">Architecture</span>
 
-<figure markdown>
-  ![Architecture de Minishell](images/minishell_architecture.jpeg){.project-architecture}
-  <figcaption>Architecture du parseur et de l'exécuteur de commandes</figcaption>
-</figure>
+Le shell fonctionne en boucle REPL : lecture de la ligne, parsing, exécution, puis retour à la lecture.
 
-`Lexer → parseur → AST → exécuteur` : chaque étape est un module séparé, avec une gestion d'erreurs dédiée au parsing et l'exécution qui s'appuie sur `fork`/`exec`/`wait` et les redirections `dup2`.
+`parsing()` enchaîne quatre transformations successives sur la chaîne lue :
+
+1. **Expansion** des variables (`$VAR`, `$?`) hors zones entre quotes simples
+2. **Espacement** des caractères `|` pour les isoler comme tokens
+3. **Découpage** en arguments avec un splitter qui ignore les séparateurs entre quotes
+4. **Nettoyage** des quotes résiduelles de chaque argument
+
+L'exécution distingue ensuite trois cas : une **commande simple**, une **redirection** (`>`), et un **pipe** — chaque commande d'un pipe étant lancée dans un processus `fork` relié à son voisin via `dup2`, avec une gestion dédiée du dernier maillon de la chaîne.
 
 ---
 
@@ -57,37 +65,40 @@ Un **interpréteur de commandes UNIX** qui exécute des commandes, gère les pip
 
 - **Langage** : C
 - **Système** : Linux/UNIX
-- **Outils** : Makefile, GCC
+- **Bibliothèques** : libft (personnelle), readline
+- **Outils** : Makefile, clang
 
 ---
 
 ## <span class="h2">Fonctionnalités</span>
 
-- Commandes (cd, echo, pwd, export, unset, env, exit)
-- Redirections (`>`, `>>`, `<`)
-- Pipes (`|`)
-- Variables d'environnement
+- Commandes builtins (cd, echo, pwd, export, unset, env, exit)
+- Commandes externes via `PATH` et exécutables locaux `./programme`
+- Pipes simples et multiples (`|`)
+- Redirection de sortie (`>`)
+- Variables d'environnement (`$VAR`) et code de retour (`$?`)
+- Gestion des signaux : `Ctrl+C` (interrompt la commande, réaffiche le prompt), `Ctrl+D` (quitte)
 - Gestion des erreurs
 
 ---
 
-## <span class="h2">Problème | Solution</span>
+## <span class="h2">Problème → Solution</span>
 
 | Problème | Solution |
 | ---------- | ---------- |
-| Distinguer un `\|` dans une chaîne `echo "a \| b"` d'une vraie pipe | Parseur en **deux passes** : tokenisation puis construction d'un AST, au lieu d'une lecture caractère par caractère |
-| Ctrl+C doit interrompre la commande en cours mais pas le shell | Gestion des signaux **ciblée** : le signal est transmis au processus enfant, le shell reste actif |
-| Enchaîner plusieurs commandes avec des pipes | Exécution **récursive de l'AST** avec mise en place des `dup2` dans l'ordre |
-| Multiplier les états de parsing (quotes simples, doubles, échappements) | Gestion d'un **état explicite du lexer** pour chaque contexte |
+| Distinguer un `\|` dans une chaîne `echo "a \| b"` d'une vraie pipe | Découpage avec `skip_quotes` : les séparateurs entre quotes simples ou doubles sont ignorés |
+| Interrompre une commande qui tourne sans tuer le shell | Gestion des signaux **ciblée** : `Ctrl+C` transmet l'interruption à l'enfant via un handler `readline`, le shell reste actif |
+| Enchaîner plusieurs commandes avec des pipes | Une **boucle de `fork`** qui chaîne les descripteurs : `dup2` relie la sortie d'un enfant à l'entrée du suivant, dernier maillon géré séparément |
+| Empêcher les variables d'être développées dans une chaîne simple-quoted | L'expansion saute explicitement les zones délimitées par `'...'` |
 
 ---
 
 ## <span class="h2">Résultats</span>
 
-- ✅ REPL complet : l'utilisateur tape, le shell exécute
-- ✅ Builtins fonctionnelles : `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`
-- ✅ Comportement des signaux aligné sur bash (`Ctrl+C`, `Ctrl+\`)
-- ✅ Redirections et chaînes de pipes multi-commandes
+- Repl complet : l'utilisateur tape, le shell exécute
+- Builtins fonctionnelles : `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`
+- Signaux correctement gérés : `Ctrl+C` interrompt, le shell reste vivant
+- Pipes simples et chaînes multi-commandes
 
 ---
 

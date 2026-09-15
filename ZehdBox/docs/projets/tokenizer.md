@@ -68,22 +68,22 @@ GOLD42 is ERC20 (OpenZeppelin)
 
 <div class="skill-card">
     <span class="skill-card-title">Langage</span><br>
-    <span class="skill-card-desc">Solidity ^0.8.0, typé et compilé pour l'EVM</span>
+    <span class="skill-card-desc"><strong>Solidity ^0.8.0</strong><br><em>Typé et compilé pour l'EVM</em></span>
 </div>
 
 <div class="skill-card">
     <span class="skill-card-title">Bibliothèque</span><br>
-    <span class="skill-card-desc">OpenZeppelin Contracts, l'implémentation ERC-20 de référence</span>
+    <span class="skill-card-desc"><strong>OpenZeppelin Contracts</strong><br><em>l'implémentation ERC-20 de référence</em></span>
 </div>
 
 <div class="skill-card">
     <span class="skill-card-title">Supports</span><br>
-    <span class="skill-card-desc">Remix IDE, MetaMask (Injected Provider), BscScan Testnet</span>
+    <span class="skill-card-desc"><strong>Remix IDE</strong><br><em>IDE en ligne pour écrire et compiler le contrat</em><br><strong>MetaMask</strong><br><em>portefeuille connecté (Injected Provider)</em><br><strong>BscScan Testnet</strong><br><em>explorateur et vérification du contrat</em></span>
 </div>
 
 <div class="skill-card">
     <span class="skill-card-title">Réseau</span><br>
-    <span class="skill-card-desc">BNB Smart Chain Testnet (Chain ID 97)</span>
+    <span class="skill-card-desc"><strong>BNB Smart Chain Testnet</strong><br><em>blockchain EVM, Chain ID 97</em></span>
 </div>
 
 </div>

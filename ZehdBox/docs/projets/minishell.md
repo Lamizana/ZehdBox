@@ -77,10 +77,29 @@ L'exécution distingue ensuite trois cas : une **commande simple**, une **redire
 
 ## <span class="h2">Technologies</span>
 
-- **Langage** : C
-- **Système** : Linux/UNIX
-- **Bibliothèques** : libft (personnelle), readline
-- **Outils** : Makefile, clang
+<div class="skill-grid">
+
+<div class="skill-card">
+    <span class="skill-card-title">Langage</span><br>
+    <span class="skill-card-desc"><strong>C</strong><br><em>Bas-niveau, gestion mémoire manuelle, compilation native</em></span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-title">Système</span><br>
+    <span class="skill-card-desc"><strong>Linux/UNIX</strong><br><em>Appels système POSIX : fork, dup2, execve, pipe</em></span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-title">Bibliothèques</span><br>
+    <span class="skill-card-desc"><strong>LIBFT</strong><br><em>bibliothèque personnalisée réimplémentant libc</em><br><strong>READLINE</strong><br><em> édition de ligne interactive</em></span>
+</div>
+
+<div class="skill-card">
+    <span class="skill-card-title">Outils</span><br>
+    <span class="skill-card-desc"><strong>Makefile</strong><br><em>build automatisé</em><br><strong>Clang</strong><br><em>compilateur LLVM, stricte conformité</em></span>
+</div>
+
+</div>
 
 ---
 

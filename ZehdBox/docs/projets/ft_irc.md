@@ -23,7 +23,9 @@ description: "ft_irc, serveur IRC en C++ (RFC 2810-2813) : sockets TCP, un seul 
 
 ## <span class="h2">Contexte</span>
 
-Projet de la branche réseau du tronc commun 42 : développer un **serveur IRC** (Internet Relay Chat) en C++98 capable de gérer plusieurs clients simultanément, sur le modèle des serveurs IRC réels (RFC 2810 à 2813). Pas de client à écrire — le serveur doit être compatible avec les clients IRC existants (HexChat, irssi, WeeChat…). Le sujet interdit `fork()` et impose un multiplexage unique (`poll()` ou équivalent comme `select()`) pour toutes les E/S.
+Projet de la branche réseau du tronc commun 42 : développer un **serveur IRC** (Internet Relay Chat) en C++98 capable de gérer plusieurs clients simultanément, sur le modèle des serveurs IRC réels (RFC 2810 à 2813).
+
+Pas de client à écrire, le serveur doit être compatible avec les clients IRC existants (HexChat, irssi, WeeChat…). Le sujet interdit `fork()` et impose un multiplexage unique (`poll()` ou équivalent comme `select()`) pour toutes les E/S.
 
 ---
 
@@ -36,6 +38,11 @@ Projet réalisé **en équipe**. Contributions portant sur la **boucle serveur**
 ## <span class="h2">Architecture</span>
 
 Un serveur mono-thread : une boucle `select()` unique surveille tous les descripteurs, accepte les nouveaux clients, lit leurs paquets (avec agrégation des fragments), puis déclenche la commande correspondante.
+
+<figure markdown>
+  ![Architecture de Ft_irc](images/ft_irc_architecture.svg){.project-architecture}
+  <figcaption>Schéma de l'architecture de Ft_irc</figcaption>
+</figure>
 
 | Étape | Rôle | Dans le code |
 |-------|------|--------------|

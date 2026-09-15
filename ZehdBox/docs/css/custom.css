@@ -50,6 +50,8 @@
 
 .project-architecture {
     display: block;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;

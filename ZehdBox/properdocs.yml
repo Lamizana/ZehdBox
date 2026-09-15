@@ -216,6 +216,10 @@ extra_css:
   - css/custom.css
 
 plugins:
+  - redirects:
+      redirect_maps:
+        'projets/tokeniser.md': 'projets/tokenizer.md'
+
   - search:
       lang: fr
   - social:

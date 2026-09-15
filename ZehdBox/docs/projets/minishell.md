@@ -31,31 +31,26 @@ Projet 42 visant à créer un **interpréteur de commandes** (shell) similaire �
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">💻</span>
     <span class="skill-card-title">Programmation système</span><br>
     <span class="skill-card-desc">Compréhension du système UNIX</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🌿</span>
     <span class="skill-card-title">Gestion des processus</span><br>
     <span class="skill-card-desc">Découverte des processus (fork, exec, wait)</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">📋</span>
     <span class="skill-card-title">Parsing</span><br>
     <span class="skill-card-desc">Gestion des inputs et parsing avancé</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">⚠️</span>
     <span class="skill-card-title">Signaux</span><br>
     <span class="skill-card-desc">Compréhension des effets des signaux (SIGINT, SIGQUIT, etc...)</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔀</span>
     <span class="skill-card-title">Redirections</span><br>
     <span class="skill-card-desc">Gestion des pipes et des redirections</span>
 </div>

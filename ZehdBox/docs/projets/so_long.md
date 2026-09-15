@@ -34,25 +34,21 @@ L'objectif principal est de gérer les entrées clavier, les collisions, et l'af
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">🖼️</span>
     <span class="skill-card-title">Rendu graphique 2D</span><br>
     <span class="skill-card-desc">Utilisation de la minilibx pour afficher et animer les sprites</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">⌨️</span>
     <span class="skill-card-title">Gestion des entrées clavier</span><br>
     <span class="skill-card-desc">Capture et traitement des événements utilisateur en temps réel</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">📂</span>
     <span class="skill-card-title">Parsing de fichiers</span><br>
     <span class="skill-card-desc">Lecture et validation des cartes .ber (murs, sortie, collectibles)</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🧠</span>
     <span class="skill-card-title">Gestion de la mémoire</span><br>
     <span class="skill-card-desc">Allocation dynamique et prévention des fuites mémoire</span>
 </div>

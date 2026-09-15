@@ -32,31 +32,26 @@ Projet final du tronc commun de l'école 42. Le but était de créer une applica
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">🌐</span>
     <span class="skill-card-title">Full-stack Web Development</span><br>
     <span class="skill-card-desc">Développement d'une application web complète, du front au back</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">⚡</span>
     <span class="skill-card-title">Temps réel</span><br>
     <span class="skill-card-desc">Mise en œuvre des WebSockets pour un gameplay fluide</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔑</span>
     <span class="skill-card-title">Authentification</span><br>
     <span class="skill-card-desc">Sessions sécurisées avec JWT et OAuth 42</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🗃️</span>
     <span class="skill-card-title">Base de données</span><br>
     <span class="skill-card-desc">Modélisation et requêtes SQL (PostgreSQL)</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🖥️</span>
     <span class="skill-card-title">Architecture</span><br>
     <span class="skill-card-desc">Conception d'une application en microservices</span>
 </div>
@@ -105,25 +100,21 @@ Projet final du tronc commun de l'école 42. Le but était de créer une applica
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">👥</span>
     <span class="skill-card-title">2 joueurs</span><br>
     <span class="skill-card-desc">en duel temps réel par partie</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">👀</span>
     <span class="skill-card-title">Mode spectateur</span><br>
     <span class="skill-card-desc">rejoindre une partie en cours</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🏆</span>
     <span class="skill-card-title">Leaderboard</span><br>
     <span class="skill-card-desc">classement global des joueurs</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">💬</span>
     <span class="skill-card-title">Chat intégré</span><br>
     <span class="skill-card-desc">échanges en direct pendant la partie</span>
 </div>

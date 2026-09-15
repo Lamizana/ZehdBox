@@ -30,25 +30,21 @@ Projet 42 visant à trier une liste de nombres entiers en utilisant **deux piles
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔀</span>
     <span class="skill-card-title">Algorithmique</span><br>
     <span class="skill-card-desc">Conception de stratégies de tri adaptées à chaque taille de liste</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🚀</span>
     <span class="skill-card-title">Optimisation</span><br>
     <span class="skill-card-desc">Réduction du nombre d'opérations minimal</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🧠</span>
     <span class="skill-card-title">Gestion mémoire</span><br>
     <span class="skill-card-desc">Allocation et libération en C, sans fuites mémoire</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🏷️</span>
     <span class="skill-card-title">Structuration du code</span><br>
     <span class="skill-card-desc">Séparation parsing / logique / opérations</span>
 </div>

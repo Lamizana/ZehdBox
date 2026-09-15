@@ -30,31 +30,26 @@ Projet 42 consistant à implémenter un **serveur IRC** (Internet Relay Chat) en
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">📡</span>
     <span class="skill-card-title">Programmation réseau</span><br>
     <span class="skill-card-desc">Sockets TCP/UDP et communication client-serveur</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🧊</span>
     <span class="skill-card-title">Programmation Orientée Objet</span><br>
     <span class="skill-card-desc">Conception orientée objet en C++</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">💬</span>
     <span class="skill-card-title">Protocole IRC</span><br>
     <span class="skill-card-desc">Implémentation conforme à la RFC 1459</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">👥</span>
     <span class="skill-card-title">Connexions multiples</span><br>
     <span class="skill-card-desc">Gestion simultanée de plusieurs clients</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">⚙️</span>
     <span class="skill-card-title">Concurrency</span><br>
     <span class="skill-card-desc">Traitement non-bloquant des événements réseau</span>
 </div>

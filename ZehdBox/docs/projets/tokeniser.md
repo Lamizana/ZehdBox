@@ -31,31 +31,26 @@ Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'object
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔗</span>
     <span class="skill-card-title">Blockchain & DeFi</span><br>
     <span class="skill-card-desc">Compréhension des concepts fondamentaux (wallet, gas, transaction, explorateur de blocs)</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">📜</span>
     <span class="skill-card-title">Smart Contracts</span><br>
     <span class="skill-card-desc">Écriture, compilation et déploiement d'un contrat Solidity</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔁</span>
     <span class="skill-card-title">Standard BEP-20/ERC-20</span><br>
     <span class="skill-card-desc">Implémentation des fonctions <code>transfer</code>, <code>approve</code>, <code>transferFrom</code>, <code>mint</code>, <code>burn</code></span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🛡️</span>
     <span class="skill-card-title">Sécurité</span><br>
     <span class="skill-card-desc">Gestion de la propriété (<code>onlyOwner</code>), plafond de supply, protection contre les transferts vers l'adresse zéro</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔧</span>
     <span class="skill-card-title">Outils</span><br>
     <span class="skill-card-desc">Remix IDE, MetaMask, BscScan Testnet</span>
 </div>
@@ -100,25 +95,21 @@ Projet solo réalisé dans le cadre du partenariat **42 × BNB Chain**. L'object
 <div class="skill-grid">
 
 <div class="skill-card">
-    <span class="skill-card-icon">🏭</span>
     <span class="skill-card-title">1 000 000 G42</span><br>
     <span class="skill-card-desc">supply maximal plafonné</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">📦</span>
     <span class="skill-card-title">80 % créés</span><br>
     <span class="skill-card-desc">au moment du déploiement</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🔨</span>
     <span class="skill-card-title">20 % mintables</span><br>
     <span class="skill-card-desc">par le propriétaire</span>
 </div>
 
 <div class="skill-card">
-    <span class="skill-card-icon">🪙</span>
     <span class="skill-card-title">10^18 wei</span><br>
     <span class="skill-card-desc">précision de 1 G42</span>
 </div>

@@ -96,7 +96,7 @@ L'exécution distingue ensuite trois cas : une **commande simple**, une **redire
 
 ---
 
-## <span class="h2">Problème → Solution</span>
+## <span class="h2">Problème | Solution</span>
 
 | Problème | Solution |
 | ---------- | ---------- |

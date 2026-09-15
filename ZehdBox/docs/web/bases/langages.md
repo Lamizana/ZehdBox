@@ -80,17 +80,10 @@ Les langages serveur sont exécutés par le **serveur**. Ils décrivent
 
 L'interaction entre le client et le serveur se résume en 3 étapes :
 
-```mermaid
-sequenceDiagram
-    participant C as Client (navigateur)
-    participant S as Serveur
-    participant B as Base de données
-
-    C->>S: 1. Je veux consulter la page d'accueil
-    S->>B: 2. Je récupère les données nécessaires
-    B-->>S: 3. Voici les données
-    S-->>C: 4. Voici la page HTML/CSS générée
-```
+<figure markdown>
+  ![Interaction Web](images/web_interaction.jpeg){.project-architecture}
+  <figcaption>Schéma de interaction entre le client et le serveur</figcaption>
+</figure>
 
 !!! summary "Règle simple"
     - **Partie visible** du site → langage **client** (HTML, CSS, JS)
@@ -104,7 +97,7 @@ Tous les sites web ont besoin d'**enregistrer des informations**
 (comptes utilisateurs, articles, commandes...).
 
 | Logiciel de BDD | Type |
-|-----------------|------|
+| ----------------- | ------ |
 | **MySQL** | Open source, très répandu |
 | **PostgreSQL** | Open source, puissant et fiable |
 | **SQLite** | Léger, fichier unique (pour les petites apps) |
@@ -125,7 +118,7 @@ généralement hébergée sur une **machine différente**.
 
 | Type | Description | Quand choisir ? |
 |------|-------------|-----------------|
-| **Site responsive** | Un seul site web qui s'adapte à toutes les tailles d'écran | La plupart du temps ✅ |
+| **Site responsive** | Un seul site web qui s'adapte à toutes les tailles d'écran | La plupart du temps  |
 | **Application native** | Application installée depuis les stores (App Store, Play Store) | Si besoin d'accès matériels (caméra, GPS offline) |
 
 !!! tip "Recommandation"

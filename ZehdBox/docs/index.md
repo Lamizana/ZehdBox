@@ -46,7 +46,7 @@ icon: material/home
 
     **Token BEP-20** GOLD42 sur BNB Smart Chain : premier smart contract, blockchain et DeFi.
 
-    [:octicons-arrow-right-24: Découvrir](projets/tokeniser.md)
+    [:octicons-arrow-right-24: Découvrir](projets/tokenizer.md)
 
 </div>
 

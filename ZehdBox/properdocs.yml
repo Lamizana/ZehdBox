@@ -14,7 +14,7 @@ nav:
 
   - Projets:
       - projets/index.md
-      - Tokenizer: projets/tokeniser.md
+      - Tokenizer: projets/tokenizer.md
       - Transcendance: projets/transcendance.md
       - Minishell: projets/minishell.md
       - ft_irc: projets/ft_irc.md

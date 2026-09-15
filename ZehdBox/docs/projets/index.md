@@ -45,7 +45,7 @@ icon: material/rocket-launch
 
     `Solidity` `BEP-20` `OpenZeppelin` `Remix`
 
-    [:octicons-arrow-right-24: Découvrir](tokeniser.md)
+    [:octicons-arrow-right-24: Découvrir](tokenizer.md)
 
 -   :material-console:{ .lg .middle } __Minishell__
 

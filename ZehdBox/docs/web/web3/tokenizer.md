@@ -17,7 +17,7 @@ description: "Tutoriel pas à pas : créer, déployer et vérifier votre premier
     Ce tutoriel couvre l'intégralité du processus : concepts de base, installation de MetaMask, écriture du smart contract en Solidity, compilation, déploiement sur le BSC Testnet, tests et vérification sur BSCScan.
 
 !!! abstract "Voir aussi"
-    Ce tutoriel est lié à la [fiche projet Tokenizer](../../projets/tokeniser.md){ target="_blank" rel="noopener" } qui présente le résultat final, la stack technique et les compétences acquises.
+    Ce tutoriel est lié à la [fiche projet Tokenizer](../../projets/tokenizer.md){ target="_blank" rel="noopener" } qui présente le résultat final, la stack technique et les compétences acquises.
 
 ---
 

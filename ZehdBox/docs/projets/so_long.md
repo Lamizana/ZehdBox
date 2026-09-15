@@ -1,6 +1,11 @@
 ---
 title: so_long — Jeu 2D en C avec MiniLibX (projet 42)
 description: "so_long, jeu 2D en C avec la MiniLibX : parsing strict des cartes .ber, flood-fill, collecte d'objets, bonus avec ennemi et compteurs (projet 42)."
+tags:
+  - projet
+  - c
+  - jeu
+  - minilibx
 ---
 
 # <span class="h1">So Long</span>

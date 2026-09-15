@@ -1,6 +1,13 @@
 ---
 title: Transcendance — Pong multijoueur local (projet 42)
 description: "Projet 42 Transcendance : application web Django + Canvas pour jouer au Pong en local — solo, 1v1, 4 joueurs, tournoi, multi-langue."
+tags:
+  - projet
+  - django
+  - python
+  - docker
+  - full-stack
+  - web
 ---
 
 # <span class="h1">Transcendance</span>

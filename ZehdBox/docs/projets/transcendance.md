@@ -18,14 +18,14 @@ description: "Projet 42 Transcendance : application web Django + Canvas pour jou
 </div>
 
 <p class="intro">
-    Projet final du tronc commun de l'école 42 : créer une application web complète permettant de jouer au <strong>Pong</strong> en local — solo contre l'IA, en duel 1v1, à 4 joueurs ou en tournoi.
+    Projet final du tronc commun de l'école 42 : créer une application web complète permettant de jouer au <strong>Pong</strong> en local.
 </p>
 
 ---
 
 ## <span class="h2">Contexte</span>
 
-Transcendance est le **dernier projet du tronc commun 42**. L'objectif était de concevoir une application web full-stack fonctionnelle, déployable via Docker, intégrant un jeu Pong jouable en local sur un même navigateur. Le projet combinait développement back-end (API REST), front-end (rendu Canvas), gestion d'utilisateurs, base de données relationnelle et conteneurisation — le tout en **solo**.
+Transcendance est le **dernier projet du tronc commun 42**. L'objectif était de concevoir une application web full-stack fonctionnelle, déployable via Docker, intégrant un jeu Pong jouable en local sur un même navigateur. Le projet combinait développement back-end (API REST), front-end (rendu Canvas), gestion d'utilisateurs, base de données relationnelle et conteneurisation, le tout en **solo**.
 
 ---
 
@@ -112,14 +112,14 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 
 ## <span class="h2">Fonctionnalités</span>
 
-- Mode Solo : partie contre l'IA, premier à 3 points
-- 1v1 local : deux joueurs, un clavier (W/S vs flèches)
-- 4 joueurs : quadra sur canvas carré, 4 palettes colorées avec murs d'angles
-- Tournoi 4 : bracket saisi par l'utilisateur, demi-finales + finale
-- Multi-langue : FR, EN, ES — toute l'interface traduite via balises `lang=""` et routeur JS
-- Profil & avatar : création, modification du mot de passe, suppression de compte
-- Système d'amis : ajout par nickname, liste persistante, statut en ligne
-- Scores & historique : wins/loses, détail par duel (adversaire, score, date), positions de tournoi
+- **Mode Solo** : partie contre l'IA, premier à 3 points
+- **1v1 local** : deux joueurs, un clavier (W/S vs flèches)
+- **4 joueurs** : quadra sur canvas carré, 4 palettes colorées avec murs d'angles
+- **Tournoi 4** : bracket saisi par l'utilisateur, demi-finales + finale
+- **Multi-langue** : FR, EN, ES — toute l'interface traduite via balises `lang=""` et routeur JS
+- **Profil & avatar** : création, modification du mot de passe, suppression de compte
+- **Système d'amis** : ajout par nickname, liste persistante, statut en ligne
+- **Scores & historique** : wins/loses, détail par duel (adversaire, score, date), positions de tournoi
 
 ---
 
@@ -140,12 +140,20 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 - Déploiement Docker en une commande (`make create`)
 - API REST complète : 5 viewsets DRF pour scores, tournois, profils, langues, statuts
 
+**Lancement**
+
+```bash
+make create        # docker compose up --build + migrations + superuser
+make psql          # accès au shell PostgreSQL
+make fclean        # arrêt total + purge des volumes et images
+```
+
 ---
 
 ## <span class="h2">Ce que j'ai appris</span>
 
 !!! info "Réflexion"
-    Transcendance m'a appris que **la plupart des projets "temps réel" en 42 ne le sont pas vraiment** — la vraie difficulté n'est pas le networking, mais la **gestion de l'état** côté client : qui possède la balle, quand le tour change, comment un score se propage au back-end. J'ai aussi compris pourquoi Docker n'est pas qu'un outil de déploiement mais une **contrainte d'architecture** : séparer web, base et proxy m'a forcé à penser les interfaces entre composants avant d'écrire la première ligne de code.
+    Transcendance m'a appris que **la plupart des projets "temps réel" en 42 ne le sont pas vraiment**. La vraie difficulté n'est pas le networking, mais la **gestion de l'état** côté client : qui possède la balle, quand le tour change, comment un score se propage au back-end. J'ai aussi compris pourquoi Docker n'est pas qu'un outil de déploiement mais une **contrainte d'architecture** : séparer web, base et proxy m'a forcé à penser les interfaces entre composants avant d'écrire la première ligne de code.
 
 ---
 

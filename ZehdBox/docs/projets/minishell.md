@@ -146,4 +146,3 @@ La gestion des signaux m'a appris qu'un programme est défini autant par ce qu'i
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Minishell){ .md-button .md-button--primary target="_blank" rel="noopener" }
-[:material-message-text: Contribuer](https://github.com/Lamizana/Minishell/issues){ .md-button target="_blank" rel="noopener" }

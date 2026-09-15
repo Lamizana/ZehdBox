@@ -182,4 +182,3 @@ Ce projet m'a aussi appris la **persévérance** : j'ai écrit trois algorithmes
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Push-swap){ .md-button .md-button--primary target="_blank" rel="noopener" }
-[:material-message-text: Contribuer](https://github.com/Lamizana/Push-swap/issues){ .md-button target="_blank" rel="noopener" }

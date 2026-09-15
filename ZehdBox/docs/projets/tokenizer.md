@@ -149,4 +149,3 @@ Tu veux reproduire ce projet ? Consulte ce tutoriel qui couvre l'intégralité d
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Tokeniser){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [:octicons-verified-24: Contrat sur BscScan](https://testnet.bscscan.com/address/0xB03B454DDa79A522603f2a21471A6bC6B24dDb80){ .md-button target="_blank" rel="noopener" }
-[:material-message-text: Contribuer](https://github.com/Lamizana/Tokeniser/issues){ .md-button target="_blank" rel="noopener" }

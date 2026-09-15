@@ -112,100 +112,33 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 
 ## <span class="h2">Fonctionnalités</span>
 
-<div class="skill-grid">
-
-<div class="skill-card">
-    <span class="skill-card-title">Mode Solo (IA)</span><br>
-    <span class="skill-card-desc"><strong>Partie contre l'ordinateur</strong><br><em>L'IA prédit la trajectoire de la balle avec une marge d'aléatoire pour varier la difficulté. Premier à 3 points gagne.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">1v1 Local</span><br>
-    <span class="skill-card-desc"><strong>Deux joueurs, un clavier</strong><br><em>Joueur 1 : W/S. Joueur 2 : flèches haut/bas. Raquettes pilotées en simultané sur le même écran.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">4 Joueurs</span><br>
-    <span class="skill-card-desc"><strong>Quadra sur un canvas carré</strong><br><em>4 raquettes (gauche/droite/haut/bas) avec murs d'angles. Chaque joueur a sa palette colorée (rouge, bleu, vert, jaune).</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Tournoi 4</span><br>
-    <span class="skill-card-desc"><strong>Bracket à 4 joueurs</strong><br><em>Saisie des 4 noms, demi-finales (p1v2, p3v4), puis finale. Résultat sauvegardé via API DRF.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Multi-langue (FR / EN / ES)</span><br>
-    <span class="skill-card-desc"><strong>3 langues natives</strong><br><em>Interfaces, boutons, règles du jeu, messages de victoire — tout est traduit via un système de balises lang="" et un routeur JS.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Profil & Avatar</span><br>
-    <span class="skill-card-desc"><strong>Gestion du joueur</strong><br><em>Création de profil (nickname, langue, avatar), modification du mot de passe, suppression de compte.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Système d'amis</span><br>
-    <span class="skill-card-desc"><strong>Ajout / suppression d'amis</strong><br><em>Liste de tous les joueurs, ajout par nickname, liste d'amis persistante via ArrayField, statut en ligne / hors ligne.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Scores & Historique</span><br>
-    <span class="skill-card-desc"><strong>Suivi des performances</strong><br><em>Wins / loses, historique détaillé par duel (adversaire, score, date), positions de tournoi — tout exposé via API REST.</em></span>
-</div>
-
-</div>
+- Mode Solo : partie contre l'IA, premier à 3 points
+- 1v1 local : deux joueurs, un clavier (W/S vs flèches)
+- 4 joueurs : quadra sur canvas carré, 4 palettes colorées avec murs d'angles
+- Tournoi 4 : bracket saisi par l'utilisateur, demi-finales + finale
+- Multi-langue : FR, EN, ES — toute l'interface traduite via balises `lang=""` et routeur JS
+- Profil & avatar : création, modification du mot de passe, suppression de compte
+- Système d'amis : ajout par nickname, liste persistante, statut en ligne
+- Scores & historique : wins/loses, détail par duel (adversaire, score, date), positions de tournoi
 
 ---
 
 ## <span class="h2">Problème <span class="h2-sep">|</span> Solution</span>
 
-<div class="skill-grid">
-
-<div class="skill-card">
-    <span class="skill-card-title">Rendu multi-écrans</span><br>
-    <span class="skill-card-desc"><strong>Problème</strong><br><em>Le jeu devait être jouable sur des écrans allant de 320px (mobile) à 1440px+ (desktop) sans distortion.</em><br><strong>Solution</strong><br><em>Calcul dynamique des dimensions Canvas en fonction de <code>window.innerWidth</code> avec 5 paliers, et normalisation de toutes les positions/rayons par <code>canvas.height / 1000</code>.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">Physique de la balle</span><br>
-    <span class="skill-card-desc"><strong>Problème</strong><br><em>La balle accélérait indéfiniment après chaque rebond, rendant le jeu ingérable.</em><br><strong>Solution</strong><br><em>Conservation de la vitesse totale via Pythagore : <code>speed = √(12² − speedy²)</code> à chaque collision, pour que la vitesse reste constante quelle que soit l'angle de rebond.</em></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">IA prédictive</span><br>
-    <span class="skill-card-desc"><strong>Problème</strong><br><em>Une IA qui suit simplement la balle est trop facile à battre.</em><br><strong>Solution</strong><br><em>L'IA calcule le point d'intersection y de la trajectoire de la balle au niveau de sa raquette, puis ajoute un bruit aléatoire (±10px) pour simuler une difficulté imparfaite mais crédible.</em></span>
-</div>
-
-</div>
+| Problème | Solution |
+|----------|----------|
+| Le jeu devait être jouable de 320px (mobile) à 1440px+ sans distortion | Calcul dynamique des dimensions Canvas avec 5 paliers de `window.innerWidth`, normalisation de toutes les positions par `canvas.height / 1000` |
+| La balle accélérait indéfiniment après chaque rebond, rendant le jeu ingérable | Conservation de la vitesse totale via Pythagore : `speed = √(12² − speedy²)` à chaque collision — la vitesse reste constante quelle que soit l'angle |
+| Une IA qui suit simplement la balle est trop facile à battre | L'IA prédit le point d'intersection y de la trajectoire au niveau de sa raquette, puis ajoute un bruit aléatoire (±10px) pour une difficulté imparfaite mais crédible |
 
 ---
 
 ## <span class="h2">Résultats</span>
 
-<div class="skill-grid">
-
-<div class="skill-card">
-    <span class="skill-card-title">4 modes de jeu</span><br>
-    <span class="skill-card-desc">solo, 1v1, 4 joueurs, tournoi — jouables en local</span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">3 langues</span><br>
-    <span class="skill-card-desc">FR, EN, ES — toute l'interface traduite</span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">3 conteneurs Docker</span><br>
-    <span class="skill-card-desc">déploiement en une commande : <code>make create</code></span>
-</div>
-
-<div class="skill-card">
-    <span class="skill-card-title">API REST complète</span><br>
-    <span class="skill-card-desc">scores, tournois, profils, langues, statuts — 5 viewsets DRF</span>
-</div>
-
-</div>
+- 4 modes de jeu fonctionnels (solo, 1v1, 4 joueurs, tournoi)
+- 3 langues complètes (FR, EN, ES)
+- Déploiement Docker en une commande (`make create`)
+- API REST complète : 5 viewsets DRF pour scores, tournois, profils, langues, statuts
 
 ---
 

@@ -48,9 +48,23 @@ Projet réalisé en **binôme** : j'ai conçu le cœur de l'interpréteur, mon b
 
 ## <span class="h2">Architecture</span>
 
-Le shell fonctionne en boucle REPL : lecture de la ligne, parsing, exécution, puis retour à la lecture.
+<figure markdown>
+  ![Architecture de Minishell](images/minishell_architecture.jpeg){.project-architecture}
+  <figcaption>Schéma de l'architecture de Minishell</figcaption>
+</figure>
 
-`parsing()` enchaîne quatre transformations successives sur la chaîne lue :
+Le REPL (**R**ead — **E**val — **P**rint — **L**oop) est le cycle fondamental de tout shell interactif :
+
+| Étape | Rôle | Dans le code |
+| ----- | ---- | ------------ |
+| **R**ead — Lecture | Le shell lit la commande saisie au clavier | `readline()` + `add_history()` |
+| **E**val — Évaluation | La commande est parsée puis exécutée | `parsing()` → `fork()` / `execve()` |
+| **P**rint — Affichage | La sortie s'affiche sur le terminal | `dup2()` vers `STDOUT_FILENO` |
+| **L**oop — Boucle | Le shell réaffiche le prompt et attend la saisie suivante | retour au `while(1)` avec `free()` |
+
+La boucle tourne jusqu'à ce qu'un signal d'arrêt mette fin au programme : commande `exit` ou fin de fichier (`Ctrl+D`).
+
+**L'étape Eval** correspond au pipeline de parsing, qui enchaîne quatre transformations sur la chaîne lue :
 
 1. **Expansion** des variables (`$VAR`, `$?`) hors zones entre quotes simples
 2. **Espacement** des caractères `|` pour les isoler comme tokens

@@ -99,7 +99,7 @@ Un serveur mono-thread : une boucle `select()` unique surveille tous les descrip
 ## <span class="h2">Problème <span class="h2-sep">|</span> Solution</span>
 
 | Problème | Solution |
-|----------|----------|
+| ---------- | ---------- |
 | Recevoir des commandes découpées en plusieurs paquets (test `ctrl+D` du sujet) | Tampon `bufTmp` par client qui agrège les fragments jusqu'au caractère `\n` avant parsing |
 | Gérer des centaines de clients sans jamais bloquer | Une seule boucle `select()` surveille tous les descripteurs ; pas de `fork()` |
 | Des pseudos identiques créent des collisions | Validation `NICK` : unicité, longueur max 9, caractères autorisés, nom `BOT` réservé |
@@ -129,8 +129,9 @@ nc 127.0.0.1 6667    # connexion de test, puis : PASS toto / NICK alice / USER a
 
 ## <span class="h2">Ce que j'ai appris</span>
 
-!!! info "Réflexion"
-    ft_irc m'a appris la discipline d'une **boucle d'événements** : avec un seul `select()`, tout le serveur repose sur la règle *« ne jamais bloquer »* — la moindre lecture bloquante gèle tous les autres clients. J'ai aussi compris que le protocole IRC est une machine à **numériques** (`001`, `475`, `482`…) : chaque cas de refus est un nombre précis, et c'est cette rigueur-là qui rend le serveur compatible avec un vrai client.
+**ft_irc** m'a appris la discipline d'une **boucle d'événements** : avec un seul `select()`, tout le serveur repose sur la règle *« ne jamais bloquer »*, la moindre lecture bloquante gèle tous les autres clients.
+
+J'ai aussi compris que le protocole IRC est une machine à **numériques** (`001`, `475`, `482`…) : chaque cas de refus est un nombre précis, et c'est cette rigueur-là qui rend le serveur compatible avec un vrai client.
 
 ---
 

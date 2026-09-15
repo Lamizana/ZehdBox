@@ -50,6 +50,11 @@ Développeur **solo** sur l'ensemble du projet :
 
 Le jeu se déroule en deux temps : une **validation complète de la carte** avant d'ouvrir la fenêtre, puis une **boucle d'événements** MiniLibX qui redessine les tuiles à chaque déplacement.
 
+<figure markdown>
+  ![Architecture de So Long](images/so_long_architecture.svg){.project-architecture}
+  <figcaption>Schéma de l'architecture de So Long</figcaption>
+</figure>
+
 | Étape | Rôle | Dans le code |
 |-------|------|--------------|
 | **Lecture & vérifs** | Ouverture du fichier `.ber`, extension valide, argc | `open_file()` (`so_long_utils.c`) |

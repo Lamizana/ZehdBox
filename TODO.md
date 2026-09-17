@@ -1,13 +1,13 @@
 # ✅ ZehdBox — Roadmap d'amélioration
 
-> **Document de travail** — Audit réalisé le **07 septembre 2026** · Site vitrine développeur
+> **Document de travail** — Audit initial le **07 septembre 2026**, re-audit le **16 septembre 2026** · Site vitrine développeur
 
 | | |
 | --- | --- |
-| 🏆 **Score global** | 86 / 100 |
+| 🏆 **Score global** | 88 / 100 *(re-audit 16/09)* |
 | 📝 **Statut** | En cours d'amélioration continue |
 | 🚀 **Priorité** | Vitrine / conviction recruteur |
-| 📈 **Progression** | 5 / 15 tâches accomplies |
+| 📈 **Progression** | 4 / 15 tâches accomplies |
 
 ---
 
@@ -46,12 +46,12 @@
 
 ### 🧱 Structure des fiches projets
 
-- [ ] Uniformiser la **densité** et la **structure** des fiches projets
-- ✅ **Modèles riches** : `transcendance.md`, `tokeniser.md`
-- **À harmoniser** :
-  - `minishell.md` : section Compétences en cards (`.soft-skills-grid`) vs liste plate ailleurs
-  - `ft_irc.md` / `minishell.md` / `push_swap.md` : ajouter *Résultat / retombées*
-- **Structure cible** : `Contexte → Compétences → Stack → Défis → Résultat → [Démo live] + [Repo]`
+- [x] Uniformiser la **densité** et la **structure** des fiches projets
+- ✅ **Terminé le 15/09/2026** — les 6 fiches suivent désormais le même template :
+  `Présentation → Contexte → Mon rôle → Architecture → Technologies → Fonctionnalités → Problème | Solution → Résultats → Ce que j'ai appris → Lien`
+- ✅ `minishell.md` utilise `skill-grid` comme les autres (fini le `.soft-skills-grid`)
+- ✅ Sections *Résultats* ajoutées sur `ft_irc.md` / `minishell.md` / `push_swap.md`
+- **Reste à faire** : enrichir la section *Lien* avec `[Démo live]` + `[Repo]` (cf. chantier Démos live)
 
 ### 🏷️ Nom du projet IRC
 
@@ -71,10 +71,10 @@
 
 ### Organisation de la navigation
 
-- [ ] Séparer explicitement dans la nav :
-  - **« Projets »** (vitrine) ← déjà le cas ✅
-  - **« Notes/Veille »** (cours, système, web, github) ← déjà bien séparé ✅
-  - → RAS — la séparation est déjà saine, continuer sur cette lancée
+- [x] Séparer explicitement dans la nav :
+  - **« Projets »** (vitrine) ✅
+  - **« Notes/Veille »** (cours, système, web, github) ✅
+  - → RAS — la séparation est saine, continuer sur cette lancée
 
 ---
 
@@ -97,9 +97,10 @@
 
 ## 🔍 SEO & référencement
 
-- [ ] **Meta Open Graph / Twitter différenciée par page projet** (partage LinkedIn/Twitter)
-  - Vérifier que le plugin social Material génère une carte distincte par page
-  - Penser aux drafts de description + images
+- [x] **Meta Open Graph / Twitter différenciée par page projet** (partage LinkedIn/Twitter)
+  - ✅ Vérifié le 16/09/2026 : le plugin social génère une carte distincte par page
+    (titre + description uniques dans le frontmatter de chaque fiche)
+  - [ ] Penser aux drafts de description + images (visuels propres à chaque fiche)
 - [ ] Confirmer l'indexation du **sitemap** dans Search Console
   - ✅ Soumis dans GSC le 08/09/2026 — état *« Impossible de lire »* à surveiller
   - ℹ️ XML pourtant validé en local (72 URLs, format OK)
@@ -119,7 +120,7 @@
 
 | Chantier | Impact | Pages | Statut |
 | --- | --- | --- | --- |
-| 1 — Chaînage cours Python | ⭐⭐⭐ | 8 | ✅ Terminé |
+| 1 — Chaînage cours Python | ⭐⭐⭐ | 8 | ⬜ À faire *(statut corrigé 16/09)* |
 | 2 — Bloc « Autres projets » | ⭐⭐⭐ | 6 | ⬜ À faire |
 | 3 — Blog & tags | ⭐⭐ | 4 | ⬜ À faire |
 | 4 — Web & cross-links | ⭐⭐ | 4 | ⬜ À faire |
@@ -129,7 +130,11 @@
 
 ### Chantier 1 — Chaînage pédagogique cours Python
 
-- [x] Ajouter en bas de chaque page un bloc **« Continuer la lecture »**
+- [ ] Ajouter en bas de chaque page un bloc **« Continuer la lecture »**
+- ⚠️ **Erreur corrigée le 16/09/2026** : ce chantier était marqué ✅ mais les blocs
+  n'existent **pas dans les fichiers** — seul `exercice-bases.md` pointe vers les exercices.
+  Statut réel : **à faire** sur `mise-en-place`, `variables`, `types`, `operateurs`,
+  `chaines`, `flux-execution`, `instructions-repetitives`, `fonctions`.
 
 | Étape | Page suivante |
 | --- | --- |
@@ -168,7 +173,7 @@
 
 ### 🟢 Chantier 4 — Web & cross-links
 
-- [ ] `react.md` orpheline → lier depuis `cours/javascript` et `web/web2/index`
+- [ ] `react.md` orpheline → lier depuis `web/web2/index` *(note : `cours/javascript` n'existe plus dans la nav)*
 - [ ] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan` (« voir aussi »)
 - [ ] `systeme/nettoyage-disque` → lien vers `linux/index`
 
@@ -180,9 +185,10 @@
 
 ## 🎯 Badges projets
 
-> 📅 **Plan validé** — déploiement prévu **après merge de la PR SEO**.
-
-- [ ] Remplacer les `<span class="tech-tag">` des 6 fiches projets par des badges `shields.io style=for-the-badge`
+- [x] Remplacer les `<span class="tech-tag">` des 6 fiches projets par des badges `shields.io style=for-the-badge`
+- ✅ **Déployé le 15/09/2026** — 6 fiches projets + `projets/index.md` + `about.md` utilisent les badges
+  avec attribut `alt` (accessibilité). Seul `mkdocs/material.md` conserve `.tech-tag` (démo palette, usage légitime).
+- **Reste possible** : nettoyer la classe `.tech-tag` dupliquée dans `custom.css` lors du chantier Design.
 
 | Type | Technos |
 | --- | --- |

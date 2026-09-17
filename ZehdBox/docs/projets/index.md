@@ -17,6 +17,9 @@ icon: material/rocket-launch
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+    <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+    <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+    <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
     <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
     <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity">
@@ -48,6 +51,16 @@ icon: material/rocket-launch
     `Solidity` `BEP-20` `OpenZeppelin`
 
     [:octicons-arrow-right-24: Découvrir](tokenizer.md)
+
+-   :material-chart-line:{ .lg .middle } __Linear Regression__
+
+    ---
+
+    **Projet 42** : régression linéaire entraînée par une **descente de gradient** écrite de zéro — booléenne sur `thetas.json`, prédiction interactive et métriques MSE, MAE, R².
+
+    `Python` `NumPy` `Pandas` `Matplotlib` `Descente de gradient`
+
+    [:octicons-arrow-right-24: Découvrir](linear-regression.md)
 
 -   :material-console:{ .lg .middle } __Minishell__
 

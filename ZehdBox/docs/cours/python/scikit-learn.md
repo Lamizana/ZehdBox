@@ -117,6 +117,7 @@ y_encoded = encoder.fit_transform(y)
 - **Deep Learning**: PyTorch, TensorFlow
 - **XGBoost**: Pour des performances optimisées
 - **Feature Engineering**: Créer de nouvelles features
+- **[Régression linéaire de zéro](linear-regression.md)** : avant d'utiliser `LinearRegression`, code ton propre modèle — moindres carrés et descente de gradient
 
 ---
 

@@ -15,6 +15,7 @@ nav:
   - Projets:
       - projets/index.md
       - Tokenizer: projets/tokenizer.md
+      - Linear Regression: projets/linear-regression.md
       - Transcendance: projets/transcendance.md
       - Minishell: projets/minishell.md
       - ft_irc: projets/ft_irc.md
@@ -57,6 +58,7 @@ nav:
                   - Cours Météo: cours/python/pandas/tutoriel-meteo.md
                   - Exercices Météo: cours/python/pandas/exercice-meteo.md
               - Scikit-learn: cours/python/scikit-learn.md
+              - Régression linéaire: cours/python/linear-regression.md
 
       - MkDocs:
           - mkdocs/index.md

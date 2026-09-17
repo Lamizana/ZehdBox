@@ -22,7 +22,7 @@ icon: material/tag
 | :material-tag: smart-contract | [Tokenizer](../projets/tokenizer/) |
 | :material-tag: web3 | [Tokenizer](../projets/tokenizer/) |
 | :material-tag: django | [Transcendance](../projets/transcendance/) |
-| :material-tag: python | [Transcendance](../projets/transcendance/) |
+| :material-tag: python | [Transcendance](../projets/transcendance/) · [Linear Regression](../projets/linear-regression/) |
 | :material-tag: docker | [Transcendance](../projets/transcendance/) |
 | :material-tag: full-stack | [Transcendance](../projets/transcendance/) |
 | :material-tag: web | [Transcendance](../projets/transcendance/) |
@@ -38,6 +38,13 @@ icon: material/tag
 | :material-tag: tri | [Push_swap](../projets/push_swap/) |
 | :material-tag: jeu | [so_long](../projets/so_long/) |
 | :material-tag: minilibx | [so_long](../projets/so_long/) |
+| :material-tag: machine-learning | [Linear Regression](../projets/linear-regression/) |
+| :material-tag: regression | [Linear Regression](../projets/linear-regression/) |
+| :material-tag: datascience | [Linear Regression](../projets/linear-regression/) |
+| :material-tag: numpy | [Linear Regression](../projets/linear-regression/) |
+| :material-tag: pandas | [Linear Regression](../projets/linear-regression/) |
+| :material-tag: matplotlib | [Linear Regression](../projets/linear-regression/) |
+| :material-tag: gradient-descent | [Linear Regression](../projets/linear-regression/) |
 
 ---
 

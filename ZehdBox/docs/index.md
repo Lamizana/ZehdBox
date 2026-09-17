@@ -48,6 +48,14 @@ icon: material/home
 
     [:octicons-arrow-right-24: Découvrir](projets/tokenizer.md)
 
+- :material-chart-line:{ .lg .middle } __Linear Regression__
+
+    ---
+
+    **Machine learning** : Premier modèle entraîné par une **descente de gradient** codée de zéro.
+
+    [:octicons-arrow-right-24: Découvrir](projets/linear-regression.md)
+
 </div>
 
 [:fontawesome-solid-arrow-right: Voir tous les projets](projets/index.md){ .md-button .md-button--primary }

@@ -15,6 +15,7 @@ nav:
   - Projets:
       - projets/index.md
       - Tokenizer: projets/tokenizer.md
+      - Linear Regression: projets/linear-regression.md
       - Transcendance: projets/transcendance.md
       - Minishell: projets/minishell.md
       - ft_irc: projets/ft_irc.md

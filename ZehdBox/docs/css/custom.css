@@ -11,7 +11,7 @@
 
 /* Titre secondaire */
 .h2 {
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     color: var(--md-primary-fg-color) !important;
 }
 

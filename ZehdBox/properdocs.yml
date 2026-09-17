@@ -58,6 +58,7 @@ nav:
                   - Cours Météo: cours/python/pandas/tutoriel-meteo.md
                   - Exercices Météo: cours/python/pandas/exercice-meteo.md
               - Scikit-learn: cours/python/scikit-learn.md
+              - Régression linéaire: cours/python/linear-regression.md
 
       - MkDocs:
           - mkdocs/index.md

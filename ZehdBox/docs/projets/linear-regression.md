@@ -53,7 +53,14 @@ Le cœur du projet est la **descente de gradient** : un algorithme d'optimisatio
 **L'objectif** : vivre le premier algorithme d'apprentissage automatique de bout en bout, sans boîte noire.
 
 !!! warning "La règle du jeu"
-    Aucune triche possible : `numpy.polyfit` **et** `scikit-learn` sont **interdits**. Tout est implémenté à la main : la normalisation, les gradients, les métriques, les graphiques.
+    Aucune triche possible : `numpy.polyfit` **et** `scikit-learn` sont **interdits**.
+
+    Tout est implémenté à la main :
+
+    - La normalisation.
+    - Les gradients.
+    - Les métriques.
+    - Les graphiques.
 
 Le programme final se compose de **deux scripts qui communiquent** :
 

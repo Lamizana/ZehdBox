@@ -39,6 +39,14 @@ description: "Les bibliothèques Python : NumPy pour le calcul numérique, Panda
 
     [:octicons-arrow-right-24: Scikit-learn](../scikit-learn.md)
 
+-   :material-chart-line:{ .lg .middle } __Régression linéaire__
+
+    ---
+
+    Ton premier modèle de machine learning codé de zéro : moindres carrés et descente de gradient.
+
+    [:octicons-arrow-right-24: Le tutoriel](../linear-regression.md)
+
 </div>
 
 ---
@@ -48,6 +56,7 @@ description: "Les bibliothèques Python : NumPy pour le calcul numérique, Panda
 1. Commencez par **[NumPy](../numpy/index.md)** : ses tableaux servent partout ailleurs.
 2. Enchaînez avec **[Pandas](../pandas/index.md)** et ses deux projets pratiques (cours + exercices météo).
 3. Terminez par **[Scikit-learn](../scikit-learn.md)** pour le machine learning.
+4. Approfondissez avec la **[régression linéaire](../linear-regression.md)** : l'algorithme écrit à la main, pas à pas.
 
 !!! info "Prérequis"
     Les bibliothèques supposent les **[bases de Python](../bases/index.md)** et les **[fonctions](../fonctions.md)** acquises.

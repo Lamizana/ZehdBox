@@ -9,8 +9,8 @@ categories:
   - 📚 Culture
 tags:
   - communication
-  - écoute
-  - relations humaines
+  - ecoute
+  - relations-humaines
 pin: true
 
 ---

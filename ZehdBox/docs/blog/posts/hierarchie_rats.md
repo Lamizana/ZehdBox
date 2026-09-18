@@ -10,8 +10,8 @@ categories:
 tags:
   - rats
   - stress
-  - comportement animal
-  - éthologie
+  - comportement-animal
+  - ethologie
 
 ---
 

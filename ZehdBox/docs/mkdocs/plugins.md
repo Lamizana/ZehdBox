@@ -115,7 +115,7 @@ Dans le frontmatter d'une page :
 ---
 tags:
   - python
-  - débutant
+  - debutant
 ---
 ```
 

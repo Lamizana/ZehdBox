@@ -4,7 +4,7 @@ description: "ft_irc, serveur IRC en C++ (RFC 2810-2813) : sockets TCP, un seul 
 tags:
   - projet
   - cpp
-  - réseau
+  - reseaux
   - sockets
   - serveur
 ---

@@ -6,7 +6,7 @@ tags:
   - c
   - unix
   - shell
-  - système
+  - systeme
 ---
 
 # <span class="h1">Minishell</span>

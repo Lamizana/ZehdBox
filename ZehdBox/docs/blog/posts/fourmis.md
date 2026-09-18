@@ -9,8 +9,8 @@ categories:
   - 🧪 Science
 tags:
   - insectes
-  - société animale
-  - communication animale
+  - societe-animale
+  - communication-animale
 
 ---
 

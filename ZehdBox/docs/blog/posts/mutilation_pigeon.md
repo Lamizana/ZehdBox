@@ -9,8 +9,8 @@ categories:
   - 📚 Culture
 tags:
   - environnement
-  - faune urbaine
-  - déchets
+  - faune-urbaine
+  - dechets
 pin: true
 
 ---

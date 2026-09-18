@@ -135,8 +135,10 @@
 
   /* Famille C : bloc de tests assert (admonition "example" dont le titre
      contient "Tests"), cherche dans la fenetre apres le declencheur.
-     NB : Material rend `??? example` sous forme de <details class="example">,
-     et `!!! example` sous forme de <div class="admonition example">. */
+     NB : Material rend `??? example` sous forme de <details class="example">
+     (titre dans <summary>, SANS classe admonition-title), et `!!! example`
+     sous forme de <div class="admonition example"> (titre dans
+     div.admonition-title). On couvre les deux. */
   function findTests(triggerEl) {
     var el = triggerEl.nextElementSibling;
     while (el && !isSectionEnd(el)) {
@@ -144,7 +146,8 @@
         el.classList &&
         el.classList.contains("example")
       ) {
-        var title = el.querySelector(".admonition-title");
+        var title = el.querySelector(".admonition-title") ||
+                    el.querySelector("summary");
         var titleText = headingText(title || el);
         if (/test/i.test(titleText)) {
           var pre = el.querySelector("pre code");

@@ -52,12 +52,48 @@ Depuis la Phase 2, les pages d'exercices embarquent un **bac à sable Python ex�
 - cliquer **Vérifier** pour comparer sa sortie avec le résultat attendu ;
 - cliquer **Charger la solution** pour se débloquer.
 
-**Familles de structure prises en charge** (le runner détecte les deux sans configuration) :
+**Familles de structure prises en charge** (le runner détecte les trois sans configuration) :
 
 | Famille | Déclencheur | Oracle (résultat attendu) | Solution |
 |---|---|---|---|
 | **A — admonitions** (recommandée) | `!!! question "Énoncé"` | `!!! success "Résultat attendu"` | `???- tip "Solution"` |
 | **B — titres `###`** (pages existantes) | `### Énoncé` | `### Résultat attendu` + bloc code | `???- tip "Solution"` |
+| **C — fonctions & tests** | `### Énoncé` | `??? example "Tests"` (lignes `assert`) | `???- tip "Solution"` |
+
+**Famille C — bloc d'exercice « fonction »** (validation par tests, type France-IOI) :
+
+```markdown
+## <span class="h2">Exercice N : [Titre]</span>
+
+### Énoncé
+
+[Consigne : écrire une fonction `[nom]([param])` qui ...]
+
+| Niveau | Notions | Durée estimée |
+|:---:|:---|:---:|
+| [🟢 Facile / 🟡 Moyen] | `def`, `return` | [N] min |
+
+```python
+def [nom]([param]):
+    pass  # à compléter
+```
+
+??? example "Tests"
+    ```python
+    assert [nom]([cas 1]) == [résultat 1]
+    assert [nom]([cas 2]) == [résultat 2]
+    ```
+
+???- tip "Solution"
+    ```python
+    [solution]
+    ```
+```
+
+**Règles spécifiques de la Famille C** :
+- Le **starter** téléchargeable est le **premier bloc de code** situé entre `### Énoncé` et le bloc Tests. Ne placez *aucun* autre bloc de code (ni admonition `details`) dans cette fenêtre, sinon le mauvais fichier est téléchargé.
+- Chaque test est une ligne `assert ...` : lignes vides et commentaires `#` ignorés. Un échec n'interrompt pas la suite → rendu test par test (`PASS` / `FAIL`).
+- L'énoncé doit rester **libre de `input()`** : les exercices fonction sont exécutés sans stdin.
 
 **Règles d'écriture du contenu** (pour que la vérification automatique fonctionne) :
 

@@ -83,8 +83,8 @@ tags:
 
 <div class="grid cards" markdown>
 
-- :octicons-arrow-right-24: **[Fin du parcours → revenir au sommaire](index.md)**
+- :octicons-arrow-right-24: **[Continuer vers les fonctions →](exercice-fonctions.md)**
 
-    Bravo, vous avez terminé le parcours d'exercices de base !
+    Passez aux fonctions Python et à la validation par tests `assert`.
 
 </div>

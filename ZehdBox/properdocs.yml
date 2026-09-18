@@ -45,6 +45,7 @@ nav:
                       - Chaînes de caractères: cours/python/exercices/exercice-string.md
                       - Nombres: cours/python/exercices/exercice-nombres.md
                       - Listes & dictionnaires: cours/python/exercices/exercice-structures.md
+                  - Fonctions (tests assert): cours/python/exercices/exercice-fonctions.md
           - Fonctions: cours/python/fonctions.md
           - Django:
               - cours/python/django/index.md

@@ -1,6 +1,6 @@
 ---
 title: Exercices Python
-description: "Parcours d'exercices Python progressif : variables, opérateurs, types, nombres, chaînes, listes et dictionnaires. BAC interactif dans le navigateur."
+description: "Parcours d'exercices Python progressif : variables, opérateurs, types, nombres, chaînes, listes et dictionnaires, fonctions. BAC interactif dans le navigateur."
 tags:
   - exercice
   - python
@@ -9,7 +9,7 @@ tags:
 # <span class="h1">Exercices Python</span>
 
 <p class="intro">
-    Un parcours progressif de <strong>21 exercices</strong> pour consolider les bases de Python, à résoudre dans la page ou en local.
+    Un parcours progressif de <strong>25 exercices</strong> pour consolider les bases de Python, à résoudre dans la page ou en local.
 </p>
 
 ---
@@ -21,6 +21,7 @@ Chaque exercice est livré avec un **bac à sable Python intégré** à la page 
 - **Éditeur** : écrivez votre solution puis lancez-la d'un clic.
 - **Exécuter** : affiche la sortie de votre programme, ainsi que les éventuelles erreurs.
 - **Vérifier** : compare automatiquement votre sortie au résultat attendu (quand celui-ci est déterministe).
+- **Tester** : pour les exercices « Fonctions », valide votre fonction avec des tests `assert` (statut test par test).
 - **Charger la solution** : si vous êtes bloqué, place la solution de l'exercice dans l'éditeur pour l'étudier.
 
 !!! tip "Mode local"
@@ -43,6 +44,7 @@ Chaque exercice est livré avec un **bac à sable Python intégré** à la page 
 | 4 | [**Chaînes de caractères**](exercice-string.md) | `upper()`, `strip()`, f-strings, tranchage | 🟡 | 45 min |
 | 5 | [**Nombres**](exercice-nombres.md) | opérations, variables, f-strings | 🟢 | 10 min |
 | 6 | [**Listes et dictionnaires**](exercice-structures.md) | listes, dicts, indexation | 🟡 | 20 min |
+| 7 | [**Fonctions**](exercice-fonctions.md) | `def`, `return`, tests `assert` | 🟡 | 25 min |
 
 [:octicons-arrow-right-24: Démarrer le parcours](exercice-variables.md){ .md-button .md-button--primary }
 

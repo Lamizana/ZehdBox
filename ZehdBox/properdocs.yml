@@ -6,7 +6,7 @@ site_description: "Cours de programmation, projets 42, tutoriels Python, JavaScr
 
 # ====================== FICHIERS EXCLUS DU BUILD =============================
 exclude_docs: |
-  cours/python/_template-exercice.md
+  cours/python/exercices/_template-exercice.md
 
 # =============================== NAVIGATION ==================================
 nav:
@@ -35,11 +35,11 @@ nav:
               - Chaînes: cours/python/bases/chaines.md
               - Flux d'exécution: cours/python/bases/flux-execution.md
               - Instructions répétitives: cours/python/bases/instructions-repetitives.md
-              - Exercices de base: cours/python/bases/exercice-bases.md
           - Exercices:
               - cours/python/exercices/index.md
-              - Nombres: cours/python/exercices/nombres.md
-              - Chaînes de caractères: cours/python/exercices/string.md
+              - Bases Python: cours/python/exercices/exercice-bases.md
+              - Nombres: cours/python/exercices/exercice-nombres.md
+              - Chaînes de caractères: cours/python/exercices/exercice-string.md
           - Fonctions: cours/python/fonctions.md
           - Django:
               - cours/python/django/index.md

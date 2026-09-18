@@ -81,7 +81,7 @@ tags:
 
     15 exercices pratiques pour valider les bases du langage.
 
-    [:octicons-arrow-right-24: Exercices](exercice-bases.md)
+    [:octicons-arrow-right-24: Exercices](../exercices/exercice-bases.md)
 
 </div>
 

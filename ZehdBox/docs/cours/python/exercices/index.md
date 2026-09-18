@@ -35,8 +35,8 @@ Chaque exercice est livré avec un **bac à sable Python intégré** à la page 
 
 ## <span class="h2">Au programme</span>
 
-- [**Les bases**](../bases/exercice-bases.md) — variables, types, opérateurs, branchements et boucles (15 exercices).
-- [**Nombres**](nombres.md) — opérations arithmétiques et manipulations numériques.
-- [**Chaînes de caractères**](string.md) — manipulation du texte en Python.
+- [**Les bases**](exercice-bases.md) — variables, types, opérateurs, branchements et boucles (15 exercices).
+- [**Nombres**](exercice-nombres.md) — opérations arithmétiques et manipulations numériques.
+- [**Chaînes de caractères**](exercice-string.md) — manipulation du texte en Python.
 - [**NumPy — Analyseur de dés**](../numpy/exercice-dice.md) — simulation, statistiques et probabilités avec NumPy.
 - [**Pandas — Exercices météo**](../pandas/exercice-meteo.md) — DataFrames, filtrage et API temps réel avec Pandas.

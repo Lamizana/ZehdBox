@@ -14,13 +14,13 @@ nav:
 
   - Projets:
       - projets/index.md
-      - Tokenizer: projets/tokenizer.md
-      - Linear Regression: projets/linear-regression.md
-      - Transcendance: projets/transcendance.md
+      - So Long: projets/so_long.md
+      - Push Swap: projets/push_swap.md
       - Minishell: projets/minishell.md
       - ft_irc: projets/ft_irc.md
-      - Push Swap: projets/push_swap.md
-      - So Long: projets/so_long.md
+      - Transcendance: projets/transcendance.md
+      - Linear Regression: projets/linear-regression.md
+      - Tokenizer: projets/tokenizer.md
 
   - Programmation:
       - cours/index.md

@@ -22,7 +22,7 @@ Un BlockExplorer est **un moteur de recherche** qui permet à ses utilisateurs d
 facilement les transactions qui transitent sur la blockchain.
 
 !!! info "Informations"
-    BscScan est développé par la même équipe qu'Etherscan (l'explorateur de référence
+    BscScan est développé par la même équipe qu'[Etherscan](etherscan.md) (l'explorateur de référence
     d'Ethereum) et reprend exactement les mêmes fonctionnalités, adaptées à la BNB Chain.
 
 Il existe une version dédiée au réseau de test :

@@ -160,3 +160,8 @@ Actuellement, dans le cas du Bitcoin, cette électricité est principalement iss
 ---
 
 > Lien vers source: [cryptoast](https://cryptoast.fr/qu-est-ce-que-la-blockchain/){ target="_blank" rel="noopener" }
+
+---
+
+!!! abstract "Mettre en pratique"
+    Envie de concrétiser ces concepts ? Le [tutoriel Tokenizer](tokenizer.md) explique pas à pas comment **déployer votre premier token BEP-20** sur la BNB Smart Chain.

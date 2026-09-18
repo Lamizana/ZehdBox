@@ -101,3 +101,8 @@ Nous allons voir ensemble les différentes informations contenues dans l'onglet 
 ---
 
 > Lien vers source: [cryptoast](https://cryptoast.fr/tutoriel-etherscan/){ target="_blank" rel="noopener" }
+
+---
+
+!!! info "Et sur la BNB Smart Chain ?"
+    Pour la BNB Chain, l'explorateur équivalent s'appelle **BscScan** (même équipe de développement) : [découvrir BscScan](bscscan.md).

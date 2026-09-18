@@ -78,3 +78,8 @@ Les fourmis fournissent un exemple d'animal social qui a réussi. Elles ont prat
 Leur force réside dans leur résilience : une fourmi seule est fragile, mais la colonie est virtuellement immortelle.
 
 Elles semblent fonctionner sans se gêner entre elles et en parfaite symbiose avec la planète...
+
+---
+
+???+ abstract "À lire aussi"
+    [Les puces : l'autolimitation et le conditionnement comportemental](puces.md)

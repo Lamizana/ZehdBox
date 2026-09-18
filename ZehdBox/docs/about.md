@@ -239,9 +239,3 @@ icon: material/account
 </div>
 
 ---
-
-## <span class="h2">Me Contacter</span>
-
-Toutes mes coordonnées sont réunies sur une page dédiée.
-
-[:material-email: Prendre contact](contact.md){ .md-button .md-button--primary }

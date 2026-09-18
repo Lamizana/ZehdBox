@@ -22,3 +22,7 @@ icon: material/language-javascript
     utilisateurs, frameworks front-end et API.
 
     Découvrez ici mes cours et notes, notamment sur le framework **React**.
+
+---
+
+[:material-language-javascript: Découvrir le framework React](react.md){ .md-button }

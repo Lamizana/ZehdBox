@@ -126,6 +126,14 @@ icon: material/home
 
     [:octicons-arrow-right-24: Strudel](strudel/index.md)
 
+- :material-blog:{ .lg .middle } __Blog__
+
+    ---
+
+    Articles sur la culture, la science et la réflexion personnelle.
+
+    [:octicons-arrow-right-24: Le blog](blog/index.md)
+
 </div>
 
 ---

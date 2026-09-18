@@ -133,20 +133,20 @@
 | Chantier | Impact | Statut |
 | --- | --- | --- |
 | 1 - Chaînage cours Python « Continuer la lecture » | Élevé | Terminé |
-| 2 - Bloc « Autres projets » en bas des fiches | Élevé | À faire |
-| 3 - Réactiver blog et tags (home + cross-links articles) | Moyen | À faire |
-| 4 - Web & cross-links (`react.md`, web3, système) | Moyen | À faire |
-| 5 - Strudel : chaînage intro → sons → notes → patterns → effets | Faible | À faire |
+| 2 - Bloc « Autres projets » en bas des fiches | Élevé | ~~Annulé~~ → **remplacé par réordonnancement de la nav Projets** (le footer `navigation.footer` chaîne déjà chaque page) · fait le 18/09 |
+| 3 - Réactiver blog et tags (home + cross-links articles) | Moyen | Fait le 18/09 |
+| 4 - Web & cross-links (`react.md`, web3, système) | Moyen | Fait le 18/09 |
+| 5 - Strudel : chaînage intro → sons → notes → patterns → effets | Faible | Sans objet (la nav Strudel est déjà dans cet ordre → footer) |
 
 ### Détails
 
-- [ ] Encart « Autres projets » en bas des 6 fiches (fi. `transcendance` → `ft_irc`, `push_swap`, index, etc.)
-- [ ] Ajouter une **carte Blog** dans les grid cards de la home (aujourd'hui le blog n'est pas mis en avant)
-- [ ] `blog/index.md` → lien « Explorer par tags » vers `tags.md`
-- [ ] Cross-links articles : `fourmis` ↔ `puces` ; `mutilation_pigeon` ↔ `hierarchie_rats`
-- [ ] `react.md` : lier depuis `cours/javascript` et `web/web2/index`
-- [ ] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan`
-- [ ] `systeme/nettoyage-disque` → lien vers `systeme/linux/index`
+- [x] ~~Encart « Autres projets » en bas des 6 fiches~~ → **non retenu** (redondant avec `navigation.footer`) - remplacé par le réordonnancement de la nav Projets le 18/09/2026 : `index → so_long → push_swap → minishell → ft_irc → transcendance → linear-regression → tokenizer` (montée en complexité, parcours sensé via Précédent/Suivant)
+- [x] Ajouter une **carte Blog** dans les grid cards de la home - fait le 18/09/2026
+- [x] `blog/index.md` → lien « Explorer par tags » vers `tags.md` - fait le 18/09/2026
+- [x] Cross-links articles : `fourmis` ↔ `puces` ; `mutilation_pigeon` ↔ `hierarchie_rats` - fait le 18/09/2026 (bloc « À lire aussi » en fin d'article)
+- [x] `react.md` : lier depuis `web/web2/index` - fait le 18/09/2026 (le dossier `cours/javascript` reste à créer : y ajouter un lien vers `react.md` quand il existera)
+- [x] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan` - fait le 18/09/2026
+- [x] `systeme/nettoyage-disque` → lien vers `systeme/linux/index` - fait le 18/09/2026
 - [x] Lier `tags.md` depuis du contenu : les chips de toutes les pages taggées pointent vers `tags/#tag:x` (marqueur `<!-- material/tags -->`) - fait le 18/09/2026
 
 ---

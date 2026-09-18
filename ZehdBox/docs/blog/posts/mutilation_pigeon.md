@@ -25,3 +25,8 @@ Toutefois, une étude publié par une équipe de chercheurs du Centre d'Ecologie
 Les pigeons estropiés ne sont pas dangereux pour l'homme, **ils sont en fait les victimes des résidues de l'activité humaine et urbaine**.
 
 Une meilleur gestion de nos déchets est necessaire pour limiter les souffrances imposées à la faune des villes, concluent les chercheurs.
+
+---
+
+???+ abstract "À lire aussi"
+    [Hiérarchie chez les rats : l'expérience de Desor](hierarchie_rats.md)

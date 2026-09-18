@@ -24,6 +24,8 @@ tags:
 !!! abstract "Voir aussi"
     Ce tutoriel est lié à la [fiche projet Tokenizer](../../projets/tokenizer.md){ target="_blank" rel="noopener" } qui présente le résultat final, la stack technique et les compétences acquises.
 
+    Les fondamentaux de la technologie sont expliqués en détail dans le cours [Blockchain](blockchain.md).
+
 ---
 
 ## <span class="h2">A. Comprendre avant de coder</span>

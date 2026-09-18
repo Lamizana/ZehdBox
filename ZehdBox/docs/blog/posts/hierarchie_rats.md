@@ -61,3 +61,8 @@ Les Chercheurs de Nancy 2 prolongèrent l'expérience en analysant par la suite 
 
 !!! note "Vidéos de l'expérience"
     - [Fait comme des Rats](https://www.canal-u.tv/chaines/cerimes/faits-comme-des-rats-grand-prix-du-ffup){ target="_blank" rel="noopener" }
+
+---
+
+???+ abstract "À lire aussi"
+    [L'homme et ses déchets : mutilation des pattes de pigeons](mutilation_pigeon.md)

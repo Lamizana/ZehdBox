@@ -163,7 +163,6 @@ theme:
     - content.code.copy
     - header.autohide
     - content.tooltips
-    - content.action.edit
 
   font:
     text: Roboto

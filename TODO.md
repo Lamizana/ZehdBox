@@ -120,7 +120,7 @@
   - `So Long` OK · `ft_irc` : H1 `FT_IRC` → `ft_irc` corrigé
 - [x] Évaluer si le tab **« Programmation »** (Python + MkDocs + Strudel) devient trop chargé → déplacer `Strudel` et `MkDocs` dans des onglets dédiés - fait le 18/09/2026
   - **Principe** : `Programmation` = hub des **langages** (Python aujourd'hui, C/C++ à venir) ; `Strudel` et `MkDocs` sont des onglets autonomes placés après `Web`
-- [x] Ajouter la feature `content.action.edit` (bouton « Modifier cette page ») - fait le 18/09/2026 (`edit_uri` était déjà configuré)
+- [x] ~~Ajouter la feature `content.action.edit`~~ (bouton « Modifier cette page ») : activée puis **retirée le 18/09/2026** (choix éditorial — `edit_uri` reste configuré pour une réactivation en 1 ligne)
 
 ---
 

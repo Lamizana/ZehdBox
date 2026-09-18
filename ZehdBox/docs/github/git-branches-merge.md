@@ -1,6 +1,10 @@
 ---
 title: Branches, Fusion & Pull Requests
 description: "Gérer les branches, résoudre les conflits de fusion et travailler avec les Pull Requests sur GitHub."
+tags:
+  - cours
+  - git
+  - branches
 ---
 
 # <span class="h1">Branches, Fusion & Pull Requests</span>

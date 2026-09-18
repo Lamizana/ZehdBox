@@ -1,6 +1,10 @@
 ---
 title: Linux
 description: "Connaissances Linux : commandes, administration et astuces du système."
+tags:
+  - cours
+  - linux
+  - administration
 ---
 
 # <span class="h1">Linux</span>

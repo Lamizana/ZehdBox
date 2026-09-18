@@ -1,6 +1,9 @@
 ---
 title: Système
 description: "Connaissances systèmes : Linux, Windows, gestion de disque et administration."
+tags:
+  - cours
+  - systeme
 icon: material/server
 ---
 

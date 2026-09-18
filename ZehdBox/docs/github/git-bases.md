@@ -1,6 +1,10 @@
 ---
 title: Git & GitHub - Les bases
 description: "Présentation de Git et GitHub, installation, création de dépôt, cycle de travail et bonnes pratiques de push."
+tags:
+  - cours
+  - git
+  - bases
 ---
 
 # <span class="h1">Git & GitHub - Les bases</span>

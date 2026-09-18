@@ -1,6 +1,6 @@
 ---
-title: Exercices
-description: "Exercices pratiques en Python, à résoudre dans le navigateur (bac à sable interactif) ou avec Python installé en local : bases, nombres, chaînes, NumPy, Pandas."
+title: Exercices Python
+description: "Parcours d'exercices Python progressif : variables, opérateurs, types, nombres, chaînes, listes et dictionnaires. BAC interactif dans le navigateur."
 tags:
   - exercice
   - python
@@ -9,7 +9,7 @@ tags:
 # <span class="h1">Exercices Python</span>
 
 <p class="intro">
-    Des exercices progressifs pour consolider vos acquis, <strong>directement dans la page</strong> ou en environnement local Python.
+    Un parcours progressif de <strong>21 exercices</strong> pour consolider les bases de Python, à résoudre dans la page ou en local.
 </p>
 
 ---
@@ -33,10 +33,24 @@ Chaque exercice est livré avec un **bac à sable Python intégré** à la page 
 
 ---
 
-## <span class="h2">Au programme</span>
+## <span class="h2">Parcours</span>
 
-- [**Les bases**](exercice-bases.md) — variables, types, opérateurs, branchements et boucles (15 exercices).
-- [**Nombres**](exercice-nombres.md) — opérations arithmétiques et manipulations numériques.
-- [**Chaînes de caractères**](exercice-string.md) — manipulation du texte en Python.
+| Étape | Page | Notions | Niveau | Durée |
+|:---:|:---|:---|:---:|:---:|
+| 1 | [**Variables**](exercice-variables.md) | affectation, `print()` | 🟢 | 10 min |
+| 2 | [**Opérateurs**](exercice-operateurs.md) | arithmétique, comparaison, logique | 🟢 | 25 min |
+| 3 | [**Types de données**](exercice-types.md) | `int`, `float`, `str`, `bool` | 🟢 | 10 min |
+| 4 | [**Nombres**](exercice-nombres.md) | opérations, variables, f-strings | 🟢 | 10 min |
+| 5 | [**Chaînes de caractères**](exercice-string.md) | `upper()`, `strip()`, f-strings, tranchage | 🟡 | 45 min |
+| 6 | [**Listes et dictionnaires**](exercice-structures.md) | listes, dicts, indexation | 🟡 | 20 min |
+
+[:octicons-arrow-right-24: Démarrer le parcours](exercice-variables.md){ .md-button .md-button--primary }
+
+---
+
+## <span class="h2">Projets appliqués</span>
+
+Une fois le parcours terminé, passez aux **projets** qui appliquent Python à des cas concrets :
+
 - [**NumPy — Analyseur de dés**](../numpy/exercice-dice.md) — simulation, statistiques et probabilités avec NumPy.
 - [**Pandas — Exercices météo**](../pandas/exercice-meteo.md) — DataFrames, filtrage et API temps réel avec Pandas.

@@ -1,6 +1,6 @@
 ---
 title: Exercices - Chaînes de caractères
-description: "Exercices pratiques sur les chaînes de caractères (strings) en Python."
+description: "Exercices pratiques sur les chaînes de caractères (strings) en Python : méthodes, f-strings, tranchage."
 tags:
   - exercice
   - python
@@ -10,27 +10,14 @@ tags:
 # <span class="h1">Exercices sur les chaînes de caractères</span>
 
 <p class="intro">
-    Découverte des <strong>chaînes de caractères</strong> en Python.
+    Huit exercices pour découvrir les <strong>chaînes de caractères</strong> : méthodes, f-strings, tranchage.
 </p>
 
 ---
 
-## <span class="h2">Présentation</span>
+## <span class="h2">Au programme</span>
 
-<div class="presentation">
-    <p>
-        Cette page contient quelques exercices simples pour la compréhension et l'utilisation des chaînes de caractères.
-    </p>
-    <p>
-        Les chaînes de caractères, plus communément appelées <strong>strings</strong>, sont une part importante dans la compréhension de la programmation.
-    </p>
-    <p>
-        Pour chaque exercice, je fournis le sujet et la réponse.
-        Cela va sans dire qu'il est préférable <strong>d'essayer par soi-même avant de regarder la réponse ou d'aller sur ChatGPT</strong>.
-    </p>
-</div>
-
----
+- [**Exercices précédents : Nombres**](exercice-nombres.md)
 
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
@@ -202,12 +189,113 @@ tags:
 
 ---
 
+## <span class="h2">Exercice 5 : Chaînes - Majuscules</span>
+
+!!! question "Énoncé"
+    Convertissez "bonjour" en majuscules.
+
+    | Niveau | Notions | Durée estimée |
+    |:---:|:---|:---:|
+    | 🟢 Facile | `upper()` | 5 min |
+
+???- note "💡 Indices"
+    - La méthode `upper()` sur une chaîne renvoie sa version en majuscules.
+
+!!! success "Résultat attendu"
+    ```
+    BONJOUR
+    ```
+
+???- tip "Solution"
+    ```python
+    texte = "bonjour"
+    print(texte.upper())
+    ```
+
+---
+
+## <span class="h2">Exercice 6 : Chaînes - Recherche</span>
+
+!!! question "Énoncé"
+    Trouvez la position de "mon" dans "Bonjour tout le monde".
+
+    | Niveau | Notions | Durée estimée |
+    |:---:|:---|:---:|
+    | 🟢 Facile | `find()` | 5 min |
+
+???- note "💡 Indices"
+    - La méthode `find()` renvoie l'index (à partir de 0) de la première occurrence trouvée.
+
+!!! success "Résultat attendu"
+    ```
+    8
+    ```
+
+???- tip "Solution"
+    ```python
+    texte = "Bonjour tout le monde"
+    print(texte.find("mon"))
+    ```
+
+---
+
+## <span class="h2">Exercice 7 : F-String</span>
+
+!!! question "Énoncé"
+    Utilisez une f-string pour afficher "J'ai 25 ans".
+
+    | Niveau | Notions | Durée estimée |
+    |:---:|:---|:---:|
+    | 🟢 Facile | f-strings | 5 min |
+
+???- note "💡 Indices"
+    - Placez la valeur dans une variable, puis insérez-la entre accolades `{}` dans une f-string.
+
+!!! success "Résultat attendu"
+    ```
+    J'ai 25 ans
+    ```
+
+???- tip "Solution"
+    ```python
+    age = 25
+    print(f"J'ai {age} ans")
+    ```
+
+---
+
+## <span class="h2">Exercice 8 : Tranchage</span>
+
+!!! question "Énoncé"
+    Extrayez "py" de "Python".
+
+    | Niveau | Notions | Durée estimée |
+    |:---:|:---|:---:|
+    | 🟡 Moyen | tranchage `[a:b]` | 5 min |
+
+???- note "💡 Indices"
+    - Le tranchage `texte[a:b]` extrait les caractères de l'index `a` inclus à l'index `b` exclu.
+    - "Python" vaut : `P`(0) `y`(1) `t`(2) `h`(3) `o`(4) `n`(5) → `"py"` correspond aux index 2 et 3.
+
+!!! success "Résultat attendu"
+    ```
+    py
+    ```
+
+???- tip "Solution"
+    ```python
+    texte = "Python"
+    print(texte[2:4])  # py
+    ```
+
+---
+
 !!! note "Source"
-    Exercices inspirés du manuel *Petite leçon de python*.
+    Exercices inspirés du manuel *Petite leçon de python* et du parcours *Les bases* de ZehdBox.
 
 <div class="grid cards" markdown>
 
-- :octicons-arrow-right-24: **[Continue vers le sommaire](../index.md)**
+- :octicons-arrow-right-24: **[Continuer vers les listes et dictionnaires →](exercice-structures.md)**
 
     Exercices terminés.
     

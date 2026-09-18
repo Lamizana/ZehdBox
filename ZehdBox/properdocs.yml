@@ -35,16 +35,16 @@ nav:
               - Chaînes: cours/python/bases/chaines.md
               - Flux d'exécution: cours/python/bases/flux-execution.md
               - Instructions répétitives: cours/python/bases/instructions-repetitives.md
-          - Exercices:
-              - cours/python/exercices/index.md
-              - Fondamentaux:
-                  - Variables: cours/python/exercices/exercice-variables.md
-                  - Opérateurs: cours/python/exercices/exercice-operateurs.md
-                  - Types de données: cours/python/exercices/exercice-types.md
-              - Textes & structures:
-                  - Nombres: cours/python/exercices/exercice-nombres.md
-                  - Chaînes de caractères: cours/python/exercices/exercice-string.md
-                  - Listes & dictionnaires: cours/python/exercices/exercice-structures.md
+              - Exercices:
+                  - cours/python/exercices/index.md
+                  - Fondamentaux:
+                      - Variables: cours/python/exercices/exercice-variables.md
+                      - Opérateurs: cours/python/exercices/exercice-operateurs.md
+                      - Types de données: cours/python/exercices/exercice-types.md
+                  - Textes & structures:
+                      - Nombres: cours/python/exercices/exercice-nombres.md
+                      - Chaînes de caractères: cours/python/exercices/exercice-string.md
+                      - Listes & dictionnaires: cours/python/exercices/exercice-structures.md
           - Fonctions: cours/python/fonctions.md
           - Django:
               - cours/python/django/index.md

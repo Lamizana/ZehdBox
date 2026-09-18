@@ -115,15 +115,15 @@
 - [ ] `react.md` : lier depuis `cours/javascript` et `web/web2/index`
 - [ ] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan`
 - [ ] `systeme/nettoyage-disque` → lien vers `systeme/linux/index`
-- [ ] Lier `tags.md` depuis du contenu (aucun lien entrant actuellement)
+- [x] Lier `tags.md` depuis du contenu : les chips de toutes les pages taggées pointent vers `tags/#tag:x` (marqueur `<!-- material/tags -->`) - fait le 18/09/2026
 
 ---
 
 ## Tags & recherche {#tags-recherche}
 
-- [ ] **Ajouter `tags:` en front matter aux pages de cours** : seules **15 pages** ont des tags (hors blog/template/tags.md), **66 pages** n'en ont pas
-  - Priorité : `cours/python/**`, `web/**`, `systeme/**`, `github/**`, `mkdocs/**`, `strudel/**`
-  - Impact : le plugin `tags` et la page `tags.md` ne reflètent que ~15 % du contenu
+- [x] **Ajouter `tags:` en front matter aux pages de cours** : **0 page de contenu sans tags** (76 pages taggées hors blog, home, about, contact, tags.md et template) - fait le 18/09/2026
+  - Lots : systeme+github (9) · mkdocs+strudel (13) · web (12) · cours/python (28)
+  - Tags normalisés en kebab-case sans accent ; tag fantôme `matplotlib` retiré
 - [ ] Vérifier le comportement de `navigation.prune` (page `tags.md` listée dans la nav - à confirmer sur mobile)
 - [ ] Option : ajouter `search.share` dans `theme.features` pour partager des résultats de recherche
 

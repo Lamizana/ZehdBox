@@ -70,7 +70,7 @@ icon: material/account
 <div class="about-projects-grid">
 
 <div class="project-card">
-    <h3><a href="https://github.com/Lamizana/Tokeniser" class="md-button md-button--primary" target="_blank" rel="noopener">
+    <h3><a href="https://github.com/Lamizana/Tokenizer" class="md-button md-button--primary" target="_blank" rel="noopener">
         Tokenizer
     </a></h3>
     <p class="project-desc">Token BEP-20 GOLD42 sur BNB Smart Chain - premier smart contract, comprendre la blockchain et la DeFi</p>

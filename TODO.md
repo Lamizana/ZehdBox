@@ -193,7 +193,7 @@
 - [ ] Supprimer `backup/` (répertoire vide à la racine)
 - [ ] Purger `ZehdBox/node_modules/` si non utilisé (déjà gitignoré - confort disque)
 - [ ] Supprimer les **assets orphelins** : fichiers images non référencés dans le Markdown (script de détection à écrire)
-- [ ] Homogénéiser l'orthographe `Tokenizer` vs `Tokeniser` (le repo GitHub est `Lamizana/Tokeniser`, la fiche et la nav sont `Tokenizer` - soit renommer le repo, soit l'indiquer en note)
+- [x] Homogénéiser l'orthographe `Tokenizer` vs `Tokeniser` : repo renommé `Lamizana/Tokenizer`, liens mis à jour - fait le 18/09/2026
 - [ ] `docs/blog/.authors.yml` : description « Createur » → corriger l'orthographe « Créateur »
 
 ---

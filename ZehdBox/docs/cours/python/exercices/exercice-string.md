@@ -17,7 +17,7 @@ tags:
 
 ## <span class="h2">Au programme</span>
 
-- [**Exercices précédents : Nombres**](exercice-nombres.md)
+- [**Exercices précédents : Opérateurs**](exercice-operateurs.md) — les opérations et comparaisons.
 
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
@@ -295,10 +295,8 @@ tags:
 
 <div class="grid cards" markdown>
 
-- :octicons-arrow-right-24: **[Continuer vers les listes et dictionnaires →](exercice-structures.md)**
+- :octicons-arrow-right-24: **[Continuer vers les nombres →](exercice-nombres.md)**
 
-    Exercices terminés.
-    
-    Explore maintenant les fonctions et les bibliothèques (Pandas, NumPy, Scikit-learn).
+    Terminez les exercices sur les nombres, puis passez aux listes et dictionnaires.
 
 </div>

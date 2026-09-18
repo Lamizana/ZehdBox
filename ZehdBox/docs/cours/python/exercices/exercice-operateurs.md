@@ -17,7 +17,7 @@ tags:
 
 ## <span class="h2">Au programme</span>
 
-- [**Exercices précédents : Variables**](exercice-variables.md) — créez et affichez des variables.
+- [**Exercices précédents : Types de données**](exercice-types.md) — créez et convertissez les types.
 
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
@@ -170,8 +170,8 @@ tags:
 
 <div class="grid cards" markdown>
 
-- :octicons-arrow-right-24: **[Continuer vers les types de données →](exercice-types.md)**
+- :octicons-arrow-right-24: **[Continuer vers les chaînes de caractères →](exercice-string.md)**
 
-    Découvrez les types `int`, `float`, `str` et `bool`.
+    Découvrez les méthodes `upper()`, `strip()` et les f-strings.
 
 </div>

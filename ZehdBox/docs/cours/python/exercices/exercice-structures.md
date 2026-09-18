@@ -17,7 +17,7 @@ tags:
 
 ## <span class="h2">Au programme</span>
 
-- [**Exercices précédents : Chaînes de caractères**](exercice-string.md) — le texte en Python.
+- [**Exercices précédents : Nombres**](exercice-nombres.md) — les opérations et f-strings.
 
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :

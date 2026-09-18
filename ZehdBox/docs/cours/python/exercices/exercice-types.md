@@ -17,7 +17,7 @@ tags:
 
 ## <span class="h2">Au programme</span>
 
-- [**Exercices précédents : Opérateurs**](exercice-operateurs.md) — les opérations et comparaisons.
+- [**Exercices précédents : Variables**](exercice-variables.md) — créez et affichez des variables.
 
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
@@ -104,8 +104,8 @@ tags:
 
 <div class="grid cards" markdown>
 
-- :octicons-arrow-right-24: **[Continuer vers les nombres →](exercice-nombres.md)**
+- :octicons-arrow-right-24: **[Continuer vers les opérateurs →](exercice-operateurs.md)**
 
-    Appliquez ces types dans des exercices sur les nombres.
+    Enchaînez avec les opérateurs arithmétiques, de comparaison et logiques.
 
 </div>

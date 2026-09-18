@@ -15,6 +15,12 @@ tags:
 
 ---
 
+## <span class="h2">Au programme</span>
+
+- [**Exercices précédents : Chaînes de caractères**](exercice-string.md) — le texte en Python.
+
+---
+
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
@@ -98,3 +104,11 @@ tags:
 
 !!! note "Source"
     Exercices inspirés des exos 2-8 et 2-9 de *Petite leçon de python*.
+
+<div class="grid cards" markdown>
+
+- :octicons-arrow-right-24: **[Continuer vers les listes et dictionnaires →](exercice-structures.md)**
+
+    Terminez le parcours avec les listes et les dictionnaires.
+
+</div>

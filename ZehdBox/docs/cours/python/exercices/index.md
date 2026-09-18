@@ -38,10 +38,10 @@ Chaque exercice est livré avec un **bac à sable Python intégré** à la page 
 | Étape | Page | Notions | Niveau | Durée |
 |:---:|:---|:---|:---:|:---:|
 | 1 | [**Variables**](exercice-variables.md) | affectation, `print()` | 🟢 | 10 min |
-| 2 | [**Opérateurs**](exercice-operateurs.md) | arithmétique, comparaison, logique | 🟢 | 25 min |
-| 3 | [**Types de données**](exercice-types.md) | `int`, `float`, `str`, `bool` | 🟢 | 10 min |
-| 4 | [**Nombres**](exercice-nombres.md) | opérations, variables, f-strings | 🟢 | 10 min |
-| 5 | [**Chaînes de caractères**](exercice-string.md) | `upper()`, `strip()`, f-strings, tranchage | 🟡 | 45 min |
+| 2 | [**Types de données**](exercice-types.md) | `int`, `float`, `str`, `bool` | 🟢 | 10 min |
+| 3 | [**Opérateurs**](exercice-operateurs.md) | arithmétique, comparaison, logique | 🟢 | 25 min |
+| 4 | [**Chaînes de caractères**](exercice-string.md) | `upper()`, `strip()`, f-strings, tranchage | 🟡 | 45 min |
+| 5 | [**Nombres**](exercice-nombres.md) | opérations, variables, f-strings | 🟢 | 10 min |
 | 6 | [**Listes et dictionnaires**](exercice-structures.md) | listes, dicts, indexation | 🟡 | 20 min |
 
 [:octicons-arrow-right-24: Démarrer le parcours](exercice-variables.md){ .md-button .md-button--primary }

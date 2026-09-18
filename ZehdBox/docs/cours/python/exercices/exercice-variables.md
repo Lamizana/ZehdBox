@@ -17,7 +17,7 @@ tags:
 
 ## <span class="h2">Au programme</span>
 
-- [**10 minutes pour manipuler les variables**](exercice-variables.md) dans ce parcours progressif.
+- [**Voir le parcours complet**](index.md) — 6 étapes du parcours d'exercices.
 
 ???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
@@ -91,8 +91,8 @@ tags:
 
 <div class="grid cards" markdown>
 
-- :octicons-arrow-right-24: **[Continuer vers les opérateurs →](exercice-operateurs.md)**
+- :octicons-arrow-right-24: **[Continuer vers les types de données →](exercice-types.md)**
 
-    Enchaînez avec les opérateurs arithmétiques, de comparaison et logiques.
+    Découvrez les types `int`, `float`, `str` et `bool`.
 
 </div>

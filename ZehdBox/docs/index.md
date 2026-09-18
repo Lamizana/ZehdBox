@@ -126,7 +126,7 @@ icon: material/home
 
     [:octicons-arrow-right-24: Strudel](strudel/index.md)
 
-- :material-blog:{ .lg .middle } __Blog__
+- :fontawesome-solid-blog:{ .lg .middle } __Blog__
 
     ---
 

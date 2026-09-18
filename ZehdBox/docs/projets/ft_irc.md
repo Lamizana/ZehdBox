@@ -9,7 +9,7 @@ tags:
   - serveur
 ---
 
-# <span class="h1">FT_IRC</span>
+# <span class="h1">ft_irc</span>
 
 <div class="badge-section">
 <div class="badge-row">

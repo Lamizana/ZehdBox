@@ -60,25 +60,6 @@ nav:
               - Scikit-learn: cours/python/scikit-learn.md
               - Régression linéaire: cours/python/linear-regression.md
 
-      - MkDocs:
-          - mkdocs/index.md
-          - Bases: mkdocs/bases.md
-          - Material: mkdocs/material.md
-          - Plugins: mkdocs/plugins.md
-          - Extensions: mkdocs/extensions.md
-          - Déploiement: mkdocs/deploiement.md
-
-      - Strudel:
-          - strudel/index.md
-          - Cours:
-              - Introduction: strudel/tutoriel-intro.md
-              - Premier Sons: strudel/tutoriel-sons.md
-              - Notes: strudel/tutoriel-notes.md
-              - Patterns: strudel/tutoriel-patterns.md
-              - Effets: strudel/tutoriel-effets.md
-          - Exercices:
-              - strudel/exercice-strudel.md
-
   - Système:
       - systeme/index.md
       - systeme/nettoyage-disque.md
@@ -106,6 +87,25 @@ nav:
           - web/web3/etherscan.md
           - web/web3/bscscan.md
           - Tokenizer: web/web3/tokenizer.md
+
+  - Strudel:
+      - strudel/index.md
+      - Cours:
+          - Introduction: strudel/tutoriel-intro.md
+          - Premier Sons: strudel/tutoriel-sons.md
+          - Notes: strudel/tutoriel-notes.md
+          - Patterns: strudel/tutoriel-patterns.md
+          - Effets: strudel/tutoriel-effets.md
+      - Exercices:
+          - strudel/exercice-strudel.md
+
+  - MkDocs:
+      - mkdocs/index.md
+      - Bases: mkdocs/bases.md
+      - Material: mkdocs/material.md
+      - Plugins: mkdocs/plugins.md
+      - Extensions: mkdocs/extensions.md
+      - Déploiement: mkdocs/deploiement.md
 
   - GitHub:
       - github/index.md
@@ -163,6 +163,7 @@ theme:
     - content.code.copy
     - header.autohide
     - content.tooltips
+    - content.action.edit
 
   font:
     text: Roboto

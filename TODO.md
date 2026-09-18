@@ -115,11 +115,12 @@
 ### Organisation de la navigation
 
 - [x] Typologie **vitrine (Projets)** vs **base de connaissances (Cours/Système/Web/GitHub)** déjà séparée - fait
-- [ ] Aligner les **libellés nav** sur les nouveaux titres :
-  - `nav: - Push_swap:` → `Push Swap` (incohérent avec le titre de la fiche)
-  - Vérifier `So Long` et `FT_IRC` (dénomination désormais utilisée en H1)
-- [ ] Évaluer si le tab **« Programmation »** (Python + MkDocs + Strudel) devient trop chargé → déplacer `Strudel` (musique algorithmique) ou `MkDocs` dans une section dédiée
-- [ ] Ajouter la feature `content.action.edit` (bouton « Modifier cette page ») - `edit_uri` est déjà configuré, c'est une ligne à activer dans `theme.features`
+- [x] Aligner les **libellés nav** sur les nouveaux titres - fait le 18/09/2026
+  - `Push_swap` → `Push Swap` (déjà OK dans la nav)
+  - `So Long` OK · `ft_irc` : H1 `FT_IRC` → `ft_irc` corrigé
+- [x] Évaluer si le tab **« Programmation »** (Python + MkDocs + Strudel) devient trop chargé → déplacer `Strudel` et `MkDocs` dans des onglets dédiés - fait le 18/09/2026
+  - **Principe** : `Programmation` = hub des **langages** (Python aujourd'hui, C/C++ à venir) ; `Strudel` et `MkDocs` sont des onglets autonomes placés après `Web`
+- [x] Ajouter la feature `content.action.edit` (bouton « Modifier cette page ») - fait le 18/09/2026 (`edit_uri` était déjà configuré)
 
 ---
 

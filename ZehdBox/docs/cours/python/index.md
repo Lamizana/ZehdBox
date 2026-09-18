@@ -1,6 +1,9 @@
 ---
 title: Cours Python - Bases, fonctions et bibliothèques
 description: "Cours Python complet : bases du langage, variables, fonctions, NumPy, Pandas et scikit-learn avec exercices pratiques."
+tags:
+  - cours
+  - python
 icon: fontawesome/brands/python
 ---
 

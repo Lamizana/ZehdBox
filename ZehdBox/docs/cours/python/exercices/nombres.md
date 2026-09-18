@@ -1,6 +1,10 @@
 ---
 title: Exercices - Nombres
 description: "Exercices Python sur les nombres : opérations arithmétiques et nombre préféré."
+tags:
+  - exercice
+  - python
+  - nombres
 ---
 
 # <span class="h1">Exercices - Nombres</span>

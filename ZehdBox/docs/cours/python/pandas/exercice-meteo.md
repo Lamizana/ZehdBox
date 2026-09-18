@@ -1,6 +1,10 @@
 ---
 title: Exercices Météo
 description: Exercices pratiques pour maîtriser Pandas avec des données météo réelles.
+tags:
+  - exercice
+  - python
+  - pandas
 ---
 
 # <span class="h1">Exercices Météo avec Pandas</span>

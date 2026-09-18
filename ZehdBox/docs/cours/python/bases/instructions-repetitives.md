@@ -1,6 +1,10 @@
 ---
 title: Instructions répétitives
 description: Les boucles for et while en Python pour automatiser les tâches répétitives.
+tags:
+  - cours
+  - python
+  - boucles
 ---
 
 # <span class="h1">Instructions répétitives</span>

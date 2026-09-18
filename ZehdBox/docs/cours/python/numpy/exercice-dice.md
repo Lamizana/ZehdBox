@@ -1,6 +1,10 @@
 ---
 title: Projet - Analyse de Dés
 description: Projet pratique pour maîtriser les fondamentaux de NumPy à travers l'analyse de dés.
+tags:
+  - exercice
+  - python
+  - numpy
 ---
 
 # <span class="h1">Analyseur de Dés</span>

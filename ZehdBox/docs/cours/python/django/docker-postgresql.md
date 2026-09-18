@@ -1,6 +1,12 @@
 ---
 title: Docker & PostgreSQL - Conteneuriser Django et brancher la base
 description: "Créer l'image Docker, orchestrer les conteneurs avec docker-compose et connecter l'application Django à une base PostgreSQL."
+tags:
+  - cours
+  - django
+  - python
+  - docker
+  - postgresql
 ---
 
 # <span class="h1">Docker & PostgreSQL</span>

@@ -1,6 +1,10 @@
 ---
 title: Fonctions
 description: Création et utilisation de fonctions en Python - paramètres, arguments, retour et portée.
+tags:
+  - cours
+  - python
+  - fonctions
 ---
 
 # <span class="h1">Fonctions</span>

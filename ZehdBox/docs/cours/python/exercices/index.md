@@ -1,6 +1,9 @@
 ---
 title: Exercices
 description: "Exercices pratiques en Python pour consolider vos acquis."
+tags:
+  - exercice
+  - python
 ---
 
 # <span class="h1">Exercices Python</span>

@@ -1,6 +1,8 @@
 ---
 title: Cours de programmation - Python, JavaScript et plus
 description: "Cours gratuits de programmation : Python, JavaScript, bases de données et tutoriels Web avec console interactive."
+tags:
+  - cours
 icon: material/school
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: Installation - Environnement virtuel et projet Django
 description: "Préparer un environnement virtuel Python, installer Django et créer son premier projet."
+tags:
+  - cours
+  - django
+  - python
 ---
 
 # <span class="h1">Installation</span>

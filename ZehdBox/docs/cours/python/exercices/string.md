@@ -1,6 +1,10 @@
 ---
 title: Exercices - Chaînes de caractères
 description: "Exercices pratiques sur les chaînes de caractères (strings) en Python."
+tags:
+  - exercice
+  - python
+  - chaines
 ---
 
 # <span class="h1">Exercices sur les chaînes de caractères</span>

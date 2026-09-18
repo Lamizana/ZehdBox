@@ -1,6 +1,10 @@
 ---
 title: Pandas
 description: Introduction à Pandas - DataFrames, Series et manipulation de données en Python.
+tags:
+  - cours
+  - python
+  - pandas
 ---
 
 # <span class="h1">Pandas</span>

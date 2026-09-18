@@ -1,6 +1,10 @@
 ---
 title: Opérateurs
 description: "Les opérateurs en Python : arithmétiques, comparaison, logiques et d'affectation."
+tags:
+  - cours
+  - python
+  - operateurs
 ---
 
 # <span class="h1">Opérateurs</span>

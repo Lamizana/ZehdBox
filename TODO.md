@@ -72,7 +72,7 @@
 | `push_swap` | — (inventaire) | — (inventaire) | ✅ |
 | `so_long` | — (inventaire) | — (inventaire) | ✅ |
 
-**Contrôle automatisé** : lancer `scripts/check-consistency.sh` (vedettes dans home + about, tous dans l'inventaire) avant toute validation — à coupler avec le build `--strict`.
+**Validation type** : relire les 3 emplacements ci-dessus + `properdocs build --strict` avant chaque commit touchant une fiche. *(Un script de contrôle de présence a été testé puis abandonné le 18/09 — il ne détectait pas les incohérences de contenu, seul le verdict AVANT la validation du build était utile ; la relecture manuelle reste la garantie.)*
 
 **Pièges historiques** (corrigés le 18/09) : Transcendance « WebSockets, OAuth 42 » → **local** · ft_irc « RFC 1459 » → **RFC 2810-2813** · about badges « React / C++ / SQL » → **Django/Canvas/PostgreSQL**.
 

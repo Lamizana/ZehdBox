@@ -15,11 +15,20 @@
  *   - ### Resultat attendu  -> h3 + bloc pre/code suivant (oracle)
  *   - ??? tip "Solution"    -> details.tip            (solution)
  *
- * Marqueur "(variable)" present dans le titre de l'oracle
- * => sortie non deterministe, verification automatique desactivee.
+*  Marqueur "(variable)" present dans le titre de l'oracle
+ *  => sortie non deterministe, verification automatique desactivee.
  *
- * Compatible navigation.instant via document$.
- * ============================================================ */
+ *  Famille C (tests assert) — exercices "fonction" type France-IOI :
+ *   - ### Enonce           -> h3 "Enonce"          (declencheur)
+ *   - ??? example "Tests"  -> details/div "example" dont le titre contient
+ *                             "Tests" (liste de lignes assert ...)  (mode test)
+ *   - ??? tip "Solution"   -> details.tip          (solution)
+ *   Le bouton "Verifier" devient "Tester" : le code de l'eleve + chaques
+ *   assert sont executes dans le meme globals Pyodide (voir runWithTests
+ *   dans pyodide-runner.js), statut affiche test par test.
+ *
+ *  Compatible navigation.instant via document$.
+ *  ============================================================ */
 (function () {
   "use strict";
 
@@ -124,6 +133,73 @@
     return null;
   }
 
+  /* Famille C : bloc de tests assert (admonition "example" dont le titre
+     contient "Tests"), cherche dans la fenetre apres le declencheur.
+     NB : Material rend `??? example` sous forme de <details class="example">,
+     et `!!! example` sous forme de <div class="admonition example">. */
+  function findTests(triggerEl) {
+    var el = triggerEl.nextElementSibling;
+    while (el && !isSectionEnd(el)) {
+      if (
+        el.classList &&
+        el.classList.contains("example")
+      ) {
+        var title = el.querySelector(".admonition-title");
+        var titleText = headingText(title || el);
+        if (/test/i.test(titleText)) {
+          var pre = el.querySelector("pre code");
+          return { el: el, code: pre ? pre.textContent : "" };
+        }
+      }
+      el = el.nextElementSibling;
+    }
+    return null;
+  }
+
+  /* Famille C : fichier starter telechargeable. On prend le premier bloc de
+     code situe dans l'enonce (avant le prochain h2 ou le bloc Tests), ou un
+     squelette fallback si aucun code n'est fourni. */
+  function findStarter(triggerEl, testsEl) {
+    var el = triggerEl.nextElementSibling;
+    while (el && !isSectionEnd(el)) {
+      // ne pas depasser le bloc Tests (ni la solution)
+      if (
+        el === testsEl ||
+        (el.tagName === "DETAILS" && el.classList && el.classList.contains("tip"))
+      ) {
+        break;
+      }
+      var pre = el.querySelector ? el.querySelector("pre code") : null;
+      if (pre && pre.textContent.trim()) return pre.textContent;
+      el = el.nextElementSibling;
+    }
+    return null;
+  }
+
+  function buildStarterFallback() {
+    return '# ---\n# TODO : ecris ta fonction ici. Exemple :\n#\n# def double(n):\n#     return n * 2\n';
+  }
+
+  /* ----------- telechargement Blob cote client (mode local) ----------- */
+  function downloadText(filename, content) {
+    try {
+      var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function () {
+        URL.revokeObjectURL(url);
+      }, 1000);
+    } catch (err) {
+      return String((err && err.message) || err);
+    }
+    return null;
+  }
+
   function extractCode(el, codeEl) {
     if (!el) return "";
     if (codeEl) {
@@ -148,9 +224,10 @@
 
   /* ------------------------ construction du panneau ------------------------ */
 
-  function buildPanel(triggerEl, oracle, solutionEl, packages) {
+  function buildPanel(triggerEl, oracle, solutionEl, testsEl, starterCode, packages) {
     var variable = isVariable(oracle);
     var expectedText = normalize(extractCode(oracle ? oracle.el : null, oracle ? oracle.codeEl : null));
+    var hasTests = !!(testsEl && testsEl.code && testsEl.code.trim());
 
     // --- elements ---
     var panel = document.createElement("div");
@@ -158,19 +235,24 @@
 
     var header = document.createElement("div");
     header.className = "exercise-panel__header";
-    header.textContent = "Python interactif (Pyodide)";
+    header.textContent = hasTests
+      ? "Python interactif (Pyodide) — Tests"
+      : "Python interactif (Pyodide)";
 
     var editor = document.createElement("textarea");
     editor.className = "exercise-panel__editor";
     editor.rows = 8;
     editor.spellcheck = false;
-    editor.placeholder = "# Ecris ton code Python ici...";
+    editor.placeholder = hasTests
+      ? "# Ecris ta fonction ici..."
+      : "# Ecris ton code Python ici...";
 
     var stdin = document.createElement("textarea");
     stdin.className = "exercise-panel__stdin";
     stdin.rows = 2;
     stdin.spellcheck = false;
     stdin.placeholder = "Entrees standard (une par ligne) — facultatif";
+    stdin.style.display = hasTests ? "none" : ""; // pas d'entree stdin pour les exercices fonction
 
     var actions = document.createElement("div");
     actions.className = "exercise-panel__actions";
@@ -182,8 +264,12 @@
 
     var btnCheck = document.createElement("button");
     btnCheck.className = "md-button exercise-panel__btn-check";
-    btnCheck.textContent = "Verifier";
-    if (variable || !oracle) {
+    if (hasTests) {
+      btnCheck.textContent = "Tester";
+    } else {
+      btnCheck.textContent = "Verifier";
+    }
+    if (!hasTests && (variable || !oracle)) {
       btnCheck.disabled = true;
       btnCheck.title = variable
         ? "Sortie variable : pas de verification automatique."
@@ -196,6 +282,21 @@
     btnSolution.textContent = "Charger la solution";
     actions.appendChild(btnSolution);
 
+    // --- boutons telecharger (Famille C : mode local) ---
+    if (hasTests) {
+      var dlStarter = document.createElement("button");
+      dlStarter.className = "md-button exercise-panel__dl";
+      dlStarter.textContent = "Starter.py";
+      dlStarter.title = "Telecharger le fichier depart (starter.py)";
+      actions.appendChild(dlStarter);
+
+      var dlTests = document.createElement("button");
+      dlTests.className = "md-button exercise-panel__dl";
+      dlTests.textContent = "Tests.py";
+      dlTests.title = "Telecharger les tests (tests.py)";
+      actions.appendChild(dlTests);
+    }
+
     var status = document.createElement("div");
     status.className = "exercise-panel__status";
 
@@ -203,12 +304,17 @@
     output.className = "exercise-panel__output";
     output.style.display = "none";
 
+    var testsOutput = document.createElement("div");
+    testsOutput.className = "exercise-panel__tests";
+    testsOutput.style.display = "none";
+
     panel.appendChild(header);
     panel.appendChild(editor);
     panel.appendChild(stdin);
     panel.appendChild(actions);
     panel.appendChild(status);
     panel.appendChild(output);
+    if (hasTests) panel.appendChild(testsOutput);
 
     // --- comportements ---
     function render(result) {
@@ -231,6 +337,72 @@
       status.className = "exercise-panel__status";
     }
 
+    function renderTests(result) {
+      // nettoyer les affichages precedents
+      output.style.display = "none";
+      testsOutput.style.display = "none";
+      testsOutput.textContent = "";
+
+      if (result.stdout) {
+        output.textContent = result.stdout;
+        output.style.display = "block";
+      }
+
+      // rendu de chaque test avec statut PASS/FAIL
+      if (result.tests && result.tests.length) {
+        testsOutput.textContent = "";
+        result.tests.forEach(function (test) {
+          var row = document.createElement("div");
+          row.className = "exercise-panel__test "
+            + (test.ok ? "exercise-panel__test--pass" : "exercise-panel__test--fail");
+
+          var mark = document.createElement("span");
+          mark.className = "exercise-panel__test-mark";
+          mark.textContent = test.ok ? "PASS" : "FAIL";
+
+          var code = document.createElement("code");
+          code.textContent = test.code;
+
+          row.appendChild(mark);
+          row.appendChild(code);
+
+          if (!test.ok && test.message) {
+            var msg = document.createElement("div");
+            msg.className = "exercise-panel__test-msg";
+            msg.textContent = test.message;
+            row.appendChild(msg);
+          }
+
+          testsOutput.appendChild(row);
+        });
+        testsOutput.style.display = "block";
+      }
+
+      if (result.stderr) {
+        output.textContent = (output.textContent || "")
+          + (output.textContent ? "\n" : "")
+          + "-- stderr --\n" + result.stderr;
+        output.style.display = "block";
+      }
+
+      if (result.error) {
+        status.textContent = "Erreur : " + result.error;
+        status.className = "exercise-panel__status exercise-panel__status--ko";
+      } else if (result.total === 0) {
+        status.textContent = "Aucun assert detecte dans le bloc Tests.";
+        status.className = "exercise-panel__status exercise-panel__status--warn";
+      } else if (result.passed === result.total) {
+        status.textContent =
+          "Bravo : " + result.passed + "/" + result.total + " tests passes !";
+        status.className = "exercise-panel__status exercise-panel__status--ok";
+      } else {
+        status.textContent =
+          result.passed + "/" + result.total +
+          " tests passes — " + (result.total - result.passed) + " echec(s).";
+        status.className = "exercise-panel__status exercise-panel__status--ko";
+      }
+    }
+
     btnRun.addEventListener("click", function () {
       status.textContent = "Execution en cours...";
       status.className = "exercise-panel__status exercise-panel__status--busy";
@@ -238,29 +410,38 @@
     });
 
     btnCheck.addEventListener("click", function () {
-      status.textContent = "Execution + verification...";
-      status.className = "exercise-panel__status exercise-panel__status--busy";
-      window.ZehdBoxPyodide.run(editor.value, stdin.value, packages).then(function (result) {
-        render(result);
-        if (result.error) return;
-        var obtained = normalize(result.stdout);
-        if (obtained === expectedText) {
-          status.textContent = "Bravo : la sortie correspond au resultat attendu.";
-          status.className = "exercise-panel__status exercise-panel__status--ok";
-        } else {
-          status.textContent =
-            "Attention : la sortie ne correspond pas. Attendu : " +
-            JSON.stringify(expectedText) +
-            " | Obtenu : " +
-            JSON.stringify(obtained);
-          status.className = "exercise-panel__status exercise-panel__status--ko";
-        }
-      });
+      if (hasTests) {
+        // --- mode tests (Famille C) ---
+        status.textContent = "Execution des tests...";
+        status.className = "exercise-panel__status exercise-panel__status--busy";
+        output.textContent = "";
+        output.style.display = "none";
+        window.ZehdBoxPyodide.runWithTests(editor.value, testsEl.code, packages).then(renderTests);
+      } else {
+        // --- mode sortie (Familles A/B) ---
+        status.textContent = "Execution + verification...";
+        status.className = "exercise-panel__status exercise-panel__status--busy";
+        window.ZehdBoxPyodide.run(editor.value, stdin.value, packages).then(function (result) {
+          render(result);
+          if (result.error) return;
+          var obtained = normalize(result.stdout);
+          if (obtained === expectedText) {
+            status.textContent = "Bravo : la sortie correspond au resultat attendu.";
+            status.className = "exercise-panel__status exercise-panel__status--ok";
+          } else {
+            status.textContent =
+              "Attention : la sortie ne correspond pas. Attendu : " +
+              JSON.stringify(expectedText) +
+              " | Obtenu : " +
+              JSON.stringify(obtained);
+            status.className = "exercise-panel__status exercise-panel__status--ko";
+          }
+        });
+      }
     });
 
     btnSolution.addEventListener("click", function () {
       var solution = extractCode(solutionEl, null);
-      // gest des blocs tabbed : on prend le premier bloc de code de chaque onglet
       if (!solution && solutionEl) {
         var codes = solutionEl.querySelectorAll("pre code");
         if (codes.length) {
@@ -276,6 +457,25 @@
       status.textContent = "Solution chargee dans l'editeur.";
       status.className = "exercise-panel__status";
     });
+
+    // --- telechargement blobs (Famille C) ---
+    if (hasTests) {
+      dlStarter.addEventListener("click", function () {
+        var code = starterCode || buildStarterFallback();
+        var err = downloadText("starter.py", code);
+        if (err) {
+          status.textContent = "Erreur telechargement : " + err;
+          status.className = "exercise-panel__status exercise-panel__status--ko";
+        }
+      });
+      dlTests.addEventListener("click", function () {
+        var err = downloadText("tests.py", testsEl.code);
+        if (err) {
+          status.textContent = "Erreur telechargement : " + err;
+          status.className = "exercise-panel__status exercise-panel__status--ko";
+        }
+      });
+    }
 
     return panel;
   }
@@ -318,7 +518,9 @@
       }
       var oracle = findOracle(triggerEl);
       var solutionEl = findSolution(triggerEl);
-      var panel = buildPanel(triggerEl, oracle, solutionEl, packages);
+      var testsEl = findTests(triggerEl);
+      var starterCode = findStarter(triggerEl, testsEl);
+      var panel = buildPanel(triggerEl, oracle, solutionEl, testsEl, starterCode, packages);
       triggerEl.parentNode.insertBefore(panel, triggerEl.nextSibling);
     });
   }

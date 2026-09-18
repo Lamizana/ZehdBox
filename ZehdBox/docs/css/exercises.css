@@ -94,3 +94,71 @@
   background-color: var(--md-code-bg-color);
   border-top: 0.05rem solid var(--md-default-fg-color--lightest);
 }
+
+/* ---------- Famille C : rendu test par test (PASS / FAIL) ---------- */
+
+.exercise-panel__tests {
+  padding: 0.2rem 0.9rem 0.6rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.exercise-panel__test {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.28rem 0;
+  font-family: var(--md-code-font-family);
+  font-size: 0.74rem;
+  line-height: 1.4;
+  border-bottom: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.exercise-panel__test:last-child {
+  border-bottom: none;
+}
+
+.exercise-panel__test-mark {
+  flex: none;
+  min-width: 2.6rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.exercise-panel__test--pass .exercise-panel__test-mark {
+  color: #1a7f37;
+  background-color: rgba(46, 160, 67, 0.16);
+}
+
+.exercise-panel__test--fail .exercise-panel__test-mark {
+  color: #cf222e;
+  background-color: rgba(207, 34, 46, 0.14);
+}
+
+.exercise-panel__test code {
+  font-family: var(--md-code-font-family);
+  font-size: 0.72rem;
+  background: none;
+  box-shadow: none;
+}
+
+.exercise-panel__test-msg {
+  flex-basis: 100%;
+  padding-left: 3.1rem;
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ---------- boutons telecharger (Famille C) ---------- */
+
+.exercise-panel__dl {
+  font-size: 0.72rem !important;
+  padding: 0 0.6rem !important;
+  line-height: 1.9 !important;
+  background-color: var(--md-default-bg-color);
+}

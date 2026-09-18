@@ -1,8 +1,8 @@
 ---
-title: Template — Exercice Python
+title: Template - Exercice Python
 ---
 
-# <span class="h1">Template — Exercice Python</span>
+# <span class="h1">Template - Exercice Python</span>
 
 > Ce fichier est un **gabarit de référence**. Il est préfixé `_` → ignoré par MkDocs (et donc invisible dans la navigation et le build). Copiez-collez le bloc d'exercice ci-dessous dans vos pages d'exercices.
 

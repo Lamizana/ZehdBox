@@ -1,5 +1,5 @@
 ---
-title: Python — Les bases
+title: Python - Les bases
 description: "Les fondamentaux de Python : installation, variables, types, opérateurs, chaînes, flux d'exécution et boucles, avec exercices."
 ---
 

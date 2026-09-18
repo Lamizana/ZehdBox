@@ -1,9 +1,9 @@
 ---
-title: Git & GitHub — Les bases
+title: Git & GitHub - Les bases
 description: "Présentation de Git et GitHub, installation, création de dépôt, cycle de travail et bonnes pratiques de push."
 ---
 
-# <span class="h1">Git & GitHub — Les bases</span>
+# <span class="h1">Git & GitHub - Les bases</span>
 
 <p class="intro">
     Tout ce qu'il faut savoir pour démarrer avec Git et GitHub : installation, premier dépôt, cycle de travail et règles de push.

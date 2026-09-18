@@ -1,5 +1,5 @@
 ---
-title: L'homme et ses déchets — mutilation des pattes de pigeons
+title: L'homme et ses déchets - mutilation des pattes de pigeons
 description: Impact des déchets humains sur la faune urbaine, focus sur les mutilations de pattes de pigeons.
 slug: lhomme-et-ses-dechets-mutilation-des-pattes-de-pigeons
 date: 2026-06-26

@@ -1,5 +1,5 @@
 ---
-title: Django — Du projet à l'application web avec SQL
+title: Django - Du projet à l'application web avec SQL
 description: "Cours Django complet : environnement virtuel, installation, Docker, PostgreSQL, modèles, migrations, vues, URLs et templates."
 icon: simple/django
 ---

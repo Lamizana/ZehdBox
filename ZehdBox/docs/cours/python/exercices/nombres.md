@@ -3,7 +3,7 @@ title: Exercices - Nombres
 description: "Exercices Python sur les nombres : opérations arithmétiques et nombre préféré."
 ---
 
-# <span class="h1">Exercices — Nombres</span>
+# <span class="h1">Exercices - Nombres</span>
 
 <p class="intro">
     Deux exercices pour manipuler les <strong>nombres</strong> en Python : opérations arithmétiques et variables.

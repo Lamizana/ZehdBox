@@ -1,5 +1,5 @@
 ---
-title: Installation — Environnement virtuel et projet Django
+title: Installation - Environnement virtuel et projet Django
 description: "Préparer un environnement virtuel Python, installer Django et créer son premier projet."
 ---
 

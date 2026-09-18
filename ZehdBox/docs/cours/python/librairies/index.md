@@ -1,5 +1,5 @@
 ---
-title: Python — Bibliothèques
+title: Python - Bibliothèques
 description: "Les bibliothèques Python : NumPy pour le calcul numérique, Pandas pour l'analyse de données et Scikit-learn pour le machine learning."
 ---
 

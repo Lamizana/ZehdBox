@@ -3,7 +3,7 @@ title: Exercices - Bases Python
 description: "Exercices pratiques pour consolider les bases du langage Python."
 ---
 
-# <span class="h1">Exercices — Bases Python</span>
+# <span class="h1">Exercices - Bases Python</span>
 
 <p class="intro">
     Pratiquez les bases de Python avec ces 15 exercices de révision.

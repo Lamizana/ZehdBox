@@ -1,5 +1,5 @@
 ---
-title: Vues & URLs — Répondre aux requêtes du navigateur
+title: Vues & URLs - Répondre aux requêtes du navigateur
 description: "Les vues Django (views.py), la configuration des URL (urls.py) et l'affichage des données issues des modèles."
 ---
 

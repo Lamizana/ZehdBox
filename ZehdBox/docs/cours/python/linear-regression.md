@@ -1,5 +1,5 @@
 ---
-title: Régression linéaire — le machine learning en pratique
+title: Régression linéaire - le machine learning en pratique
 description: "Tutoriel régression linéaire simple en Python : moindres carrés, descente de gradient, normalisation, évaluation MSE/MAE/R² et visualisation Matplotlib — avec le code du projet 42 ft_linear_regression."
 tags:
   - cours

@@ -1,5 +1,5 @@
 ---
-title: Linear Regression — Descente de gradient
+title: Linear Regression - Descente de gradient
 description: "Linear Regression : projet 42 ft_linear_regression — régression linéaire simple codée de zéro avec une descente de gradient (normalisation min-max, θ₀/θ₁, thetas.json) pour prédire le prix d'une voiture. NumPy, Pandas, Matplotlib, évaluation MSE/MAE/R²."
 tags:
   - projet

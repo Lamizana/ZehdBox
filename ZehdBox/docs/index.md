@@ -76,30 +76,6 @@ icon: material/home
 
     [:octicons-arrow-right-24: Découvrir](projets/linear-regression.md)
 
-- :material-sort:{ .lg .middle } __Push Swap__
-
-    ---
-
-    **Algorithme de tri** en C : trier des entiers sur deux piles avec 11 instructions, parsing robuste puis tri radix.
-
-    ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
-    ![Tri radix](https://img.shields.io/badge/Tri%20radix-FF6F00?style=for-the-badge)
-    ![Parsing](https://img.shields.io/badge/Parsing-4CAF50?style=for-the-badge)
-
-    [:octicons-arrow-right-24: Découvrir](projets/push_swap.md)
-
-- :material-map:{ .lg .middle } __So Long__
-
-    ---
-
-    **Jeu 2D** en C avec MiniLibX : parsing strict des cartes `.ber`, flood-fill, collecte d'objets et bonus (ennemi, compteurs).
-
-    ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
-    ![MiniLibX](https://img.shields.io/badge/MiniLibX-4E5EE4?style=for-the-badge)
-    ![Jeu 2D](https://img.shields.io/badge/Jeu%202D-FF6F00?style=for-the-badge)
-
-    [:octicons-arrow-right-24: Découvrir](projets/so_long.md)
-
 </div>
 
 [:fontawesome-solid-arrow-right: Voir tous les projets](projets/index.md){ .md-button .md-button--primary }

@@ -49,9 +49,11 @@
 
 **Règle d'or** : toute modification de `docs/projets/<fiche>.md` → *avant commit*, vérifier les 3 emplacements qui dupliquent des infos de la fiche :
 
-1. **Carte home** : `docs/index.md` (descriptions, badges de stack, liens)
-2. **Carte about** : `docs/about.md` (description, badges, lien GitHub)
-3. **Navigation/maillage** : libellés dans `properdocs.yml` + liens depuis d'autres pages
+1. **Carte home** : `docs/index.md` (descriptions, badges de stack, liens) — **les 5 projets vedettes uniquement**
+2. **Carte about** : `docs/about.md` (description, badges, lien GitHub) — **les 5 projets vedettes uniquement**
+3. **Inventaire + maillage** : `projets/index.md` (les 7 fiches) + libellés dans `properdocs.yml`
+
+**Principe éditorial** : `about.md` n'affiche qu'une **sélection en vedette** ; la home affiche la **même sélection** ; `projets/index.md` est l'**inventaire complet** des 7 fiches.
 
 **Axes de contrôle** (3) :
 - **Faits techniques** : description et détails (ex. multijoueur *local* vs en ligne, RFC *2810-2813* vs 1459)
@@ -60,17 +62,17 @@
 
 **Table de correspondance** (état du 18/09/2026) :
 
-| Fiche projet | Carte home (`index.md`) | Carte about (`about.md`) |
-| --- | --- | --- |
-| `minishell` | ✅ | ✅ |
-| `transcendance` | ✅ | ✅ |
-| `ft_irc` | ✅ | ✅ |
-| `tokenizer` | ✅ | ✅ |
-| `linear-regression` | ✅ | ✅ |
-| `push_swap` | ✅ | ✅ |
-| `so_long` | ✅ | ✅ |
+| Fiche projet | Home (`index.md`) | About (`about.md`) | Inventaire (`projets/index.md`) |
+| --- | --- | --- | --- |
+| `tokenizer` | ✅ vedette | ✅ vedette | ✅ |
+| `transcendance` | ✅ vedette | ✅ vedette | ✅ |
+| `minishell` | ✅ vedette | ✅ vedette | ✅ |
+| `ft_irc` | ✅ vedette | ✅ vedette | ✅ |
+| `linear-regression` | ✅ vedette | ✅ vedette | ✅ |
+| `push_swap` | — (inventaire) | — (inventaire) | ✅ |
+| `so_long` | — (inventaire) | — (inventaire) | ✅ |
 
-**Contrôle automatisé** : lancer `scripts/check-consistency.sh` (présence de chaque fiche dans home + about) avant toute validation — à coupler avec le build `--strict`.
+**Contrôle automatisé** : lancer `scripts/check-consistency.sh` (vedettes dans home + about, tous dans l'inventaire) avant toute validation — à coupler avec le build `--strict`.
 
 **Pièges historiques** (corrigés le 18/09) : Transcendance « WebSockets, OAuth 42 » → **local** · ft_irc « RFC 1459 » → **RFC 2810-2813** · about badges « React / C++ / SQL » → **Django/Canvas/PostgreSQL**.
 

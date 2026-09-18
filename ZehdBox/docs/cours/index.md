@@ -34,6 +34,22 @@ icon: material/school
 
     [:octicons-arrow-right-24: Django](python/django/index.md)
 
+- :simple-materialformkdocs:{ .lg .middle } __MkDocs__
+
+    ---
+
+    Documenter des projets : configuration Material, plugins et extensions Markdown.
+
+    [:octicons-arrow-right-24: MkDocs](../mkdocs/index.md)
+
+- :material-music:{ .lg .middle } __Strudel__
+
+    ---
+
+    Musique algorithmique : composition dynamique avec JavaScript, de la première note aux effets.
+
+    [:octicons-arrow-right-24: Strudel](../strudel/index.md)
+
 </div>
 
 ---

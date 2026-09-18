@@ -1,6 +1,10 @@
 ---
 title: "La naissance du Web"
 description: "Comprendre la différence entre Internet et le Web, l'hypertexte, les services en ligne et l'histoire qui a tout déclenché."
+tags:
+  - cours
+  - web
+  - histoire
 icon: material/web
 ---
 

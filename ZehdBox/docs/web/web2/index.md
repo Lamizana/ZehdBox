@@ -1,6 +1,10 @@
 ---
 title: Web 2.0
 description: "Le Web 2.0 : applications dynamiques et interactives, frameworks JavaScript comme React."
+tags:
+  - cours
+  - web
+  - web2
 icon: material/language-javascript
 ---
 

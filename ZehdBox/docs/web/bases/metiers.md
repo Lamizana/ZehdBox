@@ -1,6 +1,10 @@
 ---
 title: "Les métiers du Web"
 description: "Panorama des métiers du web : développeur frontend, backend, full stack, QA manager, sysadmin - rôles et compétences."
+tags:
+  - cours
+  - web
+  - metiers
 icon: material/account-group
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: Blockchain
 description: "Comprendre la blockchain : stockage et transmission d'informations de manière transparente et décentralisée."
+tags:
+  - cours
+  - web3
+  - blockchain
 ---
 
 # <span class="h1">Blockchain</span>

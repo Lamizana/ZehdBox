@@ -1,6 +1,10 @@
 ---
 title: "Les langages du Web"
 description: "HTML, CSS, JavaScript, PHP, Python : comprendre les langages client, serveur, les frameworks et les bases de données."
+tags:
+  - cours
+  - web
+  - langages
 icon: material/language-html5
 ---
 

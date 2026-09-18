@@ -1,6 +1,10 @@
 ---
 title: BscScan
 description: "Explorateur de blocs officiel de la BNB Smart Chain : suivre ses transactions et inspecter les smart contracts."
+tags:
+  - cours
+  - web3
+  - bscscan
 ---
 
 # <span class="h1">BscScan</span>

@@ -1,6 +1,10 @@
 ---
 title: "Les réseaux"
 description: "Serveurs, adresses IP, DNS, protocoles TCP/UDP/HTTP : comment les ordinateurs communiquent entre eux sur Internet."
+tags:
+  - cours
+  - web
+  - reseaux
 icon: material/network
 ---
 

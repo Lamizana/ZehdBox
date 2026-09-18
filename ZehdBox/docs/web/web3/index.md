@@ -1,6 +1,10 @@
 ---
 title: Web 3.0 - Blockchain, DeFi et smart contracts
 description: "Découvrir le Web 3.0 : blockchain, décentralisation, smart contracts, Etherscan et création d'un token BEP-20."
+tags:
+  - cours
+  - web
+  - web3
 icon: material/bitcoin
 ---
 

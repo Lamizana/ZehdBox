@@ -1,6 +1,11 @@
 ---
 title: Tokenizer
 description: "Tutoriel pas à pas : créer, déployer et vérifier votre premier token BEP-20 sur la BNB Smart Chain."
+tags:
+  - cours
+  - web3
+  - solidity
+  - smart-contract
 ---
 
 # <span class="h1">Tokenizer</span>

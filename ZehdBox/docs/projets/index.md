@@ -46,7 +46,7 @@ icon: material/rocket-launch
 
     ---
 
-    **Token BEP-20** `GOLD42` sur BNB Smart Chain Testnet : mint plafonné, burn et transfert de propriété — premier smart contract.
+    **Token BEP-20** `GOLD42` sur BNB Smart Chain Testnet : mint plafonné, burn et transfert de propriété - premier smart contract.
 
     `Solidity` `BEP-20` `OpenZeppelin`
 
@@ -56,7 +56,7 @@ icon: material/rocket-launch
 
     ---
 
-    **Projet 42** : régression linéaire entraînée par une **descente de gradient** écrite de zéro — booléenne sur `thetas.json`, prédiction interactive et métriques MSE, MAE, R².
+    **Projet 42** : régression linéaire entraînée par une **descente de gradient** écrite de zéro - booléenne sur `thetas.json`, prédiction interactive et métriques MSE, MAE, R².
 
     `Python` `NumPy` `Pandas` `Matplotlib` `Descente de gradient`
 

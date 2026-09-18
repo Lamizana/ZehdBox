@@ -19,7 +19,7 @@ description: "Les bibliothèques Python : NumPy pour le calcul numérique, Panda
 
     ---
 
-    Tableaux multidimensionnels et opérations vectorielles — les fondations du calcul numérique.
+    Tableaux multidimensionnels et opérations vectorielles - les fondations du calcul numérique.
 
     [:octicons-arrow-right-24: NumPy](../numpy/index.md)
 

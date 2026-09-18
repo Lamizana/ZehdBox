@@ -28,7 +28,7 @@ plugins:
 
 ## <span class="h2">search</span>
 
-Recherche full-text intégrée — activée par défaut.
+Recherche full-text intégrée - activée par défaut.
 
 ```yaml
 plugins:
@@ -44,7 +44,7 @@ plugins:
 
 ## <span class="h2">social</span>
 
-Génère automatiquement une image Open Graph (OG) pour chaque page — idéal pour le partage sur Twitter/LinkedIn.
+Génère automatiquement une image Open Graph (OG) pour chaque page - idéal pour le partage sur Twitter/LinkedIn.
 
 ```yaml
 plugins:

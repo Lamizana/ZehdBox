@@ -1,6 +1,6 @@
 ---
 title: NumPy
-description: Introduction à NumPy — tableaux multidimensionnels, opérations vectorielles et calcul numérique en Python.
+description: Introduction à NumPy - tableaux multidimensionnels, opérations vectorielles et calcul numérique en Python.
 ---
 
 # <span class="h1">NumPy</span>

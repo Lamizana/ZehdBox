@@ -1,6 +1,6 @@
 ---
 title: Bases du Web
-description: "Les fondamentaux du web : histoire d'Internet, langages, réseaux et métiers — tout ce qu'il faut savoir pour commencer."
+description: "Les fondamentaux du web : histoire d'Internet, langages, réseaux et métiers - tout ce qu'il faut savoir pour commencer."
 icon: material/book-open-page-variant
 ---
 

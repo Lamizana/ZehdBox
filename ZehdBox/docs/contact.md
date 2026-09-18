@@ -1,6 +1,6 @@
 ---
 title: Contact
-description: "Contacter Alex Lamizana — email, LinkedIn, GitHub. Ouvert à une alternance Backend/Data, un stage ou des missions freelance."
+description: "Contacter Alex Lamizana - email, LinkedIn, GitHub. Ouvert à une alternance Backend/Data, un stage ou des missions freelance."
 icon: material/email
 ---
 
@@ -20,7 +20,7 @@ icon: material/email
 
     ---
 
-    À la recherche d'une **alternance** pour la rentrée — stack Python, SQL, bases de données, IA.
+    À la recherche d'une **alternance** pour la rentrée - stack Python, SQL, bases de données, IA.
 
 -   :material-rocket-launch:{ .lg .middle } __Missions freelance__
 

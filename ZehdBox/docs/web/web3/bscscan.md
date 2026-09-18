@@ -22,7 +22,7 @@ facilement les transactions qui transitent sur la blockchain.
     d'Ethereum) et reprend exactement les mêmes fonctionnalités, adaptées à la BNB Chain.
 
 Il existe une version dédiée au réseau de test :
-**[testnet.bscscan.com](https://testnet.bscscan.com){ target="_blank" rel="noopener" }** — c'est celle utilisée pour ce projet.
+**[testnet.bscscan.com](https://testnet.bscscan.com){ target="_blank" rel="noopener" }** - c'est celle utilisée pour ce projet.
 
 ---
 
@@ -83,8 +83,8 @@ C'est via BscScan Testnet que le token **GOLD42 (G42)** est consultable publique
 | Contrat G42 | [0xa3B9A3eb3F2aE8ed3a6788F4Ccbdb1e503FE6aaD](https://testnet.bscscan.com/address/0xa3B9A3eb3F2aE8ed3a6788F4Ccbdb1e503FE6aaD){ target="_blank" rel="noopener" } |
 | Transaction de déploiement | [0x8646886e694e70d679d8bd5a46eb8429528b1ed63ae7288799f597d643ad830d](https://testnet.bscscan.com/tx/0x8646886e694e70d679d8bd5a46eb8429528b1ed63ae7288799f597d643ad830d){ target="_blank" rel="noopener" } |
 
-On y retrouve notamment les événements émis par le contrat — `Mint`, `Burn`, `Transfer`,
-`OwnershipTransferred` — ce qui rend le fonctionnement du token **entièrement traçable** :
+On y retrouve notamment les événements émis par le contrat - `Mint`, `Burn`, `Transfer`,
+`OwnershipTransferred` - ce qui rend le fonctionnement du token **entièrement traçable** :
 chaque création, destruction ou transfert de G42 est public et vérifiable par tous.
 
 ---

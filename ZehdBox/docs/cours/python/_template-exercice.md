@@ -23,19 +23,19 @@ Copiez ce bloc, puis remplacez les contenus entre `[...]`.
     | [🟢 Facile / 🟡 Moyen / 🔴 Difficile] | [notion1, notion2] | [N] min |
 
 ???- note "💡 Indices"
-    - [Indice 1 — pensée directrice]
-    - [Indice 2 — aide plus précise]
+    - [Indice 1 - pensée directrice]
+    - [Indice 2 - aide plus précise]
 
 !!! success "Résultat attendu"
     [Sortie attendue, en bloc code]
 
 ???- tip "Solution"
-    === "Méthode 1 — [nom]"
+    === "Méthode 1 - [nom]"
         ```python
         [code]
         ```
 
-    === "Méthode 2 — [nom]"
+    === "Méthode 2 - [nom]"
         ```python
         [code alternatif]
         ```
@@ -79,7 +79,7 @@ description: "Exercices pratiques sur [sujet] en Python."
 - [Prérequis 1]
 - [Prérequis 2]
 
-???+ note "Lancer les exercices — option hors environnement"
+???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
@@ -88,7 +88,7 @@ description: "Exercices pratiques sur [sujet] en Python."
 
 ## <span class="h2">Exercice 1 : ...</span>
 
-[bloc exercice type — voir ci-dessus]
+[bloc exercice type - voir ci-dessus]
 
 ---
 ```
@@ -102,5 +102,5 @@ description: "Exercices pratiques sur [sujet] en Python."
 3. **Indices toujours présents** quand l'exercice est non trivial : `???- note "💡 Indices"`.
 4. **Résultat attendu en `!!! success`**, avec bloc code si c'est une sortie console.
 5. **Plusieurs méthodes** → onglets `=== ` (éviter la séparation "Méthode 1" en texte).
-6. **Strictement uniquement hors environnement** : `???+ note "Lancer les exercices — option hors environnement"` avec bouton Basthon primaire (`--primary`), à placer après l'intro (ou après les prérequis si la page en a).
+6. **Strictement uniquement hors environnement** : `???+ note "Lancer les exercices - option hors environnement"` avec bouton Basthon primaire (`--primary`), à placer après l'intro (ou après les prérequis si la page en a).
 6. **Méta (niveau/notions/durée)** en tableau sous l'énoncé, alignement centré pour la colonne niveau/durée.

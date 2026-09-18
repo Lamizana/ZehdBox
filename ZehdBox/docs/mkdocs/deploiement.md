@@ -107,7 +107,7 @@ mkdocs-redirects==1.2.3
 ```
 
 !!! tip "Pas de `pip freeze`"
-    Ne faites jamais un `pip freeze` complet — ça inclut des paquets inutiles qui rallongent le build CI.
+    Ne faites jamais un `pip freeze` complet - ça inclut des paquets inutiles qui rallongent le build CI.
 
 ---
 

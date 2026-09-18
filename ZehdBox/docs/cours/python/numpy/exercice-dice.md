@@ -41,7 +41,7 @@ description: Projet pratique pour maîtriser les fondamentaux de NumPy à traver
 - Python 3.8+
 - NumPy installé (`pip install numpy`)
 
-???+ note "Lancer les exercices — option hors environnement"
+???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
@@ -74,7 +74,7 @@ Créez un tableau NumPy représentant les faces d'un dé à 6 faces.
 
 
 ???- tip "Solution"
-    === "Méthode 1 — `np.array`"
+    === "Méthode 1 - `np.array`"
         ```python
         import numpy as np
 
@@ -83,7 +83,7 @@ Créez un tableau NumPy représentant les faces d'un dé à 6 faces.
         print(faces)
         ```
 
-    === "Méthode 2 — `np.arange`"
+    === "Méthode 2 - `np.arange`"
         ```python
         import numpy as np
 

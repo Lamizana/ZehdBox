@@ -112,4 +112,4 @@ mon-projet/
 ```
 
 !!! warning "Ne pas commit le dossier `site/`"
-    Ajoutez `site/` à votre `.gitignore` — c'est le build généré.
+    Ajoutez `site/` à votre `.gitignore` - c'est le build généré.

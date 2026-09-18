@@ -64,14 +64,14 @@ Le Web sert de passerelle à de nombreux services stockés dans le **cloud** :
 - **Google Drive** → stockage de fichiers sur le cloud
 - **Netflix** → streaming vidéo sur le cloud
 
-!!! example "SaaS — Software as a Service"
+!!! example "SaaS - Software as a Service"
     Le modèle le plus courant pour le grand public : un logiciel utilisé
     directement via une interface web, sans rien installer.
     Exemples : Gmail, Figma, Notion, Trello.
 
 !!! tip "Wayback Machine"
     Pour retrouver les anciennes versions d'un site web, utilisez la
-    [Wayback Machine](https://web.archive.org/) — un archiveur d'Internet
+    [Wayback Machine](https://web.archive.org/) - un archiveur d'Internet
     qui enregistre les pages depuis 1996.
 
 ---
@@ -81,10 +81,10 @@ Le Web sert de passerelle à de nombreux services stockés dans le **cloud** :
 ```mermaid
 timeline
     title Histoire d'Internet et du Web
-    1969 : ARPAnet — ancêtre d'Internet (réseau militaire décentralisé)
+    1969 : ARPAnet - ancêtre d'Internet (réseau militaire décentralisé)
     1972 : Premiers e-mails échangés
     1989 : Tim Berners-Lee invente le Web au CERN
-    1991 : Lancement du Web — premières pages d'informations
+    1991 : Lancement du Web - premières pages d'informations
 ```
 
 !!! info "Tim Berners-Lee"
@@ -92,7 +92,7 @@ timeline
     un concept de page web avec des liens hypertexte, et il est aussi
     à l'origine des bases du langage **HTML**.
 
-!!! info "W3C — World Wide Web Consortium"
+!!! info "W3C - World Wide Web Consortium"
     L'organisme fondé par Tim Berners-Lee qui **guide l'évolution du Web**
     aujourd'hui : normes HTML, accessibilité, standards ouverts.
     [w3.org](https://www.w3.org/)

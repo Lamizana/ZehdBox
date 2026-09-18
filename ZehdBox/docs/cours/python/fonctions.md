@@ -1,6 +1,6 @@
 ---
 title: Fonctions
-description: Création et utilisation de fonctions en Python — paramètres, arguments, retour et portée.
+description: Création et utilisation de fonctions en Python - paramètres, arguments, retour et portée.
 ---
 
 # <span class="h1">Fonctions</span>
@@ -136,7 +136,7 @@ print(resultat)                 # None
 ```
 
 !!! warning "Attention"
-    `print()` **affiche** à l'écran, `return` **fournit** une valeur au programme. Ce sont deux choses différentes — souvent confondues par les débutants.
+    `print()` **affiche** à l'écran, `return` **fournit** une valeur au programme. Ce sont deux choses différentes - souvent confondues par les débutants.
 
 ---
 
@@ -166,7 +166,7 @@ saluer("Alex", " ?")      # Salut Alex ?
 
 ## <span class="h2">Arguments nommés</span>
 
-On peut appeler une fonction en précisant **le nom des paramètres** — l'ordre n'a alors plus d'importance :
+On peut appeler une fonction en précisant **le nom des paramètres** - l'ordre n'a alors plus d'importance :
 
 ```python
 def profil(nom, age, ville):
@@ -246,7 +246,7 @@ def incrementer(valeur):
 compteur = 0
 compteur = incrementer(compteur)
 compteur = incrementer(compteur)
-print(compteur)          # 2 — même résultat, sans effet global
+print(compteur)          # 2 - même résultat, sans effet global
 ```
 
 ---
@@ -353,7 +353,7 @@ help(aire_rectangle)
 | `return valeur` | Renvoyer une valeur |
 | `None` | Valeur renvoyée par défaut (pas de `return`) |
 | Paramètres / Arguments | Variables définies / valeurs fournies à l'appel |
-| Valeur par défaut | `def f(x, y=0)` — argument optionnel |
-| Arguments nommés | `f(y=2, x=1)` — ordre libre |
+| Valeur par défaut | `def f(x, y=0)` - argument optionnel |
+| Arguments nommés | `f(y=2, x=1)` - ordre libre |
 | Variable locale / globale | Interne à la fonction / accessible partout |
 | Docstring | Documentation de la fonction |

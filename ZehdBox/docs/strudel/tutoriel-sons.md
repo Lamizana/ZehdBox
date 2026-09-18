@@ -1,6 +1,6 @@
 ---
 title: Premier Sons
-description: Premiers pas avec Strudel — jouer des sons, créer des rythmes et utiliser le REPL.
+description: Premiers pas avec Strudel - jouer des sons, créer des rythmes et utiliser le REPL.
 ---
 
 # <span class="h1">Premier Sons avec Strudel</span>

@@ -78,7 +78,7 @@ git rebase main
 ```
 
 !!! warning "Règle d'or"
-    **Ne jamais rebaser une branche déjà partagée avec d'autres.** Le rebase réécrit l'historique — si d'autres ont pull vos commits, ils auront des problèmes.
+    **Ne jamais rebaser une branche déjà partagée avec d'autres.** Le rebase réécrit l'historique - si d'autres ont pull vos commits, ils auront des problèmes.
 
     > *"Never rebase public history"*
 
@@ -140,5 +140,5 @@ gh pr create --base main --head feature/ma-fonctionnalite \
 
 ---
 
-> Lien vers source : [Git Documentation — Branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell){ target="_blank" rel="noopener" } · [GitHub Docs — Pull Requests](https://docs.github.com/en/pull-requests){ target="_blank" rel="noopener" }
+> Lien vers source : [Git Documentation - Branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell){ target="_blank" rel="noopener" } · [GitHub Docs - Pull Requests](https://docs.github.com/en/pull-requests){ target="_blank" rel="noopener" }
 > 

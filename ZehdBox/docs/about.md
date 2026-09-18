@@ -73,7 +73,7 @@ icon: material/account
     <h3><a href="https://github.com/Lamizana/Tokeniser" class="md-button md-button--primary" target="_blank" rel="noopener">
         Tokenizer
     </a></h3>
-    <p class="project-desc">Token BEP-20 GOLD42 sur BNB Smart Chain — premier smart contract, comprendre la blockchain et la DeFi</p>
+    <p class="project-desc">Token BEP-20 GOLD42 sur BNB Smart Chain - premier smart contract, comprendre la blockchain et la DeFi</p>
     <div class="project-tech-badges">
         <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity">
         <img src="https://img.shields.io/badge/BEP--20-F0B90B?style=for-the-badge&logo=binance&logoColor=black" alt="BEP-20">

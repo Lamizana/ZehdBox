@@ -44,7 +44,7 @@ description: Exercices pratiques pour maîtriser Pandas avec des données mété
 - Pandas installé (`pip install pandas`)
 - Requests installé (`pip install requests`)
 
-???+ note "Lancer les exercices — option hors environnement"
+???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
@@ -89,7 +89,7 @@ Créez un DataFrame Pandas avec les données météo suivantes:
     | `pd.read_csv('fichier.csv')` | Charger depuis un fichier |
 
 ???- tip "Solution"
-    === "Méthode 1 — un dictionnaire"
+    === "Méthode 1 - un dictionnaire"
         ```python
         import pandas as pd
 
@@ -104,7 +104,7 @@ Créez un DataFrame Pandas avec les données météo suivantes:
         print(meteo)
         ```
 
-    === "Méthode 2 — une liste de dictionnaires"
+    === "Méthode 2 - une liste de dictionnaires"
         ```python
         import pandas as pd
 

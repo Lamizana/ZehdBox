@@ -6,7 +6,7 @@ description: "Tutoriel pas à pas : créer, déployer et vérifier votre premier
 # <span class="h1">Tokenizer</span>
 
 <p class="intro">
-    Tutoriel complet pour créer votre premier token BEP-20 sur la BNB Smart Chain — de zéro jusqu'à un token publié et vérifié sur BSCScan.
+    Tutoriel complet pour créer votre premier token BEP-20 sur la BNB Smart Chain - de zéro jusqu'à un token publié et vérifié sur BSCScan.
 </p>
 
 ---
@@ -139,7 +139,7 @@ Ce fichier doit aller dans le dossier `code/` de ton dépôt sous le nom `token.
 
 ```solidity
 // SPDX-License-Identifier: MIT
-// GOLD42 — jeton BEP-20 (standard ERC-20 d'OpenZeppelin)
+// GOLD42 - jeton BEP-20 (standard ERC-20 d'OpenZeppelin)
 // Norme : BEP-20 sur la BNB Smart Chain
 pragma solidity ^0.8.0;
 
@@ -242,12 +242,12 @@ contract GOLD42 is ERC20 {
 Le code importe `@openzeppelin/contracts/...`. Remix doit le télécharger :
 
 1. Ouvre l'onglet **« Solidity Compiler »** (icône en forme de « S » sur le côté gauche).
-2. Clique sur **« Compile token.sol »**. Remix détectera l'import manquant et proposera de l'installer — accepte.
+2. Clique sur **« Compile token.sol »**. Remix détectera l'import manquant et proposera de l'installer - accepte.
 3. Sinon, va dans l'onglet **« File explorer »** → clic droit sur le dossier racine → **« Import from GitHub »** et colle : `OpenZeppelin/openzeppelin-contracts@master/contracts/token/ERC20/ERC20.sol`.
 
 ### E.3 Choisir la version et compiler
 
-1. Dans « Solidity Compiler », choisis la version **0.8.x** (ex. 0.8.26) — elle doit correspondre à `pragma solidity ^0.8.0`.
+1. Dans « Solidity Compiler », choisis la version **0.8.x** (ex. 0.8.26) - elle doit correspondre à `pragma solidity ^0.8.0`.
 2. Clique sur **« Compile token.sol »**.
 3. La barre verte **« Compilation successful »** doit s'afficher.
 
@@ -323,7 +323,7 @@ On démontre que le token fonctionne. Ces actions seront montrées à l'évaluat
 4. **`transferOwnership`** : teste de transférer la propriété à une autre adresse.
 
 !!! success "À l'évaluation"
-    Montre ces tests dans Remix ou directement sur BSCScan — les transactions y sont visibles et vérifiables.
+    Montre ces tests dans Remix ou directement sur BSCScan - les transactions y sont visibles et vérifiables.
 
 ---
 

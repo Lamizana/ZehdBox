@@ -9,7 +9,7 @@ tags:
   - serveur
 ---
 
-# <span class="h1">ft_irc</span>
+# <span class="h1">FT_IRC</span>
 
 <div class="badge-section">
 <div class="badge-row">
@@ -43,7 +43,7 @@ Pas de client à écrire, le serveur doit être compatible avec les clients IRC 
 
 ## <span class="h2">Mon rôle</span>
 
-Projet réalisé **en équipe**. Contributions portant sur la **boucle serveur**, le **dispatch des commandes**, la **gestion des canaux et des opérateurs**, et le **bot bonus** — le tout en C++98 sans bibliothèque externe, avec un Makefile aux règles `all`, `clean`, `fclean`, `re` (sans relink).
+Projet réalisé **en équipe**. Contributions portant sur la **boucle serveur**, le **dispatch des commandes**, la **gestion des canaux et des opérateurs**, et le **bot bonus** - le tout en C++98 sans bibliothèque externe, avec un Makefile aux règles `all`, `clean`, `fclean`, `re` (sans relink).
 
 ---
 
@@ -78,7 +78,7 @@ Un serveur mono-thread : une boucle `select()` unique surveille tous les descrip
 
 <div class="skill-card">
     <span class="skill-card-title">Réseau</span><br>
-    <span class="skill-card-desc"><strong>Sockets BSD TCP/IP</strong><br><em>socket, bind, listen, accept, recv, send, close.</em><br><strong>TCP seul</strong><br><em>Protocole fiable en mode connecté — aucun UDP.</em></span>
+    <span class="skill-card-desc"><strong>Sockets BSD TCP/IP</strong><br><em>socket, bind, listen, accept, recv, send, close.</em><br><strong>TCP seul</strong><br><em>Protocole fiable en mode connecté - aucun UDP.</em></span>
 </div>
 
 <div class="skill-card">

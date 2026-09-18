@@ -20,7 +20,7 @@ icon: material/school
 
     ---
 
-    Bases, fonctions, Pandas, NumPy et Scikit-learn — du débutant au data science.
+    Bases, fonctions, Pandas, NumPy et Scikit-learn - du débutant au data science.
 
     [:octicons-arrow-right-24: Python](python/index.md)
 

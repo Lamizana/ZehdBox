@@ -1,9 +1,6 @@
 ---
 title: Push Swap - Algorithme de tri en C
 description: "Push_swap : trier des entiers sur deux piles avec 11 instructions - parsing robuste, tri adaptatif (3-5 éléments) puis tri radix par normalisation (projet 42)."
-image: projets/images/push_swap_architecture.jpeg
-social:
-  cards_layout: projet
 tags:
   - projet
   - c

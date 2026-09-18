@@ -1,9 +1,6 @@
 ---
 title: Minishell - Interpréteur de commandes UNIX en C
 description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash - REPL, parsing par pipeline, pipes, redirections et gestion des signaux (projet 42)."
-image: projets/images/minishell_architecture.jpeg
-social:
-  cards_layout: projet
 tags:
   - projet
   - c

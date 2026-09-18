@@ -1,9 +1,6 @@
 ---
 title: ft_irc - Serveur IRC en C++ (multi-clients, canaux, opérateurs)
 description: "ft_irc, serveur IRC en C++ (RFC 2810-2813) : sockets TCP, un seul select(), canaux et opérateurs, 12 commandes, bot Pierre-Papier-Ciseaux."
-image: projets/images/ft_irc_architecture.svg
-social:
-  cards_layout: projet
 tags:
   - projet
   - cpp

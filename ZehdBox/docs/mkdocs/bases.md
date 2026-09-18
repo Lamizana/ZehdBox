@@ -1,6 +1,10 @@
 ---
 title: Bases de MkDocs
 description: "Les fondamentaux de ProperDocs/MkDocs : installation, commandes et structure du projet."
+tags:
+  - cours
+  - mkdocs
+  - bases
 ---
 
 # <span class="h1">Bases</span>

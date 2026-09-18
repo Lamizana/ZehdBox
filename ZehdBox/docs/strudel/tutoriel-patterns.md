@@ -1,6 +1,10 @@
 ---
 title: Syntaxe des Patterns
 description: Maîtrisez la mini-notation pour créer des rythmes complexes avec Strudel.
+tags:
+  - tutoriel
+  - strudel
+  - musique
 ---
 
 # <span class="h1">Syntaxe des Patterns (Mini-notation)</span>

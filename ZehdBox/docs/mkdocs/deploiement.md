@@ -1,6 +1,10 @@
 ---
 title: Déploiement
 description: "Déployer votre site ProperDocs/MkDocs : GitHub Pages, CI/CD et alternatives."
+tags:
+  - cours
+  - mkdocs
+  - deploiement
 ---
 
 # <span class="h1">Déploiement</span>

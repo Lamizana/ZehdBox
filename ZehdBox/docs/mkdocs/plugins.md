@@ -1,6 +1,10 @@
 ---
 title: Plugins
 description: "Les plugins ProperDocs/MkDocs : recherche, social cards, blog, tags, RSS, minify et plus."
+tags:
+  - cours
+  - mkdocs
+  - plugins
 ---
 
 # <span class="h1">Plugins</span>

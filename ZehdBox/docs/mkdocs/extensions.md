@@ -1,6 +1,10 @@
 ---
 title: Extensions Markdown
 description: "Les extensions Markdown de Material for MkDocs : admonitions, onglets, code highlight, emojis, grid cards."
+tags:
+  - cours
+  - mkdocs
+  - extensions
 ---
 
 # <span class="h1">Extensions Markdown</span>

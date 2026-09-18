@@ -48,7 +48,7 @@ tags:
 ???- tip "Solution"
     ```python
     print(7 + 1)
-    print(16 / 2)
+    print(4 * 2)
     print(12 - 4)
     print(45 - 37)
     ```
@@ -71,7 +71,7 @@ tags:
     - Créez votre nombre dans une variable, par exemple `favorite_number`.
     - Utilisez une **f-string** pour insérer la variable dans un message : `f"Votre nombre est: {favorite_number}."`
 
-!!! success "Résultat attendu"
+!!! success "Résultat attendu (variable)"
     Un message qui contient votre nombre préféré :
     ```python
     Votre nombre est: 12.

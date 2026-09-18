@@ -1,0 +1,96 @@
+/* ============================================================
+ * exercises.css — style du bac a sable Python (exercices).
+ * Utilise les variables CSS de Material pour rester coherent
+ * en mode clair et sombre.
+ * ============================================================ */
+
+.exercise-panel {
+  margin: 1rem 0 1.5rem;
+  border: 0.075rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  background-color: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z1);
+  overflow: hidden;
+}
+
+.exercise-panel__header {
+  padding: 0.55rem 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--md-primary-bg-color);
+  background-color: var(--md-primary-fg-color);
+}
+
+.exercise-panel__editor,
+.exercise-panel__stdin {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-family: var(--md-code-font-family);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--md-code-fg-color);
+  background-color: var(--md-code-bg-color);
+  border: none;
+  border-bottom: 0.05rem solid var(--md-default-fg-color--lightest);
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.exercise-panel__editor:focus,
+.exercise-panel__stdin:focus {
+  outline: 0.125rem solid var(--md-primary-fg-color);
+  outline-offset: -0.125rem;
+}
+
+.exercise-panel__stdin {
+  font-size: 0.7rem;
+  background-color: var(--md-default-bg-color);
+}
+
+.exercise-panel__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.exercise-panel__status {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.8rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.exercise-panel__status--busy {
+  color: var(--md-default-fg-color--light);
+}
+
+.exercise-panel__status--ok {
+  color: var(--md-typeset-color);
+  background-color: rgba(46, 160, 67, 0.1);
+}
+
+.exercise-panel__status--warn {
+  color: var(--md-typeset-color);
+  background-color: rgba(187, 128, 9, 0.1);
+}
+
+.exercise-panel__status--ko {
+  color: var(--md-typeset-color);
+  background-color: rgba(207, 34, 46, 0.1);
+}
+
+.exercise-panel__output {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  font-family: var(--md-code-font-family);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--md-code-fg-color);
+  background-color: var(--md-code-bg-color);
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}

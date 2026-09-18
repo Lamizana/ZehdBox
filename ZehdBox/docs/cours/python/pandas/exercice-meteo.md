@@ -369,7 +369,7 @@ Récupérez la météo actuelle d'Angoulême (lat=45.65, lon=0.15) en utilisant 
 https://api.open-meteo.com/v1/forecast?latitude=45.65&longitude=0.15&current=temperature_2m,relative_humidity_2m
 ```
 
-### Résultat attendu
+### Résultat attendu (variable)
 
 ```
 Température à Angoulême: [valeur]°C
@@ -422,7 +422,7 @@ Le DataFrame doit contenir:
 - humidite
 - vent
 
-### Résultat attendu
+### Résultat attendu (variable)
 
 ```
       ville  temperature  humidite    vent
@@ -477,7 +477,7 @@ Créez une classe `AnalyseurMeteo` qui:
 3. A une méthode `afficher()` qui affiche un résumé
 4. A une méthode `statistiques()` qui affiche les statistiques
 
-### Résultat attendu
+### Résultat attendu (variable)
 
 ```
 ==================================================

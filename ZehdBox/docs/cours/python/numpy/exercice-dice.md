@@ -108,7 +108,7 @@ Lors des 3 lancers, vous devez afficher:
 - le nombre de lancé effectuer
 - les résultats de chaque lancé
 
-### Résultat attendu (exemple)
+### Résultat attendu (variable)
 
 ```bash
 Vous avez lancé: 3
@@ -157,7 +157,7 @@ Simulez 1000 lancers de dé et calculez:
 - La `médiane`
 - L'`écart-type`
 
-### Résultat attendu (exemple)
+### Résultat attendu (variable)
 
 ```python
 Moyenne: 3.52
@@ -188,7 +188,7 @@ Min: 1, Max: 6
 
 Comptez combien de fois chaque face apparaît sur 1000 lancers, puis calculez la fréquence en pourcentage.
 
-### Résultat attendu (exemple)
+### Résultat attendu (variable)
 
 ```python
 Face 1: 168 fois (16.80%)
@@ -326,7 +326,7 @@ class AnalyseurDe:
     
 ```
 
-### Résultat attendu (exemple)
+### Résultat attendu (variable)
 
 ```python
 === Analyse sur 1000 lancers ===

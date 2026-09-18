@@ -4,7 +4,8 @@
 > interactive dans le navigateur (Pyodide).
 >
 > - **Branche** : `feature/exercices-python-interactifs`
-> - **Statut** : en cours — feuille de route validée, aucune phase implémentée
+> - **Statut** : Phase 1 terminée (marqueurs `(variable)` sur les 5 fichiers) ;
+>   Phase 2 étendue à tous les exercices (32 détectés) — spike validé par l'utilisateur
 > - **Contexte** : site MkDocs Material (ZehdBox) — double usage vitrine + base de
 >   connaissances. Les exercices Python (`docs/cours/python/`) sont actuellement en
 >   "énoncé / indices / résultat attendu / solution" avec renvoi externe Basthon.
@@ -84,6 +85,14 @@ ZehdBox/docs/
 ### Phase 2 — Runner interactif Pyodide (cœur du chantier)
 - **Objectif** : les exercices existants "tournent" dans la page.
 - Étapes :
+  - **Spike (verification du concept, appliqué en premier)** : fichiers
+    `pyodide-runner.js` + `exercise-runner.js` + `exercises.css` créés mais
+    `SPIKE_FIRST_ONLY = true` → un seul exercice traité par page (premier
+    `div.admonition.question`), le temps de valider le bundle Pyodide en
+    situation réelle (chargement lazy depuis le CDN, stdin, stdout, solution).
+  - **Note pour les exos API (meteo 6-8)** : `requests` n'est pas fourni par
+    Pyodide ; ces exercices restent jouables via Basthon (bouton conservé).
+    Côté du runner : Executer → ModuleNotFoundError affichée dans la console. 
   - `pyodide-runner.js` : `loadPyodide()` (CDN), lazy au 1er clic, message
     "Preparation de Python...", `loadPackage()` au besoin (numpy/pandas pour
     dice/meteo).

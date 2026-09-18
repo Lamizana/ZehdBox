@@ -58,7 +58,7 @@ tags:
     - Créez d'abord la variable `name`.
     - Utilisez une f-string pour insérer la variable dans le message.
 
-!!! success "Résultat attendu"
+!!! success "Résultat attendu (variable)"
     ```python
     Bonjour Alex, voudrais-tu apprendre un peu de python?
     ```
@@ -92,7 +92,7 @@ tags:
     - Chaque méthode s'appelle directement sur la chaîne : `name.upper()`.
     - Les méthodes ne modifient pas la chaîne d'origine : elles **renvoient** une nouvelle chaîne.
 
-!!! success "Résultat attendu"
+!!! success "Résultat attendu (variable)"
     ```python
     Nom en minuscule: alex.
     Nom en majuscule: ALEX.
@@ -130,7 +130,7 @@ tags:
     - Stockez le nom de l'auteur et la citation dans deux variables.
     - Insérez les deux variables dans un f-string.
 
-!!! success "Résultat attendu"
+!!! success "Résultat attendu (variable)"
     ```python
     Mère Teresa a dit " La vie est une opportunité, profitez-en.
     La vie est belle, admirez-la.
@@ -178,7 +178,7 @@ tags:
     - `\t` insère une tabulation, `\n` un saut de ligne.
     - Observez bien la différence entre la version initiale et les versions "nettoyées".
 
-!!! success "Résultat attendu"
+!!! success "Résultat attendu (variable)"
     ```python
     Nom initial (avec espaces):
      Alex

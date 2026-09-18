@@ -252,6 +252,13 @@ markdown_extensions:
 
 extra_css:
   - css/custom.css
+  - css/exercises.css
+
+# Scripts du bac a sable Python interactif (exercices, Phase 2 - spike)
+# L'ordre est important : le chargeur Pyodide doit etre charge avant le runner.
+extra_javascript:
+  - js/pyodide-runner.js
+  - js/exercise-runner.js
 
 plugins:
   - redirects:

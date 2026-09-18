@@ -57,7 +57,7 @@ Projet **100 % solo**, mené de bout en bout :
 Le programme enchaîne quatre étapes : validation des arguments, construction de la pile, tri adaptatif, et libération de la mémoire.
 
 <figure markdown>
-  ![Architecture de Push Swap](images/push_swap_architecture.jpeg){.project-architecture}
+  ![Architecture de Push Swap](images/push_swap_architecture.jpeg){ loading=lazy .project-architecture}
   <figcaption>Schéma de l'architecture de Push Swap</figcaption>
 </figure>
 

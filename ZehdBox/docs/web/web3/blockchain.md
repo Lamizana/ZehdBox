@@ -32,7 +32,7 @@ La blockchain représente une **séquence de blocs reliés les uns aux autres** 
 
 Contrairement aux systèmes bancaires traditionnels, **la blockchain se veut décentralisée**. Au lieu d'avoir une banque qui contrôle et valide les transactions, ce rôle est réparti sur un **réseau d'ordinateurs, appelés validateurs ou nœuds**. Chaque fois qu'une transaction est effectuée, elle doit être approuvée par ces ordinateurs selon des règles préétablies, ce qui assure la sécurité et l'intégrité des données.
 
-![Schéma comparant une architecture centralisée et une architecture décentralisée](./images/architecture-centralisee-vs-decentralisee.webp)
+![Schéma comparant une architecture centralisée et une architecture décentralisée](./images/architecture-centralisee-vs-decentralisee.webp){ loading=lazy }
 
 > La blockchain peut être comparée à un grand livre de compte public et immuable.
 
@@ -89,7 +89,7 @@ Exemple concret avec la blockchain Bitcoin fonctionnant avec le consensus Proof 
 **Validation et mise à jour de la blockchain**: Une fois le nouveau bloc ajouté, la blockchain Bitcoin est mise à jour sur tous les nœuds du réseau. Chaque copie de la blockchain est identique, ce qui rend les données immuables et vérifiables par n'importe qui, à n'importe quel moment.
 
 ***Fonctionnement d'une blockchain***
-![Schéma illustrant le fonctionnement d'une blockchain](./images/fonctionnement-blockchain1.webp)
+![Schéma illustrant le fonctionnement d'une blockchain](./images/fonctionnement-blockchain1.webp){ loading=lazy }
 
 ---
 
@@ -116,7 +116,7 @@ Il existe aussi des sous types de blockchains privées nommées "**permissionné
 
 Le trilemme des blockchains aborde les défis de **sécurité**, **décentralisation** et une **scalabilité** auxquels font face ces dernières. La scalabilité se réfère à la capacité d'une blockchain à traiter efficacement un volume croissant de transactions et à s'adapter à une augmentation de la demande.
 
-![Schéma du trilemme des blockchains : sécurité, décentralisation et scalabilité](./images/Trilemme-blockchain-1.webp)
+![Schéma du trilemme des blockchains : sécurité, décentralisation et scalabilité](./images/Trilemme-blockchain-1.webp){ loading=lazy }
 
 Il souligne que **les développeurs ne peuvent cumuler les 3 aspects évoqués au-dessus et doivent par conséquent faire des compromis**.
 La blockchain Bitcoin est sécurisée et décentralisée mais peine en termes de scalabilité. À l'inverse, la **BNB Smart Chain** (BSC) allie scalabilité et sécurité, mais sacrifie la décentralisation.

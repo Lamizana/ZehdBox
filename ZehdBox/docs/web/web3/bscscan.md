@@ -41,7 +41,7 @@ En collant une adresse de wallet ou de contrat dans la barre de recherche, on ac
 - les tokens ERC-721 (NFT) qu'elle détient ;
 - les interactions avec les smart contracts.
 
-![Page accueil Bscscan](./images/bscscan-accueil.png)
+![Page accueil Bscscan](./images/bscscan-accueil.png){ loading=lazy }
 
 ### Suivre une transaction
 

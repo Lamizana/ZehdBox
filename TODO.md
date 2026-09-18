@@ -185,7 +185,9 @@
 - [ ] **Alléger le site (22 Mo de `docs/`)** :
   - Convertir les `.jpeg`/`.png` lourds en `.webp` (ex. `linear_regression.jpeg`, captures Etherscan/BscScan)
   - [x] Supprimer `Gemini_Generated_Image_ofbn0ofbn0ofbn0o.jpeg` : image orpheline détectée par script (1,8 Mo libérés) - fait le 18/09/2026
-- [ ] Ajouter `loading="lazy"` sur les images de contenu (perf mobile) - via `attr_list` (`{ loading=lazy }`)
+- [x] Ajouter `loading="lazy"` sur les images de contenu (perf mobile) - fait le 18/09/2026, via `attr_list` (`{ loading=lazy }`)
+  - **12 images** lazy : screenshots fiches + schémas web3 + interaction web
+  - **Exclusions raisonnées** : joueur animé `so_long` (au-dessus de la ligne de flottaison → LCP), 69 badges shields.io + 13 icônes iconify (micro-assets, affichage immédiat voulu), avatar `about` (hero page)
 - [x] ~~Activer `minify_js: true` et `minify_css: true` dans le plugin `minify`~~ : **écarté le 18/09/2026** — gain marginal (~1-3 % de chargement, JS/CSS déjà gzipé par GitHub Pages) pour un risque réel (minification CSS/JS casseuse) ; priorité au vrai poids : les images (22 Mo)
 
 ---

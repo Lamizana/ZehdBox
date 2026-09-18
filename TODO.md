@@ -1,208 +1,207 @@
-# ✅ ZehdBox — Roadmap d'amélioration
+# ZehdBox - Audit complet & Roadmap d'amélioration
 
-> **Document de travail** — Audit réalisé le **07 septembre 2026** · Site vitrine développeur
+> **Document de travail** - Audit réalisé le **18 septembre 2026** · Site vitrine développeur + base de connaissances
 
 | | |
 | --- | --- |
-| 🏆 **Score global** | 86 / 100 |
-| 📝 **Statut** | En cours d'amélioration continue |
-| 🚀 **Priorité** | Vitrine / conviction recruteur |
-| 📈 **Progression** | 5 / 15 tâches accomplies |
+| **Score global** | 84 / 100 |
+| **Statut** | En amélioration continue |
+| **Priorité** | Vitrine / conviction recruteur, puis maintenance du fonds documentaire |
+| **Progression** | 9 / 22 chantiers accomplis |
+| **Dernière validation** | `properdocs build --strict` (18/09/2026, 0 erreur 0 warning) |
 
 ---
 
-## 📑 Sommaire
+## Sommaire
 
-1. [🚀 Priorité haute — Vitrine recruteur](#-priorité-haute--vitrine--conviction-recruteur)
-2. [📄 Contenu & structure](#-contenu--structure)
-3. [🎨 Design & CSS](#-design--css)
-4. [🔍 SEO & référencement](#-seo--référencement)
-5. [🔗 Maillage interne](#-maillage-interne)
-6. [🎯 Badges projets](#-badges-projets)
-7. [🌐 Déploiement & CI/CD](#-déploiement--cicd)
-8. [📋 Idées futures](#-idées-futures)
+1. [Vitrine recruteur - cohérence et conviction](#vitrine)
+2. [Contenu & structure](#contenu)
+3. [Maillage interne](#maillage)
+4. [Tags & recherche](#tags-recherche)
+5. [Design, CSS & performance](#design-css-perf)
+6. [SEO & référencement](#seo)
+7. [Accessibilité](#accessibilite)
+8. [Déploiement & CI/CD](#deploiement-cicd)
+9. [Nettoyage & hygiène](#nettoyage)
+10. [Idées futures](#idees-futures)
 
 ---
 
-## 🚀 Priorité haute — Vitrine / conviction recruteur
+## Vitrine recruteur - cohérence et conviction {#vitrine}
 
-> **Objectif** : convaincre un recruteur en moins de 30 secondes.
+> **Objectif** : convaincre en moins de 30 secondes *et* ne jamais contredire les fiches projets.
 
-### 🔗 Démos live
+### P1 - Incohérences Accueil / About vs fiches projets (détectées à l'audit du 18/09)
 
-- [ ] Ajouter un lien de **démo live / déploiement** sur chaque fiche projet
-- **État actuel** : 5 projets sur 6 n'ont *que* le lien GitHub ← signal faible
+**Constat** : la page d'accueil et `about.md` contenaient des **informations périmées** qui contredisaient les fiches projets corrigées.
+
+| Emplacement | Correction appliquée |
+| --- | --- |
+| `docs/index.md` (card Transcendance) | « WebSockets, OAuth 42 » → **Django + Canvas, multijoueur local, FR/EN/ES** |
+| `docs/index.md` (card ft_irc) | « conforme à la RFC 1459 » → **RFC 2810-2813** |
+| `docs/about.md` (badges Transcendance) | Badges **React / C++ / SQL** → **Django + Canvas + PostgreSQL** |
+| `docs/about.md` (desc. Transcendance) | « Pong multiplayer en temps réel avec chat et classements » → **local** |
+
+- [x] Mettre à jour les 4 zones (2 home + 2 about) à partir des fiches projets - fait le 18/09/2026
+- [ ] Ajouter une **procédure de contrôle croisé** : à chaque mise à jour de fiche projet, relire `index.md` et `about.md`
+
+### Démos live
+
+- [ ] Ajouter un lien **démo live / déploiement** sur chaque fiche projet (héritage du TODO précédent)
 
 | Projet | Démo live | Action recommandée |
 | --- | --- | --- |
-| Transcendance | ❌ | Héberger une instance (Render / Railway / VPS) |
-| Tokenizer | ✅ | Lien BscScan déjà présent |
-| Minishell | ⚠️ | Dépendances natives → captures + démonstration |
-| ft_irc | ⚠️ | Dépendances natives → captures + démonstration |
-| Push_swap | ⚠️ | Dépendances natives → captures + démonstration |
-| So_long | ✅ | Vidéo déjà présente |
+| Transcendance | Non | Héberger une instance (Render / Railway / VPS) |
+| Tokenizer | Oui | Lien BscScan déjà présent |
+| Minishell | Partiel | Dépendances natives → captures + démonstration |
+| ft_irc | Partiel | Dépendances natives → captures + démonstration |
+| Push_swap | Partiel | Dépendances natives → captures + démonstration |
+| So_long | Oui | Vidéo déjà présente |
 
-> 💡 **Cible** : uniformiser la section « Lien » de chaque fiche → `[Démo live]` + `[Repo]`
+> **Cible** : uniformiser la section « Lien » de chaque fiche → `[Démo live]` + `[Repo]`
 
-### 🧱 Structure des fiches projets
+### Accueil - pitch et CTA
 
-- [ ] Uniformiser la **densité** et la **structure** des fiches projets
-- ✅ **Modèles riches** : `transcendance.md`, `tokeniser.md`
-- **À harmoniser** :
-  - `minishell.md` : section Compétences en cards (`.soft-skills-grid`) vs liste plate ailleurs
-  - `ft_irc.md` / `minishell.md` / `push_swap.md` : ajouter *Résultat / retombées*
-- **Structure cible** : `Contexte → Compétences → Stack → Défis → Résultat → [Démo live] + [Repo]`
+- [ ] Remplacer le tagline « Le pouvoir du savoir... » par un **pitch de 1 ligne** (qui tu es, ce que tu cherches : alternance Backend/Data/IA)
+- [ ] Ajouter un **CTA « À propos / CV »** visible sur la home (bouton `md-button`) - aujourd'hui About/Contact ne sont accessibles que via la nav
+- [ ] Envisager un **CV téléchargeable** (PDF) lié depuis home + about
 
-### 🏷️ Nom du projet IRC
+### Structure des fiches projets
 
-- [x] Homogénéiser le nom du projet IRC dans la nav
-- ✅ **Terminé** — mergé via PR #13 (`feat/seo-tittres-descriptions`)
+- [x] **Titres harmonisés** (` - ` comme séparateur) - fait le 18/09/2026
+- [x] **Badges autonomes** supprimés au profit des sections stack - fait (PR antérieure)
+- [ ] Uniformiser la **densité** et la section **« Résultat / retombées »** sur `minishell.md`, `ft_irc.md`, `push_swap.md`
 
 ---
 
-## 📄 Contenu & structure
+## Contenu & structure {#contenu}
 
 ### Blog
 
-- [ ] Étoffer la page d'accueil du blog : `docs/blog/index.md` (25 lignes, quasi vide)
-  - 📌 Présenter les derniers articles
-  - 📌 Courte présentation de la thématique (science / culture)
-  - 📌 Orienter vers les tags
+- [ ] Étoffer `docs/blog/index.md` (quasi vide) : présentation de la thématique, derniers articles, orientation vers les tags
+- [x] Les 6 articles du blog ont des `tags:` - fait le 18/09/2026
 
 ### Organisation de la navigation
 
-- [ ] Séparer explicitement dans la nav :
-  - **« Projets »** (vitrine) ← déjà le cas ✅
-  - **« Notes/Veille »** (cours, système, web, github) ← déjà bien séparé ✅
-  - → RAS — la séparation est déjà saine, continuer sur cette lancée
+- [x] Typologie **vitrine (Projets)** vs **base de connaissances (Cours/Système/Web/GitHub)** déjà séparée - fait
+- [ ] Aligner les **libellés nav** sur les nouveaux titres :
+  - `nav: - Push_swap:` → `Push Swap` (incohérent avec le titre de la fiche)
+  - Vérifier `So Long` et `FT_IRC` (dénomination désormais utilisée en H1)
+- [ ] Évaluer si le tab **« Programmation »** (Python + MkDocs + Strudel) devient trop chargé → déplacer `Strudel` (musique algorithmique) ou `MkDocs` dans une section dédiée
+- [ ] Ajouter la feature `content.action.edit` (bouton « Modifier cette page ») - `edit_uri` est déjà configuré, c'est une ligne à activer dans `theme.features`
 
 ---
 
-## 🎨 Design & CSS
+## Maillage interne {#maillage}
 
-- [ ] **Supprimer les définitions dupliquées** dans `docs/css/custom.css`
+> **Constat (audit 08/09 + 18/09)** : des pages restent orphelines (accessibles via la nav uniquement).
+
+### Chantiers (hérités, toujours en attente)
+
+| Chantier | Impact | Statut |
+| --- | --- | --- |
+| 1 - Chaînage cours Python « Continuer la lecture » | Élevé | Terminé |
+| 2 - Bloc « Autres projets » en bas des fiches | Élevé | À faire |
+| 3 - Réactiver blog et tags (home + cross-links articles) | Moyen | À faire |
+| 4 - Web & cross-links (`react.md`, web3, système) | Moyen | À faire |
+| 5 - Strudel : chaînage intro → sons → notes → patterns → effets | Faible | À faire |
+
+### Détails
+
+- [ ] Encart « Autres projets » en bas des 6 fiches (fi. `transcendance` → `ft_irc`, `push_swap`, index, etc.)
+- [ ] Ajouter une **carte Blog** dans les grid cards de la home (aujourd'hui le blog n'est pas mis en avant)
+- [ ] `blog/index.md` → lien « Explorer par tags » vers `tags.md`
+- [ ] Cross-links articles : `fourmis` ↔ `puces` ; `mutilation_pigeon` ↔ `hierarchie_rats`
+- [ ] `react.md` : lier depuis `cours/javascript` et `web/web2/index`
+- [ ] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan`
+- [ ] `systeme/nettoyage-disque` → lien vers `systeme/linux/index`
+- [ ] Lier `tags.md` depuis du contenu (aucun lien entrant actuellement)
+
+---
+
+## Tags & recherche {#tags-recherche}
+
+- [ ] **Ajouter `tags:` en front matter aux pages de cours** : seules **15 pages** ont des tags (hors blog/template/tags.md), **66 pages** n'en ont pas
+  - Priorité : `cours/python/**`, `web/**`, `systeme/**`, `github/**`, `mkdocs/**`, `strudel/**`
+  - Impact : le plugin `tags` et la page `tags.md` ne reflètent que ~15 % du contenu
+- [ ] Vérifier le comportement de `navigation.prune` (page `tags.md` listée dans la nav - à confirmer sur mobile)
+- [ ] Option : ajouter `search.share` dans `theme.features` pour partager des résultats de recherche
+
+---
+
+## Design, CSS & performance {#design-css-perf}
+
+### CSS dupliqué
+
+- [ ] **Supprimer les définitions dupliquées** dans `docs/css/custom.css` (639 lignes)
 
 | Sélecteur | Occurrence 1 | Occurrence 2 |
 | --- | --- | --- |
-| `.badge-row` | ~ligne 98 | ~ligne 537 |
-| `.badge-category` | ~ligne 91 | ~ligne 528 |
-| `.project-card` | ~ligne 116 | ~ligne 550+ |
+| `.badge-row` | ~ligne 110 | ~ligne 581 |
+| `.badge-category` | ~ligne 103 | ~ligne 572 |
+| `.project-card` | ~ligne 128 | ~ligne 550+ |
+| `.tech-tag` / `project-hero` | une seule fois | — |
 
-> Fusionner en une seule définition chacune — les règles des blocs sont proches mais pas identiques : réconcilier hauteurs/justification.
+> Réconcilier hauteurs/justification avant fusion, puis re-test mode clair/sombre.
 
-- [ ] Ajouter `loading="lazy"` sur les images de contenu (perf mobile)
-  - *(déjà listé dans l'ancien TODO — toujours en attente)*
+### Images & poids
 
----
-
-## 🔍 SEO & référencement
-
-- [ ] **Meta Open Graph / Twitter différenciée par page projet** (partage LinkedIn/Twitter)
-  - Vérifier que le plugin social Material génère une carte distincte par page
-  - Penser aux drafts de description + images
-- [ ] Confirmer l'indexation du **sitemap** dans Search Console
-  - ✅ Soumis dans GSC le 08/09/2026 — état *« Impossible de lire »* à surveiller
-  - ℹ️ XML pourtant validé en local (72 URLs, format OK)
-  - 🛠️ Solutions si persiste : re-tester dans GSC / soumettre `sitemap.xml.gz` / attendre 24-48 h
-- [ ] Vérifier que **Google Analytics** (`G-74MZWWS1RR`) collecte réellement après acceptation des cookies
+- [ ] **Alléger le site (22 Mo de `docs/`)** :
+  - Convertir les `.jpeg`/`.png` lourds en `.webp` (ex. `linear_regression.jpeg`, captures Etherscan/BscScan)
+  - Renommer `Gemini_Generated_Image_ofbn0ofbn0ofbn0o.jpeg` (nom illisible, mauvais pour le SEO des images)
+- [ ] Ajouter `loading="lazy"` sur les images de contenu (perf mobile) - via `attr_list` (`{ loading=lazy }`)
+- [ ] Activer `minify_js: true` et `minify_css: true` dans le plugin `minify` (aujourd'hui seul `minify_html` est actif)
 
 ---
 
-## 🔗 Maillage interne
+## SEO & référencement {#seo}
 
-!!! Note
-    **Constat (audit du 08/09/2026)** : 25 pages orphelines = accessibles uniquement via la nav, sans lien dans le contenu.
-
-    `cours Python (14)` · `Strudel (6)` · `blog (6 articles)` · `tags.md` · `react.md`
-
-### Vue d'ensemble des chantiers
-
-| Chantier | Impact | Pages | Statut |
-| --- | --- | --- | --- |
-| 1 — Chaînage cours Python | ⭐⭐⭐ | 8 | ✅ Terminé |
-| 2 — Bloc « Autres projets » | ⭐⭐⭐ | 6 | ⬜ À faire |
-| 3 — Blog & tags | ⭐⭐ | 4 | ⬜ À faire |
-| 4 — Web & cross-links | ⭐⭐ | 4 | ⬜ À faire |
-| 5 — Strudel | ⭐ | 6 | ⬜ À faire |
+- [x] **Descriptions SEO** : 100 % des pages ont une `description:` - fait
+- [x] **Tirets normalisés** partout (` - `) - titles, H1, descriptions, contenu - fait le 18/09/2026
+- [ ] **Meta OG / Twitter différenciée par page projet** : le plugin `social` génère une carte par page, mais le layout est identique → personnaliser les cartes des 6 fiches projets (image + titre projet) pour le partage LinkedIn/Twitter
+- [ ] **Sitemap** : soumis dans GSC le 08/09 (« Impossible de lire ») - à re-tester, sinon `sitemap.xml.gz`
+- [ ] **Analytics** : confirmer que `G-74MZWWS1RR` collecte réellement après acceptation du consentement (cohérence bandeau sur la config, reste à vérifier dans GA4)
+- [ ] Vérifier que `robots.txt` présent dans `docs/` est servi sur GitHub Pages (le fichier existe)
 
 ---
 
-### Chantier 1 — Chaînage pédagogique cours Python
+## Accessibilité {#accessibilite}
 
-- [x] Ajouter en bas de chaque page un bloc **« Continuer la lecture »**
-
-| Étape | Page suivante |
-| --- | --- |
-| `mise-en-place` | → `variables` |
-| `variables` | → `types` |
-| `types` | → `operateurs` |
-| `operateurs` | → `chaines` |
-| `chaines` | → `flux-execution` |
-| `flux-execution` | → `instructions-repetitives` |
-| `instructions-repetitives` | → `fonctions` |
-| `fonctions` | → `exercices` |
+- [ ] **Contraste** : `.intro` (`color: #90a4ae`) risque d'être trop clair en mode clair → tester avec un outil de contraste (cible AA ≥ 4.5:1)
+- [ ] Vérifier les `alt` de toutes les images (grep `![]` et `<img>`) - `about`, fiches projets et blog
+- [ ] Ajouter `aria-label` sur les liens icones seuls (ex. boutons sociaux) si présents
+- [ ] Vérifier le flot de lecture mobile (tout le contenu passe sous la nav ?) avec les features `navigation.path` + `header.autohide`
 
 ---
 
-### Chantier 2 — Bloc « Autres projets »
+## Déploiement & CI/CD {#deploiement-cicd}
 
-- [ ] Encart « 📚 Autres projets » en bas de chaque fiche
-
-| Projet | Liens suggérés |
-| --- | --- |
-| `transcendance` | ft_irc, push_swap, index |
-| `minishell` | ft_irc, push_swap, index |
-| `ft_irc` | transcendance, minishell, index |
-| `tokeniser` | web3/tokenizer *(déjà fait)* + transcendance + index |
-| `push_swap` | minishell, so_long, index |
-| `so_long` | push_swap, minishell, index |
+- [x] `--strict` activé dans le workflow GitHub Actions - fait
+- [x] `fetch-depth: 0` présent (dates de révision fiables) - fait
+- [ ] Vérifier le **dernier run GitHub Actions** après le prochain push (build + deploy)
+- [ ] Option : ajouter un **job de vérification des liens externes** (ou workflow manuel) pour attraper les URLs 404 vers shields.io / docs externes
+- [ ] Penser à un **test de non-régression** : vérifier périodiquement que `docs/` ne grossit pas démesurément (22 Mo aujourd'hui)
 
 ---
 
-### Chantier 3 — Réactiver blog et tags
+## Nettoyage & hygiène {#nettoyage}
 
-- [ ] Ajouter une carte « Blog » dans les grid cards de la home *(manquante)*
-- [ ] `blog/index.md` → lien « 📂 Explorer par tags » vers `tags.md`
-- [ ] Cross-links entre articles : `fourmis` ↔ `puces` ; `mutilation_pigeon` ↔ `hierarchie_rats`
-- [ ] Lier `tags.md` depuis le contenu *(aucun lien entrant actuellement)*
-
-### 🟢 Chantier 4 — Web & cross-links
-
-- [ ] `react.md` orpheline → lier depuis `cours/javascript` et `web/web2/index`
-- [ ] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan` (« voir aussi »)
-- [ ] `systeme/nettoyage-disque` → lien vers `linux/index`
-
-### ⚪ Chantier 5 — Strudel
-
-- [ ] Chaînage des tutoriels : `intro` → `sons` → `notes` → `patterns` → `effets` → `exercice`
+- [ ] Supprimer `backup/` (répertoire vide à la racine)
+- [ ] Purger `ZehdBox/node_modules/` si non utilisé (déjà gitignoré - confort disque)
+- [ ] Supprimer les **assets orphelins** : fichiers images non référencés dans le Markdown (script de détection à écrire)
+- [ ] Homogénéiser l'orthographe `Tokenizer` vs `Tokeniser` (le repo GitHub est `Lamizana/Tokeniser`, la fiche et la nav sont `Tokenizer` - soit renommer le repo, soit l'indiquer en note)
+- [ ] `docs/blog/.authors.yml` : description « Createur » → corriger l'orthographe « Créateur »
 
 ---
 
-## 🎯 Badges projets
+## Idées futures {#idees-futures}
 
-> 📅 **Plan validé** — déploiement prévu **après merge de la PR SEO**.
-
-- [ ] Remplacer les `<span class="tech-tag">` des 6 fiches projets par des badges `shields.io style=for-the-badge`
-
-| Type | Technos |
-| --- | --- |
-| 🎨 Logos officiels | C · C++ · JavaScript · Solidity · PostgreSQL · React |
-| 🔊 Badges texte coloré | UNIX · Makefile · Sockets · RFC 1459 · WebSockets · OAuth 42 · BEP-20 · OpenZeppelin · Algorithmique · Optimisation · MiniLibX · Jeu 2D |
-
-- 📐 Structure `badge-row` (CSS `.badge-row` déjà présent) + attribut `alt` (accessibilité)
-- 🔀 Branche dédiée : `feat/badges-projets` + PR
+- [ ] Page « Changelog » / « Journal » pour suivre les évolutions du site
+- [ ] Filtre par tag sur la page d'accueil du blog
+- [ ] Page 404 personnalisée (l'activation nécessite un override du thème - Material n'expose pas de `404.md` natif)
+- [ ] Séparer physiquement `docs/` en `projects/` et `notes/` si le contenu grossit encore (anticiper avant que la nav ne devienne ingérable)
+- [ ] Ajouter un système de statut sur les pages de cours (`à jour` / `à revoir` / `obsolète`) via front matter ou admonition
 
 ---
 
-## 🌐 Déploiement & CI/CD
-
-- [ ] Vérifier le dernier run GitHub Actions (build strict + deploy) après le prochain push
-  - via `gh` ou l'interface GitHub
-
----
-
-## 📋 Idées futures
-
-- [ ] Ajouter une page « Changelog » / « Journal » pour suivre les évolutions
-- [ ] Ajouter des tags aux pages de cours (Python, JavaScript…) pour enrichir `/tags/`
-- [ ] Réfléchir à un filtre par tag sur la page d'accueil du blog
+*Audit 18/09/2026 : `properdocs build -f ZehdBox/properdocs.yml --strict` valide (6,4 s). Tant que ce fichier existe dans le working tree, considérer les `[ ]` comme des chantiers ouverts.*

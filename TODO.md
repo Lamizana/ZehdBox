@@ -190,11 +190,11 @@
 
 ## Nettoyage & hygiène {#nettoyage}
 
-- [ ] Supprimer `backup/` (répertoire vide à la racine)
-- [ ] Purger `ZehdBox/node_modules/` si non utilisé (déjà gitignoré - confort disque)
-- [ ] Supprimer les **assets orphelins** : fichiers images non référencés dans le Markdown (script de détection à écrire)
+- [x] Supprimer `backup/` (répertoire vide à la racine) - fait le 18/09/2026
+- [x] Purger `ZehdBox/node_modules/` si non utilisé (déjà gitignoré - confort disque) - fait le 18/09/2026 (coquille vide `bootstrap-icons`)
+- [x] Supprimer les **assets orphelins** : fichiers images non référencés dans le Markdown (script de détection à écrire) - fait le 18/09/2026 (1 orphelin sur 20, 1,8 Mo)
 - [x] Homogénéiser l'orthographe `Tokenizer` vs `Tokeniser` : repo renommé `Lamizana/Tokenizer`, liens mis à jour - fait le 18/09/2026
-- [ ] `docs/blog/.authors.yml` : description « Createur » → corriger l'orthographe « Créateur »
+- [x] `docs/blog/.authors.yml` : description « Createur » → corriger l'orthographe « Créateur » - fait le 18/09/2026
 
 ---
 

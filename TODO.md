@@ -4,10 +4,10 @@
 
 | | |
 | --- | --- |
-| **Score global** | 84 / 100 |
+| **Score global** | 84 / 100 *(à ré-évaluer — de nombreux chantiers clôturés depuis l'audit)* |
 | **Statut** | En amélioration continue |
 | **Priorité** | Vitrine / conviction recruteur, puis maintenance du fonds documentaire |
-| **Progression** | 9 / 22 chantiers accomplis |
+| **Progression** | 29 / 57 cases TO-DO cochées (~51 %) |
 | **Dernière validation** | `properdocs build --strict` (18/09/2026, 0 erreur 0 warning) |
 
 ---
@@ -169,16 +169,16 @@
 
 ### CSS dupliqué
 
-- [ ] **Supprimer les définitions dupliquées** dans `docs/css/custom.css` (639 lignes)
+- [x] **Supprimer les définitions dupliquées** dans `docs/css/custom.css` (639 → ~590 lignes) - fait le 18/09/2026
 
-| Sélecteur | Occurrence 1 | Occurrence 2 |
-| --- | --- | --- |
-| `.badge-row` | ~ligne 110 | ~ligne 581 |
-| `.badge-category` | ~ligne 103 | ~ligne 572 |
-| `.project-card` | ~ligne 128 | ~ligne 550+ |
-| `.tech-tag` / `project-hero` | une seule fois | — |
+| Sélecteur en double | Traitement |
+| --- | --- |
+| `.badge-row` | Fusionné (rendu effectif conservé : `justify-content: center` + `gap: 8px`) |
+| `.badge-category` | Fusionné (rendu effectif conservé : majuscules, `0.8rem`, `opacity`, couleur primaire) |
+| `.badge-row img` (+ `:hover`) | Fusionné (hauteurs + transition/survol conservés) |
+| `.project-card` | **Faux positif** : pas de doublon réel (seuls `h2`/`p`/`md-button` sont déclinés) |
 
-> Réconcilier hauteurs/justification avant fusion, puis re-test mode clair/sombre.
+> Le rendu visuel est strictement inchangé : les 2ᵉ définitions (fin de fichier) gagnaient déjà la cascade CSS ; la fusion en une seule règle reproduit exactement l'état effectif.
 
 ### Images & poids
 

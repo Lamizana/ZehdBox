@@ -152,7 +152,7 @@
 
 - [ ] **Alléger le site (22 Mo de `docs/`)** :
   - Convertir les `.jpeg`/`.png` lourds en `.webp` (ex. `linear_regression.jpeg`, captures Etherscan/BscScan)
-  - Renommer `Gemini_Generated_Image_ofbn0ofbn0ofbn0o.jpeg` (nom illisible, mauvais pour le SEO des images)
+  - [x] Supprimer `Gemini_Generated_Image_ofbn0ofbn0ofbn0o.jpeg` : image orpheline détectée par script (1,8 Mo libérés) - fait le 18/09/2026
 - [ ] Ajouter `loading="lazy"` sur les images de contenu (perf mobile) - via `attr_list` (`{ loading=lazy }`)
 - [ ] Activer `minify_js: true` et `minify_css: true` dans le plugin `minify` (aujourd'hui seul `minify_html` est actif)
 

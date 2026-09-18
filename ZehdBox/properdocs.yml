@@ -220,10 +220,10 @@ extra_css:
 plugins:
   - redirects:
       redirect_maps:
-        'projets/tokeniser.md': 'projets/tokenizer.md'
-        'projets/ft_transcendence.md': 'projets/transcendance.md'
-        'so_long/jeux.md': 'projets/so_long.md'
-        'github/github.md': 'github/index.md'
+        "projets/tokeniser.md": "projets/tokenizer.md"
+        "projets/ft_transcendence.md": "projets/transcendance.md"
+        "so_long/jeux.md": "projets/so_long.md"
+        "github/github.md": "github/index.md"
 
   - search:
       lang: fr
@@ -260,7 +260,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Lamizana
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/alex-lamizana/
+      link: https://www.linkedin.com/in/alex-lamizana-85ab82401
     - icon: fontawesome/solid/paper-plane
       link: mailto:lamizana1987@yahoo.fr
   analytics:

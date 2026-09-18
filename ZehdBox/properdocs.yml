@@ -264,6 +264,7 @@ plugins:
   - search:
       lang: fr
   - social:
+      cards_layout_dir: layouts
       cards_layout_options:
         font_family: Noto Sans
 

@@ -1,0 +1,116 @@
+# Layout social custom pour les fiches projets
+# Affiche la capture/architecture du projet en fond, avec voile sombre à gauche
+# pour la lisibilité du titre. Sans `image:` en front matter, repli sur la
+# couleur primaire du site.
+
+# -----------------------------------------------------------------------------
+# Définitions
+# -----------------------------------------------------------------------------
+definitions:
+
+  # Image de la page (relative à docs_dir) - vide si absente
+  - &background_image >-
+    {%- if page.meta.image -%}
+      {{ config.docs_dir }}/{{ page.meta.image }}
+    {%- endif -%}
+
+  # Nom du site
+  - &site_name >-
+    {{ config.site_name }}
+
+  # Titre de la page
+  - &page_title >-
+    {%- if layout.title -%}
+      {{ layout.title }}
+    {%- else -%}
+      {{ page.meta.get("title", page.title) }}
+    {%- endif -%}
+
+  # Description de la page
+  - &page_description >-
+    {%- if layout.description -%}
+      {{ layout.description }}
+    {%- else -%}
+      {{ page.meta.get("description", config.site_description) | x }}
+    {%- endif -%}
+
+  # Police
+  - &font_family >-
+    {%- if layout.font_family -%}
+      {{ layout.font_family }}
+    {%- elif config.theme.font is mapping -%}
+      {{ config.theme.font.get("text", "Roboto") }}
+    {%- else -%}
+      Roboto
+    {%- endif -%}
+
+# -----------------------------------------------------------------------------
+# Métadonnées sociales
+# -----------------------------------------------------------------------------
+tags:
+
+  # Open Graph
+  og:type: website
+  og:title: "{{ page.meta.get('title', page.title) }} - {{ config.site_name }}"
+  og:description: *page_description
+  og:image: "{{ image.url }}"
+  og:image:type: "{{ image.type }}"
+  og:image:width: "{{ image.width }}"
+  og:image:height: "{{ image.height }}"
+  og:url: "{{ page.canonical_url }}"
+
+  # Twitter
+  twitter:card: summary_large_image
+  twitter:title: "{{ page.meta.get('title', page.title) }} - {{ config.site_name }}"
+  twitter:description: *page_description
+  twitter:image: "{{ image.url }}"
+
+# -----------------------------------------------------------------------------
+# Spécification de la carte (1200x630)
+# -----------------------------------------------------------------------------
+size: { width: 1200, height: 630 }
+layers:
+
+  # Fond : couleur primaire du site (repli si aucune image)
+  - background:
+      color: "#7e56c2"
+
+  # Fond : photo/architecture du projet (composée par-dessus la couleur)
+  - background:
+      image: *background_image
+
+  # Voile sombre à gauche (lisibilité du texte sur la photo)
+  - size: { width: 800, height: 630 }
+    offset: { x: 0, y: 0 }
+    background:
+      color: "#00000080"
+
+  # Nom du site
+  - size: { width: 700, height: 42 }
+    offset: { x: 64, y: 64 }
+    typography:
+      content: *site_name
+      color: "#ffffff"
+      font:
+        family: *font_family
+        style: Bold
+
+  # Titre du projet
+  - size: { width: 700, height: 250 }
+    offset: { x: 64, y: 160 }
+    typography:
+      content: *page_title
+      color: "#ffffff"
+      font:
+        family: *font_family
+        style: Bold
+
+  # Description
+  - size: { width: 700, height: 110 }
+    offset: { x: 64, y: 420 }
+    typography:
+      content: *page_description
+      color: "#ffffff"
+      font:
+        family: *font_family
+        style: Regular

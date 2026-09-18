@@ -38,8 +38,11 @@ possible en bonus (téléchargement des fichiers starter/tests généré côté 
   = oracle de sortie ; `??? tip` = solution).
 - **Piège connu (`navigation.instant`)** : l'injection DOM doit s'abonner à
   `app.document$` de Material, sinon elle ne s'exécute pas au changement de page.
-- Conventions Markdown minimales et optionnelles (attributs `exo="..."` sur les
-  blocs de code) — aucune ne casse le rendu actuel.
+- **Aucun attribut custom sur les fences de code** : testé (pymdown-extensions
+  10.21), SuperFences supprime silencieusement ou casse les attributs inconnus
+  (`exo="..."` → fence ignorée en `language-text`). La détection se fait donc par
+  la **structure DOM des admonitions** (`question`, `success`, `tip`) et par
+  convention de **titres d'admonition** (`(variable)` = sortie non déterministe).
 
 ## 4. Architecture cible
 
@@ -58,17 +61,24 @@ ZehdBox/docs/
 
 ### Phase 1 — Conventions Markdown & fondations
 - **Objectif** : rendre le contenu "machine-readable" sans casser l'affichage.
+- **Constat technique (validé par fichier jetable)** : SuperFences 10.21 rejette
+  les attributs custom `exo="..."` sur les fences. La détection s'appuiera donc
+  **uniquement sur la structure** :
+  - énoncé → admonition `question` ;
+  - résultat attendu → admonition `success` (oracle de sortie) ou titre
+    `### Résultat attendu` ;
+  - solution → admonition `tip` ;
+  - sortie **non déterministe** → titre de l'admonition / bloc contenant
+    le marqueur `(variable)` (ex. `!!! success "Résultat attendu (variable)"`),
+    convention nouvelle et compatible (ne casse pas le rendu).
 - Étapes :
-  - Adopter les attributs de blocs de code :
-    - ` ```python exo="solution" ` dans `??? tip "Solution"` → permet de charger
-      la solution dans l'éditeur ;
-    - (nouveaux exos) ` ```python exo="starter" ` + ` ```python exo="tests" `
-      → famille fonction.
-  - Marquer les exos à sortie **non déterministe** (ex. `nombres` exo 2) pour
-    exécution sans validation.
-- **Fichiers** : `docs/cours/python/exercices/*.md` (+ `bases/exercice-bases.md`).
-- **Validation** : `properdocs build --strict` + test préalable de la syntaxe des
-  attributs via fichier jetable.
+  - Ajouter le marqueur `(variable)` sur les sorties non déterministes :
+    `nombres` exo 2, `string` exos 1-4, `dice` exos 2-6 (+ bonus), `meteo`
+    exos 6-8.
+  - Les sorties déterministes restent telles quelles (aucune marque).
+  - Aucune modification des blocs `solution` ni des fences (structure seule).
+- **Fichiers** : `docs/cours/python/exercices/*.md` + `bases/exercice-bases.md`.
+- **Validation** : `properdocs build --strict` + contrôle visuel du rendu.
 - **Commit type** : `feat(exercices): conventions machine-readable (Phase 1)`
 
 ### Phase 2 — Runner interactif Pyodide (cœur du chantier)
@@ -101,6 +111,9 @@ ZehdBox/docs/
     `assert` exécutés dans le même namespace → affichage du statut par test ;
   - recette progressive des exos numpy/pandas vers ce contrat si pertinent ;
   - bouton "Telecharger starter.py / tests.py" (Blob client-side) pour le local.
+  - Conventions famille fonction (par cohérence avec le constat Phase 1, pas
+    d'attributs custom) : starter = bloc dans admonition `hint`/`question`,
+    tests = bloc dans admonition `example "Tests"`, identifiés par titre.
 - **Fichiers** : `docs/cours/python/bases/*.md`, `docs/js/exercise-runner.js`.
 - **Validation** : build strict + tests manuels pass/fail.
 - **Commit type** : `feat(exercices): famille fonction et validation par tests (Phase 3)`
@@ -118,8 +131,8 @@ ZehdBox/docs/
 - Étapes :
   - réécriture de l'intro de `exercices/index.md` (mode interactif, mode local,
     conseil "essayez avant de déplier") ;
-  - note wiki interne : conventions d'ajout d'un exercice (famille, attributs,
-    tests).
+  - note wiki interne : conventions d'ajout d'un exercice (famille, marqueurs
+    `(variable)`, tests).
 - **Fichiers** : `docs/cours/python/exercices/index.md`, note wiki.
 - **Validation** : build strict + lecture critique.
 - **Commit type** : `docs(exercices): intro et guide d'ajout d'exercices (Phase 5)`

@@ -124,6 +124,10 @@
 - [x] **Ajouter `tags:` en front matter aux pages de cours** : **0 page de contenu sans tags** (76 pages taggées hors blog, home, about, contact, tags.md et template) - fait le 18/09/2026
   - Lots : systeme+github (9) · mkdocs+strudel (13) · web (12) · cours/python (28)
   - Tags normalisés en kebab-case sans accent ; tag fantôme `matplotlib` retiré
+- [x] **Variante avancée du plugin tags** : icônes sur chips + TOC allégé de l'index - fait le 18/09/2026
+  - `toc: false` sur le marqueur → les 86 sections `#tag:xxx` ne polluent plus la sidebar de la page Tags
+  - Icônes Material/Simple Icons sur **31 tags** tech/domaine (`extra.tags` + `theme.icon.tag`) ; défaut `material/pound` pour les autres
+  - Étape « hide: tags » abandonnée : les hubs vitrine n'ont pas de chips, les chips des hubs de sections sont informatifs
 - [ ] Vérifier le comportement de `navigation.prune` (page `tags.md` listée dans la nav - à confirmer sur mobile)
 - [ ] Option : ajouter `search.share` dans `theme.features` pour partager des résultats de recherche
 

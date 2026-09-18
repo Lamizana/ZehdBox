@@ -84,11 +84,11 @@ icon: material/account
     <h3><a href="https://github.com/Lamizana/ft_transcendence" class="md-button md-button--primary" target="_blank" rel="noopener">
         Transcendance
     </a></h3>
-    <p class="project-desc">Application web - Pong multiplayer en temps réel avec chat et classements</p>
+    <p class="project-desc">Application web Django + Canvas - Pong multijoueur local (solo, 1v1, 4 joueurs, tournoi)</p>
     <div class="project-tech-badges">
-        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-        <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
-        <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white" alt="SQL">
+        <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
     </div>
 </div>
 

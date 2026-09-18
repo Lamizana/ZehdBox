@@ -10,4 +10,4 @@ icon: material/tag
     Retrouvez tous les articles classés par thème.
 </p>
 
-<!-- material/tags -->
+<!-- material/tags { toc: false } -->

@@ -8,7 +8,7 @@ tags:
   - tri
 ---
 
-# <span class="h1">Push_swap</span>
+# <span class="h1">Push Swap</span>
 
 <div class="badge-section">
 <div class="badge-row">

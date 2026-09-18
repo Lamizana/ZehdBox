@@ -122,6 +122,27 @@ icon: material/account
     </div>
 </div>
 
+<div class="project-card">
+    <h3><a href="https://github.com/Lamizana/linear-regression" class="md-button md-button--primary" target="_blank" rel="noopener">
+        Linear Regression
+    </a></h3>
+    <p class="project-desc">Machine learning - Descente de gradient codée de zéro avec NumPy, Pandas et Matplotlib (évaluation MSE/MAE/R²)</p>
+    <div class="project-tech-badges">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+        <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+    </div>
+</div>
+
+<div class="project-card">
+    <h3><a href="https://github.com/Lamizana/So-long" class="md-button md-button--primary" target="_blank" rel="noopener">
+        So Long
+    </a></h3>
+    <p class="project-desc">Jeu 2D en C avec MiniLibX - Parsing de cartes .ber, flood-fill, collecte d'objets et bonus (ennemi, compteurs)</p>
+    <div class="project-tech-badges">
+        <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
+    </div>
+</div>
+
 </div>
 
 <div class="about-cta" markdown="1">

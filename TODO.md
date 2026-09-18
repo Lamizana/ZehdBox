@@ -43,7 +43,36 @@
 | `docs/about.md` (desc. Transcendance) | « Pong multiplayer en temps réel avec chat et classements » → **local** |
 
 - [x] Mettre à jour les 4 zones (2 home + 2 about) à partir des fiches projets - fait le 18/09/2026
-- [ ] Ajouter une **procédure de contrôle croisé** : à chaque mise à jour de fiche projet, relire `index.md` et `about.md`
+- [x] Ajouter une **procédure de contrôle croisé** : à chaque mise à jour de fiche projet, relire `index.md` et `about.md` - fait le 18/09/2026
+
+#### ✅ Procédure de contrôle croisé (à suivre à chaque update de fiche projet)
+
+**Règle d'or** : toute modification de `docs/projets/<fiche>.md` → *avant commit*, vérifier les 3 emplacements qui dupliquent des infos de la fiche :
+
+1. **Carte home** : `docs/index.md` (descriptions, badges de stack, liens)
+2. **Carte about** : `docs/about.md` (description, badges, lien GitHub)
+3. **Navigation/maillage** : libellés dans `properdocs.yml` + liens depuis d'autres pages
+
+**Axes de contrôle** (3) :
+- **Faits techniques** : description et détails (ex. multijoueur *local* vs en ligne, RFC *2810-2813* vs 1459)
+- **Badges de stack** : chaque badge de la fiche doit se retrouver dans les cartes home/about
+- **Liens** : GitHub, démo et liens internes `projets/<slug>.md`
+
+**Table de correspondance** (état du 18/09/2026) :
+
+| Fiche projet | Carte home (`index.md`) | Carte about (`about.md`) |
+| --- | --- | --- |
+| `minishell` | ✅ | ✅ |
+| `transcendance` | ✅ | ✅ |
+| `ft_irc` | ✅ | ✅ |
+| `tokenizer` | ✅ | ✅ |
+| `linear-regression` | ✅ | ✅ |
+| `push_swap` | ✅ | ✅ |
+| `so_long` | ✅ | ✅ |
+
+**Contrôle automatisé** : lancer `scripts/check-consistency.sh` (présence de chaque fiche dans home + about) avant toute validation — à coupler avec le build `--strict`.
+
+**Pièges historiques** (corrigés le 18/09) : Transcendance « WebSockets, OAuth 42 » → **local** · ft_irc « RFC 1459 » → **RFC 2810-2813** · about badges « React / C++ / SQL » → **Django/Canvas/PostgreSQL**.
 
 ### Démos live
 

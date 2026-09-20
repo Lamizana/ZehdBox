@@ -1,13 +1,14 @@
 # ZehdBox - Audit complet & Roadmap d'amélioration
 
-> **Document de travail** - Audit réalisé le **18 septembre 2026** · Site vitrine développeur + base de connaissances
+> **Document de travail** — Audit initial le **07 septembre 2026**, re-audit le **18 septembre 2026**, ré-audit indépendant le **20 septembre 2026** · Site vitrine développeur + base de connaissances
 
 | | |
 | --- | --- |
-| **Score global** | 84 / 100 *(à ré-évaluer — de nombreux chantiers clôturés depuis l'audit)* |
-| **Statut** | En amélioration continue |
-| **Priorité** | Vitrine / conviction recruteur, puis maintenance du fonds documentaire |
-| **Progression** | 29 / 57 cases TO-DO cochées (~51 %) |
+| 🏆 **Score global (ré-audit 20/09)** | **72 / 100** — la note inclut : conflits git du `TODO.md` résolus ✅, `README.md` à resynchroniser (badges/claims périmés + liens `.md` erronés), branche remote morte à supprimer, poids des images à traiter |
+| **Score auto-évalué (18/09)** | 84 / 100 *(à ré-évaluer — de nombreux chantiers clôturés depuis l'audit)* |
+| 📝 **Statut** | En amélioration continue |
+| 🚀 **Priorité** | Vitrine / conviction recruteur, puis maintenance du fonds documentaire |
+| 📈 **Progression** | 29 / 57 cases TO-DO cochées (~51 %) |
 | **Dernière validation** | `properdocs build --strict` (18/09/2026, 0 erreur 0 warning) |
 
 ---
@@ -243,3 +244,5 @@
 ---
 
 *Audit 18/09/2026 : `properdocs build -f ZehdBox/properdocs.yml --strict` valide (6,4 s). Tant que ce fichier existe dans le working tree, considérer les `[ ]` comme des chantiers ouverts.*
+
+> **Résolution de conflit — 20/09/2026** : le `TODO.md` contenait 7 blocs de marqueurs de merge non résolus (introduits par le merge `5a02e0c`), avec des scores/progressions contradictoires. Résolution effectuée en conservant la version consolidée du 18/09 (la plus récente), les items concurrents obsolètes ayant été supprimés. Ré-audit indépendant du 20/09 : **score 72/100** — chantiers critiques restants : resynchroniser `README.md` (badges/claims périmés, liens `.md` erronés), supprimer la branche remote `origin/feature/exercices-python-interactifs`, alléger les images.

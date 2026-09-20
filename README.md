@@ -85,6 +85,7 @@ ZehdBox/
 │   │   │   │   ├── exercices/     # Exercices nombres & chaînes
 │   │   │   │   ├── numpy/         # NumPy + projet Dés
 │   │   │   │   ├── pandas/        # Pandas + tutoriel + exercices Météo
+│   │   │   │   ├── django/        # Django : installation, modèles, vues, templates
 │   │   │   │   └── fonctions.md   # Fonctions Python
 │   │   │   └── index.md           # Hub des cours
 │   │   ├── blog/                  # Articles techniques
@@ -97,7 +98,6 @@ ZehdBox/
 │   ├── requirements-ci.txt        # Dépendances minimales (CI)
 │   └── requirements-dev.txt       # Environnement complet gelé
 ├── TODO.md                        # Roadmap d'amélioration
-├── PR.txt                         # Récapitulatif des PR
 ├── LICENSE                        # MIT License
 └── README.md
 ```
@@ -106,14 +106,17 @@ ZehdBox/
 
 ## Projets
 
+> **Inventaire complet des 7 fiches projets** (même liste et ordre que [`projets/index.md`](https://lamizana.github.io/ZehdBox/projets/)).
+
 | Projet | Description | Stack | Démo |
 | --- | --- | --- | --- |
-| [**Transcendance**](https://lamizana.github.io/ZehdBox/projets/transcendance/) | Application web Pong multiplayer | ![](https://img.shields.io/badge/React-blue) ![](https://img.shields.io/badge/PostgreSQL-blue) ![](https://img.shields.io/badge/WebSockets-orange) | ❌ |
-| [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokeniser.md) | Token ERC-20 + frontend | ![](https://img.shields.io/badge/Solidity-black) ![](https://img.shields.io/badge/React-blue) ![](https://img.shields.io/badge/BEP--20-purple) | ✅ [BscScan](https://lamizana.github.io/ZehdBox/projets/tokeniser.md) |
-| [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell.md) | Interpréteur de commandes | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/UNIX-dark) | ⚠️ Captures |
-| [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc.md) | Serveur IRC en C++ | ![](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white) ![](https://img.shields.io/badge/RFC_1459-blue) | ⚠️ Captures |
-| [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap.md) | Algorithme de tri optimisé | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/Algorithmique-red) | ⚠️ Captures |
-| [**So Long**](https://lamizana.github.io/ZehdBox/projets/so_long.md) | Jeu 2D en C | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/MiniLibX-blue) | ✅ [Vidéo](https://lamizana.github.io/ZehdBox/projets/so_long.md) |
+| [**Transcendance**](https://lamizana.github.io/ZehdBox/projets/transcendance/) | Pong multijoueur local - solo, 1v1, 4 joueurs, tournoi | ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) | ❌ |
+| [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokenizer/) | Token BEP-20 GOLD42 (BNB Smart Chain testnet) | ![](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![](https://img.shields.io/badge/BEP--20-purple) | ✅ [BscScan](https://lamizana.github.io/ZehdBox/projets/tokenizer/) |
+| [**Linear Regression**](https://lamizana.github.io/ZehdBox/projets/linear-regression/) | Régression linéaire - descente de gradient (projet 42) | ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) | ⚠️ Captures |
+| [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell/) | Interpréteur de commandes UNIX | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/UNIX-dark) | ⚠️ Captures |
+| [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc/) | Serveur IRC en C++ (RFC 2810-2813) | ![](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white) ![](https://img.shields.io/badge/RFC%202810--2813-blue) | ⚠️ Captures |
+| [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap/) | Algorithme de tri optimisé en C | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/Algorithmique-red) | ⚠️ Captures |
+| [**So Long**](https://lamizana.github.io/ZehdBox/projets/so_long/) | Jeu 2D en C (MiniLibX) | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/MiniLibX-blue) | ✅ [Vidéo](https://lamizana.github.io/ZehdBox/projets/so_long/) |
 
 ---
 
@@ -125,10 +128,11 @@ ZehdBox/
 | --- | --- | --- |
 | **Les bases** | Variables, types, opérateurs, chaînes, flux, répétitives | [Bases](https://lamizana.github.io/ZehdBox/cours/python/bases/) |
 | **Exercices** | 15 exercices de révision + exercices chaînes | [Exercices](https://lamizana.github.io/ZehdBox/cours/python/exercices/) |
-| **Fonctions** | Définir, appeler, return, portée, docstrings | [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions.md) |
+| **Fonctions** | Définir, appeler, return, portée, docstrings | [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions/) |
 | **NumPy** | Tableaux, opérations vectorielles, projet Dés | [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/) |
 | **Pandas** | DataFrames, tutoriel Météo, exercices API | [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/) |
-| **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn.md) |
+| **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/) |
+| **Django** | Installation, Docker & PostgreSQL, modèles, vues, templates | [Django](https://lamizana.github.io/ZehdBox/cours/python/django/) |
 
 ### Autres domaines
 

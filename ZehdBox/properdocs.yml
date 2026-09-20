@@ -227,7 +227,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - toc:
-      permalink: true
+      permalink: false
   - footnotes
   - def_list
 
@@ -345,7 +345,7 @@ extra:
       analytics:
         name: Google Analytics
         provider: google
-        checked: false
+        checked: true
         property: G-74MZWWS1RR
 
 repo_url: https://github.com/Lamizana/ZehdBox

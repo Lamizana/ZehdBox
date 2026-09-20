@@ -9,15 +9,15 @@ categories:
   - 📚 Culture
 tags:
   - communication
-  - écoute
-  - relations humaines
+  - ecoute
+  - relations-humaines
 pin: true
 
 ---
 
 ???- info "Information"
     Voici mon **premier article**.  
-    Un espace pour réfléchir, prendre le temps, et peut-être mieux se comprendre — **un mot à la fois**.
+    Un espace pour réfléchir, prendre le temps, et peut-être mieux se comprendre - **un mot à la fois**.
 
 ---
 

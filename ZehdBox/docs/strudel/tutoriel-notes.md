@@ -1,6 +1,10 @@
 ---
 title: Notes Musicales
 description: Jouez des mélodies avec des notes musicales et des accords dans Strudel.
+tags:
+  - tutoriel
+  - strudel
+  - musique
 ---
 
 # <span class="h1">Notes Musicales avec Strudel</span>

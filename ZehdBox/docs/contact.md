@@ -1,6 +1,6 @@
 ---
 title: Contact
-description: "Contacter Alex Lamizana — email, LinkedIn, GitHub. Ouvert à une alternance Backend/Data, un stage ou des missions freelance."
+description: "Contacter Alex Lamizana - email, LinkedIn, GitHub. Ouvert à une alternance Backend/Data, un stage ou des missions freelance."
 icon: material/email
 ---
 
@@ -20,7 +20,7 @@ icon: material/email
 
     ---
 
-    À la recherche d'une **alternance** pour la rentrée — stack Python, SQL, bases de données, IA.
+    À la recherche d'une **alternance** pour la rentrée - stack Python, SQL, bases de données, IA.
 
 -   :material-rocket-launch:{ .lg .middle } __Missions freelance__
 
@@ -56,7 +56,7 @@ icon: material/email
 
     Le meilleur canal pour les opportunités professionnelles et le réseautage.
 
-    [:fontawesome-brands-linkedin: Voir mon profil](https://linkedin.com/in/alex-lamizana){ .md-button .md-button--primary target="_blank" rel="noopener" }
+    [:fontawesome-brands-linkedin: Voir mon profil](https://www.linkedin.com/in/alex-lamizana-85ab82401){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 -   :fontawesome-brands-github:{ .lg .middle } __GitHub__
 
@@ -70,15 +70,6 @@ icon: material/email
 
 ---
 
-## <span class="h2">Raccourcis</span>
-
-<div class="contact-buttons" markdown="1">
-[:material-email: Mon adresse email](mailto:lamizana1987@yahoo.fr){ .contact-btn .primary target="_blank" rel="noopener" }
-[:fontawesome-brands-github: GitHub](https://github.com/Lamizana){ .contact-btn .secondary target="_blank" rel="noopener" }
-[:fontawesome-brands-linkedin: LinkedIn](https://linkedin.com/in/alex-lamizana){ .contact-btn .secondary target="_blank" rel="noopener" }
-</div>
-
----
 
 !!! tip "Disponibilité"
     Actuellement en recherche d'une **alternance Backend / Data** ou de **missions freelance en base de données / IA**.

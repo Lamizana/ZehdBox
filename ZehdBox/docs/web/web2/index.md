@@ -1,6 +1,10 @@
 ---
 title: Web 2.0
 description: "Le Web 2.0 : applications dynamiques et interactives, frameworks JavaScript comme React."
+tags:
+  - cours
+  - web
+  - web2
 icon: material/language-javascript
 ---
 
@@ -18,3 +22,7 @@ icon: material/language-javascript
     utilisateurs, frameworks front-end et API.
 
     Découvrez ici mes cours et notes, notamment sur le framework **React**.
+
+---
+
+[:material-language-javascript: Découvrir le framework React](react.md){ .md-button }

@@ -23,3 +23,5 @@ icon: fontawesome/solid/blog
 À tous ceux qui désirent en savoir plus...
 
 ---
+
+[:fontawesome-solid-tags: Explorer par tags](../tags.md){ .md-button .md-button--primary }

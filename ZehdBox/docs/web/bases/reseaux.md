@@ -1,6 +1,10 @@
 ---
 title: "Les réseaux"
 description: "Serveurs, adresses IP, DNS, protocoles TCP/UDP/HTTP : comment les ordinateurs communiquent entre eux sur Internet."
+tags:
+  - cours
+  - web
+  - reseaux
 icon: material/network
 ---
 
@@ -37,7 +41,7 @@ Chaque ordinateur connecté à Internet possède une **adresse IP**
 (*Internet Protocol*) : une suite de nombre unique.
 
 !!! example "Exemple d'adresse IP"
-    `205.89.177.26` — c'est comme un numéro de téléphone pour un ordinateur.
+    `205.89.177.26` - c'est comme un numéro de téléphone pour un ordinateur.
 
 ### Nom d'hôte et DNS
 
@@ -48,8 +52,8 @@ Le **DNS** (*Domain Name System*) est l'annuaire qui fait le lien entre
 le nom d'hôte et l'adresse IP.
 
 <figure markdown="span">
-  ![Séquence DNS — résolution de nom de domaine](images/sequence-dns.svg){ width="700" }
-  <figcaption>Séquence DNS — résolution de nom de domaine en adresse IP</figcaption>
+  ![Séquence DNS - résolution de nom de domaine](images/sequence-dns.svg){ width="700" }
+  <figcaption>Séquence DNS - résolution de nom de domaine en adresse IP</figcaption>
 </figure>
 
 !!! summary "Règle à retenir"
@@ -70,9 +74,9 @@ des langages de communication standardisés.
 | **TCP** | Transmission Control Protocol | Transport fiable de données (pages web, e-mails...) |
 | **UDP** | User Datagram Protocol | Transport rapide mais non garanti (streaming, jeux en ligne) |
 
-!!! warning "Vint CerF — le père d'Internet"
+!!! warning "Vint CerF - le père d'Internet"
     TCP a été inventé par **Vint Cerf**, considéré comme le père d'Internet.
-    Sans TCP, pas de communication réseau — et Tim Berners-Lee n'aurait
+    Sans TCP, pas de communication réseau - et Tim Berners-Lee n'aurait
     jamais pu inventer le Web.
 
 ### Protocoles haut niveau

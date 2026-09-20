@@ -1,6 +1,10 @@
 ---
 title: Nettoyage de Disque
 description: "Guide pas à pas pour réparer et formater une clé USB inaccessible ou impossible à formater."
+tags:
+  - cours
+  - systeme
+  - disque
 ---
 
 # <span class="h1">Nettoyage de Disque</span>
@@ -158,3 +162,8 @@ Si vous êtes sur un environnement Linux, l'opération peut-être réalisée gra
 5. Dans le shéma de partitionnement, optez pour **MBR/DOS** (compatible tous systèmes) ou **GPT** (pour les clé modernes de grande capacité).
 
 6., Cliquez sur le bouton de création de volume pour ajouter une nouvbelle partition au format **FAT** ou **NTFS**.
+
+---
+
+!!! tip "Poursuivre sur Linux"
+    Vous débutez sur Linux ? Retrouvez les commandes et notions d'administration dans [Bases Linux](linux/index.md).

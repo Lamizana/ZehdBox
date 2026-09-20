@@ -1,6 +1,10 @@
 ---
 title: Effets Audio
-description: Manipulez la chaîne de signal avec des effets audio — réverbération, delay, filtres et plus.
+description: Manipulez la chaîne de signal avec des effets audio - réverbération, delay, filtres et plus.
+tags:
+  - tutoriel
+  - strudel
+  - musique
 ---
 
 # <span class="h1">Effets Audio avec Strudel</span>

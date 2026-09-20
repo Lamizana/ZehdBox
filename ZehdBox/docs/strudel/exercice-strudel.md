@@ -1,6 +1,10 @@
 ---
 title: Exercices Strudel
 description: Exercices pratiques pour consolider vos acquis en musique algorithmique avec Strudel.
+tags:
+  - exercice
+  - strudel
+  - musique
 ---
 
 # <span class="h1">Exercices Strudel</span>

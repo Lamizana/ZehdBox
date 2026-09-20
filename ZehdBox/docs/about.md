@@ -70,10 +70,10 @@ icon: material/account
 <div class="about-projects-grid">
 
 <div class="project-card">
-    <h3><a href="https://github.com/Lamizana/Tokeniser" class="md-button md-button--primary" target="_blank" rel="noopener">
+    <h3><a href="https://github.com/Lamizana/Tokenizer" class="md-button md-button--primary" target="_blank" rel="noopener">
         Tokenizer
     </a></h3>
-    <p class="project-desc">Token BEP-20 GOLD42 sur BNB Smart Chain — premier smart contract, comprendre la blockchain et la DeFi</p>
+    <p class="project-desc">Token BEP-20 GOLD42 sur BNB Smart Chain - premier smart contract, comprendre la blockchain et la DeFi</p>
     <div class="project-tech-badges">
         <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity">
         <img src="https://img.shields.io/badge/BEP--20-F0B90B?style=for-the-badge&logo=binance&logoColor=black" alt="BEP-20">
@@ -84,11 +84,11 @@ icon: material/account
     <h3><a href="https://github.com/Lamizana/ft_transcendence" class="md-button md-button--primary" target="_blank" rel="noopener">
         Transcendance
     </a></h3>
-    <p class="project-desc">Application web - Pong multiplayer en temps réel avec chat et classements</p>
+    <p class="project-desc">Application web Django + Canvas - Pong multijoueur local (solo, 1v1, 4 joueurs, tournoi)</p>
     <div class="project-tech-badges">
-        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-        <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
-        <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white" alt="SQL">
+        <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
     </div>
 </div>
 
@@ -113,12 +113,13 @@ icon: material/account
 </div>
 
 <div class="project-card">
-    <h3><a href="https://github.com/Lamizana/Push-swap" class="md-button md-button--primary" target="_blank" rel="noopener">
-        Push Swap
+    <h3><a href="https://github.com/Lamizana/linear-regression" class="md-button md-button--primary" target="_blank" rel="noopener">
+        Linear Regression
     </a></h3>
-    <p class="project-desc">Algorithme de tri optimisé - Résolution du tri avec un nombre minimal d'opérations</p>
+    <p class="project-desc">Machine learning - Descente de gradient codée de zéro avec NumPy, Pandas et Matplotlib (évaluation MSE/MAE/R²)</p>
     <div class="project-tech-badges">
-        <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+        <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
     </div>
 </div>
 
@@ -135,25 +136,33 @@ icon: material/account
 <div class="soft-skills-grid">
 
 <div class="soft-skill-card">
-    <span class="soft-skill-icon">🧠</span>
+    <span class="soft-skill-icon">
+        <img src="https://api.iconify.design/material-symbols:lightbulb-outline.svg?color=%23ffb74d" alt="Autonomie" width="32" height="32" />
+    </span>
     <span class="soft-skill-title">Autonomie</span><br>
     <span class="soft-skill-desc">Apprentissage autodidacte, capacité à résoudre des problèmes seul</span>
 </div>
 
 <div class="soft-skill-card">
-    <span class="soft-skill-icon">💪</span>
+    <span class="soft-skill-icon">
+        <img src="https://api.iconify.design/material-symbols:flag.svg?color=%23e57373" alt="Persévérance" width="32" height="32" />
+    </span>
     <span class="soft-skill-title">Persévérance</span><br>
     <span class="soft-skill-desc">Parcours de reconversion, détermination face aux défis</span>
 </div>
 
 <div class="soft-skill-card">
-    <span class="soft-skill-icon">🤝</span>
+    <span class="soft-skill-icon">
+        <img src="https://api.iconify.design/material-symbols:groups.svg?color=%234db6ac" alt="Travail d'équipe" width="32" height="32" />
+    </span>
     <span class="soft-skill-title">Travail d'équipe</span><br>
     <span class="soft-skill-desc">Projets collaboratifs à 42, peer-learning</span>
 </div>
 
 <div class="soft-skill-card">
-    <span class="soft-skill-icon">🔄</span>
+    <span class="soft-skill-icon">
+        <img src="https://api.iconify.design/material-symbols:sync.svg?color=%2364b5f6" alt="Adaptabilité" width="32" height="32" />
+    </span>
     <span class="soft-skill-title">Adaptabilité</span><br>
     <span class="soft-skill-desc">Transition d'un métier manuel vers le développement</span>
 </div>
@@ -167,27 +176,27 @@ icon: material/account
 <div class="loisirs-grid">
 
 <div class="loisir-item">
-<span class="loisir-emoji">🎸</span>
+<span class="loisir-emoji"><img src="https://api.iconify.design/mdi:guitar-acoustic.svg?color=%23ff7043" alt="Guitare" width="26" height="26" /></span>
 <span class="loisir-label">Guitare</span>
 </div>
 
 <div class="loisir-item">
-<span class="loisir-emoji">🎨</span>
+<span class="loisir-emoji"><img src="https://api.iconify.design/material-symbols:palette.svg?color=%23ab47bc" alt="Dessin" width="26" height="26" /></span>
 <span class="loisir-label">Dessin</span>
 </div>
 
 <div class="loisir-item">
-<span class="loisir-emoji">📖</span>
+<span class="loisir-emoji"><img src="https://api.iconify.design/material-symbols:auto-stories.svg?color=%238d6e63" alt="Lecture" width="26" height="26" /></span>
 <span class="loisir-label">Lecture</span>
 </div>
 
 <div class="loisir-item">
-<span class="loisir-emoji">🎮</span>
+<span class="loisir-emoji"><img src="https://api.iconify.design/material-symbols:sports-esports.svg?color=%2366bb6a" alt="Jeux vidéo" width="26" height="26" /></span>
 <span class="loisir-label">Jeux vidéo</span>
 </div>
 
 <div class="loisir-item">
-<span class="loisir-emoji">🎵</span>
+<span class="loisir-emoji"><img src="https://api.iconify.design/material-symbols:music-note.svg?color=%23ec407a" alt="Musique" width="26" height="26" /></span>
 <span class="loisir-label">Musique</span>
 </div>
 
@@ -197,34 +206,36 @@ icon: material/account
 
 ## <span class="h2">Objectifs Professionnels</span>
 
-<div class="objectifs-container">
+<div class="objectifs-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: 100%; text-align: center; margin: 20px 0;">
 
-<div class="objectif-badge">
-<span class="check">✅</span>
-<span>Alternance Backend / Data</span>
-</div>
+  <div class="objectif-badge" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
+    <span class="check" style="display: inline-flex; align-items: center;">
+      <img src="https://api.iconify.design/material-symbols:check-circle-outline.svg?color=%234caf50" alt="check" width="20" height="20" />
+    </span>
+    <span>Alternance Backend / Data</span>
+  </div>
 
-<div class="objectif-badge">
-<span class="check">✅</span>
-<span>Stage Technique</span>
-</div>
+  <div class="objectif-badge" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
+    <span class="check" style="display: inline-flex; align-items: center;">
+      <img src="https://api.iconify.design/material-symbols:check-circle-outline.svg?color=%234caf50" alt="check" width="20" height="20" />
+    </span>
+    <span>Stage Technique</span>
+  </div>
 
-<div class="objectif-badge">
-<span class="check">✅</span>
-<span>Missions Freelance Base de donnée / IA</span>
-</div>
+  <div class="objectif-badge" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
+    <span class="check" style="display: inline-flex; align-items: center;">
+      <img src="https://api.iconify.design/material-symbols:check-circle-outline.svg?color=%234caf50" alt="check" width="20" height="20" />
+    </span>
+    <span>Missions Freelance Base de donnée / IA</span>
+  </div>
 
-<div class="objectif-badge objectif-badge--next">
-<span class="check">🎯</span>
-<span>CDI Développeur Fullstack</span>
-</div>
+  <div class="objectif-badge objectif-badge--next" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
+    <span class="check" style="display: inline-flex; align-items: center;">
+      <img src="https://api.iconify.design/material-symbols:target.svg?color=%232196f3" alt="target" width="20" height="20" />
+    </span>
+    <span>CDI Développeur Fullstack</span>
+  </div>
 
 </div>
 
 ---
-
-## <span class="h2">Me Contacter</span>
-
-Toutes mes coordonnées sont réunies sur une page dédiée.
-
-[:material-email: Prendre contact](contact.md){ .md-button .md-button--primary }

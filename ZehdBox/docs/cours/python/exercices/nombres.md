@@ -1,9 +1,13 @@
 ---
 title: Exercices - Nombres
 description: "Exercices Python sur les nombres : opérations arithmétiques et nombre préféré."
+tags:
+  - exercice
+  - python
+  - nombres
 ---
 
-# <span class="h1">Exercices — Nombres</span>
+# <span class="h1">Exercices - Nombres</span>
 
 <p class="intro">
     Deux exercices pour manipuler les <strong>nombres</strong> en Python : opérations arithmétiques et variables.
@@ -11,7 +15,7 @@ description: "Exercices Python sur les nombres : opérations arithmétiques et n
 
 ---
 
-???+ note "Lancer les exercices — option hors environnement"
+???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
@@ -74,7 +78,7 @@ description: "Exercices Python sur les nombres : opérations arithmétiques et n
     ```
 
 ???- tip "Solution"
-    === "Méthode 1 — f-string"
+    === "Méthode 1 - f-string"
         ```python
         favorite_number = 12
         message = f"Votre nombre est: {favorite_number}."
@@ -82,7 +86,7 @@ description: "Exercices Python sur les nombres : opérations arithmétiques et n
         print(message)
         ```
 
-    === "Méthode 2 — concaténation"
+    === "Méthode 2 - concaténation"
         ```python
         favorite_number = 12
         message = "Votre nombre est: " + str(favorite_number) + "."

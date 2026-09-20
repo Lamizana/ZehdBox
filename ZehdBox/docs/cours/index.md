@@ -1,6 +1,8 @@
 ---
-title: Cours de programmation — Python, JavaScript et plus
+title: Cours de programmation - Python, JavaScript et plus
 description: "Cours gratuits de programmation : Python, JavaScript, bases de données et tutoriels Web avec console interactive."
+tags:
+  - cours
 icon: material/school
 ---
 
@@ -20,7 +22,7 @@ icon: material/school
 
     ---
 
-    Bases, fonctions, Pandas, NumPy et Scikit-learn — du débutant au data science.
+    Bases, fonctions, Pandas, NumPy et Scikit-learn - du débutant au data science.
 
     [:octicons-arrow-right-24: Python](python/index.md)
 
@@ -31,6 +33,22 @@ icon: material/school
     Créer une application web Django, de l'environnement virtuel jusqu'aux templates, avec Docker et PostgreSQL.
 
     [:octicons-arrow-right-24: Django](python/django/index.md)
+
+- :simple-materialformkdocs:{ .lg .middle } __MkDocs__
+
+    ---
+
+    Documenter des projets : configuration Material, plugins et extensions Markdown.
+
+    [:octicons-arrow-right-24: MkDocs](../mkdocs/index.md)
+
+- :material-music:{ .lg .middle } __Strudel__
+
+    ---
+
+    Musique algorithmique : composition dynamique avec JavaScript, de la première note aux effets.
+
+    [:octicons-arrow-right-24: Strudel](../strudel/index.md)
 
 </div>
 

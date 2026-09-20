@@ -22,13 +22,21 @@ icon: material/home
 
     **Interpréteur de commandes UNIX** en C, inspiré de bash : processus, pipes, signaux.
 
+    ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
+    ![UNIX](https://img.shields.io/badge/UNIX-2496ED?style=for-the-badge&logo=gnubash&logoColor=white)
+    ![Signaux](https://img.shields.io/badge/Signaux-FF6F00?style=for-the-badge&logo=linux&logoColor=white)
+
     [:octicons-arrow-right-24: Découvrir](projets/minishell.md)
 
 - :material-gamepad-variant:{ .lg .middle } __Transcendance__
 
     ---
 
-    Application web de **Pong multijoueur** en temps réel : WebSockets, OAuth 42, PostgreSQL.
+    Application web **Django + Canvas** : Pong multijoueur **local** - solo, 1v1, 4 joueurs, tournoi.
+
+    ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+    ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+    ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
     [:octicons-arrow-right-24: Découvrir](projets/transcendance.md)
 
@@ -36,7 +44,11 @@ icon: material/home
 
     ---
 
-    **Serveur IRC** en C++ conforme à la RFC 1459 : sockets BSD, canaux, multi-clients.
+    **Serveur IRC** en C++ conforme à la RFC 2810-2813 : sockets BSD, canaux, multi-clients.
+
+    ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+    ![Sockets BSD](https://img.shields.io/badge/Sockets%20BSD-4E5EE4?style=for-the-badge&logo=linux&logoColor=white)
+    ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-092E20?style=for-the-badge)
 
     [:octicons-arrow-right-24: Découvrir](projets/ft_irc.md)
 
@@ -46,6 +58,10 @@ icon: material/home
 
     **Token BEP-20** GOLD42 sur BNB Smart Chain : premier smart contract, blockchain et DeFi.
 
+    ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
+    ![BEP-20](https://img.shields.io/badge/BEP--20-F0B90B?style=for-the-badge&logo=binance&logoColor=black)
+    ![BNB Smart Chain](https://img.shields.io/badge/BNB%20Smart%20Chain-F0B90B?style=for-the-badge&logo=binance&logoColor=black)
+
     [:octicons-arrow-right-24: Découvrir](projets/tokenizer.md)
 
 - :material-chart-line:{ .lg .middle } __Linear Regression__
@@ -53,6 +69,10 @@ icon: material/home
     ---
 
     **Machine learning** : Premier modèle entraîné par une **descente de gradient** codée de zéro.
+
+    ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+    ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+    ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
 
     [:octicons-arrow-right-24: Découvrir](projets/linear-regression.md)
 
@@ -105,6 +125,14 @@ icon: material/home
     Musique algorithmique : composition dynamique avec JavaScript.
 
     [:octicons-arrow-right-24: Strudel](strudel/index.md)
+
+- :fontawesome-solid-blog:{ .lg .middle } __Blog__
+
+    ---
+
+    Articles sur la culture, la science et la réflexion personnelle.
+
+    [:octicons-arrow-right-24: Le blog](blog/index.md)
 
 </div>
 

@@ -26,4 +26,9 @@ Si on enlève ensuite la plaque de verre, les puces continuent de sauter de mani
 
 ???+ abstract "Sources"
     - "Science et Univers"
+
+---
+
+???+ abstract "À lire aussi"
+    [Les fourmis : une civilisation parallèle](fourmis.md)
     

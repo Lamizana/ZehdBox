@@ -1,6 +1,10 @@
 ---
 title: Variables
 description: Déclaration, types de données et affectation de variables en Python.
+tags:
+  - cours
+  - python
+  - variables
 ---
 
 # <span class="h1">Variables et Affectation</span>

@@ -1,6 +1,10 @@
 ---
 title: Mise en place
 description: "Installer Python et préparer son environnement pour commencer la programmation."
+tags:
+  - cours
+  - python
+  - installation
 ---
 
 # <span class="h1">Mise en place</span>

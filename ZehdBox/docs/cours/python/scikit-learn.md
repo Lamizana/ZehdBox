@@ -1,6 +1,11 @@
 ---
 title: Scikit-learn
-description: Introduction à Scikit-learn — classification, régression, clustering et machine learning en Python.
+description: Introduction à Scikit-learn - classification, régression, clustering et machine learning en Python.
+tags:
+  - cours
+  - python
+  - machine-learning
+  - scikit-learn
 ---
 
 # <span class="h1">Scikit-learn</span>
@@ -117,7 +122,7 @@ y_encoded = encoder.fit_transform(y)
 - **Deep Learning**: PyTorch, TensorFlow
 - **XGBoost**: Pour des performances optimisées
 - **Feature Engineering**: Créer de nouvelles features
-- **[Régression linéaire de zéro](linear-regression.md)** : avant d'utiliser `LinearRegression`, code ton propre modèle — moindres carrés et descente de gradient
+- **[Régression linéaire de zéro](linear-regression.md)** : avant d'utiliser `LinearRegression`, code ton propre modèle - moindres carrés et descente de gradient
 
 ---
 

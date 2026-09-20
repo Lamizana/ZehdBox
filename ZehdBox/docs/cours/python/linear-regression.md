@@ -1,6 +1,6 @@
 ---
-title: Régression linéaire — le machine learning en pratique
-description: "Tutoriel régression linéaire simple en Python : moindres carrés, descente de gradient, normalisation, évaluation MSE/MAE/R² et visualisation Matplotlib — avec le code du projet 42 ft_linear_regression."
+title: Régression linéaire - le machine learning en pratique
+description: "Tutoriel régression linéaire simple en Python : moindres carrés, descente de gradient, normalisation, évaluation MSE/MAE/R² et visualisation Matplotlib - avec le code du projet 42 ft_linear_regression."
 tags:
   - cours
   - python
@@ -35,7 +35,7 @@ estimatePrice(x) = θ₀ + θ₁ × x
 !!! warning "La règle du jeu"
     L'objectif est de **comprendre** l'algorithme. Utiliser `numpy.polyfit` ou `sklearn.linear_model.LinearRegression` reviendrait à tricher : tout est codé à la main.
 
-Le but de l'apprentissage : trouver les meilleurs `θ₀` et `θ₁` pour que la droite colle le mieux possible aux données réelles. Deux grandes approches existent — **les moindres carrés** (formule analytique) et **la descente de gradient** (optimisation itérative).
+Le but de l'apprentissage : trouver les meilleurs `θ₀` et `θ₁` pour que la droite colle le mieux possible aux données réelles. Deux grandes approches existent - **les moindres carrés** (formule analytique) et **la descente de gradient** (optimisation itérative).
 
 ---
 
@@ -141,7 +141,7 @@ La descente de gradient **approche** le minimum de la MSE **par étapes itérati
 !!! example "C'est le cœur du projet 42"
     Cette partie correspond exactement à la **partie obligatoire** du sujet `ft_linear_regression` de l'école 42 : entraîner un modèle pour prédire le prix d'une voiture à partir de son kilométrage, puis réutiliser les paramètres pour prédire.
 
-### Étape 1 — Normaliser les données
+### Étape 1 - Normaliser les données
 
 Le kilométrage (jusqu'à 240 000) et le prix (quelques milliers) n'ont **pas la même échelle** : la descente serait instable. On normalise tout vers `[0, 1]` :
 
@@ -154,7 +154,7 @@ x_norm, x_min, x_max = normalize(X)
 y_norm, y_min, y_max = normalize(Y)
 ```
 
-### Étape 2 — Boucle d'entraînement
+### Étape 2 - Boucle d'entraînement
 
 À chaque itération on calcule les **gradients** (les dérivées partielles de la MSE par rapport à θ₀ et θ₁), puis on met à jour **simultanément** les deux paramètres :
 
@@ -182,7 +182,7 @@ for _ in range(ITERATIONS):
 !!! danger "Mise à jour simultanée"
     Il faut calculer **les deux gradients à partir des mêmes prédictions**, puis appliquer les deux mises à jour. Si l'on modifie `theta0` avant de calculer `grad_theta1`, l'algorithme diverge.
 
-### Étape 3 — Dénormaliser les paramètres
+### Étape 3 - Dénormaliser les paramètres
 
 L'entraînement s'est fait sur des données normalisées `[0, 1]` : il faut **ramener θ₀ et θ₁ à l'échelle d'origine** avant de les utiliser pour prédire.
 
@@ -227,7 +227,7 @@ print(f"Prix estimé pour {km:,.0f} km : {prix_estime:,.2f} €")
 ```
 
 !!! warning "Limite du modèle linéaire"
-    Avec le modèle du projet, un kilométrage extrême peut donner un prix estimé **négatif** — le programme le détecte et affiche un avertissement : au-delà de certaines données, la droite n'est plus fiable.
+    Avec le modèle du projet, un kilométrage extrême peut donner un prix estimé **négatif** - le programme le détecte et affiche un avertissement : au-delà de certaines données, la droite n'est plus fiable.
 
 ---
 
@@ -315,10 +315,10 @@ plt.savefig("regression_lineaire.png")
 
 ## <span class="h2">Pour aller plus loin</span>
 
-- **[Scikit-learn](scikit-learn.md)** : la bibliothèque qui implémente `LinearRegression`, `train_test_split` et `cross_val_score` — maintenant que tu sais les coder, tu peux les utiliser sans mystère.
+- **[Scikit-learn](scikit-learn.md)** : la bibliothèque qui implémente `LinearRegression`, `train_test_split` et `cross_val_score` - maintenant que tu sais les coder, tu peux les utiliser sans mystère.
 - **Régression multiple** : plusieurs variables explicatives (km, âge, motorisation…) → l'équation devient `ŷ = θ₀ + θ₁x₁ + θ₂x₂ + …` et le raisonnement reste le même.
 - **Régularisation** : Ridge / Lasso pour limiter le surapprentissage.
-- Le projet complet — la **fiche 42** de la descente de gradient, avec son architecture et ses résultats chiffrés : [**Linear Regression**](../../projets/linear-regression.md).
+- Le projet complet - la **fiche 42** de la descente de gradient, avec son architecture et ses résultats chiffrés : [**Linear Regression**](../../projets/linear-regression.md).
 
 ---
 

@@ -1,6 +1,10 @@
 ---
-title: Templates — Gabarits HTML et architecture MVT
+title: Templates - Gabarits HTML et architecture MVT
 description: "Créer des gabarits Django (base.html, blocks), itérer sur les données, appliquer des filtres et comprendre l'architecture MVT."
+tags:
+  - cours
+  - django
+  - python
 ---
 
 # <span class="h1">Templates</span>

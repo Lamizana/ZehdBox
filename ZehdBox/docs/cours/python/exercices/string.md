@@ -1,6 +1,10 @@
 ---
 title: Exercices - Chaînes de caractères
 description: "Exercices pratiques sur les chaînes de caractères (strings) en Python."
+tags:
+  - exercice
+  - python
+  - chaines
 ---
 
 # <span class="h1">Exercices sur les chaînes de caractères</span>
@@ -28,7 +32,7 @@ description: "Exercices pratiques sur les chaînes de caractères (strings) en P
 
 ---
 
-???+ note "Lancer les exercices — option hors environnement"
+???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
@@ -136,7 +140,7 @@ description: "Exercices pratiques sur les chaînes de caractères (strings) en P
     ```
 
 ???- tip "Solution"
-    === "Méthode 1 — f-string simple"
+    === "Méthode 1 - f-string simple"
         ```python
         name = "Mère Teresa"
         citation = "La vie est une opportunité, profitez-en."
@@ -144,7 +148,7 @@ description: "Exercices pratiques sur les chaînes de caractères (strings) en P
         print(f'{name} a dit "{citation}"')
         ```
 
-    === "Méthode 2 — citation multi-lignes"
+    === "Méthode 2 - citation multi-lignes"
         ```python
         name = "Mère Teresa"
         citation = " La vie est une opportunité, profitez-en. \nLa vie est belle, admirez-la. \nLa vie est un rêve, réalisez-la. \nLa vie est un devoir, complétez-la. \nLa vie est un jeu, jouez-la."

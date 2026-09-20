@@ -1,6 +1,10 @@
 ---
 title: Plugins
 description: "Les plugins ProperDocs/MkDocs : recherche, social cards, blog, tags, RSS, minify et plus."
+tags:
+  - cours
+  - mkdocs
+  - plugins
 ---
 
 # <span class="h1">Plugins</span>
@@ -28,7 +32,7 @@ plugins:
 
 ## <span class="h2">search</span>
 
-Recherche full-text intégrée — activée par défaut.
+Recherche full-text intégrée - activée par défaut.
 
 ```yaml
 plugins:
@@ -44,7 +48,7 @@ plugins:
 
 ## <span class="h2">social</span>
 
-Génère automatiquement une image Open Graph (OG) pour chaque page — idéal pour le partage sur Twitter/LinkedIn.
+Génère automatiquement une image Open Graph (OG) pour chaque page - idéal pour le partage sur Twitter/LinkedIn.
 
 ```yaml
 plugins:
@@ -115,7 +119,7 @@ Dans le frontmatter d'une page :
 ---
 tags:
   - python
-  - débutant
+  - debutant
 ---
 ```
 

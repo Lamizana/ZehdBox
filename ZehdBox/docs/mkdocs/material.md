@@ -1,6 +1,10 @@
 ---
 title: Material for MkDocs
 description: "Le thème Material for MkDocs : palettes, modes sombre/clair, polices, features de navigation et icônes."
+tags:
+  - cours
+  - mkdocs
+  - material
 ---
 
 # <span class="h1">Material</span>

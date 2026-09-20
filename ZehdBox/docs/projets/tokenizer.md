@@ -1,6 +1,6 @@
 ---
-title: Tokenizer — Smart contract BEP-20 sur BNB Smart Chain
-description: "Tokenizer : création du token GOLD42 (BEP-20) sur BNB Smart Chain Testnet — Solidity, OpenZeppelin, mint plafonné, burn et transfert de propriété (projet 42 × BNB Chain)."
+title: Tokenizer - Smart contract BEP-20 sur BNB Smart Chain
+description: "Tokenizer : création du token GOLD42 (BEP-20) sur BNB Smart Chain Testnet - Solidity, OpenZeppelin, mint plafonné, burn et transfert de propriété (projet 42 × BNB Chain)."
 tags:
   - projet
   - blockchain
@@ -114,11 +114,11 @@ GOLD42 is ERC20 (OpenZeppelin)
 
 | Problème | Solution |
 | ---------- | ---------- |
-| Comprendre la blockchain avant d'écrire une ligne de code | Assimiler les concepts clés — wallet, gas, transaction, explorateur de blocs — via la documentation du dépôt |
+| Comprendre la blockchain avant d'écrire une ligne de code | Assimiler les concepts clés - wallet, gas, transaction, explorateur de blocs - via la documentation du dépôt |
 | Manipuler les unités avec précision | Travailler en unités de base (wei) : `1 G42 = 10^18`, pas en décimales flottantes |
 | Garantir une offre prédictible | Supply plafonnée absolue dans le contrat : `mint()` rejette tout dépassement de 1 000 000 G42 |
 | Sécuriser les actions sensibles | Modificateur `onlyOwner` maison : seuls `mint` et `transferOwnership` sont restreints au propriétaire |
-| Déployer sans argent réel | Testnet BSC + faucet de tBNB gratuit — zéro argent réel engagé |
+| Déployer sans argent réel | Testnet BSC + faucet de tBNB gratuit - zéro argent réel engagé |
 
 ---
 
@@ -153,5 +153,5 @@ Tu veux reproduire ce projet ? Consulte ce tutoriel qui couvre l'intégralité d
 
 ## <span class="h2">Lien</span>
 
-[:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Tokeniser){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/Tokenizer){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [:octicons-verified-24: Contrat sur BscScan](https://testnet.bscscan.com/address/0xB03B454DDa79A522603f2a21471A6bC6B24dDb80){ .md-button target="_blank" rel="noopener" }

@@ -1,5 +1,5 @@
 ---
-title: L'homme et ses déchets — mutilation des pattes de pigeons
+title: L'homme et ses déchets - mutilation des pattes de pigeons
 description: Impact des déchets humains sur la faune urbaine, focus sur les mutilations de pattes de pigeons.
 slug: lhomme-et-ses-dechets-mutilation-des-pattes-de-pigeons
 date: 2026-06-26
@@ -9,8 +9,8 @@ categories:
   - 📚 Culture
 tags:
   - environnement
-  - faune urbaine
-  - déchets
+  - faune-urbaine
+  - dechets
 pin: true
 
 ---
@@ -25,3 +25,8 @@ Toutefois, une étude publié par une équipe de chercheurs du Centre d'Ecologie
 Les pigeons estropiés ne sont pas dangereux pour l'homme, **ils sont en fait les victimes des résidues de l'activité humaine et urbaine**.
 
 Une meilleur gestion de nos déchets est necessaire pour limiter les souffrances imposées à la faune des villes, concluent les chercheurs.
+
+---
+
+???+ abstract "À lire aussi"
+    [Hiérarchie chez les rats : l'expérience de Desor](hierarchie_rats.md)

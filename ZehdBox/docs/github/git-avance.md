@@ -1,6 +1,10 @@
 ---
 title: Fonctionnalités avancées
 description: "Stash, tags, cherry-pick, sous-modules, GitHub Actions et fichiers spéciaux : les outils avancés de Git."
+tags:
+  - cours
+  - git
+  - avance
 ---
 
 # <span class="h1">Fonctionnalités avancées</span>

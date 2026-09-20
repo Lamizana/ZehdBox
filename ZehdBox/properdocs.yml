@@ -2,7 +2,7 @@
 site_name: ZehdBox
 site_author: Alex Lamizana
 site_url: https://lamizana.github.io/ZehdBox/
-site_description: "Cours de programmation, projets 42, tutoriels Python, JavaScript, Web 3.0, Linux et blog — par Alex Lamizana."
+site_description: "Cours de programmation, projets 42, tutoriels Python, JavaScript, Web 3.0, Linux et blog - par Alex Lamizana."
 
 # ====================== FICHIERS EXCLUS DU BUILD =============================
 exclude_docs: |
@@ -14,13 +14,13 @@ nav:
 
   - Projets:
       - projets/index.md
-      - Tokenizer: projets/tokenizer.md
-      - Linear Regression: projets/linear-regression.md
-      - Transcendance: projets/transcendance.md
+      - So Long: projets/so_long.md
+      - Push Swap: projets/push_swap.md
       - Minishell: projets/minishell.md
       - ft_irc: projets/ft_irc.md
-      - Push Swap: projets/push_swap.md
-      - So Long: projets/so_long.md
+      - Transcendance: projets/transcendance.md
+      - Linear Regression: projets/linear-regression.md
+      - Tokenizer: projets/tokenizer.md
 
   - Programmation:
       - cours/index.md
@@ -169,6 +169,42 @@ theme:
     code: Roboto Mono
   icon:
     logo: material/bat
+    tag:
+      default: material/pound
+      # Langages & frameworks
+      python: fontawesome/brands/python
+      django: simple/django
+      docker: simple/docker
+      postgresql: simple/postgresql
+      react: simple/react
+      c: material/language-c
+      cpp: material/language-cpp
+      solidity: simple/solidity
+      numpy: simple/numpy
+      pandas: simple/pandas
+      scikit-learn: material/flask-outline
+      # Outils & plateformes
+      git: simple/git
+      github: simple/github
+      linux: simple/linux
+      windows: material/microsoft-windows
+      mkdocs: material/book-open-page-variant
+      # Domaines & thèmes
+      web: material/language-html5
+      web3: material/bitcoin
+      blockchain: material/link-variant
+      systeme: material/cog
+      shell: material/console-line
+      reseaux: material/network
+      serveur: material/server
+      jeu: material/gamepad-variant
+      machine-learning: material/robot
+      strudel: material/music
+      musique: material/music-note
+      cours: material/school
+      projet: material/rocket-launch
+      exercice: material/notebook-outline
+      tutoriel: material/play-circle-outline
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -220,10 +256,10 @@ extra_css:
 plugins:
   - redirects:
       redirect_maps:
-        'projets/tokeniser.md': 'projets/tokenizer.md'
-        'projets/ft_transcendence.md': 'projets/transcendance.md'
-        'so_long/jeux.md': 'projets/so_long.md'
-        'github/github.md': 'github/index.md'
+        "projets/tokeniser.md": "projets/tokenizer.md"
+        "projets/ft_transcendence.md": "projets/transcendance.md"
+        "so_long/jeux.md": "projets/so_long.md"
+        "github/github.md": "github/index.md"
 
   - search:
       lang: fr
@@ -255,6 +291,39 @@ plugins:
 
 # ======================== Configuration des versions =========================
 extra:
+  tags:
+    # Identifiants d'icônes des tags (voir theme.icon.tag)
+    python: python
+    django: django
+    docker: docker
+    postgresql: postgresql
+    react: react
+    c: c
+    cpp: cpp
+    solidity: solidity
+    numpy: numpy
+    pandas: pandas
+    scikit-learn: scikit-learn
+    git: git
+    github: github
+    linux: linux
+    windows: windows
+    mkdocs: mkdocs
+    web: web
+    web3: web3
+    blockchain: blockchain
+    systeme: systeme
+    shell: shell
+    reseaux: reseaux
+    serveur: serveur
+    jeu: jeu
+    machine-learning: machine-learning
+    strudel: strudel
+    musique: musique
+    cours: cours
+    projet: projet
+    exercice: exercice
+    tutoriel: tutoriel
   copyright: ZehdBox Copyright (c) 2026 Alex Lamizana
   social:
     - icon: fontawesome/brands/github

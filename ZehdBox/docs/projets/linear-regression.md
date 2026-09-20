@@ -1,6 +1,6 @@
 ---
-title: Linear Regression — Descente de gradient
-description: "Linear Regression : projet 42 ft_linear_regression — régression linéaire simple codée de zéro avec une descente de gradient (normalisation min-max, θ₀/θ₁, thetas.json) pour prédire le prix d'une voiture. NumPy, Pandas, Matplotlib, évaluation MSE/MAE/R²."
+title: Linear Regression - Descente de gradient
+description: "Linear Regression : projet 42 ft_linear_regression - régression linéaire simple codée de zéro avec une descente de gradient (normalisation min-max, θ₀/θ₁, thetas.json) pour prédire le prix d'une voiture. NumPy, Pandas, Matplotlib, évaluation MSE/MAE/R²."
 tags:
   - projet
   - python
@@ -107,7 +107,7 @@ L'entraînement a eu lieu sur des données `[0, 1]` : on **ramène θ₀ et θ�
 ### 4. Cycle d'utilisation
 
 <figure markdown>
-  ![Cycle d'utilisation](images/linear_regression.jpeg){.project-architecture}
+  ![Cycle d'utilisation](images/linear_regression.jpeg){ loading=lazy .project-architecture}
   <figcaption>Architecture globale du système de prédiction de prix de voiture par régression linéaire</figcaption>
 </figure>
 

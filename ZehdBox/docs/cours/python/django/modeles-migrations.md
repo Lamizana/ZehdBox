@@ -1,6 +1,10 @@
 ---
-title: Modèles & Migrations — Définir la structure des données
+title: Modèles & Migrations - Définir la structure des données
 description: "Migrations Django, création d'une application (pong), modèles Python et manipulation des données dans le shell."
+tags:
+  - cours
+  - django
+  - python
 ---
 
 # <span class="h1">Modèles & Migrations</span>

@@ -1,6 +1,10 @@
 ---
 title: Introduction
 description: "Découvrez Strudel, un langage de musique algorithmique, et installez votre environnement de travail."
+tags:
+  - tutoriel
+  - strudel
+  - musique
 ---
 
 # <span class="h1">Introduction à Strudel</span>

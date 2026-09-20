@@ -1,9 +1,13 @@
 ---
 title: Exercices - Bases Python
 description: "Exercices pratiques pour consolider les bases du langage Python."
+tags:
+  - exercice
+  - python
+  - bases
 ---
 
-# <span class="h1">Exercices — Bases Python</span>
+# <span class="h1">Exercices - Bases Python</span>
 
 <p class="intro">
     Pratiquez les bases de Python avec ces 15 exercices de révision.
@@ -29,7 +33,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
 !!! tip "Conseil"
     Essayez **par vous-même** avant de déplier la solution. L'erreur fait partie de l'apprentissage !
 
-???+ note "Lancer les exercices — option hors environnement"
+???+ note "Lancer les exercices - option hors environnement"
     Pas d'environnement Python local ? Utilisez un **bac à sable** directement dans le navigateur :
 
     [:fontawesome-brands-python: Ouvrir avec Basthon](https://basthon.fr/){ target="_blank" rel="noopener" .md-button .md-button--primary }
@@ -196,7 +200,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
 
 ---
 
-## <span class="h2">Exercice 8 : Chaînes — Majuscules</span>
+## <span class="h2">Exercice 8 : Chaînes - Majuscules</span>
 
 !!! question "Énoncé"
     Convertissez "bonjour" en majuscules.
@@ -214,7 +218,7 @@ Cette page regroupe les **notions essentielles** du parcours *Les bases* :
 
 ---
 
-## <span class="h2">Exercice 9 : Chaînes — Recherche</span>
+## <span class="h2">Exercice 9 : Chaînes - Recherche</span>
 
 !!! question "Énoncé"
     Trouvez la position de "mon" dans "Bonjour tout le monde".

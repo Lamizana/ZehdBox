@@ -1,6 +1,6 @@
 ---
-title: Push_swap — Algorithme de tri en C
-description: "Push_swap : trier des entiers sur deux piles avec 11 instructions — parsing robuste, tri adaptatif (3-5 éléments) puis tri radix par normalisation (projet 42)."
+title: Push Swap - Algorithme de tri en C
+description: "Push_swap : trier des entiers sur deux piles avec 11 instructions - parsing robuste, tri adaptatif (3-5 éléments) puis tri radix par normalisation (projet 42)."
 tags:
   - projet
   - c
@@ -8,7 +8,7 @@ tags:
   - tri
 ---
 
-# <span class="h1">Push_swap</span>
+# <span class="h1">Push Swap</span>
 
 <div class="badge-section">
 <div class="badge-row">
@@ -37,7 +37,7 @@ L'objectif est de produire la **suite d'instructions la plus courte** qui range 
 
 *Projet du tronc commun de l'école 42, réalisé en solo entre décembre 2022 et janvier 2023.*
 
-**L'objectif** : ma première vraie rencontre avec la **complexité algorithmique** — comprendre que quelques instructions demandées en millions d'exemplaires se paient en coût de calcul, et choisir une stratégie en conséquence.
+**L'objectif** : ma première vraie rencontre avec la **complexité algorithmique** - comprendre que quelques instructions demandées en millions d'exemplaires se paient en coût de calcul, et choisir une stratégie en conséquence.
 
 ---
 
@@ -46,7 +46,7 @@ L'objectif est de produire la **suite d'instructions la plus courte** qui range 
 Projet **100 % solo**, mené de bout en bout :
 
 - **Parsing** des arguments (plusieurs arguments ou une seule chaîne entre quotes) et gestion des erreurs
-- Conception des **algorithmes de tri** — avec trois approches essayées et abandonnées avant la bonne
+- Conception des **algorithmes de tri** - avec trois approches essayées et abandonnées avant la bonne
 - **Implémentation** des 11 instructions sur une liste chaînée
 - **Tests & validation** : checker Linux officiel, testeur maison et vérification mémoire
 
@@ -57,7 +57,7 @@ Projet **100 % solo**, mené de bout en bout :
 Le programme enchaîne quatre étapes : validation des arguments, construction de la pile, tri adaptatif, et libération de la mémoire.
 
 <figure markdown>
-  ![Architecture de Push Swap](images/push_swap_architecture.jpeg){.project-architecture}
+  ![Architecture de Push Swap](images/push_swap_architecture.jpeg){ loading=lazy .project-architecture}
   <figcaption>Schéma de l'architecture de Push Swap</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Chaque passage sépare les éléments selon un bit du rang, pour un total de `le
 | Vérification des entrées | Rejette non-nombres, valeurs hors `int`, doublons, chaînes vides | `Error\n` sur stderr |
 | 11 instructions | `sa sb ss` · `pa pb` · `ra rb rr` · `rra rrb rrr` | affichées une par ligne |
 | Tri adaptatif | Cas manuels 2-3, hybride 4-5, radix 6+ | automatique |
-| Conversion sûre | `ft_atoi` maison en `long` avec détection de débordement | — |
+| Conversion sûre | `ft_atoi` maison en `long` avec détection de débordement | - |
 
 ---
 
@@ -180,7 +180,7 @@ La vitesse et le zoom sont réglables dans le code (`G_SPEED`, `G_ZOOM`), et le 
 
 J'ai compris que la « complexité » n'est pas un concept de cours : c'est le moment précis où un programme passe de l'instantané à l'interminable selon le nombre d'éléments.
 
-Ce projet m'a aussi appris la **persévérance** : j'ai écrit trois algorithmes qui fonctionnaient mais perdaient trop de coups avant d'accepter de normaliser le problème et d'utiliser le tri radix — une solution simple une fois qu'on a changé de point de vue.
+Ce projet m'a aussi appris la **persévérance** : j'ai écrit trois algorithmes qui fonctionnaient mais perdaient trop de coups avant d'accepter de normaliser le problème et d'utiliser le tri radix - une solution simple une fois qu'on a changé de point de vue.
 
 ---
 

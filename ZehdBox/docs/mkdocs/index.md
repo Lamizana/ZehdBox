@@ -1,6 +1,9 @@
 ---
 title: Créer une documentation avec MkDocs et Material
 description: "Créer un site de documentation avec ProperDocs, MkDocs et le thème Material : plugins, extensions et déploiement."
+tags:
+  - cours
+  - mkdocs
 icon: simple/materialformkdocs
 ---
 

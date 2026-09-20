@@ -1,6 +1,10 @@
 ---
-title: GitHub pour débutants — Git, branches et pull requests
+title: GitHub pour débutants - Git, branches et pull requests
 description: "Apprendre GitHub : dépôts, branches, pull requests et bonnes pratiques Git pour collaborer sur vos projets."
+tags:
+  - cours
+  - git
+  - github
 icon: material/github
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: Commandes & Bonnes pratiques
 description: "Récapitulatif de toutes les commandes Git et les bonnes pratiques à adopter au quotidien."
+tags:
+  - cours
+  - git
+  - commandes
 ---
 
 # <span class="h1">Commandes & Bonnes pratiques</span>

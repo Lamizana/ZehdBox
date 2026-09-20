@@ -1,6 +1,10 @@
 ---
 title: Déploiement
 description: "Déployer votre site ProperDocs/MkDocs : GitHub Pages, CI/CD et alternatives."
+tags:
+  - cours
+  - mkdocs
+  - deploiement
 ---
 
 # <span class="h1">Déploiement</span>
@@ -107,7 +111,7 @@ mkdocs-redirects==1.2.3
 ```
 
 !!! tip "Pas de `pip freeze`"
-    Ne faites jamais un `pip freeze` complet — ça inclut des paquets inutiles qui rallongent le build CI.
+    Ne faites jamais un `pip freeze` complet - ça inclut des paquets inutiles qui rallongent le build CI.
 
 ---
 

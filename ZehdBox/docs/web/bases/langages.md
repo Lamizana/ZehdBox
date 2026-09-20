@@ -1,6 +1,10 @@
 ---
 title: "Les langages du Web"
 description: "HTML, CSS, JavaScript, PHP, Python : comprendre les langages client, serveur, les frameworks et les bases de données."
+tags:
+  - cours
+  - web
+  - langages
 icon: material/language-html5
 ---
 
@@ -19,7 +23,7 @@ Il existe deux types d'ordinateurs connectés au Web :
 
 | Rôle | Description |
 |------|-------------|
-| **Client** | Votre ordinateur, smartphone ou tablette — c'est l'appareil qui **consulte** les sites web via un navigateur. |
+| **Client** | Votre ordinateur, smartphone ou tablette - c'est l'appareil qui **consulte** les sites web via un navigateur. |
 | **Serveur** | Une machine puissante qui **possède** les sites web et les envoie aux clients qui les demandent. |
 
 !!! info "Les navigateurs"
@@ -66,7 +70,7 @@ Les langages serveur sont exécutés par le **serveur**. Ils décrivent
 | **Ruby** | Ruby on Rails |
 
 !!! warning "Ne pas confondre"
-    **Java** ≠ **JavaScript** — ce sont deux langages complètement différents,
+    **Java** ≠ **JavaScript** - ce sont deux langages complètement différents,
     malgré le nom similaire.
 
 !!! note "Framework vs CMS"
@@ -81,7 +85,7 @@ Les langages serveur sont exécutés par le **serveur**. Ils décrivent
 L'interaction entre le client et le serveur se résume en 3 étapes :
 
 <figure markdown>
-  ![Interaction Web](images/web_interaction.jpeg){.project-architecture}
+  ![Interaction Web](images/web_interaction.jpeg){ loading=lazy .project-architecture}
   <figcaption>Schéma de interaction entre le client et le serveur</figcaption>
 </figure>
 
@@ -104,7 +108,7 @@ Tous les sites web ont besoin d'**enregistrer des informations**
 | **SQL Server** | Microsoft, entreprise |
 | **Oracle** | Entreprise, très gros volumes |
 
-!!! info "SQL — Structured Query Language"
+!!! info "SQL - Structured Query Language"
     Pour communiquer avec ces bases de données, on utilise le langage **SQL**.
     On fait des **requêtes SQL** : "je veux stocker ce message",
     "je veux récupérer tous les utilisateurs".

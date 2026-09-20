@@ -1,6 +1,10 @@
 ---
-title: Web 3.0 — Blockchain, DeFi et smart contracts
+title: Web 3.0 - Blockchain, DeFi et smart contracts
 description: "Découvrir le Web 3.0 : blockchain, décentralisation, smart contracts, Etherscan et création d'un token BEP-20."
+tags:
+  - cours
+  - web
+  - web3
 icon: material/bitcoin
 ---
 
@@ -16,7 +20,7 @@ icon: material/bitcoin
 
 ## :material-robot-love: Tutoriel : Créer votre token BEP-20
 
-Un guide complet pas à pas — de zéro jusqu'à un token publié sur la blockchain. **0 € requis**, tout se passe sur le testnet.
+Un guide complet pas à pas - de zéro jusqu'à un token publié sur la blockchain. **0 € requis**, tout se passe sur le testnet.
 
 [:octicons-arrow-right-24: Commencer le tutoriel](tokenizer.md){ .md-button .md-button--primary }
 

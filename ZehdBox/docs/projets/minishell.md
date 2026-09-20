@@ -1,12 +1,12 @@
 ---
-title: Minishell — Interpréteur de commandes UNIX en C 
-description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash — REPL, parsing par pipeline, pipes, redirections et gestion des signaux (projet 42)."
+title: Minishell - Interpréteur de commandes UNIX en C
+description: "Minishell : interpréteur de commandes UNIX en C inspiré de bash - REPL, parsing par pipeline, pipes, redirections et gestion des signaux (projet 42)."
 tags:
   - projet
   - c
   - unix
   - shell
-  - système
+  - systeme
 ---
 
 # <span class="h1">Minishell</span>
@@ -55,18 +55,18 @@ Projet réalisé en **binôme** : j'ai conçu le cœur de l'interpréteur, mon b
 ## <span class="h2">Architecture</span>
 
 <figure markdown>
-  ![Architecture de Minishell](images/minishell_architecture.jpeg){.project-architecture}
+  ![Architecture de Minishell](images/minishell_architecture.jpeg){ loading=lazy .project-architecture}
   <figcaption>Schéma de l'architecture de Minishell</figcaption>
 </figure>
 
-Le REPL (**R**ead — **E**val — **P**rint — **L**oop) est le cycle fondamental de tout shell interactif :
+Le REPL (**R**ead - **E**val - **P**rint - **L**oop) est le cycle fondamental de tout shell interactif :
 
 | Étape | Rôle | Dans le code |
 | ----- | ---- | ------------ |
-| **R**ead — Lecture | Le shell lit la commande saisie au clavier | `readline()` + `add_history()` |
-| **E**val — Évaluation | La commande est parsée puis exécutée | `parsing()` → `fork()` / `execve()` |
-| **P**rint — Affichage | La sortie s'affiche sur le terminal | `dup2()` vers `STDOUT_FILENO` |
-| **L**oop — Boucle | Le shell réaffiche le prompt et attend la saisie suivante | retour au `while(1)` avec `free()` |
+| **R**ead - Lecture | Le shell lit la commande saisie au clavier | `readline()` + `add_history()` |
+| **E**val - Évaluation | La commande est parsée puis exécutée | `parsing()` → `fork()` / `execve()` |
+| **P**rint - Affichage | La sortie s'affiche sur le terminal | `dup2()` vers `STDOUT_FILENO` |
+| **L**oop - Boucle | Le shell réaffiche le prompt et attend la saisie suivante | retour au `while(1)` avec `free()` |
 
 La boucle tourne jusqu'à ce qu'un signal d'arrêt mette fin au programme : commande `exit` ou fin de fichier (`Ctrl+D`).
 
@@ -77,7 +77,7 @@ La boucle tourne jusqu'à ce qu'un signal d'arrêt mette fin au programme : comm
 3. **Découpage** en arguments avec un splitter qui ignore les séparateurs entre quotes
 4. **Nettoyage** des quotes résiduelles de chaque argument
 
-L'exécution distingue ensuite trois cas : une **commande simple**, une **redirection** (`>`), et un **pipe** — chaque commande d'un pipe étant lancée dans un processus `fork` relié à son voisin via `dup2`, avec une gestion dédiée du dernier maillon de la chaîne.
+L'exécution distingue ensuite trois cas : une **commande simple**, une **redirection** (`>`), et un **pipe** - chaque commande d'un pipe étant lancée dans un processus `fork` relié à son voisin via `dup2`, avec une gestion dédiée du dernier maillon de la chaîne.
 
 ---
 

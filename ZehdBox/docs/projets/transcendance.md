@@ -1,6 +1,6 @@
 ---
-title: Transcendance — Pong multijoueur local
-description: "Projet 42 Transcendance : application web Django + Canvas pour jouer au Pong en local — solo, 1v1, 4 joueurs, tournoi, multi-langue."
+title: Transcendance - Pong multijoueur local
+description: "Projet 42 Transcendance : application web Django + Canvas pour jouer au Pong en local - solo, 1v1, 4 joueurs, tournoi, multi-langue."
 tags:
   - projet
   - django
@@ -55,7 +55,7 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 ## <span class="h2">Architecture</span>
 
 <figure markdown>
-  ![Architecture de Transcendance](images/transcendance_architecture.jpeg){.project-architecture}
+  ![Architecture de Transcendance](images/transcendance_architecture.jpeg){ loading=lazy .project-architecture}
   <figcaption>Schéma de l'architecture de Transcendance</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ Côté client, un **routeur JavaScript** (`router.js`) récupère le HTML par `f
 
 <div class="skill-card">
     <span class="skill-card-title">Base de données</span><br>
-    <span class="skill-card-desc"><strong>PostgreSQL 15</strong><br><em>Stockage des profils, scores, duels, tournois, amis.</em><br><strong>ArrayField (psycopg2)</strong><br><em>Tableaux d'historique sans jointures — duels, positions de tournoi.</em></span>
+    <span class="skill-card-desc"><strong>PostgreSQL 15</strong><br><em>Stockage des profils, scores, duels, tournois, amis.</em><br><strong>ArrayField (psycopg2)</strong><br><em>Tableaux d'historique sans jointures - duels, positions de tournoi.</em></span>
 </div>
 
 <div class="skill-card">
@@ -114,7 +114,7 @@ Côté client, un **routeur JavaScript** (`router.js`) récupère le HTML par `f
 - **1v1 local** : deux joueurs, un clavier (W/S vs flèches)
 - **4 joueurs** : quadra sur canvas carré, 4 palettes colorées avec murs d'angles
 - **Tournoi 4** : bracket saisi par l'utilisateur, demi-finales + finale
-- **Multi-langue** : FR, EN, ES — toute l'interface traduite via balises `lang=""` et routeur JS
+- **Multi-langue** : FR, EN, ES - toute l'interface traduite via balises `lang=""` et routeur JS
 - **Profil & avatar** : création, modification du mot de passe, suppression de compte
 - **Système d'amis** : ajout par nickname, liste persistante, statut en ligne
 - **Scores & historique** : wins/loses, détail par duel (adversaire, score, date), positions de tournoi
@@ -126,7 +126,7 @@ Côté client, un **routeur JavaScript** (`router.js`) récupère le HTML par `f
 | Problème | Solution |
 |----------|----------|
 | Le jeu devait être jouable de 320px (mobile) à 1440px+ sans distortion | Calcul dynamique des dimensions Canvas avec 5 paliers de `window.innerWidth`, normalisation de toutes les positions par `canvas.height / 1000` |
-| La balle accélérait indéfiniment après chaque rebond, rendant le jeu ingérable | Conservation de la vitesse totale via Pythagore : `speed = √(12² − speedy²)` à chaque collision — la vitesse reste constante quelle que soit l'angle |
+| La balle accélérait indéfiniment après chaque rebond, rendant le jeu ingérable | Conservation de la vitesse totale via Pythagore : `speed = √(12² − speedy²)` à chaque collision - la vitesse reste constante quelle que soit l'angle |
 | Une IA qui suit simplement la balle est trop facile à battre | L'IA prédit le point d'intersection y de la trajectoire au niveau de sa raquette, puis ajoute un bruit aléatoire (±10px) pour une difficulté imparfaite mais crédible |
 
 ---

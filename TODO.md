@@ -1,25 +1,15 @@
 # ZehdBox - Audit complet & Roadmap d'amélioration
 
-<<<<<<< HEAD
-> **Document de travail** — Audit initial le **07 septembre 2026**, re-audit le **16 septembre 2026** · Site vitrine développeur
+> **Document de travail** — Audit initial le **07 septembre 2026**, re-audit le **18 septembre 2026**, ré-audit indépendant le **20 septembre 2026** · Site vitrine développeur + base de connaissances
 
 | | |
 | --- | --- |
-| 🏆 **Score global** | 88 / 100 *(re-audit 16/09)* |
-| 📝 **Statut** | En cours d'amélioration continue |
-| 🚀 **Priorité** | Vitrine / conviction recruteur |
-| 📈 **Progression** | 4 / 15 tâches accomplies |
-=======
-> **Document de travail** - Audit réalisé le **18 septembre 2026** · Site vitrine développeur + base de connaissances
-
-| | |
-| --- | --- |
-| **Score global** | 84 / 100 *(à ré-évaluer — de nombreux chantiers clôturés depuis l'audit)* |
-| **Statut** | En amélioration continue |
-| **Priorité** | Vitrine / conviction recruteur, puis maintenance du fonds documentaire |
-| **Progression** | 29 / 57 cases TO-DO cochées (~51 %) |
+| 🏆 **Score global (ré-audit 20/09)** | **72 / 100** — la note inclut : conflits git du `TODO.md` résolus ✅, `README.md` à resynchroniser (badges/claims périmés + liens `.md` erronés), branche remote morte à supprimer, poids des images à traiter |
+| **Score auto-évalué (18/09)** | 84 / 100 *(à ré-évaluer — de nombreux chantiers clôturés depuis l'audit)* |
+| 📝 **Statut** | En amélioration continue |
+| 🚀 **Priorité** | Vitrine / conviction recruteur, puis maintenance du fonds documentaire |
+| 📈 **Progression** | 29 / 57 cases TO-DO cochées (~51 %) |
 | **Dernière validation** | `properdocs build --strict` (18/09/2026, 0 erreur 0 warning) |
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 
 ---
 
@@ -104,18 +94,9 @@
 
 ### Accueil - pitch et CTA
 
-<<<<<<< HEAD
-- [x] Uniformiser la **densité** et la **structure** des fiches projets
-- ✅ **Terminé le 15/09/2026** — les 6 fiches suivent désormais le même template :
-  `Présentation → Contexte → Mon rôle → Architecture → Technologies → Fonctionnalités → Problème | Solution → Résultats → Ce que j'ai appris → Lien`
-- ✅ `minishell.md` utilise `skill-grid` comme les autres (fini le `.soft-skills-grid`)
-- ✅ Sections *Résultats* ajoutées sur `ft_irc.md` / `minishell.md` / `push_swap.md`
-- **Reste à faire** : enrichir la section *Lien* avec `[Démo live]` + `[Repo]` (cf. chantier Démos live)
-=======
 - [ ] Remplacer le tagline « Le pouvoir du savoir... » par un **pitch de 1 ligne** (qui tu es, ce que tu cherches : alternance Backend/Data/IA)
 - [ ] Ajouter un **CTA « À propos / CV »** visible sur la home (bouton `md-button`) - aujourd'hui About/Contact ne sont accessibles que via la nav
 - [ ] Envisager un **CV téléchargeable** (PDF) lié depuis home + about
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 
 ### Structure des fiches projets
 
@@ -134,12 +115,6 @@
 
 ### Organisation de la navigation
 
-<<<<<<< HEAD
-- [x] Séparer explicitement dans la nav :
-  - **« Projets »** (vitrine) ✅
-  - **« Notes/Veille »** (cours, système, web, github) ✅
-  - → RAS — la séparation est saine, continuer sur cette lancée
-=======
 - [x] Typologie **vitrine (Projets)** vs **base de connaissances (Cours/Système/Web/GitHub)** déjà séparée - fait
 - [x] Aligner les **libellés nav** sur les nouveaux titres - fait le 18/09/2026
   - `Push_swap` → `Push Swap` (déjà OK dans la nav)
@@ -147,7 +122,6 @@
 - [x] ~~Évaluer si le tab **« Programmation »** (Python + MkDocs + Strudel) devient trop chargé → déplacer `Strudel` et `MkDocs` dans des onglets dédiés~~ : testé puis **annulé le 18/09/2026** — `Strudel` et `MkDocs` sont **de retour dans Programmation** (choix final)
   - Ordre interne : `cours/index → Python → MkDocs → Strudel`
 - [x] ~~Ajouter la feature `content.action.edit`~~ (bouton « Modifier cette page ») : activée puis **retirée le 18/09/2026** (choix éditorial — `edit_uri` reste configuré pour une réactivation en 1 ligne)
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 
 ---
 
@@ -180,17 +154,6 @@
 
 ## Tags & recherche {#tags-recherche}
 
-<<<<<<< HEAD
-- [x] **Meta Open Graph / Twitter différenciée par page projet** (partage LinkedIn/Twitter)
-  - ✅ Vérifié le 16/09/2026 : le plugin social génère une carte distincte par page
-    (titre + description uniques dans le frontmatter de chaque fiche)
-  - [ ] Penser aux drafts de description + images (visuels propres à chaque fiche)
-- [ ] Confirmer l'indexation du **sitemap** dans Search Console
-  - ✅ Soumis dans GSC le 08/09/2026 — état *« Impossible de lire »* à surveiller
-  - ℹ️ XML pourtant validé en local (72 URLs, format OK)
-  - 🛠️ Solutions si persiste : re-tester dans GSC / soumettre `sitemap.xml.gz` / attendre 24-48 h
-- [ ] Vérifier que **Google Analytics** (`G-74MZWWS1RR`) collecte réellement après acceptation des cookies
-=======
 - [x] **Ajouter `tags:` en front matter aux pages de cours** : **0 page de contenu sans tags** (76 pages taggées hors blog, home, about, contact, tags.md et template) - fait le 18/09/2026
   - Lots : systeme+github (9) · mkdocs+strudel (13) · web (12) · cours/python (28)
   - Tags normalisés en kebab-case sans accent ; tag fantôme `matplotlib` retiré
@@ -200,7 +163,6 @@
   - Étape « hide: tags » abandonnée : les hubs vitrine n'ont pas de chips, les chips des hubs de sections sont informatifs
 - [ ] Vérifier le comportement de `navigation.prune` (page `tags.md` listée dans la nav - à confirmer sur mobile)
 - [ ] Option : ajouter `search.share` dans `theme.features` pour partager des résultats de recherche
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 
 ---
 
@@ -210,31 +172,7 @@
 
 - [x] **Supprimer les définitions dupliquées** dans `docs/css/custom.css` (639 → ~590 lignes) - fait le 18/09/2026
 
-<<<<<<< HEAD
-### Vue d'ensemble des chantiers
-
-| Chantier | Impact | Pages | Statut |
-| --- | --- | --- | --- |
-| 1 — Chaînage cours Python | ⭐⭐⭐ | 8 | ⬜ À faire *(statut corrigé 16/09)* |
-| 2 — Bloc « Autres projets » | ⭐⭐⭐ | 6 | ⬜ À faire |
-| 3 — Blog & tags | ⭐⭐ | 4 | ⬜ À faire |
-| 4 — Web & cross-links | ⭐⭐ | 4 | ⬜ À faire |
-| 5 — Strudel | ⭐ | 6 | ⬜ À faire |
-
----
-
-### Chantier 1 — Chaînage pédagogique cours Python
-
-- [ ] Ajouter en bas de chaque page un bloc **« Continuer la lecture »**
-- ⚠️ **Erreur corrigée le 16/09/2026** : ce chantier était marqué ✅ mais les blocs
-  n'existent **pas dans les fichiers** — seul `exercice-bases.md` pointe vers les exercices.
-  Statut réel : **à faire** sur `mise-en-place`, `variables`, `types`, `operateurs`,
-  `chaines`, `flux-execution`, `instructions-repetitives`, `fonctions`.
-
-| Étape | Page suivante |
-=======
 | Sélecteur en double | Traitement |
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 | --- | --- |
 | `.badge-row` | Fusionné (rendu effectif conservé : `justify-content: center` + `gap: 8px`) |
 | `.badge-category` | Fusionné (rendu effectif conservé : majuscules, `0.8rem`, `opacity`, couleur primaire) |
@@ -268,52 +206,20 @@
 
 ## Accessibilité {#accessibilite}
 
-<<<<<<< HEAD
-- [ ] Ajouter une carte « Blog » dans les grid cards de la home *(manquante)*
-- [ ] `blog/index.md` → lien « 📂 Explorer par tags » vers `tags.md`
-- [ ] Cross-links entre articles : `fourmis` ↔ `puces` ; `mutilation_pigeon` ↔ `hierarchie_rats`
-- [ ] Lier `tags.md` depuis le contenu *(aucun lien entrant actuellement)*
-
-### 🟢 Chantier 4 — Web & cross-links
-
-- [ ] `react.md` orpheline → lier depuis `web/web2/index` *(note : `cours/javascript` n'existe plus dans la nav)*
-- [ ] web3 : `blockchain` ↔ `tokenizer` ; `etherscan` ↔ `bscscan` (« voir aussi »)
-- [ ] `systeme/nettoyage-disque` → lien vers `linux/index`
-
-### ⚪ Chantier 5 — Strudel
-
-- [ ] Chaînage des tutoriels : `intro` → `sons` → `notes` → `patterns` → `effets` → `exercice`
-=======
 - [ ] **Contraste** : `.intro` (`color: #90a4ae`) risque d'être trop clair en mode clair → tester avec un outil de contraste (cible AA ≥ 4.5:1)
 - [ ] Vérifier les `alt` de toutes les images (grep `![]` et `<img>`) - `about`, fiches projets et blog
 - [ ] Ajouter `aria-label` sur les liens icones seuls (ex. boutons sociaux) si présents
 - [ ] Vérifier le flot de lecture mobile (tout le contenu passe sous la nav ?) avec les features `navigation.path` + `header.autohide`
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 
 ---
 
 ## Déploiement & CI/CD {#deploiement-cicd}
 
-<<<<<<< HEAD
-- [x] Remplacer les `<span class="tech-tag">` des 6 fiches projets par des badges `shields.io style=for-the-badge`
-- ✅ **Déployé le 15/09/2026** — 6 fiches projets + `projets/index.md` + `about.md` utilisent les badges
-  avec attribut `alt` (accessibilité). Seul `mkdocs/material.md` conserve `.tech-tag` (démo palette, usage légitime).
-- **Reste possible** : nettoyer la classe `.tech-tag` dupliquée dans `custom.css` lors du chantier Design.
-
-| Type | Technos |
-| --- | --- |
-| 🎨 Logos officiels | C · C++ · JavaScript · Solidity · PostgreSQL · React |
-| 🔊 Badges texte coloré | UNIX · Makefile · Sockets · RFC 1459 · WebSockets · OAuth 42 · BEP-20 · OpenZeppelin · Algorithmique · Optimisation · MiniLibX · Jeu 2D |
-
-- 📐 Structure `badge-row` (CSS `.badge-row` déjà présent) + attribut `alt` (accessibilité)
-- 🔀 Branche dédiée : `feat/badges-projets` + PR
-=======
 - [x] `--strict` activé dans le workflow GitHub Actions - fait
 - [x] `fetch-depth: 0` présent (dates de révision fiables) - fait
 - [ ] Vérifier le **dernier run GitHub Actions** après le prochain push (build + deploy)
 - [ ] Option : ajouter un **job de vérification des liens externes** (ou workflow manuel) pour attraper les URLs 404 vers shields.io / docs externes
 - [ ] Penser à un **test de non-régression** : vérifier périodiquement que `docs/` ne grossit pas démesurément (22 Mo aujourd'hui)
->>>>>>> 9661af92cbbe4feec7d83a5cf7187f23a29b472d
 
 ---
 
@@ -338,3 +244,5 @@
 ---
 
 *Audit 18/09/2026 : `properdocs build -f ZehdBox/properdocs.yml --strict` valide (6,4 s). Tant que ce fichier existe dans le working tree, considérer les `[ ]` comme des chantiers ouverts.*
+
+> **Résolution de conflit — 20/09/2026** : le `TODO.md` contenait 7 blocs de marqueurs de merge non résolus (introduits par le merge `5a02e0c`), avec des scores/progressions contradictoires. Résolution effectuée en conservant la version consolidée du 18/09 (la plus récente), les items concurrents obsolètes ayant été supprimés. Ré-audit indépendant du 20/09 : **score 72/100** — chantiers critiques restants : resynchroniser `README.md` (badges/claims périmés, liens `.md` erronés), supprimer la branche remote `origin/feature/exercices-python-interactifs`, alléger les images.

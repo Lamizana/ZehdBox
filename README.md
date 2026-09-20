@@ -85,6 +85,7 @@ ZehdBox/
 │   │   │   │   ├── exercices/     # Exercices nombres & chaînes
 │   │   │   │   ├── numpy/         # NumPy + projet Dés
 │   │   │   │   ├── pandas/        # Pandas + tutoriel + exercices Météo
+│   │   │   │   ├── django/        # Django : installation, modèles, vues, templates
 │   │   │   │   └── fonctions.md   # Fonctions Python
 │   │   │   └── index.md           # Hub des cours
 │   │   ├── blog/                  # Articles techniques
@@ -97,7 +98,6 @@ ZehdBox/
 │   ├── requirements-ci.txt        # Dépendances minimales (CI)
 │   └── requirements-dev.txt       # Environnement complet gelé
 ├── TODO.md                        # Roadmap d'amélioration
-├── PR.txt                         # Récapitulatif des PR
 ├── LICENSE                        # MIT License
 └── README.md
 ```
@@ -128,10 +128,11 @@ ZehdBox/
 | --- | --- | --- |
 | **Les bases** | Variables, types, opérateurs, chaînes, flux, répétitives | [Bases](https://lamizana.github.io/ZehdBox/cours/python/bases/) |
 | **Exercices** | 15 exercices de révision + exercices chaînes | [Exercices](https://lamizana.github.io/ZehdBox/cours/python/exercices/) |
-| **Fonctions** | Définir, appeler, return, portée, docstrings | [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions.md) |
+| **Fonctions** | Définir, appeler, return, portée, docstrings | [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions/) |
 | **NumPy** | Tableaux, opérations vectorielles, projet Dés | [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/) |
 | **Pandas** | DataFrames, tutoriel Météo, exercices API | [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/) |
-| **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn.md) |
+| **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/) |
+| **Django** | Installation, Docker & PostgreSQL, modèles, vues, templates | [Django](https://lamizana.github.io/ZehdBox/cours/python/django/) |
 
 ### Autres domaines
 

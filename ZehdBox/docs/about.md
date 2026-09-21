@@ -219,14 +219,14 @@ icon: material/account
     <span class="check" style="display: inline-flex; align-items: center;">
       <img src="https://api.iconify.design/material-symbols:check-circle-outline.svg?color=%234caf50" alt="check" width="20" height="20" />
     </span>
-    <span>Stage Technique</span>
+    <span>Stage technique</span>
   </div>
 
   <div class="objectif-badge" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
     <span class="check" style="display: inline-flex; align-items: center;">
       <img src="https://api.iconify.design/material-symbols:check-circle-outline.svg?color=%234caf50" alt="check" width="20" height="20" />
     </span>
-    <span>Missions Freelance Base de donnée / IA</span>
+    <span>Missions Freelance Base de données / IA</span>
   </div>
 
   <div class="objectif-badge objectif-badge--next" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">

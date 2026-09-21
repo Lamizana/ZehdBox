@@ -155,12 +155,12 @@ theme:
     - navigation.prune
     - navigation.indexes
     - navigation.footer
-    - navigation.expand
 
     # - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
     - header.autohide
     - content.tooltips
 
@@ -239,7 +239,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
   - pymdownx.tasklist:
@@ -324,7 +328,6 @@ extra:
     projet: projet
     exercice: exercice
     tutoriel: tutoriel
-  copyright: ZehdBox Copyright (c) 2026 Alex Lamizana
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Lamizana
@@ -350,7 +353,7 @@ extra:
 
 repo_url: https://github.com/Lamizana/ZehdBox
 repo_name: Lamizana/ZehdBox
-edit_uri: edit/main/ZehdBox/docs/
+copyright: ZehdBox Copyright (c) 2026 Alex Lamizana
 
 # ========================= VALIDATION DES LIENS ==============================
 # Les liens relatifs vers les posts du blog (../blog/2026/../slug/) pointent

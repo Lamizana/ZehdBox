@@ -22,7 +22,7 @@
 
 **ZehdBox** est un site vitrine & base de connaissances personnel, couvrant le développement logiciel, la data science, le web et le système. Il sert à la fois de **portfolio pour les recruteurs** et de **mémo technique** alimenté au fil de l'apprentissage.
 
-Contenu structuré, déployées automatiquement via GitHub Actions sur GitHub Pages.
+Contenu structuré, déployé automatiquement via GitHub Actions sur GitHub Pages.
 
 **Live** : [lamizana.github.io/ZehdBox](https://lamizana.github.io/ZehdBox/)
 
@@ -96,8 +96,7 @@ ZehdBox/
 │   │   ├── mkdocs/                # Documentation MkDocs
 │   │   └── css/custom.css         # Styles personnalisés
 │   ├── requirements-ci.txt        # Dépendances minimales (CI)
-│   └── requirements-dev.txt       # Environnement complet gelé
-├── TODO.md                        # Roadmap d'amélioration
+│   └── requirements-dev.txt       # Environnement de développement
 ├── LICENSE                        # MIT License
 └── README.md
 ```
@@ -184,7 +183,6 @@ Le site sera accessible sur `http://127.0.0.1:8001`.
 | --- | --- |
 | `properdocs serve` | Serveur local avec hot-reload |
 | `properdocs build --strict` | Build de validation (warnings = erreurs) |
-| `properdocs gh-deploy` | Déployer sur GitHub Pages |
 
 > [!WARNING]
 > Toutes les commandes doivent être lancées **depuis le dossier `ZehdBox/`** avec l'environnement virtuel activé.
@@ -195,10 +193,10 @@ properdocs serve --dev-addr=127.0.0.1:8001
 
 # Build de validation
 properdocs build -f properdocs.yml --strict
-
-# Déploiement
-properdocs gh-deploy
 ```
+
+> [!NOTE]
+> Le déploiement **ne se fait pas en local** : un simple `git push` sur `main` déclenche le workflow GitHub Actions (voir la section [CI/CD](#cicd) ci-dessous). La commande `properdocs gh-deploy` n'est donc pas utilisée par ce projet.
 
 ---
 
@@ -212,6 +210,9 @@ Le déploiement est automatisé via **GitHub Actions** (`deploy.yml`) :
 4. **Deploy** → déploiement sur GitHub Pages
 
 Le workflow utilise `fetch-depth: 0` pour conserver l'historique git complet (nécessaire pour `git-revision-date-localized`).
+
+> [!IMPORTANT]
+> **Aucune commande de déploiement manuelle n'est nécessaire.** Le workflow est la seule source de vérité pour la mise en ligne ; ne pas publier via une branche `gh-pages` (vestige de l'ancien déploiement MkDocs, désormais abandonné).
 
 ---
 

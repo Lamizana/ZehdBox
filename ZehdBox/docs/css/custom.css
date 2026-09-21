@@ -15,6 +15,20 @@
     color: var(--md-primary-fg-color) !important;
 }
 
+/* Titre tertiaire (niveau h3 habillé) */
+.h3 {
+    font-weight: 600 !important;
+    color: var(--md-primary-fg-color) !important;
+}
+
+/* Séparateur dans un titre : « Problème | Solution » */
+.h2-sep {
+    color: var(--md-default-fg-color--light);
+    font-weight: 400;
+    margin: 0 0.5em;
+    opacity: 0.6;
+}
+
 /* Texte d'intro */
 .intro {
     text-align: center !important;

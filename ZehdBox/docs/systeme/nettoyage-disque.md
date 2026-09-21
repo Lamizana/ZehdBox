@@ -82,7 +82,7 @@ Sélectionnez le disque de votre clé en remplaçant la lettre `X` par le numér
 select disk X
 ```
 
-!!! example
+!!! example "Exemple"
     Si votre clé USB est associée au disque 2, tapez `select disk 2`. Un message de confirmation vous indiquera *"Le disque X est maintenant le disque sélectionné"*.
 
 ### <span class="h2">5. Nettoyage complet du support (Remise à zéro)</span>

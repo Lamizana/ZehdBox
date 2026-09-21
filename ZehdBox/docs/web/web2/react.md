@@ -259,7 +259,7 @@ key={`${plant}-${index}`}
 ???+ info "Information"
     La méthode **`map()`** permet d'itérer sur des données et de retourner un tableau d'éléments. Par ailleurs, les méthodes **`forEach()`**, **`filter()`**, **`reduce()`**, etc., qui permettent de manipuler des tableaux, seront également vos alliés en React.
 
-- Pour recuperer une categories de plantes :
+- Pour récupérer une catégorie de plantes :
 
 ```js
 // Fichier data.js

@@ -106,8 +106,8 @@ Une fois sur **Basthon** ou dans votre terminal avec l'interpréteur python lanc
 >>> 5+3
 8
 >>> 2 - 9       # les espaces sont optionnels
-7
->> 7 + 3 * 4    # la hierarchie des operations mathématiques sont respecté
+-7
+>>> 7 + 3 * 4   # la hiérarchie des opérations est respectée
 19
 >>> (7+3)*4
 40
@@ -116,7 +116,7 @@ Une fois sur **Basthon** ou dans votre terminal avec l'interpréteur python lanc
 >>> 20 // 3
 6
 
->>> Ctrl-D      # quitte l'interpreteur Pyhton
+>>> Ctrl-D      # quitte l'interpréteur Python
 ```
 
 ---

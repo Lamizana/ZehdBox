@@ -284,6 +284,13 @@ plugins:
   - minify:
       minify_html: true
 
+  - optimize:
+      cache: true
+      cache_dir: .cache/plugin/optimize
+      optimize_png: true
+      optimize_jpg: false
+      print_gain_summary: true
+
   - git-revision-date-localized:
       type: date
       locale: fr

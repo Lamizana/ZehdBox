@@ -29,10 +29,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install system dependencies (Cairo for social plugin)
+      - name: Install system dependencies (Cairo, pngquant)
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libpango1.0-dev libgdk-pixbuf2.0-dev libffi-dev
+          sudo apt-get install -y libcairo2-dev libpango1.0-dev libgdk-pixbuf2.0-dev libffi-dev pngquant
 
       - name: Install Python dependencies
         run: pip install -r ZehdBox/requirements-ci.txt

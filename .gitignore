@@ -2,6 +2,7 @@
 .idea/
 .vscode/
 ZehdBox/.cache/
+.cache/
 ZehdBox/site/
 ZehdBox/node_modules/
 .aider*

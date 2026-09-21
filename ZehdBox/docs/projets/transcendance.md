@@ -71,7 +71,7 @@ Les requêtes HTTP entrent par **Nginx**, qui termine le SSL et les transmet à 
 
 Deux apps **Django** : `utilisateurs` (inscription, connexion, déconnexion) et `pong` (jeu, profil, amis, scores).
 
-Côté client, un **routeur JavaScript** (`router.js`) récupère le HTML par `fetch()` et applique la langue: un fonctionnement type SPA sans framework.
+Côté client, un **routeur JavaScript** (`router.js`) récupère le HTML par `fetch()` et applique la langue : un fonctionnement type SPA sans framework.
 
 ---
 
@@ -150,9 +150,9 @@ make fclean        # arrêt total + purge des volumes et images
 
 ## <span class="h2">Ce que j'ai appris</span>
 
-Transcendance m'a appris que **la plupart des projets "temps réel" en 42 ne le sont pas vraiment**. 
+Transcendance m'a appris que **la plupart des projets "temps réel" en 42 ne le sont pas vraiment**.
 
-La vraie difficulté n'est pas le networking, mais la **gestion de l'état** côté client : qui possède la balle, quand le tour change, comment un score se propage au back-end. 
+La vraie difficulté n'est pas le networking, mais la **gestion de l'état** côté client : qui possède la balle, quand le tour change, comment un score se propage au back-end.
 
 J'ai aussi compris pourquoi Docker n'est pas qu'un outil de déploiement mais une **contrainte d'architecture** : séparer web, base et proxy m'a forcé à penser les interfaces entre composants avant d'écrire la première ligne de code.
 

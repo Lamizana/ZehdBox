@@ -82,7 +82,7 @@ Chaque passage sépare les éléments selon un bit du rang, pour un total de `le
 
 <div class="skill-card">
     <span class="skill-card-title">Compilation</span><br>
-    <span class="skill-card-desc"><strong>Makefile</strong><br><em>build automatisé: clang -Wall -Werror -Wextra, sans relink</em></span>
+    <span class="skill-card-desc"><strong>Makefile</strong><br><em>build automatisé : clang -Wall -Werror -Wextra, sans relink</em></span>
 </div>
 
 <div class="skill-card">

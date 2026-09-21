@@ -37,7 +37,7 @@ Un **interpréteur de commandes UNIX** qui exécute des commandes, gère les pip
 
 *Projet du tronc commun de l'école 42, réalisé en binôme avec mon camarade, en 2023.*
 
-**L'objectif** : comprendre ce qui se passe réellement quand on tape une commande dans un terminal; les processus, les descripteurs de fichiers et les signaux.
+**L'objectif** : comprendre ce qui se passe réellement quand on tape une commande dans un terminal : les processus, les descripteurs de fichiers et les signaux.
 
 ---
 
@@ -134,7 +134,7 @@ L'exécution distingue ensuite trois cas : une **commande simple**, une **redire
 
 ## <span class="h2">Résultats</span>
 
-- Repl complet : l'utilisateur tape, le shell exécute
+- REPL complet : l'utilisateur tape, le shell exécute
 - Builtins fonctionnelles : `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`
 - Signaux correctement gérés : `Ctrl+C` interrompt, le shell reste vivant
 - Pipes simples et chaînes multi-commandes

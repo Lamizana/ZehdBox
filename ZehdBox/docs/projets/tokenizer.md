@@ -21,7 +21,7 @@ tags:
 </div>
 
 <p class="intro">
-    Création du token <strong>GOLD42 (G42)</strong> sur la BNB Smart Chain Testnet: mon premier smart contract.
+    Création du token <strong>GOLD42 (G42)</strong> sur la BNB Smart Chain Testnet : mon premier smart contract.
 </p>
 
 ---
@@ -127,7 +127,7 @@ GOLD42 is ERC20 (OpenZeppelin)
 - Smart contract déployé et **vérifié sur BscScan** : [`0xB03B454DDa79A522603f2a21471A6bC6B24dDb80`](https://testnet.bscscan.com/address/0xB03B454DDa79A522603f2a21471A6bC6B24dDb80)
 - **1 000 000 G42** de supply maximale, **800 000 (80 %)** créés au déploiement, **200 000 (20 %)** mintables par le propriétaire
 - **18 décimales**, coût de déploiement : 0,001544511 BNB
-- Token importable dans MetaMask: transferts et échanges testés entre wallets
+- Token importable dans MetaMask : transferts et échanges testés entre wallets
 
 ---
 
@@ -135,7 +135,7 @@ GOLD42 is ERC20 (OpenZeppelin)
 
 La blockchain n'est pas magique : chaque transaction est un **appel de fonction sur un contrat**, et le vrai coût est la compréhension des unités (`wei`) et de la **gestion de la propriété**.
 
-Débugger un smart contract est radicalement différent du C : pas de `printf`, pas de `gdb`; il faut raisonner sur l'état du contrat **avant** de le déployer.
+Débugger un smart contract est radicalement différent du C : pas de `printf`, pas de `gdb` ; il faut raisonner sur l'état du contrat **avant** de le déployer.
 
 ---
 

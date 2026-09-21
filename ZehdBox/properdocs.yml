@@ -347,9 +347,7 @@ extra:
     cookies:
       analytics:
         name: Google Analytics
-        provider: google
         checked: true
-        property: G-74MZWWS1RR
 
 repo_url: https://github.com/Lamizana/ZehdBox
 repo_name: Lamizana/ZehdBox

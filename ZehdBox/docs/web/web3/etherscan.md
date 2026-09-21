@@ -33,7 +33,7 @@ Etherscan propose aussi un ensemble de service comme des API permettant de crée
 
 Voici un aperçu de la page d'accueil d'Etherscan :
 
-![Aperçu de la page d'accueil d'Etherscan : market cap d'Ethereum, derniers blocs minés et dernières transactions](./images/etherscan-page-accueil.png){ loading=lazy }
+![Aperçu de la page d'accueil d'Etherscan : market cap d'Ethereum, derniers blocs minés et dernières transactions](./images/etherscan-page-accueil.png){ loading=lazy width=1175 height=859 }
 
 - **A gauche**, dans l'onglet bleu, est indiqué **le market cap** d'etherum.
 - **A droite** du market cap est indique le **nombre de transactions** effectuées sur la blockchain Etherum au cours des 14 derniers jours.
@@ -47,7 +47,7 @@ Pour consulter un portefeuille, vous devez indiquer la **clé publique** (l'adre
 
 Une fois l'adresse indiqué, vous arrivez sur une page similaire à celle de ci-dessous :
 
-![Page de portefeuille Etherscan : solde ETH, onglet Overview et tableau des dernières transactions](./images/etherscan-wallet-transactions.png){ loading=lazy }
+![Page de portefeuille Etherscan : solde ETH, onglet Overview et tableau des dernières transactions](./images/etherscan-wallet-transactions.png){ loading=lazy width=1176 height=789 }
 
 Nous allons expliquer en détail les différents parties :
 
@@ -80,7 +80,7 @@ Pour suivre une transaction sur la blockchain Etherum vous devrez avoir :
 
 Après avoir renseigné le TxHash donné précédemment dans **la barre de recherche** vous serez redirigé sur la page suivante :
 
-![Page de détail d'une transaction Ethereum sur Etherscan avec l'onglet Overview](./images/etherscan-transaction.png){ loading=lazy }
+![Page de détail d'une transaction Ethereum sur Etherscan avec l'onglet Overview](./images/etherscan-transaction.png){ loading=lazy width=1184 height=923 }
 
 Nous allons voir ensemble les différentes informations contenues dans l'onglet **Overview** :
 

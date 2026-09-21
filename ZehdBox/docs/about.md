@@ -10,7 +10,7 @@ icon: material/account
 
 <div class="about-hero">
 <div class="about-avatar">
-    <img class="about-avatar-img" src="../blog/images/zehd.png" alt="Alex Lamizana">
+    <img class="about-avatar-img" src="../blog/images/zehd.png" alt="Alex Lamizana" width="400" height="400">
 </div>
 <div class="about-intro">
     <p class="about-name">Alex Lamizana</p>

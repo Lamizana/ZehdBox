@@ -10,7 +10,7 @@ tags:
 
 # <span class="h1">So Long</span>
 
-![player](../images/player-solong.png){.player-solong}
+![player](../images/player-solong.png){.player-solong width=78 height=62}
 
 <div class="badge-section">
 <div class="badge-row">

@@ -107,7 +107,7 @@ L'entraînement a eu lieu sur des données `[0, 1]` : on **ramène θ₀ et θ�
 ### 4. Cycle d'utilisation
 
 <figure markdown>
-  ![Cycle d'utilisation](images/linear_regression.jpeg){ loading=lazy .project-architecture}
+  ![Cycle d'utilisation](images/linear_regression.jpeg){ loading=lazy .project-architecture width=1600 height=873}
   <figcaption>Architecture globale du système de prédiction de prix de voiture par régression linéaire</figcaption>
 </figure>
 

@@ -55,7 +55,7 @@ Développeur **full-stack solo** sur l'ensemble du projet :
 ## <span class="h2">Architecture</span>
 
 <figure markdown>
-  ![Architecture de Transcendance](images/transcendance_architecture.jpeg){ loading=lazy .project-architecture}
+  ![Architecture de Transcendance](images/transcendance_architecture.jpeg){ loading=lazy .project-architecture width=1600 height=873}
   <figcaption>Schéma de l'architecture de Transcendance</figcaption>
 </figure>
 

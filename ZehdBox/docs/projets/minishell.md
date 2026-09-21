@@ -55,7 +55,7 @@ Projet réalisé en **binôme** : j'ai conçu le cœur de l'interpréteur, mon b
 ## <span class="h2">Architecture</span>
 
 <figure markdown>
-  ![Architecture de Minishell](images/minishell_architecture.jpeg){ loading=lazy .project-architecture}
+  ![Architecture de Minishell](images/minishell_architecture.jpeg){ loading=lazy .project-architecture width=1600 height=873}
   <figcaption>Schéma de l'architecture de Minishell</figcaption>
 </figure>
 

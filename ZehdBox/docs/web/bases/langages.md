@@ -85,7 +85,7 @@ Les langages serveur sont exécutés par le **serveur**. Ils décrivent
 L'interaction entre le client et le serveur se résume en 3 étapes :
 
 <figure markdown>
-  ![Interaction Web](images/web_interaction.jpeg){ loading=lazy .project-architecture}
+  ![Interaction Web](images/web_interaction.jpeg){ loading=lazy .project-architecture width=1600 height=873}
   <figcaption>Schéma de interaction entre le client et le serveur</figcaption>
 </figure>
 

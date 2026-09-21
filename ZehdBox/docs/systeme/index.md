@@ -10,7 +10,7 @@ icon: material/server
 # <span class="h1">Système</span>
 
 <p class="intro">
-    Ici est regroupé les connaissances systèmes.
+    Ici sont regroupées les connaissances système.
 </p>
 
 ---

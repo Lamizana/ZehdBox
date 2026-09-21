@@ -35,8 +35,8 @@ Nous allons ici mettre en place un environnement pour utiliser Python. Nous avon
 
 <div class="soft-skills-grid">
     <div class="soft-skill-card">
-        <span class="soft-skill-title">Mode intéractif</span><br><br>
-        <span class="soft-skill-desc">Possibilié de dialoguer directement depuis le clavier.</span>
+        <span class="soft-skill-title">Mode interactif</span><br><br>
+        <span class="soft-skill-desc">Possibilité de dialoguer directement depuis le clavier.</span>
     </div>
     
     <div class="soft-skill-card">
@@ -60,8 +60,8 @@ $ python3
 ```
 
 !!! bug "A savoir"
-    Les trois caractères "supérieur à" (`>>>`) constitue **le signal d'invite**, ou _prompt principal_, lequel vous 
-    indique que Python est prét à exécuter une commande.
+    Les trois caractères "supérieur à" (`>>>`) constituent **le signal d'invite**, ou _prompt principal_, lequel vous 
+    indique que Python est prêt à exécuter une commande.
 
 ### 2. Pour lancer l'interpréteur de commande avec une interface graphique
 
@@ -100,7 +100,7 @@ Vous avez un lien qui vous permet d'accéder directement à la console correspon
 
 ## <span class="h2">Utilisation de l'interpréteur de commande</span>
 
-Une fois sur **Basthon** ou dans votre terminal avec l'interpreteur python lancé :
+Une fois sur **Basthon** ou dans votre terminal avec l'interpréteur python lancé :
 
 ``` python
 >>> 5+3
@@ -123,19 +123,19 @@ Une fois sur **Basthon** ou dans votre terminal avec l'interpreteur python lanc�
 
 ## <span class="h2">Création de scripts en Python</span>
 
-Jusqu'à présent, nous avons utilisé Python en **mode intéractif** dans le terminal ou Basthon. Cela signifie que 
+Jusqu'à présent, nous avons utilisé Python en **mode interactif** dans le terminal ou Basthon. Cela signifie que 
 vous avez à chaque fois entré directement les commandes directement dans l'interpréteur, sans les sauvegarder au 
-prealable dans un fichier.
+préalable dans un fichier.
 
 Nous allons ici voir comment écrire _un script_, que vous pourrez ensuite sauvegarder, modifier, copier, 
 etc.
 
-Pour ensuite tester l'execution de votre programme, il suffira de lancer l'interpreteur python en lui fournissant 
+Pour ensuite tester l'exécution de votre programme, il suffira de lancer l'interpréteur python en lui fournissant 
 comme argument le nom du fichier qui contient le script.
 
 !!! note
     Pour ce faire, vous allez désormais rédiger vos séquences d'instructions dans un _éditeur de texte_, il y a 
-    plusieurs choix et ce dernier dépendra de vos affinitées. Voici une liste non exaustive des principaux :
+    plusieurs choix et ce dernier dépendra de vos affinités. Voici une liste non exhaustive des principaux :
     
     !!! abstract "Editeurs"
         :material-microsoft-visual-studio-code: VsCode
@@ -144,7 +144,7 @@ comme argument le nom du fichier qui contient le script.
         
         :simple-pycharm: Pycharm
 
-Vous pouvez tout aussi bien creer votre script sans editeur en creant un fichier `monScript.py` et en n'oubliant pas 
+Vous pouvez tout aussi bien créer votre script sans éditeur en créant un fichier `monScript.py` et en n'oubliant pas 
 de rajouter `.py`
 
 !!! tip "Cas concret"
@@ -153,14 +153,14 @@ de rajouter `.py`
     $ touch monScript.py        # Cree un fichier monScript.py
     ```
 
-    Une fois le script créé, ecrire dedans :
+    Une fois le script créé, écrire dedans :
     ```python
     print("Hello World")
     ```
     
     Pour le compiler, allez dans le terminal au niveau de votre script:
     ```console
-    $ python3 monScript.py      # Execute le script                  
+    $ python3 monScript.py      # Exécute le script                  
     Hello World
     ```
 

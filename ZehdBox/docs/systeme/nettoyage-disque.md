@@ -24,12 +24,12 @@ Nous allons aborder ici deux méthodes :
 <div class="soft-skills-grid">
 
 <div class="soft-skill-card">
-    <span class="soft-skill-title">Methode pincipale</span><br><br>
+    <span class="soft-skill-title">Méthode principale</span><br><br>
     <span class="soft-skill-desc">Diskpart Windows</span>
 </div>
 
 <div class="soft-skill-card">
-    <span class="soft-skill-title">Methode alternative</span><br><br>
+    <span class="soft-skill-title">Méthode alternative</span><br><br>
     <span class="soft-skill-desc">Linux (GParted / Disques)</span>
 </div>
 
@@ -50,14 +50,14 @@ L'utilitaire en ligne de commande `diskpart` permet de communiquer directement a
 
 ### <span class="h2">1. Ouverture de l'invite de commande</span>
 
-- Branchez votre clé USB  défectueuse a votre ordinateur.
-- Appuyer sur la touche ***`Windows`***.
+- Branchez votre clé USB défectueuse à votre ordinateur.
+- Appuyez sur la touche ***`Windows`***.
 - Tapez l'abréviation `cmd`.
-- Faites un clic droit sur le résultat de **invite de commande** et sélectionner impérativement ***Exécuter en tant qu'administrateur***.
+- Faites un clic droit sur le résultat **Invite de commandes** et sélectionnez impérativement ***Exécuter en tant qu'administrateur***.
 
 ### <span class="h2">2. Lancement de l'outil de partitionnement</span>
 
-Dans la fenêtre noire qui s'affiche, tapez la commande suivante puis validez avec la touche `Entré` :
+Dans la fenêtre noire qui s'affiche, tapez la commande suivante puis validez avec la touche `Entrée` :
 
 ```bash
 > diskpart
@@ -65,25 +65,25 @@ Dans la fenêtre noire qui s'affiche, tapez la commande suivante puis validez av
 
 ### <span class="h2">3. Identification de la clé USB</span>
 
-Affichez l'ensemble des disques phisique connectés à la machine :
+Affichez l'ensemble des disques physiques connectés à la machine :
 
 ```bash
 
 list disk
 ```
 
-Analyser la colonne `Taille`. Repérez le numéro (ex: Disque 1, Disque 2) correspondant à votre clé USB (par exemple , une clé de 16 Go affichera environ 14 ou 15 Go).
+Analysez la colonne `Taille`. Repérez le numéro (ex : Disque 1, Disque 2) correspondant à votre clé USB (par exemple, une clé de 16 Go affichera environ 14 ou 15 Go).
 
 ### <span class="h2">4. Sélection du périphérique</span>
 
-Sélectionnez le disque de votre clé en remplacant la lettre `X` par le numéro identifié à lèétape précédente :
+Sélectionnez le disque de votre clé en remplaçant la lettre `X` par le numéro identifié à l'étape précédente :
 
 ```bash
-select disk x
+select disk X
 ```
 
-!!! exemple
-    Si votre clé USB est associé au disque 2, tapez `select disk 2`. Une message de confirmation vous indiquera *"Le disque X est maintenant le disque sélectionné"*.
+!!! example
+    Si votre clé USB est associée au disque 2, tapez `select disk 2`. Un message de confirmation vous indiquera *"Le disque X est maintenant le disque sélectionné"*.
 
 ### <span class="h2">5. Nettoyage complet du support (Remise à zéro)</span>
 
@@ -103,7 +103,7 @@ create partition primary
 
 ### <span class="h2">7. Sélection et activation de la partition</span>
 
-Ciblez la partition fraichement créé afin de la rendre bootable et opérationnel :
+Ciblez la partition fraîchement créée afin de la rendre bootable et opérationnelle :
 
 ```bash
 select partition 1
@@ -118,12 +118,12 @@ Lancez un formatage rapide. Choisissez le format selon vos besoins de stockage :
 
 <div class="soft-skill-card">
     <span class="soft-skill-title">FAT32</span><br><br>
-    <span class="soft-skill-desc">Idéal pour une compatibilité maximal (TV, consoles, Linux, Mac), mais limité aux fichiers de moins de 4 Go.</span>
+    <span class="soft-skill-desc">Idéal pour une compatibilité maximale (TV, consoles, Linux, Mac), mais limité aux fichiers de moins de 4 Go.</span>
 </div>
 
 <div class="soft-skill-card">
     <span class="soft-skill-title">NTFS</span><br><br>
-    <span class="soft-skill-desc">Recommandé si votre clé fait plus de 32 Go et doit acueillir des gros fichiers.</span>
+    <span class="soft-skill-desc">Recommandé si votre clé fait plus de 32 Go et doit accueillir de gros fichiers.</span>
 </div>
 
 </div>
@@ -149,19 +149,19 @@ exit
 
 ## <span class="h2">Utilisation de Linux (GParted / Disques)</span>
 
-Si vous êtes sur un environnement Linux, l'opération peut-être réalisée graphiquement de manière trés intuitive.
+Si vous êtes sur un environnement Linux, l'opération peut être réalisée graphiquement de manière très intuitive.
 
 1. Ouvrez l'utilitaire natif nommé ***Disques*** (Gnome Disk) ou installez l'outil avancé ***GParted***.
 
 2. Dans le panneau latéral gauche, sélectionnez minutieusement votre clé USB en vérifiant sa capacité globale.
 
-3. Cliquez sur le bouton de menu (icone d'engrenage ou trois petits points verticaux) en haut à droite de l'interface.
+3. Cliquez sur le bouton de menu (icône d'engrenage ou trois petits points verticaux) en haut à droite de l'interface.
 
-4. Sélectionner l'option ***Formater le disque...***
+4. Sélectionnez l'option ***Formater le disque...***
 
-5. Dans le shéma de partitionnement, optez pour **MBR/DOS** (compatible tous systèmes) ou **GPT** (pour les clé modernes de grande capacité).
+5. Dans le schéma de partitionnement, optez pour **MBR/DOS** (compatible tous systèmes) ou **GPT** (pour les clés modernes de grande capacité).
 
-6., Cliquez sur le bouton de création de volume pour ajouter une nouvbelle partition au format **FAT** ou **NTFS**.
+6. Cliquez sur le bouton de création de volume pour ajouter une nouvelle partition au format **FAT** ou **NTFS**.
 
 ---
 

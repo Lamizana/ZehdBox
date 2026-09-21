@@ -83,7 +83,7 @@ débogage.
 et `XCAS` !), sans rien avoir à installer. Il suffit de disposer d'un navigateur (`Firefox` ⩾ 78, `Chrome` ou `Chromium`
 ⩾ 85, ou encore `Edge` 1) à jour et d'une connexion à Internet.
 
-!!! tips "Astuce"
+!!! tip "Astuce"
     En fait, Basthon peut être utilisé pour s'initier à d'autres langages que Python !
 
 Deux interfaces permettent d'utiliser **Basthon** :

@@ -1,11 +1,10 @@
 ---
-title: MyBlog
-description: Articles sur la culture, la science et la réflexion personnelle.
+title: Blog
+description: "Articles sur la culture, la science et la réflexion personnelle."
 icon: fontawesome/solid/blog
-
 ---
 
-# <span class="h1">MyBlog</span>
+# <span class="h1">Blog</span>
 
 <p class="intro">
     Le pouvoir du savoir...
@@ -13,7 +12,7 @@ icon: fontawesome/solid/blog
 
 ---
 !!! info "Information"
-    Bienvenue sur **MyBlog**,  
+    Bienvenue sur **Blog**,  
     Ce site me permet d'accéder en direct à toutes les informations acquises au cours de ma courte existence.
 
 ---

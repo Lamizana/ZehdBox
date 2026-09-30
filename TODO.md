@@ -1,19 +1,40 @@
 # TODO — Indexation Google du site ZehdBox
 
 > **Objectif** : faire indexer les **88 URLs** du site par Google.
-> **Source de vérité** : [`sitemap.xml`](https://lamizana.github.io/ZehdBox/sitemap.xml), généré automatiquement par ProperDocs
-> (build `--strict` vert le 2026-09-30).
+> **Chemin critique** : l'**inspection d'URL**, page par page (§1) — **pas** le sitemap (voir la note ci-dessous).
 > **Cockpit** : [Google Search Console](https://search.google.com/search-console) · **Site** : https://lamizana.github.io/ZehdBox/
+
+---
+
+## ⚠️ À savoir : le sitemap n'est PAS le chemin critique
+
+État au 2026-09-30 — Search Console affiche « **Impossible de lire le sitemap** », **0 page découverte**.
+
+- La doc Google classe ce message comme une **erreur de récupération (fetch)**, pas d'analyse (parsing).
+- Le fichier est pourtant **provably valide** : XML bien formé, **validé contre le XSD officiel sitemaps.org**, namespace `0.9`, 88 `<loc>` toutes vérifiées en **HTTP 200**, `application/xml`, **0 redirection**, aucun blocage `robots.txt`.
+- L'URL est **active** au test en direct de Google (Inspection d'URL → Tester l'URL réelle).
+- Causes probables restantes : **erreur générale transitoire** et **faible demande d'exploration** sur un site récent. La doc précise que Google **cesse d'essayer** après plusieurs échecs, puis qu'il faut renvoyer le sitemap.
+
+**Conclusion : ne plus chercher à « corriger » le sitemap, et ne pas conditionner l'indexation à lui.**
+
+> Doc Google : *« Si votre site est de taille modeste (pas plus de 500 pages environ) et que vous pouvez accéder à chacune de ses pages en suivant un ou plusieurs liens à partir de votre page d'accueil, vous n'avez probablement pas besoin de sitemap. Dans ce cas, il vous suffit de demander l'indexation de votre page d'accueil. »*
+>
+> Et : *« submitting a sitemap is merely a hint »*.
+
+ZehdBox : **84 pages**, toutes atteignables depuis l'accueil (nav + maillage interne) → le chemin garanti est l'**inspection d'URL** (§1).
+
+**Suivi** : laisser le sitemap soumis, **ne pas le resoumettre en boucle**. Recontrôler la ligne Search Console vers le **07/10/2026**.
 
 ---
 
 ## 0. Prérequis techniques
 
-- [x] `robots.txt` autorise tout le site et déclare le sitemap (`docs/robots.txt`)
+- [x] Aucun blocage robots : `https://lamizana.github.io/robots.txt` renvoie **404** → Google autorise tout
+      *(piège : le `docs/robots.txt` du site est **ignoré** par Google, un robots.txt n'étant lu qu'à la racine de l'hôte)*
 - [x] Fichier de vérification Search Console déployé (`docs/googlec39c99d186f1c077.html`)
 - [x] `sitemap.xml` généré nativement (88 URLs) — aucun plugin supplémentaire requis
 - [x] Déploiement automatique via GitHub Actions (`push` sur `main`)
-- [ ] Sitemap soumis : Search Console → *Sitemaps* → `sitemap.xml`
+- [x] Sitemap soumis (`/sitemap.xml`) — état « Impossible de lire » assumé : **non bloquant**, cf. la note en tête
 - [x] Type de propriété cohérent avec `site_url` (Préfixe d'URL `https://lamizana.github.io/ZehdBox/`)
 - [x] Search Console → *Indexation → Pages* : aucune anomalie (« Exclue », « Erreur 404 »)
 

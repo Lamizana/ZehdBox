@@ -342,7 +342,7 @@ extra:
     provider: google
     property: G-74MZWWS1RR
 
-  # Consentement pour resencement :
+  # Consentement pour référencement :
   consent:
     title: Consentement aux cookies
     description: >-
@@ -357,10 +357,11 @@ repo_name: Lamizana/ZehdBox
 copyright: ZehdBox Copyright (c) 2026 Alex Lamizana
 
 # ========================= VALIDATION DES LIENS ==============================
-# Les liens relatifs vers les posts du blog (../blog/2026/../slug/) pointent
-# vers des URLs générées dynamiquement par le plugin blog : MkDocs ne peut pas
-# les résoudre statiquement et les signale en INFO. Ils fonctionnent pourtant
-# parfaitement à l'exécution. On les ignore pour garder un build propre, tout en
-# conservant la détection des vrais liens morts (not_found, anchors).
+# Détection des liens morts active : `unrecognized_links: warn` transforme tout
+# lien relatif non résolu en WARNING (donc en erreur sous `--strict`, obligatoire
+# en CI). Vérifié le 2026-09-30 : le build produit 0 warning, donc aucun lien
+# mort à ce jour. Si le plugin blog se remet à générer des URLs non résolubles
+# statiquement (posts ../blog/AAAA/MM/JJ/<slug>/), elles réapparaîtront ici et
+# devront être traitées au cas par cas plutôt que d'être toutes ignorées.
 validation:
   unrecognized_links: warn

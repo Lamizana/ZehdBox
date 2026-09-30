@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Surcharge du template natif de MkDocs : mkdocs/templates/sitemap.xml
+
+  POURQUOI CETTE SURCHARGE
+  Le template natif ecrit la balise lastmod a partir de file.page.update_date.
+  Or MkDocs affecte update_date = date du build (voir pages.py:48 dans
+  mkdocs, qui appelle get_build_date()). Consequence : les 88 pages du site
+  annoncaient toutes la meme date, egale au jour du deploiement, et cette
+  date changeait a chaque deploiement. Google finit par ignorer un lastmod
+  systematiquement faux, ce qui prive les pages reellement mises a jour de
+  leur re-crawl prioritaire.
+
+  LA CORRECTION
+  On prend la date de derniere revision git reelle de chaque page, fournie
+  par le plugin git-revision-date-localized dans page.meta, sous la cle
+  git_revision_date_localized_raw_iso_date : variante brute (sans element
+  span, donc valide en XML) et au format AAAA-MM-JJ attendu par le
+  protocole sitemap (W3C Datetime, date seule).
+
+  GARDE-FOU
+  Si la cle est absente (page non versionnee par git, ou plugin desactive),
+  on retombe sur update_date pour ne jamais perdre le lastmod.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for file in pages -%}
+    {% if not file.page.is_link and (file.page.abs_url or file.page.canonical_url) %}
+    <url>
+         <loc>{% if file.page.canonical_url %}{{ file.page.canonical_url|e }}{% else %}{{ file.page.abs_url|e }}{% endif %}</loc>
+         {% set lastmod = file.page.meta.get('git_revision_date_localized_raw_iso_date') or file.page.update_date %}
+         {% if lastmod %}<lastmod>{{ lastmod }}</lastmod>{% endif %}
+    </url>
+    {%- endif -%}
+{% endfor %}
+</urlset>

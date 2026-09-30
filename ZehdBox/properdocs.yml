@@ -350,7 +350,7 @@ extra:
     cookies:
       analytics:
         name: Google Analytics
-        checked: true
+        checked: false
 
 repo_url: https://github.com/Lamizana/ZehdBox
 repo_name: Lamizana/ZehdBox
@@ -363,4 +363,4 @@ copyright: ZehdBox Copyright (c) 2026 Alex Lamizana
 # parfaitement à l'exécution. On les ignore pour garder un build propre, tout en
 # conservant la détection des vrais liens morts (not_found, anchors).
 validation:
-  unrecognized_links: ignore
+  unrecognized_links: warn

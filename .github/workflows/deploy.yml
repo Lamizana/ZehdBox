@@ -39,6 +39,12 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r ZehdBox/requirements-ci.txt
 
+      - name: Check plugin/requirements parity
+        # Garde-fou : echoue ICI (message explicite) si un plugin de
+        # properdocs.yml n'est pas installe par requirements-ci.txt,
+        # au lieu d'echouer plus loin sur un build strict obscur.
+        run: python ZehdBox/scripts/check_ci_parity.py
+
       - name: Build site (strict)
         run: properdocs build -f ZehdBox/properdocs.yml --strict
 

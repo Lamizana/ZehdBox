@@ -167,9 +167,7 @@ theme:
     - header.autohide
     - content.tooltips
 
-  font:
-    text: Roboto
-    code: Roboto Mono
+  font: false
   icon:
     logo: material/bat
     tag:
@@ -333,10 +331,13 @@ extra:
     tutoriel: tutoriel
   social:
     - icon: fontawesome/brands/github
+      name: GitHub
       link: https://github.com/Lamizana
     - icon: fontawesome/brands/linkedin
+      name: LinkedIn
       link: https://www.linkedin.com/in/alex-lamizana-85ab82401
     - icon: fontawesome/solid/paper-plane
+      name: E-mail
       link: mailto:lamizana1987@yahoo.fr
   analytics:
     provider: google

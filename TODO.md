@@ -81,24 +81,24 @@ Ces pages portent l'image professionnelle du site (recruteurs, clients) : à ind
 - [X] [Types de données](https://lamizana.github.io/ZehdBox/cours/python/bases/types/)
 - [X] [Opérateurs](https://lamizana.github.io/ZehdBox/cours/python/bases/operateurs/)
 - [X] [Chaînes de caractères](https://lamizana.github.io/ZehdBox/cours/python/bases/chaines/)
-- [ ] [Flux d'exécution](https://lamizana.github.io/ZehdBox/cours/python/bases/flux-execution/)
-- [ ] [Instructions répétitives](https://lamizana.github.io/ZehdBox/cours/python/bases/instructions-repetitives/)
-- [ ] [Exercices - Bases Python](https://lamizana.github.io/ZehdBox/cours/python/bases/exercice-bases/)
+- [X] [Flux d'exécution](https://lamizana.github.io/ZehdBox/cours/python/bases/flux-execution/)
+- [X] [Instructions répétitives](https://lamizana.github.io/ZehdBox/cours/python/bases/instructions-repetitives/)
+- [X] [Exercices - Bases Python](https://lamizana.github.io/ZehdBox/cours/python/bases/exercice-bases/)
 
 **Exercices**
 
-- [ ] [Exercices](https://lamizana.github.io/ZehdBox/cours/python/exercices/)
-- [ ] [Exercices - Nombres](https://lamizana.github.io/ZehdBox/cours/python/exercices/nombres/)
-- [ ] [Exercices - Chaînes de caractères](https://lamizana.github.io/ZehdBox/cours/python/exercices/string/)
+- [X] [Exercices](https://lamizana.github.io/ZehdBox/cours/python/exercices/)
+- [X] [Exercices - Nombres](https://lamizana.github.io/ZehdBox/cours/python/exercices/nombres/)
+- [X] [Exercices - Chaînes de caractères](https://lamizana.github.io/ZehdBox/cours/python/exercices/string/)
 
 **Fonctions & Django**
 
-- [ ] [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions/)
-- [ ] [Django - Du projet à l'application web avec SQL](https://lamizana.github.io/ZehdBox/cours/python/django/)
-- [ ] [Installation - Environnement virtuel et projet Django](https://lamizana.github.io/ZehdBox/cours/python/django/installation/)
-- [ ] [Docker & PostgreSQL - Conteneuriser Django et brancher la base](https://lamizana.github.io/ZehdBox/cours/python/django/docker-postgresql/)
-- [ ] [Modèles & Migrations - Définir la structure des données](https://lamizana.github.io/ZehdBox/cours/python/django/modeles-migrations/)
-- [ ] [Vues & URLs - Répondre aux requêtes du navigateur](https://lamizana.github.io/ZehdBox/cours/python/django/vues-urls/)
+- [X] [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions/)
+- [X] [Django - Du projet à l'application web avec SQL](https://lamizana.github.io/ZehdBox/cours/python/django/)
+- [X] [Installation - Environnement virtuel et projet Django](https://lamizana.github.io/ZehdBox/cours/python/django/installation/)
+- [X] [Docker & PostgreSQL - Conteneuriser Django et brancher la base](https://lamizana.github.io/ZehdBox/cours/python/django/docker-postgresql/)
+- [X] [Modèles & Migrations - Définir la structure des données](https://lamizana.github.io/ZehdBox/cours/python/django/modeles-migrations/)
+- [X] [Vues & URLs - Répondre aux requêtes du navigateur](https://lamizana.github.io/ZehdBox/cours/python/django/vues-urls/)
 - [ ] [Templates - Gabarits HTML et architecture MVT](https://lamizana.github.io/ZehdBox/cours/python/django/templates/)
 
 **Bibliothèques**

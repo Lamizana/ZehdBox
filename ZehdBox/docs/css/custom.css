@@ -517,3 +517,25 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(100, 181, 246, 0.3);
 }
+
+/* =========================== ACCESSIBILITÉ =========================== */
+/* Contraste WCAG AA en mode sombre (schéma slate) :
+   le teal primaire (#009485) ne donne que 3,77:1 avec le texte blanc
+   (minimum 4,5:1). On assombrit UNIQUEMENT les surfaces qui portent du
+   texte blanc (en-tête, barre d'onglets, boutons primaires) afin d'atteindre
+   5,32:1. On ne touche pas à --md-primary-fg-color lui-même : il sert aussi
+   de couleur de TEXTE (.h1/.h2/.h3, liens de cartes) et l'assombrir
+   dégraderait le contraste sur fond sombre (4,27 -> 3,03). */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs,
+[data-md-color-scheme="slate"] .md-button--primary {
+  background-color: #00796b;
+}
+
+/* Les liens dans le corps de texte doivent rester identifiables sans la
+   seule couleur (WCAG 1.4.1 "Utilisation de la couleur"). On les souligne,
+   en excluant les éléments déjà stylés comme des boutons ou des pastilles
+   pour ne pas casser leur rendu. */
+.md-typeset a:not(.md-button):not(.md-link) {
+  text-decoration: underline;
+}

@@ -103,13 +103,16 @@ nav:
 
       - Web 3.0:
           - web/web3/index.md
-          - web/web3/blockchain.md
-          - web/web3/etherscan.md
-          - web/web3/bscscan.md
-          - Tokenizer: web/web3/tokenizer.md
-          - TokenizeArt: web/web3/tokenizeart.md
-          - NFT & ERC-721: web/web3/nft.md
-          - IPFS & Pinata: web/web3/ipfs.md
+          - Concepts:
+              - Blockchain: web/web3/blockchain.md
+              - NFT & ERC-721: web/web3/nft.md
+              - IPFS & Pinata: web/web3/ipfs.md
+          - Outils:
+              - Etherscan: web/web3/etherscan.md
+              - BscScan: web/web3/bscscan.md
+          - Tutoriels:
+              - Tokenizer: web/web3/tokenizer.md
+              - TokenizeArt: web/web3/tokenizeart.md
 
   - GitHub:
       - github/index.md
@@ -159,7 +162,6 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.sections
-    - navigation.prune
     - navigation.indexes
     - navigation.footer
 

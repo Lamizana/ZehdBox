@@ -1,6 +1,7 @@
 .env/
 .idea/
 .opencode/
+.openchamber/
 .vscode/
 ZehdBox/.cache/
 .cache/

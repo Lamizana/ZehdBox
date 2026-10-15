@@ -35,7 +35,9 @@ On ne part pas écrire du Solidity sans comprendre **ce qu'est un NFT** et **où
 
 ### <span class="h3">A.1 Qu'est-ce qu'un NFT ?</span>
 
-Un **NFT** (*non-fungible token*, ou jeton non fongible) est un **certificat numérique d'authenticité et de propriété** enregistré sur une blockchain. Contrairement à un jeton fongible comme un token BEP-20 - où un jeton en vaut un autre -, chaque NFT est **unique** et **non interchangeable** : il porte un identifiant (`tokenId`) qui lui est propre.
+Un **NFT** (*non-fungible token*, ou jeton non fongible) est un **certificat numérique d'authenticité et de propriété** enregistré sur une blockchain.
+
+Contrairement à un jeton fongible comme un token BEP-20 où un jeton en vaut un autre, chaque NFT est **unique** et **non interchangeable** : il porte un identifiant (`tokenId`) qui lui est propre.
 
 !!! info "En résumé"
     Un NFT = **un identifiant unique sur la blockchain** + **des métadonnées** (l'œuvre et sa description) stockées ailleurs, sur IPFS.
@@ -44,7 +46,7 @@ Pour aller plus loin : [NFT & ERC-721](nft.md).
 
 ### <span class="h3">A.2 Le standard ERC-721 (et BEP-721)</span>
 
-**ERC-721** est la norme Ethereum qui définit l'API d'un jeton non fongible : `ownerOf`, `transferFrom`, `approve`… **BEP-721** en est le strict équivalent sur la **BNB Smart Chain** - même interface, autre réseau.
+**ERC-721** est la norme Ethereum qui définit l'API d'un jeton non fongible : `ownerOf`, `transferFrom`, `approve`… **BEP-721** en est le strict équivalent sur la **BNB Smart Chain** (même interface, autre réseau).
 
 On ne réécrit pas cette norme à la main : on **hérite** de l'implémentation [`ERC721URIStorage` d'OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc721){ target="_blank" rel="noopener" }, qui gère pour nous la propriété, les transferts et l'URI des métadonnées.
 
@@ -103,18 +105,18 @@ Pour aller plus loin : [IPFS & Pinata](ipfs.md).
 
 MetaMask arrive configuré sur Ethereum. Il faut lui ajouter le réseau de test de la BNB Smart Chain.
 
-1. Ouvre MetaMask → menu des réseaux → **Ajouter un réseau manuellement**.
-2. Renseigne :
+- Ouvre MetaMask → menu des réseaux → **Ajouter un réseau manuellement**.
+- Renseigne :
 
-| Champ | Valeur |
-| ----- | ------ |
-| Nom du réseau | `BSC Testnet` |
-| Nouvelle URL RPC | `https://data-seed-prebsc-1-s1.binance.org:8545/` |
-| ID de chaîne | `97` |
-| Symbole de la monnaie | `tBNB` |
-| URL de l'explorateur de blocs | `https://testnet.bscscan.com` |
+    | Champ | Valeur |
+    | ----- | ------ |
+    | Nom du réseau | `BSC Testnet` |
+    | Nouvelle URL RPC | `https://data-seed-prebsc-1-s1.binance.org:8545/` |
+    | ID de chaîne | `97` |
+    | Symbole de la monnaie | `tBNB` |
+    | URL de l'explorateur de blocs | `https://testnet.bscscan.com` |
 
-3. Enregistre, puis **sélectionne le réseau BSC Testnet**.
+- Enregistre, puis **sélectionne le réseau BSC Testnet**.
 
 !!! info "Astuce"
     Le sélecteur de réseau en haut de MetaMask affiche le réseau actif. Tout déploiement se fera sur celui qui est sélectionné : vérifie-le **avant** chaque transaction importante.
@@ -219,7 +221,7 @@ contract Zehd42 is ERC721URIStorage, Ownable {
 ### <span class="h3">D.3 Mettre à jour ton dépôt</span>
 
 1. Ouvre `code/zehd42.sol` et colle le code ci-dessus.
-2. Assure-toi que chaque fonction a bien un commentaire lisible. C'est exigé par le sujet (revue de code à l'évaluation).
+2. Assure-toi que chaque fonction a bien un commentaire lisible.
 
 ---
 
@@ -247,7 +249,7 @@ import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5
 !!! info "Pourquoi cette version ?"
     La **v5.1.0** ne dépend pas de l'opcode `mcopy`, ce qui simplifie la compilation avec la version d'EVM par défaut de Remix.
 
-Remix télécharge automatiquement les imports lors de la compilation - tu n'as rien à installer manuellement.
+Remix télécharge automatiquement les imports lors de la compilation, tu n'as rien à installer manuellement.
 
 ### <span class="h3">E.3 Choisir la version et compiler</span>
 
@@ -256,7 +258,7 @@ Remix télécharge automatiquement les imports lors de la compilation - tu n'as 
 3. Clique sur **Compile zehd42.sol**.
 
 !!! warning "Erreurs fréquentes"
-    - *Source not found* : l'URL d'import est incomplète ou mal copiée - vérifie la ligne `import`.
+    - *Source not found* : l'URL d'import est incomplète ou mal copiée> Vérifie la ligne `import`.
     - *ParserError* : la version de Solidity sélectionnée est trop ancienne (il faut ≥ 0.8.20).
     - *Identifier already declared* : le fichier existe en double dans l'explorateur de Remix.
 
@@ -390,14 +392,11 @@ Un appel `transact` modifie la chaîne ; un appel bleu (lecture) ne coûte rien 
 
 | Appel | Résultat attendu |
 | ----- | ---------------- |
-| `mintNFT(<ton adresse>)` | Un `tokenId` retourné - le premier vaut **1** |
+| `mintNFT(<ton adresse>)` | Un `tokenId` retourné. Le premier vaut **1** |
 | `ownerOf(1)` | Ton adresse |
 | `tokenURI(1)` | `https://gateway.pinata.cloud/ipfs/<CID_JSON>` |
 | `balanceOf(<ton adresse>)` | `1` |
 | `baseURI()` | `https://gateway.pinata.cloud/ipfs/<CID_JSON>` |
-
-!!! success "À l'évaluation"
-    Tu peux démontrer le cycle complet : **mint → lecture du propriétaire → transfert** (`transferFrom`). Chaque étape est vérifiable par n'importe qui sur BSCScan.
 
 ---
 

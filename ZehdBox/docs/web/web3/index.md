@@ -20,7 +20,9 @@ icon: material/bitcoin
 
 ## :material-robot-love: Tutoriel : Créer votre token BEP-20
 
-Un guide complet pas à pas - de zéro jusqu'à un token publié sur la blockchain. **0 € requis**, tout se passe sur le testnet.
+Un guide complet pas à pas de zéro jusqu'à un token publié sur la blockchain.
+
+**0 € requis**, tout se passe sur le testnet.
 
 [:octicons-arrow-right-24: Commencer le tutoriel](tokenizer.md){ .md-button .md-button--primary }
 
@@ -32,7 +34,9 @@ Un guide complet pas à pas - de zéro jusqu'à un token publié sur la blockcha
 
 ## :material-image-frame: Tutoriel : Créer votre NFT BEP-721
 
-Un guide complet pas à pas - image, métadonnées IPFS, contrat Solidity, déploiement, mint et vérification. **0 € requis**, tout se passe sur le testnet.
+Un guide complet pas à pas : image, métadonnées IPFS, contrat Solidity, déploiement, mint et vérification.
+
+**0 € requis**, tout se passe sur le testnet.
 
 [:octicons-arrow-right-24: Commencer le tutoriel](tokenizeart.md){ .md-button .md-button--primary }
 

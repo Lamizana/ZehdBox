@@ -12,7 +12,7 @@ tags:
 # <span class="h1">TokenizeArt</span>
 
 <p class="intro">
-    Tutoriel complet pour créer votre premier <strong>NFT BEP-721</strong> sur la BNB Smart Chain de l'image jusqu'à un jeton non fongible miné, hébergé sur IPFS et vérifié sur BSCScan.
+    Tutoriel complet pour créer votre premier <strong>NFT BEP-721</strong> sur la BNB Smart Chain, de l'image jusqu'à un jeton non fongible miné, hébergé sur IPFS et vérifié sur BSCScan.
 </p>
 
 ---

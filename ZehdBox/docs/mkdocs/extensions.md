@@ -67,7 +67,7 @@ Blocs d'information mis en avant : notes, astuces, avertissements.
 !!! warning "Attention"
     Contenu de l'avertissement.
 
-### Admonitions dépliables
+### <span class="h3">Admonitions dépliables</span>
 
 ```markdown
 ??? note "Cliquer pour ouvrir"
@@ -230,4 +230,33 @@ markdown_extensions:
       permalink: true    # Lien d'ancrage sur chaque titre
 ```
 
-Les titres `##` et `###` affichent une icône de lien au survol.
+---
+
+## <span class="h2">Titres et numérotation</span>
+
+### <span class="h3">Habillage des titres</span>
+
+Chaque titre porte la classe de son niveau, définie dans `docs/css/custom.css` :
+
+```markdown
+# <span class="h1">Titre de la page</span>
+
+## <span class="h2">Section</span>
+
+### <span class="h3">Sous-section</span>
+```
+
+### <span class="h3">Numérotation des étapes</span>
+
+!!! note "Convention"
+    Les étapes d'un tutoriel pas-à-pas se numérotent **en chiffres arabes** : un `h2` pour l'étape, un `h3` pour la sous-étape.
+
+    ```markdown
+    ## <span class="h2">1. Créer le compte</span>
+
+    ### <span class="h3">1.1 Installer l'extension</span>
+    ```
+
+    Une fois les étapes numérotées, tout renvoi dans le texte cite le **numéro** — « retourne à l'étape 3 » — jamais la lettre. Les pages de concepts (cours, notes, fiches projets) ne numérotent pas leurs titres : l'habillage `h2`/`h3` suffit à les repérer.
+
+C'est la forme prévue par la norme [ISO 2145](https://www.iso.org/standard/6937.html) — chiffres arabes, point entre les niveaux, rien après le dernier numéro.

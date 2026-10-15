@@ -49,11 +49,11 @@ Ces ordinateurs, aussi appelés **validateurs**, travaillent pour atteindre un c
 
 ---
 
-### Proof of Work
+### <span class="h3">Proof of Work</span>
 
 Utilisé par Bitcoin, il requiert des mineurs pour résoudre des problèmes cryptographiques complexes. Cette méthode de consensus assure une **sécurité robuste mais plus consommatrice d'énergie**.
 
-### Proof of Stake
+### <span class="h3">Proof of Stake</span>
 
 Il attribue le droit de valider des transactions en fonction de la quantité de crypto détenue par un participant ce qui favorise une approche plus écologique. Cependant le ***PoS soulève des questions sur la centralisation*** potentielle du pouvoir entre les mains des gros détenteurs de jetons.
 
@@ -97,11 +97,11 @@ Exemple concret avec la blockchain Bitcoin fonctionnant avec le consensus Proof 
 
 **Il existe deux principaux types de blockchains**. Actuellement, les cas d'usage sont en grande majorité développés sur le premier type, celui des **blockchains publiques**.
 
-### Les blockchains publiques
+### <span class="h3">Les blockchains publiques</span>
 
 Les blockchains publiques sont le type de blockchain qui nous viennent intuitivement à l'esprit. **Ces chaînes de blocs sont entièrement accessibles et ouvertes à tous ce qui souhaite participer à la validation des transactions**. Elles offrent une transparence totale et fonctionnent sans autorité centrale, favorisant ainsi la décentralisation. Cependant, cette ouverture expose à des risques de sécurité, notamment l'attaque des 51%.
 
-### Les blockchains privées
+### <span class="h3">Les blockchains privées</span>
 
 **Les blockchains privées sont gérées par une seule entité**, offrant confidentialité et rapidité des transactions, mais en omettant la décentralisation. Les nœuds sont simplement des points sur un réseau privé, et la blockchain est utilisée comme un registre distribué. Un cas d'utilisation répandue de blockchain privée est dans le secteur des institutions financières soumises à de fortes obligations de conformité aux réglementations.
 
@@ -127,17 +127,17 @@ Pour surmonter ce défi majeur, l'écosystème a vu l'émergence de **blockchain
 
 ## <span class="h2">Cas d'utilisation concret de la blockchain</span>
 
-### Un réseau de paiement infalsifiable
+### <span class="h3">Un réseau de paiement infalsifiable</span>
 
 L'utilisation de la blockchain dans le système de paiements offre des avantages en **réduisant les coûts de transaction ainsi que la corruption**. Sa nature transparente et immuable permet de rendre impossible la falsification des enregistrements sur la blockchain. **Les transactions deviennent entièrement traçables et vérifiables**, ce qui empêche toute manipulation des montants transférés.
 
-### Un renouveau pour la chaîne d'approvisionnement
+### <span class="h3">Un renouveau pour la chaîne d'approvisionnement</span>
 
 La blockchain offre de nombreux avantages pour **la gestion de la supply chain (ou chaîne d'approvisionnement)**. Elle permet une meilleure transparence, car toutes les informations concernant les produits peuvent être **suivies et vérifiées en temps réel** par tous les acteurs de la chaîne, même le consommateur final.
 
 La blockchain assure aussi une plus grande sécurité des données et réduit les risques de fraudes grâce à son système de chiffrement. Elle permet aussi **de réduire les coûts et les délais en automatisant certaines tâches et en éliminant les intermédiaires inutiles**.
 
-### La révolution NFT permise grâce à l'immuabilité
+### <span class="h3">La révolution NFT permise grâce à l'immuabilité</span>
 
 Les **tokens non fongibles** (**NFT**) tirent parti de l'immutabilité de la blockchain. **Chaque NFT est unique et non interchangeable**. Grâce à la blockchain, **les informations concernant la création, la propriété et l'historique des transactions de chaque NFT sont enregistrées de manière permanente et transparente**, ce qui rend impossible la falsification ou la duplication.
 
@@ -145,13 +145,13 @@ Les **tokens non fongibles** (**NFT**) tirent parti de l'immutabilité de la blo
 
 ## <span class="h2">Quelles sont les limites de la blockchain</span>
 
-### Scalabilité et frais de transaction
+### <span class="h3">Scalabilité et frais de transaction</span>
 
 Les blockchains peuvent rencontrer des difficultés à traiter un grand nombre de transactions simultanément, ce qui congestionne le réseau et entraîne une augmentation des coûts de transaction.
 
 Pour l'instant, aucune blockchain majeure n'arrive à rivaliser avec la scalabilité d'un réseau de paiement comme **Visa qui est en capacité de traiter 24 000 transactions par seconde**.
 
-### L'impact environnemental
+### <span class="h3">L'impact environnemental</span>
 
 **Les blockchains fonctionnant en Proof of Work (PoW) sont fréquemment sous le feu des critiques en raison de leur consommation énergétique élevée**. En effet, le processus de minage s'avère gourmand en électricité. Cette consommation énergétique est d'autant plus préoccupante lorsque la source d'énergie est non renouvelable
 
@@ -159,11 +159,11 @@ Actuellement, dans le cas du Bitcoin, cette électricité est principalement iss
 
 ---
 
-> Lien vers source: [cryptoast](https://cryptoast.fr/qu-est-ce-que-la-blockchain/){ target="_blank" rel="noopener" }
-
----
-
 !!! abstract "Mettre en pratique"
     Envie de concrétiser ces concepts ? Le [tutoriel Tokenizer](tokenizer.md) explique pas à pas comment **déployer votre premier token BEP-20** sur la BNB Smart Chain.
 
     Pour un objet **non fongible**, le [tutoriel TokenizeArt](tokenizeart.md) montre comment **créer et miner un NFT BEP-721** ([fiche projet](../../projets/tokenizeart.md)), avec ses métadonnées hébergées sur [IPFS](ipfs.md).
+
+---
+
+> Lien vers source: [cryptoast](https://cryptoast.fr/qu-est-ce-que-la-blockchain/){ target="_blank" rel="noopener" }

@@ -115,7 +115,7 @@ Peu importe le prestataire, tant que l'image et les métadonnées sont **accessi
 ---
 
 !!! abstract "Mettre en pratique"
-    La procédure complète (créer un compte, uploader l'image et le JSON, récupérer les CID) est détaillée à l'étape **F** du [tutoriel TokenizeArt](tokenizeart.md).
+    La procédure complète (créer un compte, uploader l'image et le JSON, récupérer les CID) est détaillée à l'étape **6** du [tutoriel TokenizeArt](tokenizeart.md).
 
     Sa fiche projet : [TokenizeArt](../../projets/tokenizeart.md) · Concept lié : [NFT & ERC-721](nft.md).
 

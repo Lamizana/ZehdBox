@@ -29,7 +29,7 @@ Ce jeton accorde des droits de propriété ou autres sur un objet réel ou virtu
 - Un diplôme.
 - ...
 
-Il est associé à un compte propriétaire comme tout jeton de blockchain, mais parce que le jeton est **non fongible**, le propriétaire est **garanti unique** 
+Il est associé à un compte propriétaire comme tout jeton de blockchain, mais parce que le jeton est **non fongible**, le propriétaire est **garanti unique** :
 
 - C'est cette unicité qui donne sa valeur au jeton.
 

@@ -32,13 +32,13 @@ tags:
 
 Pas de panique si certains mots te semblent étranges. Voici l'essentiel en 5 minutes.
 
-### A.1 Qu'est-ce qu'un token ?
+### <span class="h3">A.1 Qu'est-ce qu'un token ?</span>
 
 Un **token** est une sorte de « pièce numérique » créée sur une blockchain. Dans notre projet, il suivra la norme **BEP-20** (la norme des jetons sur la BNB Chain), calquée sur l'ERC-20 d'Ethereum.
 
 Cette norme impose un socle commun : tout token possède un `name` (nom), un `symbol` (ticker), un nombre de `decimals` (18 comme ETH), et des fonctions comme `transfer`, `balanceOf`, `approve`, `transferFrom`. Grâce à cela, tous les wallets et plateformes comprennent ton token automatiquement.
 
-### A.2 Blockchain, testnet et réseau réel
+### <span class="h3">A.2 Blockchain, testnet et réseau réel</span>
 
 La **BNB Chain** (réseau du partenaire du projet 42) existe en deux versions :
 
@@ -48,7 +48,7 @@ La **BNB Chain** (réseau du partenaire du projet 42) existe en deux versions :
 !!! success "Rassure-toi"
     Ce projet ne demande **jamais** d'argent réel. Tout se passe sur le testnet.
 
-### A.3 Le vocabulaire à connaître
+### <span class="h3">A.3 Le vocabulaire à connaître</span>
 
 | Terme | Définition |
 | --- | --- |
@@ -72,7 +72,7 @@ MetaMask est le wallet qu'on utilisera pour signer les transactions et recevoir 
 !!! tip "Objectif"
     Un wallet prêt, connecté au réseau BSC Testnet.
 
-### B.1 Installer l'extension
+### <span class="h3">B.1 Installer l'extension</span>
 
 1. Va sur `metamask.io` et clique sur **« Download »**.
 2. Installe l'extension sur ton navigateur (Chrome, Firefox, Brave…).
@@ -83,7 +83,7 @@ MetaMask est le wallet qu'on utilisera pour signer les transactions et recevoir 
 !!! danger "Attention"
     **Jamais** donner sa seed phrase à qui que ce soit, ni la coller dans un site ou dans un code.
 
-### B.2 Ajouter le réseau BSC Testnet
+### <span class="h3">B.2 Ajouter le réseau BSC Testnet</span>
 
 Par défaut, MetaMask est sur Ethereum. On ajoute la BNB Smart Chain de test :
 
@@ -104,7 +104,7 @@ Par défaut, MetaMask est sur Ethereum. On ajoute la BNB Smart Chain de test :
 !!! info "Astuce"
     Le « Chain ID 97 » identifie la BSC Testnet. Si tu vois un autre numéro, tu es sur le mauvais réseau.
 
-### B.3 Copier ton adresse
+### <span class="h3">B.3 Copier ton adresse</span>
 
 Clique sur ton adresse (sous le nom du compte, ça ressemble à `0x1234...abcd`) pour la copier. Garde-la sous la main : tu t'en serviras partout.
 
@@ -117,7 +117,7 @@ Pour déployer un contrat, il faut payer le « gas » en TBNB. On les obtient gr
 !!! tip "Objectif"
     Avoir quelques TBNB sur ton wallet testnet.
 
-### C.1 Utiliser le faucet de BNB Chain
+### <span class="h3">C.1 Utiliser le faucet de BNB Chain</span>
 
 1. Va sur le site officiel : `https://www.bnbchain.org/` puis cherche la section **Faucet** (ou va directement sur `faucet.bnbchain.org`).
 2. Sélectionne le réseau **BSC Testnet**.
@@ -140,7 +140,7 @@ On écrit le programme de notre token en **Solidity**. On réutilise la biblioth
 !!! tip "Objectif"
     Un fichier `token.sol` correct, commenté.
 
-### D.1 Le code complet du contrat
+### <span class="h3">D.1 Le code complet du contrat</span>
 
 Ce fichier doit aller dans le dossier `code/` de ton dépôt sous le nom `token.sol` :
 
@@ -210,7 +210,7 @@ contract GOLD42 is ERC20 {
 }
 ```
 
-### D.2 Expliquer les mots du code
+### <span class="h3">D.2 Expliquer les mots du code</span>
 
 | Élément | Explication |
 |---|---|
@@ -224,7 +224,7 @@ contract GOLD42 is ERC20 {
 !!! info "Pourquoi pas de dépôt de fonds ?"
     Le contrat n'accepte aucun ETH/BNB : il n'a pas de fonction `payable`. C'est une bonne chose pour la sécurité (pas d'argent bloqué).
 
-### D.3 Mettre à jour ton dépôt
+### <span class="h3">D.3 Mettre à jour ton dépôt</span>
 
 1. Ouvre `code/token.sol` et remplace son contenu par le code ci-dessus.
 2. Assure-toi que chaque fonction a bien un commentaire lisible. C'est exigé par le sujet (revue de code à l'évaluation).
@@ -238,13 +238,13 @@ contract GOLD42 is ERC20 {
 !!! tip "Objectif"
     Ton code compile sans erreur.
 
-### E.1 Ouvrir Remix et créer le fichier
+### <span class="h3">E.1 Ouvrir Remix et créer le fichier</span>
 
 1. Va sur `https://remix.ethereum.org`.
 2. Dans le panneau de gauche (explorateur de fichiers), crée un dossier **contracts** s'il n'existe pas, puis un fichier `token.sol` (icône « nouveau fichier »).
 3. Colle le code du contrat dedans et enregistre (`Ctrl+S`).
 
-### E.2 Installer OpenZeppelin (import)
+### <span class="h3">E.2 Installer OpenZeppelin (import)</span>
 
 Le code importe `@openzeppelin/contracts/...`. Remix doit le télécharger :
 
@@ -252,7 +252,7 @@ Le code importe `@openzeppelin/contracts/...`. Remix doit le télécharger :
 2. Clique sur **« Compile token.sol »**. Remix détectera l'import manquant et proposera de l'installer - accepte.
 3. Sinon, va dans l'onglet **« File explorer »** → clic droit sur le dossier racine → **« Import from GitHub »** et colle : `OpenZeppelin/openzeppelin-contracts@master/contracts/token/ERC20/ERC20.sol`.
 
-### E.3 Choisir la version et compiler
+### <span class="h3">E.3 Choisir la version et compiler</span>
 
 1. Dans « Solidity Compiler », choisis la version **0.8.x** (ex. 0.8.26) - elle doit correspondre à `pragma solidity ^0.8.0`.
 2. Clique sur **« Compile token.sol »**.
@@ -272,7 +272,7 @@ Maintenant qu'on compile, on déploie réellement le token sur le testnet via Me
 !!! tip "Objectif"
     Une adresse de contrat `0x...` sur le testnet + des TBNB dépensés (en test, ça ne coûte rien de réel).
 
-### F.1 Connecter Remix à MetaMask
+### <span class="h3">F.1 Connecter Remix à MetaMask</span>
 
 1. Dans Remix, ouvre l'onglet **« Deploy & Run Transactions »** (icône en forme de flèche « Run »).
 2. Dans le menu **Environment**, choisis **« Injected Provider - MetaMask »**.
@@ -282,14 +282,14 @@ Maintenant qu'on compile, on déploie réellement le token sur le testnet via Me
 !!! warning "Si rien ne se connecte"
     Assure-toi que l'extension MetaMask est déverrouillée et que tu es sur le bon réseau. Relance Remix au besoin.
 
-### F.2 Lancer le déploiement
+### <span class="h3">F.2 Lancer le déploiement</span>
 
 1. Dans le panneau « Deploy & Run », le contrat **GOLD42** doit être sélectionné (en haut).
 2. Clique sur **« Deploy »**.
 3. Une fenêtre MetaMask apparaît : vérifie le « gas » estimé et clique **« Confirmer »**.
 4. Attends que la transaction soit incluse dans un bloc (généralement quelques secondes).
 
-### F.3 Récupérer l'adresse du contrat
+### <span class="h3">F.3 Récupérer l'adresse du contrat</span>
 
 1. Sous la section « Deployed Contracts » de Remix, tu verras ton contrat déployé avec son adresse `0x...`.
 2. **Clique sur la copie** de l'adresse (icône) et sauvegarde-la quelque part. On en a besoin pour BSCScan et pour le README.
@@ -307,13 +307,13 @@ On démontre que le token fonctionne. Ces actions seront montrées à l'évaluat
 !!! tip "Objectif"
     Prouver que balance, transfert, mint et burn marchent.
 
-### G.1 Vérifier le solde initial
+### <span class="h3">G.1 Vérifier le solde initial</span>
 
 1. Dans Remix, déploie le contrat (section « Deployed Contracts »).
 2. Clique sur **`balanceOf`** et colle ton adresse MetaMask, puis clique le bouton.
 3. Tu dois voir `1000000000000000000000000` (1 000 000 G42 avec 18 décimales).
 
-### G.2 Transférer des tokens
+### <span class="h3">G.2 Transférer des tokens</span>
 
 1. Dans MetaMask, copie une **deuxième adresse** (compte de test B.3).
 2. Appelle `transfer` avec : adresse destinataire + montant `10000000000000000000` (soit 10 G42).
@@ -322,7 +322,7 @@ On démontre que le token fonctionne. Ces actions seront montrées à l'évaluat
 !!! info "Note"
     1 G42 = `1` suivi de 18 zéros en « plus petit entier ». C'est la règle des 18 décimales, comme pour l'ETH.
 
-### G.3 Mint et burn
+### <span class="h3">G.3 Mint et burn</span>
 
 1. **`mint`** (réservé au propriétaire) : renseigne une adresse + un montant. Confirme.
 2. Pour prouver la sécurité : appelle `mint` **depuis une autre adresse** (change de compte dans MetaMask) → la transaction doit échouer avec `GOLD42: only owner can perform this action`.
@@ -341,13 +341,13 @@ Un block explorer est le « Google de la blockchain ». On y rend notre contrat 
 !!! tip "Objectif"
     Le contrat « Vérifié » sur BSCScan, avec ticker publié et transactions de démo visibles.
 
-### H.1 Trouver le contrat
+### <span class="h3">H.1 Trouver le contrat</span>
 
 1. Va sur `https://testnet.bscscan.com` (le **testnet**, pas le mainnet !).
 2. Colle l'adresse du contrat dans la barre de recherche.
 3. La page du contrat s'affiche avec les transactions, les holders, etc. Le symbole y apparaît encore comme « Unknown Token » tant que ce n'est pas vérifié.
 
-### H.2 Vérifier le code source
+### <span class="h3">H.2 Vérifier le code source</span>
 
 1. Ouvre l'onglet **« Contract »** puis clique **« Verify and Publish »**.
 2. Remplis le formulaire **exactement** comme à la compilation :
@@ -360,7 +360,7 @@ Un block explorer est le « Google de la blockchain ». On y rend notre contrat 
 !!! warning "Si la vérification échoue"
     C'est presque toujours un paramètre différent de la compilation (version Solidity, licence, ou le code pas exactement identique). Recopie ton code depuis Remix tel quel.
 
-### H.3 Publier le ticker et les infos du token
+### <span class="h3">H.3 Publier le ticker et les infos du token</span>
 
 1. Sur la page du contrat, ouvre **« Contract → Update Token Info »** (ou « Update Token Information »).
 2. Renseigne : nom `GOLD42`, symbole `G42`, 18 décimales.
@@ -375,33 +375,33 @@ Un block explorer est le « Google de la blockchain ». On y rend notre contrat 
 
 Les erreurs les plus courantes et leurs solutions.
 
-### J.1 « Not enough funds for gas »
+### <span class="h3">J.1 « Not enough funds for gas »</span>
 
 Tu n'as pas assez de TBNB sur ton wallet testnet.
 
 → Récupère des TBNB au faucet (partie C) ou vérifie que MetaMask est bien sur le **BSC Testnet** (chain ID 97), pas sur Ethereum Mainnet.
 
-### J.2 La transaction reste « pending »
+### <span class="h3">J.2 La transaction reste « pending »</span>
 
 Le réseau de test est parfois lent ou le gas nonce est bloqué.
 
 → Attends, ou dans MetaMask va dans Paramètres → Avancé → **« Clear activity tab data »** pour réinitialiser. Puis réessaie.
 
-### J.3 « Identifier already declared » à la compilation
+### <span class="h3">J.3 « Identifier already declared » à la compilation</span>
 
 C'est le fameux conflit `decimals` : une constante `uint8 public constant decimals` entre en collision avec le getter `decimals()` de l'ERC-20.
 
 → Supprime la constante (et renomme-la `DECIMALS` en majuscule si tu la gardes en interne). Le getter d'OpenZeppelin renvoie déjà 18.
 
-### J.4 La vérification BSCScan échoue
+### <span class="h3">J.4 La vérification BSCScan échoue</span>
 
 → Compare paramètre par paramètre avec Remix : version Solidity identique, licence MIT, et colle le code **exact** de `token.sol` (mêmes espaces, mêmes commentaires, c'est un hash qui doit matcher).
 
-### J.5 « revert » quand j'appelle mint depuis un autre compte
+### <span class="h3">J.5 « revert » quand j'appelle mint depuis un autre compte</span>
 
 Normal ! `mint` est protégé par `onlyOwner`. C'est le comportement attendu et c'est exactement ce qu'il faut montrer à l'évaluation.
 
-### J.6 Est-ce que je risque de perdre de l'argent ?
+### <span class="h3">J.6 Est-ce que je risque de perdre de l'argent ?</span>
 
 Non. On ne travaille que sur la BSC Testnet avec des TBNB de test qui ne valent rien. N'utilise **jamais** le Mainnet ni des fonds réels.
 

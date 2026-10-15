@@ -32,7 +32,7 @@ Il existe une version dédiée au réseau de test :
 
 ## <span class="h2">Les fonctionnalités principales</span>
 
-### Rechercher une adresse
+### <span class="h3">Rechercher une adresse</span>
 
 En collant une adresse de wallet ou de contrat dans la barre de recherche, on accède à :
 
@@ -43,7 +43,7 @@ En collant une adresse de wallet ou de contrat dans la barre de recherche, on ac
 
 ![Page accueil Bscscan](./images/bscscan-accueil.png){ loading=lazy width=1901 height=878 }
 
-### Suivre une transaction
+### <span class="h3">Suivre une transaction</span>
 
 Chaque transaction possède un **hash unique** permettant de vérifier :
 
@@ -52,14 +52,14 @@ Chaque transaction possède un **hash unique** permettant de vérifier :
 - les **frais de gas** payés ;
 - les **tokens transférés** et les événements émis.
 
-### Lire et interagir avec un smart contract
+### <span class="h3">Lire et interagir avec un smart contract</span>
 
 Sur la page d'un contrat, l'onglet **« Contract »** permet de :
 
 - **Read Contract** : exécuter les fonctions de lecture (`balanceOf`, `totalSupply`…) ;
 - **Write Contract** : envoyer des transactions (`transfer`, `mint`…) en connectant un wallet.
 
-### Vérifier un contrat (Verify & Publish)
+### <span class="h3">Vérifier un contrat (Verify & Publish)</span>
 
 L'onglet **« Verify & Publish »** permet de publier le code source d'un smart contract.
 BscScan le compile et compare le bytecode obtenu avec celui réellement déployé on-chain :
@@ -70,7 +70,7 @@ consultable par tous.
     C'est un **gage de transparence essentiel** : n'importe qui peut
     vérifier ce que fait le contrat avant d'interagir avec lui.
 
-### Consulter les informations d'un token
+### <span class="h3">Consulter les informations d'un token</span>
 
 La page d'un token BEP-20 affiche son nom, son ticker, sa supply, le nombre de détenteurs
 et son graphique de prix si celui-ci est échangé. Le bouton **« Update Token Info »**

@@ -242,21 +242,49 @@ Le workflow utilise `fetch-depth: 0` pour conserver l'historique git complet (n�
 
 ## Contribution
 
-Ce projet est un repository personnel. Cependant, si vous souhaitez contribuer :
+Ce dépôt est un projet personnel : les corrections et les remarques restent bienvenues.
 
-1. Fork le dépôt
-2. Créer une branche (`git checkout -b feature/amazing-feature`)
-3. Commit vos changements (`git commit -m 'Add amazing feature'`)
-4. Push vers la branche (`git push origin feature/amazing-feature`)
-5. Ouvrir une Pull Request
+1. **Fork** le dépôt
+2. **Créer une branche** depuis `main` : `git checkout -b docs/typo-bases`
+3. **Committer** en suivant la convention ci-dessous
+4. **Pousser** la branche : `git push origin docs/typo-bases`
+5. **Ouvrir une Pull Request** en décrivant le changement
+
+> [!TIP]
+> Avant de pousser, lancer le build local (`properdocs build -f properdocs.yml --strict`) : la CI échoue au moindre avertissement.
 
 ### Convention de commits
 
-```bash
-<type>(<scope>): <description>
+Le projet suit [Conventional Commits](https://www.conventionalcommits.org/fr/), avec une ligne de sujet en français :
 
-Types : feat, fix, docs, style, refactor, test, chore
-Scopes : python, exercices, nav, web, blog, css
+```text
+<type>(<scope>): <description>
+```
+
+- description à l'impératif présent, **sans point final**
+- ligne de sujet ≤ 72 caractères
+- un commit = un changement identifiable
+
+| Type | Usage |
+| --- | --- |
+| `feat` | Nouvelle page ou nouvelle fonctionnalité |
+| `fix` | Correction de bug ou d'information erronée |
+| `docs` | Contenu, documentation |
+| `style` | Mise en forme, CSS, thème |
+| `perf` | Optimisation (images, vidéos) |
+| `refactor` | Réécriture sans changement de comportement |
+| `test` | Ajout ou correction de tests |
+| `chore` | Maintenance, dépendances, outillage |
+| `revert` | Annulation d'un commit |
+
+**Scopes** : `nav`, `python`, `exercices`, `projets`, `web`, `systeme`, `blog`, `css`, `config`, `seo`, `readme`, `deps`, `ci`.
+
+Exemples issus de l'historique du dépôt :
+
+```text
+docs(web): documente le déploiement du contrat BEP-20
+fix(seo): ajoute la description des pages projets
+style(css): corrige le contraste des cartes en mode sombre
 ```
 
 ---

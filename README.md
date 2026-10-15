@@ -26,6 +26,21 @@ Contenu structuré, déployé automatiquement via GitHub Actions sur GitHub Page
 
 **Live** : [lamizana.github.io/ZehdBox](https://lamizana.github.io/ZehdBox/)
 
+### Aperçu du site
+
+<p align="center">
+  <img src=".github/assets/apercu-clair.jpg" alt="Page d'accueil du site ZehdBox en thème clair">
+</p>
+
+<details>
+<summary>Thème sombre</summary>
+
+<p align="center">
+  <img src=".github/assets/apercu-sombre.jpg" alt="Page d'accueil du site ZehdBox en thème sombre">
+</p>
+
+</details>
+
 ---
 
 ## Fonctionnalités

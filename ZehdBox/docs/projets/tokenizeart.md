@@ -92,8 +92,8 @@ Zehd42 is ERC721URIStorage, Ownable (OpenZeppelin v5.1.0)
 
 Les données sont réparties sur **deux étages** :
 
-- La **blockchain** porte le contrat, la propriété.
-- Le `tokenId`: **IPFS** porte l'image et le JSON de métadonnées, référencés par `tokenURI`.
+- La **blockchain** porte le contrat, la propriété et le `tokenId`.
+- **IPFS** porte l'image et le JSON de métadonnées, référencés par `tokenURI`.
 
 !!! note "Pourquoi stocker l'image hors chaîne ?"
     Écrire une image dans la blockchain coûterait des sommes considérables. Le contrat ne stocke donc que l'**empreinte** du fichier : c'est le rôle du CID IPFS. Voir [IPFS & Pinata](../web/web3/ipfs.md).

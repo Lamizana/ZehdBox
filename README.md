@@ -18,6 +18,29 @@
 
 ---
 
+## Sommaire
+
+<details>
+<summary>Déplier le sommaire</summary>
+
+- [À propos](#à-propos)
+- [Fonctionnalités](#fonctionnalités)
+- [Stack technique](#stack-technique)
+- [Structure du projet](#structure-du-projet)
+- [Projets](#projets)
+- [Cours](#cours)
+- [Installation](#installation)
+- [Commandes](#commandes)
+- [CI/CD](#cicd)
+- [Contribution](#contribution)
+- [Auteur](#auteur)
+- [Remerciements](#remerciements)
+- [Licence](#licence)
+
+</details>
+
+---
+
 ## À propos
 
 **ZehdBox** est un site vitrine & base de connaissances personnel, couvrant le développement logiciel, la data science, le web et le système. Il sert à la fois de **portfolio pour les recruteurs** et de **mémo technique** alimenté au fil de l'apprentissage.
@@ -304,17 +327,27 @@ style(css): corrige le contraste des cartes en mode sombre
 
 ---
 
-## License
-
-Distribué sous la licence MIT. Voir [`LICENSE`](LICENSE) pour plus de détails.
-
----
-
 ## Auteur
 
-**Alex Lamizana** — Étudiant 42 Angoulême, spécialisation Data & IA
+**Alex Lamizana** — étudiant à 42 Angoulême, spécialisation Data & IA
 
 - [Site](https://lamizana.github.io/ZehdBox/)
 - [GitHub](https://github.com/Lamizana)
+- [Contact](https://lamizana.github.io/ZehdBox/contact/)
 
 ---
+
+## Remerciements
+
+- [ProperDocs](https://pypi.org/project/properdocs/) — générateur du site, successeur maintenu de MkDocs
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) — thème du site
+- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) — onglets, admonitions, emoji
+- [shields.io](https://shields.io/) — badges de ce README
+
+---
+
+## Licence
+
+Distribué sous licence **MIT** (SPDX : `MIT`). Voir [`LICENSE`](LICENSE).
+
+© 2026 Alex Lamizana

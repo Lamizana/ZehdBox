@@ -11,7 +11,7 @@ tags:
 # <span class="h1">Tokenizer</span>
 
 <p class="intro">
-    Tutoriel complet pour créer votre premier token BEP-20 sur la BNB Smart Chain - de zéro jusqu'à un token publié et vérifié sur BSCScan.
+    Tutoriel complet pour créer votre premier token BEP-20 sur la BNB Smart Chain de zéro jusqu'à un token publié et vérifié sur BSCScan.
 </p>
 
 ---

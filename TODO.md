@@ -99,23 +99,23 @@ Ces pages portent l'image professionnelle du site (recruteurs, clients) : à ind
 - [X] [Docker & PostgreSQL - Conteneuriser Django et brancher la base](https://lamizana.github.io/ZehdBox/cours/python/django/docker-postgresql/)
 - [X] [Modèles & Migrations - Définir la structure des données](https://lamizana.github.io/ZehdBox/cours/python/django/modeles-migrations/)
 - [X] [Vues & URLs - Répondre aux requêtes du navigateur](https://lamizana.github.io/ZehdBox/cours/python/django/vues-urls/)
-- [ ] [Templates - Gabarits HTML et architecture MVT](https://lamizana.github.io/ZehdBox/cours/python/django/templates/)
+- [X] [Templates - Gabarits HTML et architecture MVT](https://lamizana.github.io/ZehdBox/cours/python/django/templates/)
 
 **Bibliothèques**
 
-- [ ] [Python - Bibliothèques](https://lamizana.github.io/ZehdBox/cours/python/librairies/)
-- [ ] [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/)
-- [ ] [Projet - Analyse de Dés](https://lamizana.github.io/ZehdBox/cours/python/numpy/exercice-dice/)
-- [ ] [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/)
-- [ ] [Analyse Météo](https://lamizana.github.io/ZehdBox/cours/python/pandas/tutoriel-meteo/)
-- [ ] [Exercices Météo](https://lamizana.github.io/ZehdBox/cours/python/pandas/exercice-meteo/)
-- [ ] [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/)
-- [ ] [Régression linéaire - le machine learning en pratique](https://lamizana.github.io/ZehdBox/cours/python/linear-regression/)
+- [X] [Python - Bibliothèques](https://lamizana.github.io/ZehdBox/cours/python/librairies/)
+- [X] [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/)
+- [X] [Projet - Analyse de Dés](https://lamizana.github.io/ZehdBox/cours/python/numpy/exercice-dice/)
+- [X] [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/)
+- [X] [Analyse Météo](https://lamizana.github.io/ZehdBox/cours/python/pandas/tutoriel-meteo/)
+- [X] [Exercices Météo](https://lamizana.github.io/ZehdBox/cours/python/pandas/exercice-meteo/)
+- [X] [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/)
+- [X] [Régression linéaire - le machine learning en pratique](https://lamizana.github.io/ZehdBox/cours/python/linear-regression/)
 
 ## 4. 📚 Programmation — MkDocs
 
-- [ ] [Créer une documentation avec MkDocs et Material](https://lamizana.github.io/ZehdBox/mkdocs/)
-- [ ] [Bases de MkDocs](https://lamizana.github.io/ZehdBox/mkdocs/bases/)
+- [X] [Créer une documentation avec MkDocs et Material](https://lamizana.github.io/ZehdBox/mkdocs/)
+- [X] [Bases de MkDocs](https://lamizana.github.io/ZehdBox/mkdocs/bases/)
 - [ ] [Material for MkDocs](https://lamizana.github.io/ZehdBox/mkdocs/material/)
 - [ ] [Plugins](https://lamizana.github.io/ZehdBox/mkdocs/plugins/)
 - [ ] [Extensions Markdown](https://lamizana.github.io/ZehdBox/mkdocs/extensions/)

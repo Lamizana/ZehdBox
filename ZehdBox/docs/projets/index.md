@@ -1,6 +1,6 @@
 ---
 title: Projets 42 - Applications, algorithmes et serveurs
-description: "Portfolio de projets école 42 : Pong multijoueur, serveur IRC, interpréteur shell, smart contract BEP-20, jeux 2D et algorithmes en C/C++."
+description: "Portfolio de projets école 42 : Pong multijoueur, serveur IRC, interpréteur shell, smart contract BEP-20 et NFT BEP-721, jeux 2D et algorithmes en C/C++."
 icon: material/rocket-launch
 ---
 
@@ -23,6 +23,7 @@ icon: material/rocket-launch
     <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
     <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity">
+    <img src="https://img.shields.io/badge/IPFS-65C2CB?style=for-the-badge&logo=ipfs&logoColor=white" alt="IPFS">
 </div>
 </div>
 
@@ -51,6 +52,16 @@ icon: material/rocket-launch
     `Solidity` `BEP-20` `OpenZeppelin`
 
     [:octicons-arrow-right-24: Découvrir](tokenizer.md)
+
+-   :material-image-frame:{ .lg .middle } __TokenizeArt__
+
+    ---
+
+    **NFT BEP-721** `Zehd42` sur BNB Smart Chain Testnet : jeton non fongible unique portant le 42, avec métadonnées sur **IPFS** et mint réservé au propriétaire.
+
+    `Solidity` `BEP-721` `OpenZeppelin` `IPFS` `Pinata`
+
+    [:octicons-arrow-right-24: Découvrir](tokenizeart.md)
 
 -   :material-chart-line:{ .lg .middle } __Linear Regression__
 

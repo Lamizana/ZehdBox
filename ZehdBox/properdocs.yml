@@ -21,6 +21,7 @@ nav:
       - Transcendance: projets/transcendance.md
       - Linear Regression: projets/linear-regression.md
       - Tokenizer: projets/tokenizer.md
+      - TokenizeArt: projets/tokenizeart.md
 
   - Programmation:
       - cours/index.md
@@ -106,6 +107,9 @@ nav:
           - web/web3/etherscan.md
           - web/web3/bscscan.md
           - Tokenizer: web/web3/tokenizer.md
+          - TokenizeArt: web/web3/tokenizeart.md
+          - NFT & ERC-721: web/web3/nft.md
+          - IPFS & Pinata: web/web3/ipfs.md
 
   - GitHub:
       - github/index.md
@@ -194,6 +198,8 @@ theme:
       web: material/language-html5
       web3: material/bitcoin
       blockchain: material/link-variant
+      nft: material/image-frame
+      ipfs: simple/ipfs
       systeme: material/cog
       shell: material/console-line
       reseaux: material/network
@@ -317,6 +323,8 @@ extra:
     web: web
     web3: web3
     blockchain: blockchain
+    nft: nft
+    ipfs: ipfs
     systeme: systeme
     shell: shell
     reseaux: reseaux

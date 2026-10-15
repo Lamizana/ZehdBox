@@ -165,3 +165,5 @@ Actuellement, dans le cas du Bitcoin, cette électricité est principalement iss
 
 !!! abstract "Mettre en pratique"
     Envie de concrétiser ces concepts ? Le [tutoriel Tokenizer](tokenizer.md) explique pas à pas comment **déployer votre premier token BEP-20** sur la BNB Smart Chain.
+
+    Pour un objet **non fongible**, le [tutoriel TokenizeArt](tokenizeart.md) montre comment **créer et miner un NFT BEP-721** ([fiche projet](../../projets/tokenizeart.md)), avec ses métadonnées hébergées sur [IPFS](ipfs.md).

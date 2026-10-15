@@ -1,6 +1,6 @@
 ---
 title: Web 3.0 - Blockchain, DeFi et smart contracts
-description: "Découvrir le Web 3.0 : blockchain, décentralisation, smart contracts, Etherscan et création d'un token BEP-20."
+description: "Découvrir le Web 3.0 : blockchain, décentralisation, smart contracts, Etherscan, NFT (ERC-721), IPFS et création d'un token BEP-20."
 tags:
   - cours
   - web
@@ -23,6 +23,18 @@ icon: material/bitcoin
 Un guide complet pas à pas - de zéro jusqu'à un token publié sur la blockchain. **0 € requis**, tout se passe sur le testnet.
 
 [:octicons-arrow-right-24: Commencer le tutoriel](tokenizer.md){ .md-button .md-button--primary }
+
+</div>
+
+---
+
+<div class="project-card" markdown>
+
+## :material-image-frame: Tutoriel : Créer votre NFT BEP-721
+
+Un guide complet pas à pas - image, métadonnées IPFS, contrat Solidity, déploiement, mint et vérification. **0 € requis**, tout se passe sur le testnet.
+
+[:octicons-arrow-right-24: Commencer le tutoriel](tokenizeart.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -55,6 +67,22 @@ Un guide complet pas à pas - de zéro jusqu'à un token publié sur la blockcha
     Explorer la BNB Smart Chain : suivre les transactions et inspecter les contrats.
 
     [:octicons-arrow-right-24: Découvrir](bscscan.md)
+
+-   :material-image-frame:{ .lg .middle } **NFT & ERC-721**
+
+    ---
+
+    Les jetons non fongibles : unicité, propriété, droits associés et norme ERC-721 / BEP-721.
+
+    [:octicons-arrow-right-24: Découvrir](nft.md)
+
+-   :simple-ipfs:{ .lg .middle } **IPFS & Pinata**
+
+    ---
+
+    Stockage distribué : adressage par contenu (CID), épinglage et passerelles.
+
+    [:octicons-arrow-right-24: Découvrir](ipfs.md)
 
 </div>
 

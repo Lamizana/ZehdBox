@@ -30,8 +30,8 @@ Contenu structuré, déployé automatiquement via GitHub Actions sur GitHub Page
 
 ## Fonctionnalités
 
-- **Cours Python complet** : bases du langage, exercices, NumPy, Pandas, Scikit-learn, fonctions
-- **7 fiches projets** détaillées : contexte, stack, défis techniques, résultats
+- **Cours Python complet** : bases du langage, exercices, fonctions, bibliothèques (NumPy, Pandas, Scikit-learn), régression linéaire, Django
+- **8 fiches projets** détaillées : contexte, stack, défis techniques, résultats
 - **Blog technique** avec articles et images
 - **Cours Système** : Linux, Windows
 - **Cours Web** : Web2, Web3, blockchain
@@ -72,32 +72,45 @@ Contenu structuré, déployé automatiquement via GitHub Actions sur GitHub Page
 
 ## Structure du projet
 
-```console
+```text
 ZehdBox/
-├── .github/workflows/deploy.yml   # CI/CD GitHub Actions
+├── .github/
+│   ├── assets/                     # Aperçus du site utilisés par ce README
+│   └── workflows/deploy.yml        # CI/CD GitHub Actions
 ├── ZehdBox/
-│   ├── properdocs.yml             # Configuration du site
+│   ├── properdocs.yml              # Configuration du site
 │   ├── docs/
-│   │   ├── projets/               # 7 fiches projets
+│   │   ├── index.md                # Accueil
+│   │   ├── projets/                # 8 fiches projets
 │   │   ├── cours/
-│   │   │   ├── python/            # Cours Python complet (30+ pages)
-│   │   │   │   ├── bases/         # Variables, types, opérateurs, etc.
-│   │   │   │   ├── exercices/     # Exercices nombres & chaînes
-│   │   │   │   ├── numpy/         # NumPy + projet Dés
-│   │   │   │   ├── pandas/        # Pandas + tutoriel + exercices Météo
-│   │   │   │   ├── django/        # Django : installation, modèles, vues, templates
-│   │   │   │   └── fonctions.md   # Fonctions Python
-│   │   │   └── index.md           # Hub des cours
-│   │   ├── blog/                  # Articles techniques
-│   │   ├── systeme/               # Linux & Windows
-│   │   ├── web/                   # Web2 & Web3
-│   │   ├── strudel/               # Tutoriels audio
-│   │   ├── github/                # Git & GitHub
-│   │   ├── mkdocs/                # Documentation MkDocs
-│   │   └── css/custom.css         # Styles personnalisés
-│   ├── requirements-ci.txt        # Dépendances minimales (CI)
-│   └── requirements-dev.txt       # Environnement de développement
-├── LICENSE                        # MIT License
+│   │   │   ├── index.md            # Hub des cours
+│   │   │   └── python/
+│   │   │       ├── bases/          # Variables, types, opérateurs, chaînes, flux
+│   │   │       ├── exercices/      # Exercices nombres & chaînes
+│   │   │       ├── fonctions.md    # Fonctions Python
+│   │   │       ├── librairies/     # Hub du parcours data science
+│   │   │       ├── numpy/          # NumPy + projet Dés
+│   │   │       ├── pandas/         # Pandas + tutoriel et exercices Météo
+│   │   │       ├── scikit-learn.md # Machine learning
+│   │   │       ├── linear-regression.md  # Tutoriel régression linéaire
+│   │   │       └── django/         # Installation, modèles, vues, templates
+│   │   ├── blog/                   # Articles techniques
+│   │   ├── systeme/                # Linux & Windows
+│   │   ├── web/                    # Web 2.0, Web 3.0, blockchain
+│   │   ├── strudel/                # Tutoriels audio live coding
+│   │   ├── github/                 # Git & GitHub
+│   │   ├── mkdocs/                 # Documentation du générateur
+│   │   ├── about.md, contact.md    # Pages vitrine
+│   │   ├── tags.md                 # Index des tags
+│   │   ├── images/                 # Images du site
+│   │   └── css/custom.css          # Styles personnalisés
+│   ├── overrides/sitemap.xml       # Sitemap aux dates de révision git
+│   ├── scripts/check_ci_parity.py  # Garde-fou : parité plugins / requirements
+│   ├── requirements-ci.txt         # Dépendances figées (CI)
+│   ├── requirements-dev.txt        # Dépendances de développement
+│   └── site/                       # Site généré (ignoré par Git)
+├── LICENSE                         # MIT
+├── TODO.md                         # Suivi de l'indexation Google
 └── README.md
 ```
 
@@ -105,32 +118,35 @@ ZehdBox/
 
 ## Projets
 
-> **Inventaire complet des 7 fiches projets** (même liste et ordre que [`projets/index.md`](https://lamizana.github.io/ZehdBox/projets/)).
+> **Inventaire complet des 8 fiches projets** (même liste et ordre que [`projets/index.md`](https://lamizana.github.io/ZehdBox/projets/)).
 
-| Projet | Description | Stack | Démo |
-| --- | --- | --- | --- |
-| [**Transcendance**](https://lamizana.github.io/ZehdBox/projets/transcendance/) | Pong multijoueur local - solo, 1v1, 4 joueurs, tournoi | ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) | ❌ |
-| [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokenizer/) | Token BEP-20 GOLD42 (BNB Smart Chain testnet) | ![](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![](https://img.shields.io/badge/BEP--20-purple) | ✅ [BscScan](https://lamizana.github.io/ZehdBox/projets/tokenizer/) |
-| [**Linear Regression**](https://lamizana.github.io/ZehdBox/projets/linear-regression/) | Régression linéaire - descente de gradient (projet 42) | ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) | ⚠️ Captures |
-| [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell/) | Interpréteur de commandes UNIX | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/UNIX-dark) | ⚠️ Captures |
-| [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc/) | Serveur IRC en C++ (RFC 2810-2813) | ![](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white) ![](https://img.shields.io/badge/RFC%202810--2813-blue) | ⚠️ Captures |
-| [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap/) | Algorithme de tri optimisé en C | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/Algorithmique-red) | ⚠️ Captures |
-| [**So Long**](https://lamizana.github.io/ZehdBox/projets/so_long/) | Jeu 2D en C (MiniLibX) | ![](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![](https://img.shields.io/badge/MiniLibX-blue) | ✅ [Vidéo](https://lamizana.github.io/ZehdBox/projets/so_long/) |
+| Projet | Description | Stack |
+| --- | --- | --- |
+| [**Transcendance**](https://lamizana.github.io/ZehdBox/projets/transcendance/) | Pong multijoueur local - solo, 1v1, 4 joueurs, tournoi | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) |
+| [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokenizer/) | Token BEP-20 GOLD42 (BNB Smart Chain testnet) | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![BEP-20](https://img.shields.io/badge/BEP--20-purple) ![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4) |
+| [**TokenizeArt**](https://lamizana.github.io/ZehdBox/projets/tokenizeart/) | NFT BEP-721 `Zehd42` sur BNB Smart Chain testnet, métadonnées sur IPFS | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![BEP-721](https://img.shields.io/badge/BEP--721-purple) ![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4) ![IPFS](https://img.shields.io/badge/IPFS-65C4ED?logo=ipfs&logoColor=white) ![Pinata](https://img.shields.io/badge/Pinata-purple) |
+| [**Linear Regression**](https://lamizana.github.io/ZehdBox/projets/linear-regression/) | Régression linéaire - descente de gradient (projet 42) | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) |
+| [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell/) | Interpréteur de commandes UNIX | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![UNIX](https://img.shields.io/badge/UNIX-dark) |
+| [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc/) | Serveur IRC en C++ (RFC 2810-2813) | ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white) ![RFC 2810-2813](https://img.shields.io/badge/RFC%202810--2813-blue) |
+| [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap/) | Algorithme de tri optimisé en C | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![Algorithmique](https://img.shields.io/badge/Algorithmique-red) |
+| [**So Long**](https://lamizana.github.io/ZehdBox/projets/so_long/) | Jeu 2D en C (MiniLibX) | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![MiniLibX](https://img.shields.io/badge/MiniLibX-blue) |
 
 ---
 
 ## Cours
 
-### Python (30+ pages)
+### Python
 
 | Section | Contenu | Lien |
 | --- | --- | --- |
 | **Les bases** | Variables, types, opérateurs, chaînes, flux, répétitives | [Bases](https://lamizana.github.io/ZehdBox/cours/python/bases/) |
 | **Exercices** | 15 exercices de révision + exercices chaînes | [Exercices](https://lamizana.github.io/ZehdBox/cours/python/exercices/) |
 | **Fonctions** | Définir, appeler, return, portée, docstrings | [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions/) |
-| **NumPy** | Tableaux, opérations vectorielles, projet Dés | [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/) |
-| **Pandas** | DataFrames, tutoriel Météo, exercices API | [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/) |
-| **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/) |
+| **Bibliothèques** | Le parcours data science : point d'entrée des quatre sections suivantes | [Bibliothèques](https://lamizana.github.io/ZehdBox/cours/python/librairies/) |
+| ↳ **NumPy** | Tableaux, opérations vectorielles, projet Dés | [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/) |
+| ↳ **Pandas** | DataFrames, tutoriel Météo, exercices API | [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/) |
+| ↳ **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/) |
+| ↳ **Régression linéaire** | Moindres carrés et descente de gradient codés de zéro | [Régression linéaire](https://lamizana.github.io/ZehdBox/cours/python/linear-regression/) |
 | **Django** | Installation, Docker & PostgreSQL, modèles, vues, templates | [Django](https://lamizana.github.io/ZehdBox/cours/python/django/) |
 
 ### Autres domaines
@@ -153,7 +169,7 @@ ZehdBox/
 - Python 3.12+
 - pip
 
-### Déploiement rapide
+### Installation locale
 
 ```bash
 # 1. Cloner le dépôt
@@ -164,10 +180,10 @@ cd ZehdBox
 python3 -m venv .env
 source .env/bin/activate
 
-# 3. Installer les dépendances
+# 3. Installer les dépendances (CI + outils de développement)
 cd ZehdBox
 pip install --upgrade pip
-pip install -r requirements-ci.txt
+pip install -r requirements-dev.txt
 
 # 4. Lancer le serveur local
 properdocs serve --dev-addr=127.0.0.1:8001 --livereload
@@ -175,24 +191,31 @@ properdocs serve --dev-addr=127.0.0.1:8001 --livereload
 
 Le site sera accessible sur `http://127.0.0.1:8001`.
 
+> [!NOTE]
+> `requirements-ci.txt` fige les versions utilisées par le workflow de déploiement ; `requirements-dev.txt` l'inclut (`-r requirements-ci.txt`) et ajoute les outils de développement local. Le script `scripts/check_ci_parity.py` vérifie que les deux restent cohérents avec `properdocs.yml`.
+
 ---
 
 ## Commandes
 
 | Commande | Description |
 | --- | --- |
-| `properdocs serve` | Serveur local avec hot-reload |
-| `properdocs build --strict` | Build de validation (warnings = erreurs) |
+| `properdocs serve --dev-addr=127.0.0.1:8001 --livereload` | Serveur local avec rechargement à chaud |
+| `properdocs build -f properdocs.yml --strict` | Build de validation (avertissements = erreurs) |
+| `python scripts/check_ci_parity.py` | Vérifie que chaque plugin de `properdocs.yml` est installé par `requirements-ci.txt` |
 
 > [!WARNING]
 > Toutes les commandes doivent être lancées **depuis le dossier `ZehdBox/`** avec l'environnement virtuel activé.
 
 ```bash
 # Serveur local
-properdocs serve --dev-addr=127.0.0.1:8001
+properdocs serve --dev-addr=127.0.0.1:8001 --livereload
 
 # Build de validation
 properdocs build -f properdocs.yml --strict
+
+# Contrôle de parité plugins / requirements (à lancer avant de committer)
+python scripts/check_ci_parity.py
 ```
 
 > [!NOTE]
@@ -205,9 +228,10 @@ properdocs build -f properdocs.yml --strict
 Le déploiement est automatisé via **GitHub Actions** (`deploy.yml`) :
 
 1. **Push sur `main`** → déclenche le workflow
-2. **Build strict** → validation des warnings comme erreurs
-3. **Upload artifact** → upload du site généré
-4. **Deploy** → déploiement sur GitHub Pages
+2. **Contrôle de parité** → `scripts/check_ci_parity.py` vérifie que chaque plugin déclaré dans `properdocs.yml` est bien installé par `requirements-ci.txt`
+3. **Build strict** → le build échoue au moindre avertissement (liens cassés, références manquantes)
+4. **Upload artifact** → archivage du site généré
+5. **Deploy** → déploiement sur GitHub Pages
 
 Le workflow utilise `fetch-depth: 0` pour conserver l'historique git complet (nécessaire pour `git-revision-date-localized`).
 

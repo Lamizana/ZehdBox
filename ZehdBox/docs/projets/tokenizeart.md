@@ -47,7 +47,13 @@ Un **NFT** `Zehd42 (Z42)` conforme à la norme **BEP-721 / ERC-721**, déployé 
 
 **L'objectif** : comprendre concrètement le cycle de vie d'un **jeton non fongible** en créant, minant et vérifiant un NFT réel sur un réseau de test, sans jamais engager d'argent réel.
 
-C'est le second volet de mon parcours blockchain après [Tokenizer](tokenizer.md) : là où un token BEP-20 est **fongible** (un G42 en vaut un autre), un NFT est **unique** - et cette unicité change tout : identifiant propre, métadonnées externalisées, notion de propriété.
+C'est le second volet de mon parcours blockchain après [Tokenizer](tokenizer.md) : là où un token BEP-20 est **fongible** (un G42 en vaut un autre), un NFT est **unique** !
+
+**Cette unicité change tout**:
+
+- Identifiant propre
+- Métadonnées externalisées
+- Notion de propriété.
 
 ---
 
@@ -69,9 +75,13 @@ Projet **100 % solo**, mené de bout en bout :
 
 Un **contrat unique** `Zehd42` qui **hérite** de `ERC721URIStorage` et d'`Ownable` (OpenZeppelin v5.1.0). L'héritage fournit les fonctions natives de la norme : `ownerOf`, `balanceOf`, `transferFrom`, `safeTransferFrom`, `approve`…
 
-Le contrat ajoute sa **logique métier** : un compteur d'identifiants (`_tokenIds`), un `mintNFT` réservé au propriétaire, et un `setBaseURI` pour faire évoluer l'emplacement des métadonnées sans redéployer.
+Le contrat ajoute sa **logique métier** :
 
-```
+- Un compteur d'identifiants (`_tokenIds`).
+- Un `mintNFT` réservé au propriétaire
+- Un `setBaseURI` pour faire évoluer l'emplacement des métadonnées sans redéployer.
+
+```console
 Zehd42 is ERC721URIStorage, Ownable (OpenZeppelin v5.1.0)
 ├── from ERC721  : ownerOf, balanceOf, transferFrom, safeTransferFrom, approve…
 ├── from Ownable : onlyOwner, transferOwnership
@@ -80,7 +90,10 @@ Zehd42 is ERC721URIStorage, Ownable (OpenZeppelin v5.1.0)
 └── setBaseURI() : change l'URI des prochains mints (jetons déjà minés inchangés)
 ```
 
-Les données sont réparties sur **deux étages** : la **blockchain** porte le contrat, la propriété et le `tokenId` ; **IPFS** porte l'image et le JSON de métadonnées, référencés par `tokenURI`.
+Les données sont réparties sur **deux étages** :
+
+- La **blockchain** porte le contrat, la propriété.
+- Le `tokenId`: **IPFS** porte l'image et le JSON de métadonnées, référencés par `tokenURI`.
 
 !!! note "Pourquoi stocker l'image hors chaîne ?"
     Écrire une image dans la blockchain coûterait des sommes considérables. Le contrat ne stocke donc que l'**empreinte** du fichier : c'est le rôle du CID IPFS. Voir [IPFS & Pinata](../web/web3/ipfs.md).
@@ -124,15 +137,15 @@ Les données sont réparties sur **deux étages** : la **blockchain** porte le c
 
 | Fonction | Rôle | Accès |
 | -------- | ---- | ----- |
-| `mintNFT(recipient)` | Créer un NFT unique et lui associer les métadonnées | Propriétaire |
-| `ownerOf(tokenId)` | Connaître le propriétaire d'un NFT | Lecture |
-| `balanceOf(owner)` | Nombre de NFT détenus par une adresse | Lecture |
-| `tokenURI(tokenId)` | URL des métadonnées IPFS associées | Lecture |
-| `baseURI()` | URI de base utilisée pour les prochains mints | Lecture |
-| `transferFrom(from, to, tokenId)` | Transférer un NFT | Propriétaire ou approuvé |
-| `safeTransferFrom(...)` | Transfert sûr vers un contrat | Propriétaire ou approuvé |
-| `approve` / `setApprovalForAll` | Autoriser un tiers à transférer | Propriétaire |
-| `setBaseURI(newURI)` | Changer l'URI des prochains mints | Propriétaire |
+| **`mintNFT(recipient)`** | Créer un NFT unique et lui associer les métadonnées | *Propriétaire* |
+| **`ownerOf(tokenId)`** | Connaître le propriétaire d'un NFT | Lecture |
+| **`balanceOf(owner)`** | Nombre de NFT détenus par une adresse | Lecture |
+| **`tokenURI(tokenId)`** | URL des métadonnées IPFS associées | Lecture |
+| **`baseURI()`** | URI de base utilisée pour les prochains mints | Lecture |
+| **`transferFrom(from, to, tokenId)`** | Transférer un NFT | Propriétaire ou approuvé |
+| **`safeTransferFrom(...)`** | Transfert sûr vers un contrat | Propriétaire ou approuvé |
+| **`approve`** / **`setApprovalForAll`** | Autoriser un tiers à transférer | Propriétaire |
+| **`setBaseURI(newURI)`** | Changer l'URI des prochains mints | Propriétaire |
 
 ---
 
@@ -141,7 +154,7 @@ Les données sont réparties sur **deux étages** : la **blockchain** porte le c
 | Problème | Solution |
 | -------- | -------- |
 | Un NFT doit être **unique**, contrairement à un token fongible | Norme BEP-721 : à chaque mint, un `tokenId` incrémenté par le compteur `_tokenIds` |
-| Stocker l'œuvre sur la blockchain serait hors de prix | Image et métadonnées publiées sur **IPFS** ; seul le CID est référencé par le contrat |
+| Stocker l'œuvre sur la blockchain serait hors de prix | Image et métadonnées publiées sur **IPFS** : seul le CID est référencé par le contrat |
 | Un lien vers un serveur central peut mourir | Épinglage IPFS via **Pinata** : le CID reste résolvable, sans point de défaillance unique |
 | Les wallets affichent une case vide au lieu de l'image | `tokenURI` pointe vers le **JSON de métadonnées**, dont le champ `image` utilise une **URL HTTPS de passerelle** (et non `ipfs://`) |
 | Un caractère parasite peut casser l'affichage | Champs d'URL vérifiés caractère par caractère (bug rencontré et corrigé en cours de projet) |
@@ -157,7 +170,7 @@ Les données sont réparties sur **deux étages** : la **blockchain** porte le c
 - Smart contract `0x3fcCab7bb70aa5BCA5706B83e6Fcf08F80526ce9` déployé sur la **BSC Testnet** ([transaction de déploiement](https://testnet.bscscan.com/tx/0x717d3eaf6b7001b2dee9e4cc29d15b94fb7023ce89e42379c3c475ddb5663232){ target="_blank" rel="noopener" })
 - Contrat **vérifié sur BscScan** : code source public, transactions traçables
 - NFT **`Zehd42 (Z42)`**, jeton unique conforme à la norme **BEP-721**
-- **tokenId `1`** miné vers `0x69eF124b2033A69C6061cf88FfFBAE913E169fB2`, propriété vérifiée par `ownerOf(1)`
+- **tokenId `1`** miné vers `0x**************`, propriété vérifiée par `ownerOf(1)`
 - `tokenURI(1)` renvoie les métadonnées **IPFS** (CID JSON : `bafkrei…numeb4pe`)
 - **Deux fichiers épinglés** sur IPFS via Pinata : l'image (`bafybei…44eejcu`) et son JSON de métadonnées
 - Code source, livre blanc et tutoriel documentés dans le dépôt
@@ -169,7 +182,8 @@ Les données sont réparties sur **deux étages** : la **blockchain** porte le c
 
 ## <span class="h2">Ce que j'ai appris</span>
 
-La différence entre un token **fongible** et un NFT n'est pas cosmétique : un NFT vit sur **deux étages**, et c'est cette séparation qui le fait tenir. Le contrat garantit l'unicité et la propriété ; **IPFS** garantit la pérennité de l'œuvre. Déployer le contrat ne suffit donc pas - il faut aussi **publier et épingler** les fichiers, et vérifier que le lien entre les deux est correct.
+La différence entre un token **fongible** et un NFT n'est pas cosmétique : un NFT vit sur **deux étages**, et c'est cette séparation qui le fait tenir. Le contrat garantit l'unicité et la propriété. **IPFS** garantit la pérennité de l'œuvre.
+Déployer le contrat ne suffit donc pas, il faut aussi **publier et épingler** les fichiers, et vérifier que le lien entre les deux est correct.
 
 Le lien est justement le point le plus fragile : une URL avec un espace en trop, un `tokenURI` qui pointe vers l'image plutôt que vers le JSON, et le wallet affiche une **case vide** alors que tout est « déployé ». Raisonner sur les **données avant la mise en ligne**, et non après, reste la compétence centrale du développement blockchain.
 
@@ -192,5 +206,7 @@ Tu veux reproduire ce projet ? Consulte ce tutoriel qui couvre l'intégralité d
 ## <span class="h2">Lien</span>
 
 [:fontawesome-brands-github: Voir le code](https://github.com/Lamizana/TokenizeArt){ .md-button .md-button--primary target="_blank" rel="noopener" }
+
 [:octicons-verified-24: Contrat sur BscScan](https://testnet.bscscan.com/address/0x3fcCab7bb70aa5BCA5706B83e6Fcf08F80526ce9){ .md-button target="_blank" rel="noopener" }
+
 [:simple-ipfs: Métadonnées sur IPFS](https://gateway.pinata.cloud/ipfs/bafkreibd2pph7dcwz7ewgtr73x3iwxmibux4bsb5ebqtg242n2numeb4pe){ .md-button target="_blank" rel="noopener" }

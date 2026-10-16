@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Material_for_MkDocs-9-526CFE?style=for-the-badge&logo=markdown&logoColor=white" alt="Material for MkDocs">
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/GitHub_Pages-deployed-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages">
-  <img src="https://img.shields.io/badge/ProperDocs-1.6.7-blue?style=for-the-badge" alt="ProperDocs">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License MIT">
+  <a href="https://squidfunk.github.io/mkdocs-material/"><img src="https://img.shields.io/badge/Material_for_MkDocs-9-526CFE?style=for-the-badge&logo=markdown&logoColor=white" alt="Material for MkDocs"></a>
+  <a href="https://docs.python.org/3/"><img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://pages.github.com/"><img src="https://img.shields.io/badge/GitHub_Pages-deployed-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages"></a>
+  <a href="https://pypi.org/project/properdocs/"><img src="https://img.shields.io/badge/ProperDocs-1.6.7-blue?style=for-the-badge" alt="ProperDocs"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License MIT"></a>
 </p>
 
 <h1 align="center">ZehdBox</h1>
@@ -85,13 +85,13 @@ Contenu structuré, déployé automatiquement via GitHub Actions sur GitHub Page
 
 | Catégorie | Technologie | Badge |
 | --- | --- | --- |
-| **Générateur** | ProperDocs + Material for MkDocs | ![](https://img.shields.io/badge/ProperDocs-1.6.7-blue) |
-| **Thème** | Material for MkDocs | ![](https://img.shields.io/badge/Material_for_MkDocs-9-dark?logo=markdown&logoColor=white) |
-| **Langage** | Python 3.12 | ![](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white) |
-| **Extensions** | PyMdown, Mermaid, Admonitions, Content Tabs | ![](https://img.shields.io/badge/Extensions-Markdown-orange) |
-| **CI/CD** | GitHub Actions | ![](https://img.shields.io/badge/GitHub_Actions-2023-dark?logo=githubactions&logoColor=white) |
-| **Hébergement** | GitHub Pages | ![](https://img.shields.io/badge/GitHub_Pages-brightgreen?logo=githubpages&logoColor=white) |
-| **Recherche** | Plugin search (built-in) | ![](https://img.shields.io/badge/Search-full--text-yellow) |
+| **Générateur** | ProperDocs + Material for MkDocs | [![ProperDocs](https://img.shields.io/badge/ProperDocs-1.6.7-blue)](https://pypi.org/project/properdocs/) |
+| **Thème** | Material for MkDocs | [![Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-9-dark?logo=markdown&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) |
+| **Langage** | Python 3.12 | [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://docs.python.org/3/) |
+| **Extensions** | PyMdown, Mermaid, Admonitions, Content Tabs | [![Extensions Markdown](https://img.shields.io/badge/Extensions-Markdown-orange)](https://facelessuser.github.io/pymdown-extensions/) |
+| **CI/CD** | GitHub Actions | [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2023-dark?logo=githubactions&logoColor=white)](https://docs.github.com/en/actions) |
+| **Hébergement** | GitHub Pages | [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-brightgreen?logo=githubpages&logoColor=white)](https://pages.github.com/) |
+| **Recherche** | Plugin search (built-in) | [![Search](https://img.shields.io/badge/Search-full--text-yellow)](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/) |
 
 ### Extensions Markdown activées
 
@@ -160,15 +160,15 @@ ZehdBox/
 
 | Projet | Description | Stack |
 | --- | --- | --- |
-| [**Transcendance**](https://lamizana.github.io/ZehdBox/projets/transcendance/) | Pong multijoueur local - solo, 1v1, 4 joueurs, tournoi | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) |
-| [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokenizer/) | Token BEP-20 GOLD42 (BNB Smart Chain testnet) | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![BEP-20](https://img.shields.io/badge/BEP--20-purple) ![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4) |
-| [**TokenizeArt**](https://lamizana.github.io/ZehdBox/projets/tokenizeart/) | NFT BEP-721 `Zehd42` sur BNB Smart Chain testnet, métadonnées sur IPFS | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![BEP-721](https://img.shields.io/badge/BEP--721-purple) ![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4) ![IPFS](https://img.shields.io/badge/IPFS-65C4ED?logo=ipfs&logoColor=white) ![Pinata](https://img.shields.io/badge/Pinata-purple) |
-| [**Linear Regression**](https://lamizana.github.io/ZehdBox/projets/linear-regression/) | Régression linéaire - descente de gradient (projet 42) | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) |
-| [**DSLR**](https://lamizana.github.io/ZehdBox/projets/dslr/) | Régression logistique multiclasse - le Choixpeau de Poudlard (projet 42) | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=python&logoColor=white) |
-| [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell/) | Interpréteur de commandes UNIX | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![UNIX](https://img.shields.io/badge/UNIX-dark) |
-| [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc/) | Serveur IRC en C++ (RFC 2810-2813) | ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white) ![RFC 2810-2813](https://img.shields.io/badge/RFC%202810--2813-blue) |
-| [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap/) | Algorithme de tri optimisé en C | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![Algorithmique](https://img.shields.io/badge/Algorithmique-red) |
-| [**So Long**](https://lamizana.github.io/ZehdBox/projets/so_long/) | Jeu 2D en C (MiniLibX) | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![MiniLibX](https://img.shields.io/badge/MiniLibX-blue) |
+| [**Transcendance**](https://lamizana.github.io/ZehdBox/projets/transcendance/) | Pong multijoueur local - solo, 1v1, 4 joueurs, tournoi | [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/3/) [![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)](https://docs.djangoproject.com/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/docs/) [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/) [![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)](https://nginx.org/en/docs/) |
+| [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokenizer/) | Token BEP-20 GOLD42 (BNB Smart Chain testnet) | [![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)](https://docs.soliditylang.org/) [![BEP-20](https://img.shields.io/badge/BEP--20-purple)](https://eips.ethereum.org/EIPS/eip-20) [![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4)](https://docs.openzeppelin.com/) |
+| [**TokenizeArt**](https://lamizana.github.io/ZehdBox/projets/tokenizeart/) | NFT BEP-721 `Zehd42` sur BNB Smart Chain testnet, métadonnées sur IPFS | [![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white)](https://docs.soliditylang.org/) [![BEP-721](https://img.shields.io/badge/BEP--721-purple)](https://eips.ethereum.org/EIPS/eip-721) [![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4)](https://docs.openzeppelin.com/) [![IPFS](https://img.shields.io/badge/IPFS-65C4ED?logo=ipfs&logoColor=white)](https://docs.ipfs.tech/) [![Pinata](https://img.shields.io/badge/Pinata-purple)](https://docs.pinata.cloud/) |
+| [**Linear Regression**](https://lamizana.github.io/ZehdBox/projets/linear-regression/) | Régression linéaire - descente de gradient (projet 42) | [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/3/) [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/doc/) [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white)](https://matplotlib.org/stable/) |
+| [**DSLR**](https://lamizana.github.io/ZehdBox/projets/dslr/) | Régression logistique multiclasse - le Choixpeau de Poudlard (projet 42) | [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/3/) [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/doc/) [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/) [![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=python&logoColor=white)](https://seaborn.pydata.org/) |
+| [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell/) | Interpréteur de commandes UNIX | [![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)](https://en.cppreference.com/w/c) [![UNIX](https://img.shields.io/badge/UNIX-dark)](https://fr.wikipedia.org/wiki/Unix) |
+| [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc/) | Serveur IRC en C++ (RFC 2810-2813) | [![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)](https://en.cppreference.com/w/cpp) [![RFC 2810-2813](https://img.shields.io/badge/RFC%202810--2813-blue)](https://datatracker.ietf.org/doc/html/rfc2812) |
+| [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap/) | Algorithme de tri optimisé en C | [![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)](https://en.cppreference.com/w/c) [![Algorithmique](https://img.shields.io/badge/Algorithmique-red)](https://fr.wikipedia.org/wiki/Algorithme) |
+| [**So Long**](https://lamizana.github.io/ZehdBox/projets/so_long/) | Jeu 2D en C (MiniLibX) | [![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)](https://en.cppreference.com/w/c) [![MiniLibX](https://img.shields.io/badge/MiniLibX-blue)](https://harm-smits.github.io/42docs/libs/minilibx) |
 
 ---
 

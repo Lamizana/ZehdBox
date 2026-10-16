@@ -337,7 +337,7 @@ style(css): corrige le contraste des cartes en mode sombre
 
 ## Auteur
 
-**Alex Lamizana** — étudiant à 42 Angoulême, spécialisation Data & IA
+**Alex Lamizana**, étudiant à 42 Angoulême, spécialisation Data & IA
 
 - [Site](https://lamizana.github.io/ZehdBox/)
 - [GitHub](https://github.com/Lamizana)
@@ -347,10 +347,10 @@ style(css): corrige le contraste des cartes en mode sombre
 
 ## Remerciements
 
-- [ProperDocs](https://pypi.org/project/properdocs/) — générateur du site, successeur maintenu de MkDocs
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) — thème du site
-- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) — onglets, admonitions, emoji
-- [shields.io](https://shields.io/) — badges de ce README
+- [ProperDocs](https://pypi.org/project/properdocs/) : générateur du site, successeur maintenu de MkDocs
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) : thème du site
+- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) : onglets, admonitions, emoji
+- [shields.io](https://shields.io/) : badges de ce README
 
 ---
 

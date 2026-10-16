@@ -253,7 +253,7 @@ Tu veux reproduire ce projet pas à pas ?
 
 Le tutoriel couvre la théorie, la descente de gradient, la méthode des moindres carrés, l'évaluation et la visualisation avec le vrai code du dépôt.
 
-[:octicons-arrow-right-24: Commencer le tutoriel](../cours/python/linear-regression.md){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: Commencer le tutoriel](../ia/linear-regression.md){ .md-button .md-button--primary }
 
 </div>
 

@@ -1,6 +1,6 @@
 # TODO — Indexation Google du site ZehdBox
 
-> **Objectif** : faire indexer les **88 URLs** du site par Google.
+> **Objectif** : faire indexer les **91 URLs** du site par Google.
 > **Chemin critique** : l'**inspection d'URL**, page par page (§1) — **pas** le sitemap (voir la note ci-dessous).
 > **Cockpit** : [Google Search Console](https://search.google.com/search-console) · **Site** : https://lamizana.github.io/ZehdBox/
 
@@ -11,7 +11,7 @@
 État au 2026-09-30 — Search Console affiche « **Impossible de lire le sitemap** », **0 page découverte**.
 
 - La doc Google classe ce message comme une **erreur de récupération (fetch)**, pas d'analyse (parsing).
-- Le fichier est pourtant **provably valide** : XML bien formé, **validé contre le XSD officiel sitemaps.org**, namespace `0.9`, 88 `<loc>` toutes vérifiées en **HTTP 200**, `application/xml`, **0 redirection**, aucun blocage `robots.txt`.
+- Le fichier est pourtant **provably valide** : XML bien formé, **validé contre le XSD officiel sitemaps.org**, namespace `0.9`, 91 `<loc>` toutes vérifiées en **HTTP 200**, `application/xml`, **0 redirection**, aucun blocage `robots.txt`.
 - L'URL est **active** au test en direct de Google (Inspection d'URL → Tester l'URL réelle).
 - Causes probables restantes : **erreur générale transitoire** et **faible demande d'exploration** sur un site récent. La doc précise que Google **cesse d'essayer** après plusieurs échecs, puis qu'il faut renvoyer le sitemap.
 
@@ -21,7 +21,7 @@
 >
 > Et : *« submitting a sitemap is merely a hint »*.
 
-ZehdBox : **84 pages**, toutes atteignables depuis l'accueil (nav + maillage interne) → le chemin garanti est l'**inspection d'URL** (§1).
+ZehdBox : **87 pages**, toutes atteignables depuis l'accueil (nav + maillage interne) → le chemin garanti est l'**inspection d'URL** (§1).
 
 **Suivi** : laisser le sitemap soumis, **ne pas le resoumettre en boucle**. Recontrôler la ligne Search Console vers le **07/10/2026**.
 
@@ -64,6 +64,7 @@ Ces pages portent l'image professionnelle du site (recruteurs, clients) : à ind
 - [X] [ft_irc - Serveur IRC en C++ (multi-clients, canaux, opérateurs)](https://lamizana.github.io/ZehdBox/projets/ft_irc/)
 - [X] [Transcendance - Pong multijoueur local](https://lamizana.github.io/ZehdBox/projets/transcendance/)
 - [X] [Linear Regression - Descente de gradient](https://lamizana.github.io/ZehdBox/projets/linear-regression/)
+- [ ] [DSLR - Le Choixpeau par régression logistique](https://lamizana.github.io/ZehdBox/projets/dslr/)
 - [X] [Tokenizer - Smart contract BEP-20 sur BNB Smart Chain](https://lamizana.github.io/ZehdBox/projets/tokenizer/)
 - [X] [À Propos](https://lamizana.github.io/ZehdBox/about/)
 - [X] [Contact](https://lamizana.github.io/ZehdBox/contact/)
@@ -110,7 +111,12 @@ Ces pages portent l'image professionnelle du site (recruteurs, clients) : à ind
 - [X] [Analyse Météo](https://lamizana.github.io/ZehdBox/cours/python/pandas/tutoriel-meteo/)
 - [X] [Exercices Météo](https://lamizana.github.io/ZehdBox/cours/python/pandas/exercice-meteo/)
 - [X] [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/)
-- [X] [Régression linéaire - le machine learning en pratique](https://lamizana.github.io/ZehdBox/cours/python/linear-regression/)
+
+**IA**
+
+- [ ] [Intelligence Artificielle](https://lamizana.github.io/ZehdBox/ia/)
+- [ ] [Régression linéaire - le machine learning en pratique](https://lamizana.github.io/ZehdBox/ia/linear-regression/) ⚠️ ancienne URL `/cours/python/linear-regression/` → 404 (pas de redirection)
+- [ ] [Régression logistique - le Choixpeau de Poudlard](https://lamizana.github.io/ZehdBox/ia/dslr/)
 
 ## 4. 📚 Programmation — MkDocs
 
@@ -202,14 +208,14 @@ De même, `docs/cours/python/_template-exercice.md` est exclu du build (`exclude
 ## 12. ⚠️ Points de vigilance SEO (avant/pendant l'indexation)
 
 - [ ] `docs/blog/index.md` → frontmatter `title: MyBlog` : remplacer par un titre explicite (« Blog — notes & articles »), il apparaît dans les résultats Google.
-- [ ] Contenus proches à départager : `projets/linear-regression/` vs `cours/python/linear-regression/`, et `projets/tokenizer/` vs `web/web3/tokenizer/`. Vérifier qu'ils ne se cannibalisent pas (contenu réellement différent, liens croisés).
+- [ ] Contenus proches à départager : `projets/linear-regression/` vs `ia/linear-regression/`, `projets/dslr/` vs `ia/dslr/`, et `projets/tokenizer/` vs `web/web3/tokenizer/`. Vérifier qu'ils ne se cannibalisent pas (contenu réellement différent, liens croisés).
 - [ ] Catégories du blog : les emojis (📚 🧪 🤖) sont retirés des URLs → `/blog/category/-culture/`. Fonctionnel, mais URL peu lisible.
 - [ ] 5 fiches projets sur 7 n'ont **pas de démo live** (Push Swap, Minishell, ft_irc, Transcendance, Linear Regression). Les 7 renvoient bien vers le code sur GitHub, mais seuls Tokenizer (contrat BscScan) et So Long (vidéo locale) montrent un résultat exécutable. Une démo ou des captures commentées renforcent la perception de contenu substantiel — critère d'indexation chez Google.
 - [ ] Vérifier le rendu mobile et la vitesse (Search Console → *Signaux web essentiels*).
 
 ## 13. 📈 Suivi après indexation
 
-- [ ] Search Console → *Indexation → Pages* : viser 88 URLs « Indexée » (les 84 pages + 4 pages blog auto)
+- [ ] Search Console → *Indexation → Pages* : viser 91 URLs « Indexée » (les 87 pages + 4 pages blog auto)
 - [ ] Traiter les « Détectée, actuellement non indexée » (souvent : contenu jugé trop léger)
 - [ ] Search Console → *Performances* : relever les premières requêtes et impressions
 - [ ] Re-soumettre le sitemap après chaque ajout de page (le fichier est régénéré à chaque déploiement)

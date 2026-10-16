@@ -73,6 +73,16 @@ icon: material/rocket-launch
 
     [:octicons-arrow-right-24: Découvrir](linear-regression.md)
 
+-   :material-brain:{ .lg .middle } __DSLR__
+
+    ---
+
+    **Projet 42** : le Choixpeau de Poudlard reconstruit par une **régression logistique multiclasse** one-vs-all codée de zéro - analyse, visualisation et descente de gradient.
+
+    `Python` `NumPy` `Pandas` `Seaborn` `Classification`
+
+    [:octicons-arrow-right-24: Découvrir](dslr.md)
+
 -   :material-console:{ .lg .middle } __Minishell__
 
     ---

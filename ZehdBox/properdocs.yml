@@ -20,6 +20,7 @@ nav:
       - ft_irc: projets/ft_irc.md
       - Transcendance: projets/transcendance.md
       - Linear Regression: projets/linear-regression.md
+      - DSLR: projets/dslr.md
       - Tokenizer: projets/tokenizer.md
       - TokenizeArt: projets/tokenizeart.md
 
@@ -59,7 +60,6 @@ nav:
                   - Cours Météo: cours/python/pandas/tutoriel-meteo.md
                   - Exercices Météo: cours/python/pandas/exercice-meteo.md
               - Scikit-learn: cours/python/scikit-learn.md
-              - Régression linéaire: cours/python/linear-regression.md
 
       - MkDocs:
           - mkdocs/index.md
@@ -79,6 +79,11 @@ nav:
               - Effets: strudel/tutoriel-effets.md
           - Exercices:
               - strudel/exercice-strudel.md
+
+  - IA:
+      - ia/index.md
+      - Régression linéaire: ia/linear-regression.md
+      - DSLR: ia/dslr.md
 
   - Système:
       - systeme/index.md
@@ -208,6 +213,10 @@ theme:
       serveur: material/server
       jeu: material/gamepad-variant
       machine-learning: material/robot
+      intelligence-artificielle: material/brain
+      classification: material/shape-outline
+      regression: material/chart-line
+      datascience: material/database-outline
       strudel: material/music
       musique: material/music-note
       cours: material/school
@@ -333,6 +342,10 @@ extra:
     serveur: serveur
     jeu: jeu
     machine-learning: machine-learning
+    intelligence-artificielle: intelligence-artificielle
+    classification: classification
+    regression: regression
+    datascience: datascience
     strudel: strudel
     musique: musique
     cours: cours

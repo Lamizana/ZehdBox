@@ -26,6 +26,14 @@ icon: material/school
 
     [:octicons-arrow-right-24: Python](python/index.md)
 
+- :material-brain:{ .lg .middle } __IA__
+
+    ---
+
+    Intelligence artificielle et machine learning : les modèles codés de zéro, de la régression à la classification.
+
+    [:octicons-arrow-right-24: IA](../ia/index.md)
+
 - :simple-django:{ .lg .middle } __Django__
 
     ---

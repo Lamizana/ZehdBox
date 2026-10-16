@@ -123,6 +123,17 @@ icon: material/account
     </div>
 </div>
 
+<div class="project-card">
+    <h3><a href="https://github.com/Lamizana/DSLR" class="md-button md-button--primary" target="_blank" rel="noopener">
+        DSLR
+    </a></h3>
+    <p class="project-desc">Machine learning - Classification multiclasse (régression logistique one-vs-all) codée de zéro : analyse, visualisation et descente de gradient</p>
+    <div class="project-tech-badges">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+        <img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn">
+    </div>
+</div>
+
 </div>
 
 <div class="about-cta" markdown="1">

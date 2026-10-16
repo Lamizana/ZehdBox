@@ -69,7 +69,7 @@ Contenu structuré, déployé automatiquement via GitHub Actions sur GitHub Page
 ## Fonctionnalités
 
 - **Cours Python complet** : bases du langage, exercices, fonctions, bibliothèques (NumPy, Pandas, Scikit-learn), régression linéaire, Django
-- **8 fiches projets** détaillées : contexte, stack, défis techniques, résultats
+- **9 fiches projets** détaillées : contexte, stack, défis techniques, résultats
 - **Blog technique** avec articles et images
 - **Cours Système** : Linux, Windows
 - **Cours Web** : Web2, Web3, blockchain
@@ -119,7 +119,7 @@ ZehdBox/
 │   ├── properdocs.yml              # Configuration du site
 │   ├── docs/
 │   │   ├── index.md                # Accueil
-│   │   ├── projets/                # 8 fiches projets
+│   │   ├── projets/                # 9 fiches projets
 │   │   ├── cours/
 │   │   │   ├── index.md            # Hub des cours
 │   │   │   └── python/
@@ -130,8 +130,8 @@ ZehdBox/
 │   │   │       ├── numpy/          # NumPy + projet Dés
 │   │   │       ├── pandas/         # Pandas + tutoriel et exercices Météo
 │   │   │       ├── scikit-learn.md # Machine learning
-│   │   │       ├── linear-regression.md  # Tutoriel régression linéaire
 │   │   │       └── django/         # Installation, modèles, vues, templates
+│   │   ├── ia/                     # Intelligence artificielle : régression linéaire, DSLR
 │   │   ├── blog/                   # Articles techniques
 │   │   ├── systeme/                # Linux & Windows
 │   │   ├── web/                    # Web 2.0, Web 3.0, blockchain
@@ -156,7 +156,7 @@ ZehdBox/
 
 ## Projets
 
-> **Inventaire complet des 8 fiches projets** (même liste et ordre que [`projets/index.md`](https://lamizana.github.io/ZehdBox/projets/)).
+> **Inventaire complet des 9 fiches projets** (même liste et ordre que [`projets/index.md`](https://lamizana.github.io/ZehdBox/projets/)).
 
 | Projet | Description | Stack |
 | --- | --- | --- |
@@ -164,6 +164,7 @@ ZehdBox/
 | [**Tokenizer**](https://lamizana.github.io/ZehdBox/projets/tokenizer/) | Token BEP-20 GOLD42 (BNB Smart Chain testnet) | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![BEP-20](https://img.shields.io/badge/BEP--20-purple) ![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4) |
 | [**TokenizeArt**](https://lamizana.github.io/ZehdBox/projets/tokenizeart/) | NFT BEP-721 `Zehd42` sur BNB Smart Chain testnet, métadonnées sur IPFS | ![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=white) ![BEP-721](https://img.shields.io/badge/BEP--721-purple) ![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-4E5EE4) ![IPFS](https://img.shields.io/badge/IPFS-65C4ED?logo=ipfs&logoColor=white) ![Pinata](https://img.shields.io/badge/Pinata-purple) |
 | [**Linear Regression**](https://lamizana.github.io/ZehdBox/projets/linear-regression/) | Régression linéaire - descente de gradient (projet 42) | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) |
+| [**DSLR**](https://lamizana.github.io/ZehdBox/projets/dslr/) | Régression logistique multiclasse - le Choixpeau de Poudlard (projet 42) | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=python&logoColor=white) |
 | [**Minishell**](https://lamizana.github.io/ZehdBox/projets/minishell/) | Interpréteur de commandes UNIX | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![UNIX](https://img.shields.io/badge/UNIX-dark) |
 | [**ft_irc**](https://lamizana.github.io/ZehdBox/projets/ft_irc/) | Serveur IRC en C++ (RFC 2810-2813) | ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white) ![RFC 2810-2813](https://img.shields.io/badge/RFC%202810--2813-blue) |
 | [**Push Swap**](https://lamizana.github.io/ZehdBox/projets/push_swap/) | Algorithme de tri optimisé en C | ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) ![Algorithmique](https://img.shields.io/badge/Algorithmique-red) |
@@ -180,12 +181,19 @@ ZehdBox/
 | **Les bases** | Variables, types, opérateurs, chaînes, flux, répétitives | [Bases](https://lamizana.github.io/ZehdBox/cours/python/bases/) |
 | **Exercices** | 15 exercices de révision + exercices chaînes | [Exercices](https://lamizana.github.io/ZehdBox/cours/python/exercices/) |
 | **Fonctions** | Définir, appeler, return, portée, docstrings | [Fonctions](https://lamizana.github.io/ZehdBox/cours/python/fonctions/) |
-| **Bibliothèques** | Le parcours data science : point d'entrée des quatre sections suivantes | [Bibliothèques](https://lamizana.github.io/ZehdBox/cours/python/librairies/) |
+| **Bibliothèques** | Le parcours data science : point d'entrée des trois sections suivantes | [Bibliothèques](https://lamizana.github.io/ZehdBox/cours/python/librairies/) |
 | ↳ **NumPy** | Tableaux, opérations vectorielles, projet Dés | [NumPy](https://lamizana.github.io/ZehdBox/cours/python/numpy/) |
 | ↳ **Pandas** | DataFrames, tutoriel Météo, exercices API | [Pandas](https://lamizana.github.io/ZehdBox/cours/python/pandas/) |
 | ↳ **Scikit-learn** | Machine learning : classification, régression | [Scikit-learn](https://lamizana.github.io/ZehdBox/cours/python/scikit-learn/) |
-| ↳ **Régression linéaire** | Moindres carrés et descente de gradient codés de zéro | [Régression linéaire](https://lamizana.github.io/ZehdBox/cours/python/linear-regression/) |
 | **Django** | Installation, Docker & PostgreSQL, modèles, vues, templates | [Django](https://lamizana.github.io/ZehdBox/cours/python/django/) |
+
+### IA
+
+| Section | Contenu | Lien |
+| --- | --- | --- |
+| **Intelligence Artificielle** | Les modèles codés de zéro : régression linéaire et régression logistique | [IA](https://lamizana.github.io/ZehdBox/ia/) |
+| ↳ **Régression linéaire** | Moindres carrés et descente de gradient codés de zéro | [Régression linéaire](https://lamizana.github.io/ZehdBox/ia/linear-regression/) |
+| ↳ **DSLR** | Régression logistique multiclasse : le Choixpeau de Poudlard | [DSLR](https://lamizana.github.io/ZehdBox/ia/dslr/) |
 
 ### Autres domaines
 
@@ -315,7 +323,7 @@ Le projet suit [Conventional Commits](https://www.conventionalcommits.org/fr/), 
 | `chore` | Maintenance, dépendances, outillage |
 | `revert` | Annulation d'un commit |
 
-**Scopes** : `nav`, `python`, `exercices`, `projets`, `web`, `systeme`, `blog`, `css`, `config`, `seo`, `readme`, `deps`, `ci`.
+**Scopes** : `nav`, `ia`, `python`, `exercices`, `projets`, `web`, `systeme`, `blog`, `css`, `config`, `seo`, `readme`, `deps`, `ci`.
 
 Exemples issus de l'historique du dépôt :
 

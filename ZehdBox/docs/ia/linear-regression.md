@@ -315,10 +315,10 @@ plt.savefig("regression_lineaire.png")
 
 ## <span class="h2">Pour aller plus loin</span>
 
-- **[Scikit-learn](scikit-learn.md)** : la bibliothèque qui implémente `LinearRegression`, `train_test_split` et `cross_val_score` - maintenant que tu sais les coder, tu peux les utiliser sans mystère.
+- **[Scikit-learn](../cours/python/scikit-learn.md)** : la bibliothèque qui implémente `LinearRegression`, `train_test_split` et `cross_val_score` - maintenant que tu sais les coder, tu peux les utiliser sans mystère.
 - **Régression multiple** : plusieurs variables explicatives (km, âge, motorisation…) → l'équation devient `ŷ = θ₀ + θ₁x₁ + θ₂x₂ + …` et le raisonnement reste le même.
 - **Régularisation** : Ridge / Lasso pour limiter le surapprentissage.
-- Le projet complet - la **fiche 42** de la descente de gradient, avec son architecture et ses résultats chiffrés : [**Linear Regression**](../../projets/linear-regression.md).
+- Le projet complet - la **fiche 42** de la descente de gradient, avec son architecture et ses résultats chiffrés : [**Linear Regression**](../projets/linear-regression.md).
 
 ---
 
@@ -328,7 +328,7 @@ plt.savefig("regression_lineaire.png")
 
     Tu maîtrises la régression linéaire de zéro : moindres carrés, descente de gradient, évaluation et visualisation.
 
--   :material-rocket-launch: **[Voir la fiche projet →](../../projets/linear-regression.md)**
+-   :material-rocket-launch: **[Voir la fiche projet →](../projets/linear-regression.md)**
 
     Contexte 42, architecture, résultats chiffrés et lien GitHub.
 

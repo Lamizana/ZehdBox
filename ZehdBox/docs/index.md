@@ -76,6 +76,18 @@ icon: material/home
 
     [:octicons-arrow-right-24: Découvrir](projets/linear-regression.md)
 
+- :material-brain:{ .lg .middle } __DSLR__
+
+    ---
+
+    **Classification** : Le Choixpeau de Poudlard reconstruit par une **régression logistique** multiclasse codée de zéro.
+
+    ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+    ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+    ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
+
+    [:octicons-arrow-right-24: Découvrir](projets/dslr.md)
+
 </div>
 
 [:fontawesome-solid-arrow-right: Voir tous les projets](projets/index.md){ .md-button .md-button--primary }

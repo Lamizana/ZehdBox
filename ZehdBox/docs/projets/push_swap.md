@@ -69,6 +69,26 @@ Le programme enchaîne quatre étapes : validation des arguments, construction d
 
 Chaque passage sépare les éléments selon un bit du rang, pour un total de `len_bit × n` opérations : **O(n log n)**.
 
+Sur un exemple de 6 éléments (le radix ne s'exécute qu'au-delà de 5) :
+
+```mermaid
+flowchart TD
+    V["valeurs : 15 -3 200 7 900 42"] --> N["normalisation<br/>indices 3 1 5 2 6 4"]
+    N --> P1["passe 1 · bit 0<br/>3 1 5 2 6 4 → 2 6 4 3 1 5"]
+    P1 --> P2["passe 2 · bit 1<br/>2 6 4 3 1 5 → 4 1 5 2 6 3"]
+    P2 --> P3["passe 3 · bit 2<br/>4 1 5 2 6 3 → 1 2 3 4 5 6"]
+    P3 --> R["pile triée : -3 7 15 42 200 900"]
+```
+
+| Passe | Bit testé | Écartés vers `b` | Instructions | Pile `a` après la passe |
+| --- | --- | --- | --- | --- |
+| — | normalisation | — | `15 -3 200 7 900 42` → `3 1 5 2 6 4` | `3 1 5 2 6 4` |
+| 1 | bit 0 (LSB) | `4 6 2` | `ra ra ra pb pb pb pa pa pa` | `2 6 4 3 1 5` |
+| 2 | bit 1 | `5 1 4` | `ra ra pb ra pb pb pa pa pa` | `4 1 5 2 6 3` |
+| 3 | bit 2 (MSB) | `3 2 1` | `ra pb ra pb ra pb pa pa pa` | `1 2 3 4 5 6` |
+
+27 instructions au total, sans qu'aucune comparaison de valeurs n'ait eu lieu.
+
 ---
 
 ## <span class="h2">Technologies</span>
@@ -125,14 +145,16 @@ Chaque passage sépare les éléments selon un bit du rang, pour un total de `le
 
 ## <span class="h2">Résultats</span>
 
-Mesures réelles produites par le programme (vérifiées avec le `checker_linux` officiel : `OK`) :
+Mesures réelles (moyenne sur 20 tirages, vérifiées avec le `checker_linux` officiel : `OK`) :
 
-| Taille | Opérations |
-|--------|-----------|
-| 3 éléments | ≤ 3 |
-| 5 éléments | ≤ 12 |
-| 100 éléments | ≈ 1081 |
-| 500 éléments | ≈ 6778 |
+| Taille | Mesuré (min–max) | Seuil de validation | Note maximale |
+| --- | --- | --- | --- |
+| 3 éléments | 1 (0–2) | — | — |
+| 5 éléments | 8 (0–11) | — | — |
+| 100 éléments | **1081** | ≤ 1 500 | ≤ 700 |
+| 500 éléments | **6778** | ≤ 11 500 | ≤ 5 500 |
+
+À 100 et 500 éléments, le nombre d'opérations est **constant quelle que soit la permutation** : le radix ne travaille que sur les index normalisés.
 
 Le programme **valide le checker** sur 100 et 500 éléments, et ne produit **aucune fuite mémoire** (testé via `valgrind`).
 

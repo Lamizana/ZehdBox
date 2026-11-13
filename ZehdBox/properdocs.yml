@@ -82,6 +82,7 @@ nav:
 
   - IA:
       - ia/index.md
+      - Histoire de l'IA: ia/histoire.md
       - Régression linéaire: ia/linear-regression.md
       - DSLR: ia/dslr.md
 

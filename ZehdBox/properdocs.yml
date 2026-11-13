@@ -85,6 +85,7 @@ nav:
       - Histoire de l'IA: ia/histoire.md
       - Régression linéaire: ia/linear-regression.md
       - DSLR: ia/dslr.md
+      - OpenCode: ia/opencode.md
 
   - Système:
       - systeme/index.md

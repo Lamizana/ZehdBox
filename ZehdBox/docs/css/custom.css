@@ -557,3 +557,24 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   border-color: var(--md-default-fg-color--lightest);
 }
+
+/* =========================== SCREENSHOT GALLERY =========================== */
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.screenshot-gallery .cli-demo {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .screenshot-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

@@ -47,10 +47,6 @@ tags:
 
     [:octicons-arrow-right-24: OpenChamber](#openchamber-interface-web-pour-opencode)
 
-    ![OpenCode Web - Session active](assets/opencode-web-active-session.png){ .cli-demo }
-    ![OpenCode Web - Nouvelle session](assets/opencode-web-new-session.png){ .cli-demo }
-    ![OpenCode Web - Voir les serveurs](assets/opencode-web-see-servers.png){ .cli-demo }
-
 -   :material-cellphone:{ .lg .middle } __Mobile__
 
     ---
@@ -76,6 +72,20 @@ tags:
     Environnement de développement agentique : desktop, web, VS Code, mobile. Inclut OpenCode pré-installé.
 
     [:octicons-arrow-right-24: OpenChamber](#openchamber-interface-web-pour-opencode)
+
+</div>
+
+---
+
+## <span class="h2">Aperçu de l'interface Web OpenCode</span>
+
+<div class="screenshot-gallery" markdown>
+
+![OpenCode Web - Session active](assets/opencode-web-active-session.png){ .cli-demo }
+
+![OpenCode Web - Nouvelle session](assets/opencode-web-new-session.png){ .cli-demo }
+
+![OpenCode Web - Voir les serveurs](assets/opencode-web-see-servers.png){ .cli-demo }
 
 </div>
 
@@ -257,9 +267,6 @@ tags:
 
     [:octicons-arrow-right-24: Télécharger](https://openchamber.dev/download/)
 
-    ![OpenChamber Desktop - Thème clair](assets/openchamber-desktop-light.png){ .cli-demo }
-    ![OpenChamber Desktop - Thème sombre](assets/openchamber-desktop-dark.png){ .cli-demo }
-
 -   :material-web:{ .lg .middle } __Web + PWA (auto-hébergé)__
 
     ---
@@ -297,7 +304,19 @@ tags:
     nix run github:openchamber/openchamber#gui    # Desktop
     ```
 
-    ![OpenChamber Multi-run & Fusion](assets/openchamber-multirun.png){ .cli-demo }
+</div>
+
+---
+
+## <span class="h2">Aperçu d'OpenChamber</span>
+
+<div class="screenshot-gallery" markdown>
+
+![OpenChamber Desktop - Thème clair](assets/openchamber-desktop-light.png){ .cli-demo }
+
+![OpenChamber Desktop - Thème sombre](assets/openchamber-desktop-dark.png){ .cli-demo }
+
+![OpenChamber Multi-run & Fusion](assets/openchamber-multirun.png){ .cli-demo }
 
 </div>
 

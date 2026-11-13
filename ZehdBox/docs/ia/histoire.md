@@ -52,6 +52,8 @@ Turing expose un test : "**Imitation Game**" (Le Jeu de l'Imitation)
 
 Son article fondateur ouvre la voie aux développements et expérimentations qui vont suivre, pour aboutir à la naissance des recherches sur l'intelligence artificielle en 1956.
 
+### <span class="h3">Article à télécharger</span>
+
 <div class="grid cards" markdown>
 
 - :material-file-pdf-box:{ .lg .middle } __Version anglaise originale__
@@ -92,13 +94,13 @@ Le SNARC a été conçu pour simuler un rat virtuel cherchant la sortie d'un lab
 
 ---
 
-## <span class="h2">1955-1956 — Vers Dartmouth : la naissance de l'IA</span>
+## <span class="h2">Vers Dartmouth : la naissance de l'IA</span>
 
-**1955** — ***Minsky*** (28 ans à l'**époque**), rédige avec ***John McCarthy***, un projet d'école d'**été** pour **développer** une nouvelle discipline qu'ils **décident** de nommer « intelligence artificielle », et qui vise **à** étudier les différentes facettes de l'intelligence en les **simulant** avec des ordinateurs.
+- **1955**: ***Minsky*** (28 ans à l'**époque**), rédige avec ***John McCarthy***, un projet d'école d'**été** pour **développer** une nouvelle discipline qu'ils **décident** de nommer « intelligence artificielle », et qui vise **à** étudier les différentes facettes de l'intelligence en les **simulant** avec des ordinateurs.
 
-**1956** — Après avoir fait parrainer leur projet par ***Nick Rochester***, le directeur scientifique d'**IBM**, et surtout par le très célèbre ***Claude Shannon***, le père de la théorie de l'information, ils le **soumettent** à la **fondation Rockefeller**, qui **accepte** de le financer.
+- **1956**: Après avoir fait parrainer leur projet par ***Nick Rochester***, le directeur scientifique d'**IBM**, et surtout par le très célèbre ***Claude Shannon***, le père de la théorie de l'information, ils le **soumettent** à la **fondation Rockefeller**, qui **accepte** de le financer.
 
-## <span class="h2">1956 — La conférence de Dartmouth : la naissance du terme</span>
+## <span class="h2">La conférence de Dartmouth : la naissance du terme</span>
 
 L'été 1956, [***John McCarthy***](https://fr.wikipedia.org/wiki/John_McCarthy){ target="_blank" }, **Marvin Minsky**, **Nathaniel Rochester** et **Claude Shannon** organisent à Dartmouth College (New Hampshire) le *Dartmouth Summer Research Project on Artificial Intelligence*. C'est là que le terme **« Intelligence Artificielle »** est officiellement adopté.
 
@@ -113,19 +115,19 @@ Les participants (dont **Arthur Samuel**, **Herbert Simon**, **Allen Newell**) p
 
 ### <span class="h3">Les trois pionniers fondateurs</span>
 
-!!! abstract "Herbert Simon & Allen Newell — Recherche symbolique & Problem Solving"
+=== "Herbert Simon & Allen Newell"
 
     **Domaine posé** : Recherche symbolique & Résolution de problèmes (*Problem Solving*)
 
     **Contribution concrète en 1956** : Ils présentent **Logic Theorist**, considéré comme le **tout premier programme d'IA fonctionnel**. Capable de démontrer 38 des 52 théorèmes des *Principia Mathematica* de Whitehead et Russell, il pose les bases du **traitement symbolique** (manipuler des symboles plutôt que de simples nombres) et de la **recherche heuristique** (explorer un arbre de solutions sans tout tester par force brute).
 
-!!! abstract "Arthur Samuel — Apprentissage automatique (Machine Learning)"
+=== "Arthur Samuel"
 
     **Domaine posé** : Apprentissage automatique (*Machine Learning*)
 
     **Contribution concrète en 1956** : Chercheur chez IBM, il développe le célèbre **programme de jeu de dames** (*Samuel Checkers-playing Program*). Plutôt que de programmer chaque coup manuellement, il apprend à la machine à **s'améliorer seule** en jouant des milliers de parties contre elle-même (apprentissage par renforcement avant l'heure) et invente l'**algorithme alpha-bêta**. Il popularise le terme **Machine Learning** en 1959.
 
-!!! abstract "Marvin Minsky & Dean Edmonds — Réseaux neuronaux & Matériel"
+=== "Marvin Minsky & Dean Edmonds"
 
     **Domaine posé** : Réseaux neuronaux & Matériel neuronal (*Neural Networks & Hardware*)
 
@@ -135,12 +137,10 @@ Les participants (dont **Arthur Samuel**, **Herbert Simon**, **Allen Newell**) p
 
 ## <span class="h2">L'Âge d'or de l'IA symbolique</span>
 
-Pendant la periode 1957-1974
-
-### Premiers programmes « intelligents »
+### <span class="h3">Premiers programmes « intelligents »</span>
 
 | Année | Programme | Auteur(s) | Contribution |
-|-------|-----------|-----------|--------------|
+| ------- | ----------- | ----------- | -------------- |
 | 1957 | **General Problem Solver** | Newell, Shaw, Simon | Résolution de problèmes par recherche dans un espace d'états |
 | 1958 | **Perceptron** | Frank Rosenblatt | Premier modèle de neurone artificiel apprenant |
 | 1959 | **Programme de jeu d'échecs** | Arthur Samuel | Apprentissage par renforcement (premier *machine learning*) |
@@ -149,59 +149,63 @@ Pendant la periode 1957-1974
 | 1968-70 | **SHRDLU** | Terry Winograd | Compréhension du langage naturel dans un monde de blocs |
 | 1972 | **MYCIN** | Shortliffe et al. | Système expert diagnostic maladies du sang |
 
-### L'optimisme et ses limites
+### <span class="h3">L'optimisme et ses limites</span>
+
 - **Financement massif** (DARPA, USAF)
 - **Prédictions excessives** : « Dans une génération, les machines feront tout ce que l'homme peut faire » (Minsky, 1967)
 - **Limites révélées** : explosion combinatoire, absence de « sens commun », incapacité à traiter l'incertitude
 
 ---
 
-## <span class="h2">1974-1980 — Premier hiver de l'IA</span>
+## <span class="h2">Premier hiver de l'IA</span>
 
 Le rapport **Lighthill (1973)** au Royaume-Uni souligne l'échec des promesses : l'IA n'a pas tenu ses engagements. **Financements coupés** (DARPA, SRC britannique). Les programmes « jouets » ne passent pas à l'échelle.
 
-> « L'intelligence artificielle n'a pas produit d'applications pratiques significatives. » — Sir James Lighthill
+!!! note "Citation"
+    « *L'intelligence artificielle n'a pas produit d'applications pratiques significatives.* » **Sir James Lighthill**
 
 Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode réduit.
 
 ---
 
-## <span class="h2">1980-1987 — L'ère des systèmes experts</span>
+## <span class="h2">L'ère des systèmes experts</span>
 
-### Renaissance par l'industrialisation
+### <span class="h3">Renaissance par l'industrialisation</span>
 
 | Système | Domaine | Caractéristique |
 |---------|---------|-----------------|
-| **XCON (R1)** | Configuration ordinateurs (DEC) | Premier système expert déployé en production (1980-2000) |
-| **MYCIN** | Diagnostic infectieux | Chaînage arrière, facteurs de certitude |
-| **DENDRAL** | Analyse spectres de masse | Premier système expert scientifique |
-| **PROSPECTOR** | Prospection minière | Découverte gisement molybdène (1981) |
+| **XCON (R1)** | Configuration ordinateurs (DEC) | *Premier système expert déployé en production (1980-2000)* |
+| **MYCIN** | Diagnostic infectieux | *Chaînage arrière, facteurs de certitude* |
+| **DENDRAL** | Analyse spectres de masse | *Premier système expert scientifique* |
+| **PROSPECTOR** | Prospection minière | *Découverte gisement molybdène (1981)* |
 
-### Boom commercial puis 2e hiver
+### <span class="h3">Boom commercial puis 2e hiver</span>
+
 - **Marché IA** : $425M (1985) → $1,5Md (1988)
 - **Problèmes** : maintenance coûteuse, rigidité, acquisition connaissances (« goulot d'étranglement »), hardware spécialisé (Lisp machines) dépassé par stations de travail Sun/PC
 - **Fin 1987** : effondrement du marché des machines Lisp → **2e hiver**
 
 ---
 
-## <span class="h2">1986-1995 — Renaissance connexionniste & Backpropagation</span>
+## <span class="h2">Renaissance connexionniste & Backpropagation</span>
 
-### Rupture théorique
+### <span class="h3">Rupture théorique</span>
 
-- **1986** : **Rumelhart, Hinton, Williams** publient *Learning representations by back-propagating errors* — généralisation du **rétropropagation du gradient** aux réseaux multicouches
-- **Yann LeCun** (1989) : **LeNet** — premier CNN pour reconnaissance chiffres manuscrits (zip codes USPS)
-- **Sepp Hochreiter & Jürgen Schmidhuber** (1997) : **LSTM** — résout le problème du gradient évanescent
+- **1986** : **Rumelhart, Hinton, Williams** publient *Learning representations by back-propagating errors*: c'est la généralisation du **rétropropagation du gradient** aux réseaux multicouches
+- **Yann LeCun** (1989) : **LeNet**, le premier **CNN** pour reconnaissance chiffres manuscrits (zip codes USPS)
+- **Sepp Hochreiter & Jürgen Schmidhuber** (1997) : **LSTM**, il résout le problème du gradient évanescent.
 
-### Applications précoces
+### <span class="h3">Applications précoces</span>
+
 - **Reconnaissance optique de caractères** (banques, poste)
 - **Reconnaissance vocale** (Dragon Systems, IBM ViaVoice)
-- **Jeux** : **TD-Gammon** (Tesauro, 1992) — apprentissage par renforcement au backgammon niveau champion
+- **Jeux** : **TD-Gammon** (Tesauro, 1992), apprentissage par renforcement au backgammon niveau champion
 
 ---
 
-## <span class="h2">1997 — Deep Blue : le symbole franchit une étape</span>
+## <span class="h2">Deep Blue : le symbole franchit une étape</span>
 
-**IBM Deep Blue** bat **Garry Kasparov** (3,5 - 2,5) sous conditions de tournoi. Première victoire d'une machine sur un champion du monde d'échecs en temps réglementaire.
+**IBM Deep Blue** bat **Garry Kasparov** sous conditions de tournoi en **1997**. Première victoire d'une machine sur un champion du monde d'échecs en temps réglementaire.
 
 - **Matériel** : 30 nœuds RS/6000 SP + 480 puces d'échecs VLSI
 - **Calcul** : 200 millions positions/seconde
@@ -209,9 +213,9 @@ Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode 
 
 ---
 
-## <span class="h2">2006-2012 — Renaissance du Deep Learning</span>
+## <span class="h2">Renaissance du Deep Learning</span>
 
-### Points de bascule
+### <span class="h3">Points de bascule</span>
 
 | Année | Événement | Signification |
 |-------|-----------|---------------|
@@ -220,17 +224,18 @@ Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode 
 | 2011 | **GPU computing** (Krizhevsky, Sutskever, Hinton) | Entraînement CNN 10-50x plus vite |
 | **2012** | **AlexNet** (Krizhevsky, Sutskever, Hinton) | **Top-5 error 15,3 %** sur ImageNet (vs 26 % meilleur classique) — **choc** |
 
-### Conséquences
+### <span class="h3">Conséquences</span>
+
 - **Fin de l'IA symbolique** dominante → **Deep Learning** s'impose
 - **Grands labs** créés : Google Brain (2011), Facebook AI Research (2013), OpenAI (2015)
 - **Données massives + GPU + algorithmes** = nouvelle équation
 
 ---
 
-## <span class="h2">2014-2019 — Architectures fondatrices</span>
+## <span class="h2">Architectures fondatrices</span>
 
 | Année | Modèle / Article | Auteur(s) | Apport |
-|-------|------------------|-----------|--------|
+| ------- | ------------------ | ----------- | -------- |
 | 2014 | **GAN** (Generative Adversarial Networks) | Goodfellow et al. | Génération d'images par jeu adversaire |
 | 2014 | **Seq2Seq / Attention** | Sutskever, Vinyals, Le / Bahdanau | Traduction automatique neuronale |
 | 2015 | **ResNet** | He, Zhang, Ren, Sun | Réseaux résiduels (100+ couches) |
@@ -241,22 +246,22 @@ Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode 
 
 ---
 
-## <span class="h2">2020-2022 — L'ère des LLM et modèles fondateurs</span>
+## <span class="h2">L'ère des LLM et modèles fondateurs</span>
 
 | Modèle | Organisation | Paramètres | Particularité |
-|--------|--------------|------------|---------------|
-| **GPT-3** (2020) | OpenAI | 175 Mds | Few-shot learning, API commerciale |
-| **DALL-E** (2021) | OpenAI | 12 Mds | Génération image depuis texte |
-| **Codex / GitHub Copilot** (2021) | OpenAI / GitHub | — | Génération de code |
-| **LaMDA** (2021) | Google | 137 Mds | Dialogue ouvert |
-| **Chinchilla** (2022) | DeepMind | 70 Mds | Loi d'échelle optimale (compute/tokens) |
-| **Stable Diffusion** (2022) | Stability AI | 1 Md (open) | Génération image open-source |
+| -------- | -------------- | ------------ | --------------- |
+| **GPT-3** (2020) | OpenAI | 175 Mds | *Few-shot learning, API commerciale* |
+| **DALL-E** (2021) | OpenAI | 12 Mds | *Génération image depuis texte* |
+| **Codex / GitHub Copilot** (2021) | OpenAI / GitHub | — |* Génération de code* |
+| **LaMDA** (2021) | Google | 137 Mds | *Dialogue ouvert* |
+| **Chinchilla** (2022) | DeepMind | 70 Mds | *Loi d'échelle optimale (compute/tokens)* |
+| **Stable Diffusion** (2022) | Stability AI | 1 Md (open) | *Génération image open-source* |
 
 ---
 
-## <span class="h2">Novembre 2022 — ChatGPT : l'IA grand public</span>
+## <span class="h2">ChatGPT : l'IA grand public</span>
 
-**30 novembre 2022** : lancement de **ChatGPT** (GPT-3.5 turbo). **1 million d'utilisateurs en 5 jours**, 100 millions en 2 mois — adoption la plus rapide de l'histoire.
+**30 novembre 2022** : lancement de **ChatGPT** (GPT-3.5 turbo). **1 million d'utilisateurs en 5 jours**, 100 millions en 2 mois. C'est adoption la plus rapide de l'histoire.
 
 - **RLHF** (Reinforcement Learning from Human Feedback) : alignement préférences humaines
 - **Impact** : éducation, code, rédaction, recherche, débat sociétal (emploi, copyright, désinformation)
@@ -264,10 +269,10 @@ Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode 
 
 ---
 
-## <span class="h2">2023-2024 — Multimodalité, agents, raisonnement</span>
+## <span class="h2">Multimodalité, agents, raisonnement</span>
 
 | Tendance | Exemples |
-|----------|----------|
+| ---------- | ---------- |
 | **Multimodal natif** | GPT-4o, Gemini 1.5, Claude 3.5 Sonnet (texte + image + audio + vidéo) |
 | **Fenêtres de contexte massives** | 1M tokens (Gemini 1.5), 200k+ (Claude, GPT-4) |
 | **Raisonnement explicite (Chain-of-Thought)** | **OpenAI o1 / o3** (2024) — « penser avant de répondre » |
@@ -276,15 +281,17 @@ Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode 
 
 ---
 
-## <span class="h2">2025 — État de l'art et perspectives</span>
+## <span class="h2">État de l'art et perspectives</span>
 
-### Frontières actuelles
+### <span class="h3">Frontières actuelles</span>
+
 - **Raisonnement complexe** : mathématiques (IMO niveau), programmation競技, preuves formelles (Lean)
 - **Agents généralistes** : utilisation d'outils (navigateur, terminal, API), planification long terme
 - **Efficacité** : modèles « small » (1-7B) rivaux des gros via distillation / quantization
 - **Multimodal unifié** : un seul modèle pour tout (texte, image, audio, vidéo, code)
 
-### Débats ouverts
+### <span class="h3">Débats ouverts</span>
+
 - **Alignement / Sécurité** : interpretabilité, *scalable oversight*, *constitutional AI*
 - **Droits d'auteur / Données** : entraînement sur données protégées, *fair use* ?
 - **Impact économique** : automatisation cognitive, transformation métiers, inégalités
@@ -292,48 +299,35 @@ Seuls quelques laboratoires (MIT, Stanford, CMU, Edimbourg) poursuivent en mode 
 
 ---
 
-## <span class="h2">Documents fondateurs — à télécharger</span>
+## <span class="h2">Pour aller plus loin</span>
+
+### <span class="h3">Ouvrages de référence</span>
+
+- **Russell & Norvig** : *Artificial Intelligence: A Modern Approach* (4e éd., la « bible » universitaire)
+- **Goodfellow, Bengio, Courville** : *Deep Learning* (MIT Press, 2016)
+- **Hinton, LeCun, Bengio** : *Deep Learning* (Nature, 2015) — article fondateur
+- **McCulloch & Pitts** (1943) : *A logical calculus of the ideas immanent in nervous activity*
+
+### <span class="h3">Archives et ressources</span>
 
 <div class="grid cards" markdown>
 
--   :material-file-pdf-box:{ .lg .middle } __Version anglaise originale__
+- :material-archive-outline:{ .lg .middle } __The Turing Digital Archive__
 
     ---
 
-    **Computing Machinery and Intelligence**  
-    *Mind*, Vol. 59, No. 236, pp. 433–460 (octobre 1950)
+    Archives numérisées originales, manuscrits et correspondances d'Alan Turing (King's College, Cambridge).
 
-    [:material-download: Télécharger le PDF (EN)](assets/Turing_1950_Computing_Machinery_and_Intelligence_EN.pdf){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Explorer l'archive](https://turingarchive.kings.cam.ac.uk/){ target="_blank" }
 
--   :material-file-pdf-box:{ .lg .middle } __Traduction française (nettoyée)__
+- :material-code-braces-box:{ .lg .middle } __Papers With Code__
 
     ---
 
-    **Machines informatiques et intelligence**  
-    Traduction intégrale de l'article fondateur, nettoyée et reformatée.
+    État de l'art scientifique (SOTA) par tâche, benchmarks et implémentations open source associées.
 
-    [:material-download: Télécharger le PDF (FR)](assets/Turing_1950_Machines_Informatiques_et_Intelligence_FR.pdf){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Voir les benchmarks](https://paperswithcode.com/){ target="_blank" }
 
 </div>
 
-!!! note "Note sur la traduction"
-    La traduction française a été générée automatiquement (onlinedoctranslator.com) puis nettoyée et reformatée manuellement (correction de la citation de Lady Lovelace, suppression des artefacts d'extraction, structuration Markdown → PDF). L'article original est dans le domaine public.
-
 ---
-
-## <span class="h2">Pour aller plus loin</span>
-
-### Ouvrages de référence
-- **Russell & Norvig** — *Artificial Intelligence: A Modern Approach* (4e éd., la « bible » universitaire)
-- **Goodfellow, Bengio, Courville** — *Deep Learning* (MIT Press, 2016)
-- **Hinton, LeCun, Bengio** — *Deep Learning* (Nature, 2015) — article fondateur
-- **McCulloch & Pitts** (1943) — *A logical calculus of the ideas immanent in nervous activity*
-
-### Archives et ressources
-- **[The Turing Archive](https://www.turingarchive.org/)** — documents originaux de Turing
-- **[AI Topics (AAAI)](https://aitopics.org/)** — encyclopédie historique de l'IA
-- **[Papers With Code](https://paperswithcode.com/)** — SOTA par tâche + code
-
----
-
-> **Dernière mise à jour** : Septembre 2025. Cette page évolue avec le domaine — n'hésitez pas à proposer des corrections ou ajouts.

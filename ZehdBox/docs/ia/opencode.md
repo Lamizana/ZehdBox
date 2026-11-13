@@ -11,27 +11,11 @@ tags:
   - windows
 ---
 
-<div class="opencode-hero" markdown>
+# <span class="h1">OpenCode : Agent de codage IA</span>
 
-![OpenCode](assets/opencode-logo.svg){ .hero-logo }
-
-<p class="hero-tagline">L'agent de codage <strong>open source</strong> qui s'exécute localement — terminal, desktop, web, mobile, SDK.</p>
-
-<div class="hero-stats" markdown>
-
-| :material-star: 220k+ | :material-account-group: 22M+ | :material-github: 1000+ |
-|---|---|---|
-| Stars GitHub | Développeurs/mois | Contributeurs |
-
-</div>
-
-<div class="hero-badges" markdown>
-
-`Terminal` `Desktop` `Web` `Mobile` `SDK` `OpenChamber`
-
-</div>
-
-</div>
+<p class="intro">
+    <strong>OpenCode</strong> est un agent de codage <strong>open source</strong> (220k+ ⭐, 22M+ devs/mois) qui s'exécute localement sur votre machine. Il s'utilise depuis le terminal, une application desktop, le web, le mobile ou via son SDK.
+</p>
 
 ---
 
@@ -43,8 +27,7 @@ tags:
 
     ---
 
-    Interface rapide dans n'importe quel shell, éditeur ou serveur distant.
-    Raccourcis clavier, sessions parallèles, diffs temps réel.
+    Interface rapide dans n'importe quel shell, éditeur ou serveur distant. Raccourcis clavier, sessions parallèles, diffs temps réel.
 
     [:octicons-arrow-right-24: Installation CLI](#terminal-cli)
 
@@ -60,8 +43,7 @@ tags:
 
     ---
 
-    Via `opencode pair` (tunnel local) ou auto-hébergée avec OpenChamber.
-    PWA installable, fonctionne sur mobile.
+    Via `opencode pair` (tunnel local) ou auto-hébergée avec OpenChamber. PWA installable, fonctionne sur mobile.
 
     [:octicons-arrow-right-24: OpenChamber](#openchamber-interface-web-pour-opencode)
 
@@ -87,12 +69,28 @@ tags:
 
     ---
 
-    Environnement de développement agentique : desktop, web, VS Code, mobile.
-    Inclut OpenCode pré-installé.
+    Environnement de développement agentique : desktop, web, VS Code, mobile. Inclut OpenCode pré-installé.
 
     [:octicons-arrow-right-24: OpenChamber](#openchamber-interface-web-pour-opencode)
 
 </div>
+
+---
+
+## <span class="h2">Fonctionnalités clés</span>
+
+| Fonctionnalité | Description |
+|----------------|-------------|
+| **Modèles** | 200+ providers via Models.dev (Anthropic, OpenAI, Google, xAI, DeepSeek, Groq, Ollama, OpenRouter...) + modèles locaux |
+| **Modèles gratuits** | Big Pickle, DeepSeek V4.1 Flash Free, GLM-5.3-Flash Free (sans compte) |
+| **Multi-session** | Plusieurs agents en parallèle sur le même projet |
+| **Plugins** | Hooks événementiels pour étendre OpenCode |
+| **MCP Servers** | Connexion à GitHub, Linear, Figma, Sentry, Notion, Slack, Supabase, Stripe... |
+| **Agents personnalisés** | Prompts, modèles et outils dédiés par agent |
+| **Skills** | Workflows réutilisables (fichiers `.md` avec étapes) |
+| **Commandes** | Slash commands personnalisés (`/ma-commande`) |
+| **Permissions** | Contrôle granulaire : auto-approbation ou confirmation |
+| **Undo/Redo** | Annuler/rétablir les changements récents (fichiers + conversation) |
 
 ---
 
@@ -142,18 +140,14 @@ tags:
 
     Télécharger depuis <https://opencode.ai/update/api/latest/cli/opencode/> :
 
-    <table class="install-table">
-    <thead>
-    <tr><th>Architecture</th><th>glibc</th><th>musl (Alpine)</th></tr>
-    </thead>
-    <tbody>
-    <tr><td>x64</td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64.tar.gz">linux-x64.tar.gz</a></td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64-musl.tar.gz">linux-x64-musl.tar.gz</a></td></tr>
-    <tr><td>ARM64</td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-arm64.tar.gz">linux-arm64.tar.gz</a></td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-arm64-musl.tar.gz">linux-arm64-musl.tar.gz</a></td></tr>
-    <tr><td>x64 (baseline)</td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64-baseline.tar.gz">linux-x64-baseline.tar.gz</a></td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64-baseline-musl.tar.gz">linux-x64-baseline-musl.tar.gz</a></td></tr>
-    </tbody>
-    </table>
+    | Architecture | glibc | musl (Alpine) |
+    |--------------|-------|---------------|
+    | x64 | [linux-x64.tar.gz](https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64.tar.gz) | [linux-x64-musl.tar.gz](https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64-musl.tar.gz) |
+    | ARM64 | [linux-arm64.tar.gz](https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-arm64.tar.gz) | [linux-arm64-musl.tar.gz](https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-arm64-musl.tar.gz) |
+    | x64 (baseline) | [linux-x64-baseline.tar.gz](https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64-baseline.tar.gz) | [linux-x64-baseline-musl.tar.gz](https://opencode.ai/update/api/latest/cli/opencode/opencode-linux-x64-baseline-musl.tar.gz) |
 
     Installation :
+
     ```bash
     # Exemple x64 glibc
     tar -xzf opencode-linux-x64.tar.gz
@@ -165,18 +159,14 @@ tags:
 
     Télécharger depuis <https://opencode.ai/desktop#download> :
 
-    <table class="install-table">
-    <thead>
-    <tr><th>Format</th><th>x64</th><th>ARM64</th></tr>
-    </thead>
-    <tbody>
-    <tr><td>.deb (Ubuntu/Debian)</td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-amd64.deb">amd64.deb</a></td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-arm64.deb">arm64.deb</a></td></tr>
-    <tr><td>.rpm (Fedora/RHEL)</td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-x86_64.rpm">x86_64.rpm</a></td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-aarch64.rpm">aarch64.rpm</a></td></tr>
-    <tr><td>AppImage (universel)</td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-x86_64.AppImage">x86_64.AppImage</a></td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-arm64.AppImage">arm64.AppImage</a></td></tr>
-    </tbody>
-    </table>
+    | Format | x64 | ARM64 |
+    |--------|-----|-------|
+    | .deb (Ubuntu/Debian) | [amd64.deb](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-amd64.deb) | [arm64.deb](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-arm64.deb) |
+    | .rpm (Fedora/RHEL) | [x86_64.rpm](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-x86_64.rpm) | [aarch64.rpm](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-aarch64.rpm) |
+    | AppImage (universel) | [x86_64.AppImage](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-x86_64.AppImage) | [arm64.AppImage](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-arm64.AppImage) |
 
     Installation :
+
     ```bash
     # .deb (Ubuntu/Debian)
     sudo dpkg -i opencode-desktop-linux-amd64.deb
@@ -199,22 +189,17 @@ tags:
 
     Télécharger depuis <https://opencode.ai/update/api/latest/cli/opencode/> :
 
-    <table class="install-table">
-    <thead>
-    <tr><th>Architecture</th><th>Fichier</th></tr>
-    </thead>
-    <tbody>
-    <tr><td>x64</td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-x64.zip">windows-x64.zip</a></td></tr>
-    <tr><td>ARM64</td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-arm64.zip">windows-arm64.zip</a></td></tr>
-    <tr><td>x64 (baseline)</td><td><a href="https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-x64-baseline.zip">windows-x64-baseline.zip</a></td></tr>
-    </tbody>
-    </table>
+    | Architecture | Fichier |
+    |--------------|---------|
+    | x64 | [windows-x64.zip](https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-x64.zip) |
+    | ARM64 | [windows-arm64.zip](https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-arm64.zip) |
+    | x64 (baseline) | [windows-x64-baseline.zip](https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-x64-baseline.zip) |
 
     ```powershell
     # PowerShell - x64
     Invoke-WebRequest -Uri "https://opencode.ai/update/api/latest/cli/opencode/opencode-windows-x64.zip" -OutFile "opencode.zip"
     Expand-Archive -Path "opencode.zip" -DestinationPath "$env:USERPROFILE\opencode"
-    # Ajouter $env:USERPROFILE\opencode au PATH système (Variables d'environnement)
+    # Ajouter $env:USERPROFILE\opencode au PATH système
     ```
 
     #### Via gestionnaires de paquets (si disponibles)
@@ -237,13 +222,10 @@ tags:
 
     Télécharger l'installateur :
 
-    <table class="install-table">
-    <thead><tr><th>Version</th><th>Télécharger</th></tr></thead>
-    <tbody>
-    <tr><td>Windows x64</td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-win-x64.exe">.exe</a></td></tr>
-    <tr><td>Windows ARM64</td><td><a href="https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-win-arm64.exe">.exe</a></td></tr>
-    </tbody>
-    </table>
+    | Version | Télécharger |
+    |---------|-------------|
+    | Windows x64 | [.exe](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-win-x64.exe) |
+    | Windows ARM64 | [.exe](https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-win-arm64.exe) |
 
     Exécuter l'installateur et suivre l'assistant.
 
@@ -313,18 +295,16 @@ tags:
 
 ## <span class="h2">Configuration initiale</span>
 
-<div class="config-card" markdown>
-
-### :material-cog: Connexion aux modèles (Providers)
+### :material-account-key: Connexion aux modèles (Providers)
 
 ```bash
 opencode
 # Puis dans le TUI : /connect
 ```
 
-**Providers :** Anthropic, OpenAI, Google, xAI, DeepSeek, Groq, **Ollama (local)**, OpenRouter, 200+ via Models.dev.
+**Providers supportés :** Anthropic, OpenAI, Google, xAI, DeepSeek, Groq, **Ollama (local)**, OpenRouter, 200+ via Models.dev.
 
-**Gratuits (sans clé) :** Big Pickle, DeepSeek V4.1 Flash Free, GLM-5.3-Flash Free.
+**Modèles gratuits (sans clé) :** Big Pickle, DeepSeek V4.1 Flash Free, GLM-5.3-Flash Free.
 
 ### :material-file-cog: Fichiers de configuration
 
@@ -333,6 +313,7 @@ opencode
 | `~/.config/opencode/opencode.json` | Globale (utilisateur) |
 | `.opencode/opencode.json` | Projet (partagé via git) |
 
+Exemple `.opencode/opencode.json` :
 ```json
 {
   "theme": "catppuccin-mocha",
@@ -348,13 +329,9 @@ opencode
 Thèmes : `catppuccin-mocha`, `tokyo-night`, `dracula`, `gruvbox`, `nord`
 Raccourcis : `vscode`, `vim`, `emacs`, `default`
 
-</div>
-
 ---
 
 ## <span class="h2">Exemple d'usage : Premier projet avec OpenCode</span>
-
-<div class="usage-steps" markdown>
 
 ### 1. :material-folder-open: Ouvrir un projet
 
@@ -366,8 +343,7 @@ opencode
 ### 2. :material-robot: Lancer une première tâche
 
 Dans le TUI, taper en langage naturel :
-
-```text
+```
 > Analyse ce projet et propose une amélioration du README
 ```
 
@@ -392,10 +368,9 @@ description: Revue de code complète
 ---
 Revue : style, sécurité, performance, tests, doc.
 ```
+Puis utiliser : `/review`
 
-Puis : `/review`
-
-### 5. :material-github: Connecter MCP (ex: GitHub)
+### 5. :material-github: Connecter un serveur MCP (ex: GitHub)
 
 ```bash
 # Dans le TUI
@@ -403,7 +378,7 @@ Puis : `/review`
 # Suivre les instructions d'authentification
 ```
 
-### 6. :material-book-multiple: Skills (workflows)
+### 6. :material-book-multiple: Skills (workflows réutilisables)
 
 ```bash
 # .opencode/skills/ma-tache.md
@@ -417,10 +392,7 @@ description: Mon workflow personnalisé
 4. Tester
 5. Documenter
 ```
-
-Puis : `/skill ma-tache`
-
-</div>
+Puis lancer : `/skill ma-tache`
 
 ---
 

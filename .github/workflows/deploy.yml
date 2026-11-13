@@ -34,7 +34,12 @@ jobs:
       - name: Install system dependencies (Cairo for social plugin)
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libpango1.0-dev libgdk-pixbuf2.0-dev libffi-dev
+          sudo apt-get install -y libcairo2-dev libpango1.0-dev libffi-dev
+          # gdk-pixbuf a change de nom sur Ubuntu 26.04 "resolute" :
+          # libgdk-pixbuf2.0-dev n'existe plus, remplace par libgdk-pixbuf-xlib-2.0-dev.
+          # On tente le nouveau nom d'abord, puis l'ancien pour les images plus anciennes.
+          sudo apt-get install -y libgdk-pixbuf-xlib-2.0-dev \
+            || sudo apt-get install -y libgdk-pixbuf2.0-dev
 
       - name: Install Python dependencies
         run: pip install -r ZehdBox/requirements-ci.txt

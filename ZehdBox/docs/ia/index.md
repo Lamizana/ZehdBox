@@ -21,7 +21,7 @@ tags:
 
 L'IA n'est pas une magie : derrière chaque modèle, il y a des maths, une fonction de coût et un algorithme d'optimisation. Cette section **construit les algorithmes à la main**, ligne par ligne, du plus simple au plus complet.
 
-Les exemples sont écrits en **Python** — mais les idées (prédire, mesurer l'erreur, corriger un pas à la fois) sont **indépendantes du langage**.
+Les exemples sont écrits en **Python**, mais les idées (prédire, mesurer l'erreur, corriger un pas à la fois) sont **indépendantes du langage**.
 
 <div class="grid cards" markdown>
 
